@@ -1,0 +1,1348 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="31%20ANCOVA%20R.html" />
+    <link rel="prev" title="Toepassing" href="29%20Factoriele%20ANOVA%20R.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/r/30 Factoriele repeated measures ANOVA R.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fr/30 Factoriele repeated measures ANOVA R.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#within-en-between-subjects-variabelen">
+   Within en between-subjects variabelen
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hoofdeffecten-en-interacties">
+   Hoofdeffecten en interacties
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitleg-assumpties">
+   Uitleg assumpties
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#normaliteit">
+     Normaliteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sphericiteit">
+     Sphericiteit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#effectmaat">
+   Effectmaat
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#post-hoc-toetsen">
+   Post-hoc toetsen
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering">
+   Uitvoering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-data-bekijken">
+     De data bekijken
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id17">
+     Normaliteit
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#histogram">
+       Histogram
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#toetsen-van-normaliteit">
+       Toetsen van normaliteit
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#kolmogorov-smirnov-test">
+         Kolmogorov-Smirnov test
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#shapiro-wilk-test">
+         Shapiro-Wilk test
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id23">
+     Sphericiteit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#factoriele-repeated-measures-anova">
+   Factoriële repeated measures ANOVA
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#simple-effects-analyse">
+     Simple effects analyse
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#periode">
+       Periode
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vaksoort">
+       Vaksoort
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#illustratie-van-post-hoc-toetsing-bij-hoofdeffecten-zonder-interactie-effect">
+     Illustratie van post-hoc toetsing bij hoofdeffecten zonder interactie-effect
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rapportage">
+   Rapportage
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-924f26e6aa13&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span>exists<span class="o">(</span><span class="s2">&quot;Substitute_var&quot;</span><span class="o">))</span> <span class="o">{</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.R -->
+<!-- ## /CLOSEDBLOK: Reticulate.R -->
+<!-- ## OPENBLOK: Data-aanmaken.R --><!-- ## /OPENBLOK: Data-aanmaken.R -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<p>Gebruik de <em>factoriële repeated measures ANOVA</em> om te toetsen of de gemiddelden van groepen op basis van twee of meer onafhankelijke categorische variabelen van elkaar verschillen waarbij de deelnemers<a class="footnote-reference brackets" href="#id29" id="id1">19</a> gemeten zijn voor elke categorie van de onafhankelijke variabelen (herhaalde metingen).<a class="footnote-reference brackets" href="#id30" id="id2">1</a> De onafhankelijke variabelen zijn bij de <em>factoriële  repeated measures ANOVA</em> allemaal within-subjects variabelen.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id = "casus">
+<p>De opleidingsdirecteur van de bachelor Leisure Management van een hogeschool wil onderzoeken of de manier van toetsing invloed heeft op de resultaten van studenten in het eerste studiejaar. In het eerste studiejaar volgen de studenten in elke onderwijsperiode een theoretisch vak dat wordt afgesloten met een tentamen en een praktijkvak dat wordt afgesloten met een casus. Om het onderwijs te verbeteren wil de opleidingsdirecteur uitzoeken of er verschillen zijn tussen de vier onderwijsperiodes qua gemiddelde cijfers. Daarnaast is zij nieuwsgierig of er een verschil is tussen de becijfering van de theoretische en praktische vakken, en of deze verschillen afhangen van de onderwijsperiode.</p>
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is. Bij <em>factoriële repeated measures ANOVA</em> zijn er hypotheses op te stellen voor de verschillen tussen groepen van elke onafhankelijke variabele apart (hoofdeffecten) en een hypothese voor de interactie tussen twee of meerdere onafhankelijke variabelen (interactie-effect).</p>
+<p><em>H~0~</em>: Het gemiddelde cijfer is gelijk voor theoretische en praktijkvakken, i.e. er is geen hoofdeffect van Vaksoort op Gemiddeld cijfer.</p>
+<p><em>H~A~</em>: Het gemiddelde cijfer is niet gelijk voor theoretische en praktijkvakken, i.e. er is een hoofdeffect van Vaksoort op Gemiddeld cijfer.</p>
+<p><em>H~0~</em>: Het gemiddelde cijfer is gelijk in onderwijsperiode 1, 2, 3 en 4, i.e. er is geen hoofdeffect van Periode op Gemiddeld cijfer.</p>
+<p><em>H~A~</em>: Het gemiddelde cijfer is niet gelijk in onderwijsperiode 1, 2, 3 en 4, i.e. er is een hoofdeffect van Periode op Gemiddeld cijfer.</p>
+<p><em>H~0~</em>: Er is geen interactie-effect tussen de variabelen Vaksoort en Periode op het gemiddeld cijfer.</p>
+<p><em>H~A~</em>: Er is een interactie-effect tussen de variabelen Vaksoort en Periode op het gemiddeld cijfer.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="within-en-between-subjects-variabelen">
+<h1>Within en between-subjects variabelen<a class="headerlink" href="#within-en-between-subjects-variabelen" title="Permalink to this headline">¶</a></h1>
+<p>Binnen de <em>ANOVA</em> familie zijn er verschillende soorten analyses die afhangen van het type onafhankelijke variabele dat wordt gebruikt. Een onafhankelijke variabele kan een between-subjects en within-subjects variabele zijn. Between-subjects houdt in dat elke categorie van de variabele andere deelnemers bevat; elke deelnemer zit slechts in één van de categoriëen. Een voorbeeld van een between-subjects variabele is Geslacht: de deelnemer zit in de categorie man of categorie vrouw en kan niet in beide zitten. Een within-subjects variabele kan op twee manieren ontworpen worden. De eerste manier is dat elke deelnemer in elke categorie zit doordat hij of zij in elke categorie gemeten is (herhaalde metingen). Een voorbeeld hiervan is de variabele onderwijsperiode: de deelnemer wordt in elke onderwijsperiode gemeten wat betreft zijn gemiddelde cijfer. De tweede manier is dat deelnemers in elke categorie aan elkaar gematcht worden. Dit betekent dat er op basis van achtergrondkenmerken deelnemers aan elkaar gekoppeld worden die erg op elkaar lijken. Een herhaalde meting wordt op deze manier als het ware nagebootst. Een voorbeeld hiervan is het matchen van studenten bij verschillende opleidingen op basis van kenmerken als geslacht, leeftijd, vooropleiding en gemiddeld eindexamencijfer middelbare school.</p>
+<p>Het soort onafhankelijke variabelen bepaalt het type <em>ANOVA</em> dat gebruikt moet worden. Bij één between-subjects variabele is de <span class="xref myst">one-way ANOVA</span> de juiste toets en bij één within-subjects variabele is de <span class="xref myst">repeated measures ANOVA</span> de juiste toets. Bij meerdere variabelen wordt het iets complexer. Als alle variabelen between-subjects variabelen zijn is de <span class="xref myst">factoriële ANOVA</span> de juiste toets. Als alle variabelen within-subjects variabelen zijn, is de <em>factoriële repeated measures ANOVA</em> (de huidige toetspagina) de juiste toets. Als er een combinatie is van within-subjects en between-subjects variabelen, dan is de <span class="xref myst">mixed ANOVA</span> de juiste toets. Bekijk dus van tevoren wat voor soort onafhankelijke variabelen worden gebruikt om de juiste toets te bepalen.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="hoofdeffecten-en-interacties">
+<h1>Hoofdeffecten en interacties<a class="headerlink" href="#hoofdeffecten-en-interacties" title="Permalink to this headline">¶</a></h1>
+<p>Bij <em>factoriële repeated measures ANOVA</em> wordt onderzocht of er verschillen zijn tussen groepen die gemaakt worden op basis van meerdere categorische onafhankelijke variabelen met herhaalde metingen. Dit wordt toegelicht met een versimpelde vorm van de huidige casus met twee onafhankelijke variabelen Vaksoort en Periode en een afhankelijke variabele Cijfer. De onafhankelijke variabele Vaksoort bestaat uit twee groepen (theorie en praktijk) en de onafhankelijke variabele Periode bestaat ook uit twee groepen (1 en 2). Binnen <em>factoriële repeated measures ANOVA</em> wordt een onderscheid gemaakt tussen hoofdeffecten en interactie-effecten. Een hoofdeffect houdt in dat er een verschil is tussen de groepen van één van de onafhankelijke variabelen. In andere woorden, de onafhankelijke variabele heeft effect op de afhankelijke variabele. Voor het bedachte experiment houdt een hoofdeffect van de variabele Vaksoort in dat er een verschil is in het gemiddelde van groep theorie en groep praktijk. Een hoofdeffect van de variabele Periode houdt in dat er een verschil is in het gemiddelde van periode1 en peridoe 2.<a class="footnote-reference brackets" href="#id31" id="id3">10</a></p>
+<p>Een grafische weergave van hoofdeffecten is te zien in Figuur 1. In de figuur is de relatie tussen de variabelen Periode en Cijfer weergegeven voor de vaksoorten theorie en praktijk. Het hoofdeffect van de variabele Periode is te zien door het gemiddelde van periode 1 te vergelijken met het gemiddelde van periode 2. Beide gemiddelden zijn weergegeven met groene driehoeken: periode 1 heeft een gemiddelde van 6 en periode 2 een gemiddelde van 8. Er is dus een verschil in gemiddelde tussen de groepen van onafhankelijke variabele Periode, wat betekent dat er een hoofdeffect van de variabele Periode is. Op dezelfde manier kan een mogelijk hoofdeffect van de variabele Vaksoort onderzocht worden. Het gemiddelde van groep theorie is weergegeven met een oranje vierkant en het gemiddelde van groep praktijk met een blauw vierkant. Het gemiddelde van groep praktijk (8) ligt hoger dan het gemiddelde van groep theorie (6), dus er is ook een hoofdeffect van onafhankelijke variabele Vaksoort. Beide onafhankelijke variabelen hebben dus een effect op de afhankelijke variabele Cijfer.</p>
+<!-- ## CLOSEDBLOK: Uitleg1.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Uitleg1.R -->
+<p><em>Figuur 1.  Illustratie van hoofdeffecten bij factoriële repeated measures ANOVA voor een casus met afhankelijke variabele Cijfer en onafhankelijke variabelen Vaksoort en Periode. In deze grafiek zijn er hoofdeffecten voor de variabelen Vaksoort en Periode, maar geen interactie-effecten.</em></p>
+<p>Een interactie-effect houdt in dat het effect van de ene onafhankelijke variabele op de afhankelijke variabele afhangt van de andere onafhankelijke variabele(n). Er is als het ware een interactie tussen de onafhankelijke variabelen die het effect op de afhankelijke variabele bepaalt. In het bedachte experiment zou dit betekenen dat het effect van onafhankelijke variabele Periode op Cijfer verschillend is voor de groepen theorie en praktijk. Een voorbeeld van dit interactie-effect is te zien in Figuur 2. In deze figuur is zichtbaar dat er bij de groep theorie geen verschil is tussen de periode 1 en 2 wat betreft het cijfer, maar dat er voor de groep praktijk wel een verschil is. Bij de groep praktijk is er in periode 2 een hoger gemiddeld cijfer (9) dan in periode 1 (7). Het effect van de onafhankelijke variabele Periode op Cijfer hangt af van de variabele Vaksoort, dus er is een interactie-effect van de variabelen Periode en Vaksoort op de afhankelijke variabele Cijfer.</p>
+<!-- ## CLOSEDBLOK: Uitleg2.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Uitleg2.R -->
+<p><em>Figuur 2.  Illustratie van interactie-effecten bij factoriële repeated measures ANOVA voor een casus met de afhankelijke variabele Cijfer en de onafhankelijke variabelen Vaksoort en Periode. In deze grafiek is er een interactie-effect van de onafhankelijke variabelen Vaksoort en Periode op de afhankelijke variabele Cijfer.</em></p>
+<p>In Figuur 1 waren er hoofdeffecten van de variabelen Vaksoort en Periode gevonden, maar was het interactie-effect nog niet onderzocht. In deze figuur is er geen sprake van een interactie-effect, omdat het effect van Periode op Cijfer hetzelfde is voor de groepen theorie en praktijk en dus niet afhangt van de variabele Vaksoort. Voor beide groepen (theorie en praktijk) is het verschil tussen periode 1 en 2 twee punten. Hier is dus geen sprake van een interactie-effect. Bij grafieken is er een interactie-effect als de twee (of meerdere) lijnen niet parallel lopen. Op deze manier kan snel onderzocht worden of er een interactie-effect is en wat de invloed van het interactie-effect is.</p>
+<p>Bij <em>factoriële repeated measures ANOVA</em> worden bovenstaande grafieken gebruikt om de resultaten te interpreteren. De hoofdeffecten en interactie-effecten worden eerst statistisch getoetst en daarna geïnterpreteerd met onder andere deze grafieken. De aanpak is als volgt.<a class="footnote-reference brackets" href="#id31" id="id4">10</a> Eerst wordt getoetst of er sprake is van een interactie-effect tussen de onafhankelijke variabelen. Als dit niet het geval is, kunnen de hoofdeffecten geïnterpreteerd worden. Als er wel een interactie-effect is, kunnen de hoofdeffecten niet geïnterpreteerd worden. De volgende stap is dan een <em>simple effects analyse</em> waarbij het effect van de ene onafhankelijke variabele op de afhankelijke variabele wordt getoetst voor alle groepen van de andere onafhankelijke variabele die deel uitmaakt van het interactie-effect. Voor Figuur 2 zou dit betekenen dat het effect van Periode op Gemiddeld_cijfer apart getoetst wordt voor de groepen theorie en praktijk van de variabele Vaksoort. Het interactie-effect kan op deze manier geïnterpreteerd worden, samen met de grafische weergave zoals te zien in Figuur 2.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitleg-assumpties">
+<h1>Uitleg assumpties<a class="headerlink" href="#uitleg-assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Voor een valide toetsresultaat bij de <em>factoriële repeated measures ANOVA</em> moet er aan een aantal assumpties voldaan worden. De steekproef moet bestaan uit onafhankelijke deelnemers, de afhankelijke variabele moet normaal verdeeld zijn voor elke combinatie van groepen van de onafhankelijke variabelen en er moet sphericiteit zijn.<a class="footnote-reference brackets" href="#id30" id="id5">1</a> In deze sectie worden de assumpties allen toegelicht en worden de opties bij het niet voldoen aan de assumptie weergegeven. Verderop in de toetspagina worden de assumpties getoetst met de dataset van de onderwijscasus.</p>
+<div class="section" id="normaliteit">
+<h2>Normaliteit<a class="headerlink" href="#normaliteit" title="Permalink to this headline">¶</a></h2>
+<p>Controleer de assumptie van normaliteit voor elke groep met de volgende stappen:</p>
+<ol class="simple">
+<li><p>Controleer de data visueel met een histogram, een boxplot of een Q-Q plot.</p></li>
+<li><p>Toets of de data normaal verdeeld zijn met de <em>Kolmogorov-Smirnov test</em> of bij een kleinere steekproef (n &lt; 50) met de <em>Shapiro-Wilk test</em>.<a class="footnote-reference brackets" href="#id32" id="id6">7</a><sup>, </sup><a class="footnote-reference brackets" href="#id33" id="id7">8</a></p></li>
+</ol>
+<!-- ## TEKSTBLOK: Link1.R -->
+<p>De <em>factoriële repeated measures ANOVA</em> is redelijk robuust ten opzichte van een schending van de assumptie van normaliteit. Als er kleine afwijkingen zijn, heeft dat relatief kleine gevolgen voor de validiteit van de toets. Bij grotere afwijkingen is het transformeren van de afhankelijke variabele een optie.<a class="footnote-reference brackets" href="#id34" id="id8">2</a> Als dit niet werkt, dan is het een optie om <span class="xref myst">Friedman’s ANOVA</span>. Dit is een nonparametrische versie van de <em>repeated measures ANOVA</em> en hoeft niet te voldoen aan de assumptie van normaliteit en sphericiteit. De <em>factoriële repeated measures ANOVA</em> heeft echter een hoger onderscheidend vermogen als aan alle assumpties is voldaan, dus in dat geval heeft deze toets de voorkeur.<a class="footnote-reference brackets" href="#id35" id="id9">21</a></p>
+<!-- ## /TEKSTBLOK: Link1.R -->
+</div>
+<div class="section" id="sphericiteit">
+<h2>Sphericiteit<a class="headerlink" href="#sphericiteit" title="Permalink to this headline">¶</a></h2>
+<p>De assumptie van sphericiteit houdt in dat de variantie van de verschilscores tussen groepen ongeveer aan elkaar gelijk zijn.<a class="footnote-reference brackets" href="#id36" id="id10">11</a> Bij een <em>repeated measures ANOVA</em> met meerdere onafhankelijke variabelen zijn er verschilscores te maken voor elke individuele onafhankelijke variabele en voor alle combinaties van interactie-effecten tussen de onafhankelijke variabelen. In de huidige casus zijn er voor de variabele Periode zes verschilscores te maken: periode 1 - periode 2, periode 1 - periode 3, periode 1 - periode 4, periode 2 - periode 3, periode 2 - periode 4 en periode 3 - periode 4. De variantie van deze zes verschilscores moet dus ongeveer gelijk zijn om aan de assumptie te voldoen.</p>
+<p>Voor de variabele Vaksoort is er slechts één verschilscore (theorie - praktijk). Omdat er maar één verschilscore is, is de variantie per definitie gelijk voor alle verschilscores van deze variabele. Er is namelijk geen andere verschilscore om de variantie mee te vergelijken. Het interactie-effect tussen Vaksoort en Periode zorgt voor acht (4 perioden keer 2 vaksoorten) groepen op basis waarvan verschilscores zijn te maken voor alle combinaties van groepen. De variantie van al deze verschilscores moet ongeveer aan elkaar gelijk zijn.</p>
+<p>Toets deze assumptie met <em>Mauchly’s test</em>. Als de onafhankelijke variabelen niet aan de assumptie voldoen, geeft de gewone <em>repeated measures ANOVA</em> een verkeerd resultaat. Er zijn echter correcties die gebruikt kunnen worden als er niet aan sphericiteit voldaan is. Een voorbeeld van mogelijke output van <em>Mauchly’s test</em> in R voor de huidige toetspagina is hieronder weergegeven.</p>
+<!-- ## CLOSEDBLOK: Sphericiteit.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Sphericiteit.R -->
+<!-- ## TEKSTBLOK: Sphericiteit1.R -->
+<p>De output bestaat uit drie delen die zijn aangegeven met een dollarteken ($). Het eerste deel (ANOVA) bestaat uit het resultaat van de <em>factoriële repeated measures ANOVA</em> als er aan de assumptie van sphericiteit is voldaan. Het tweede deel van de output (Mauchly’s Test for Sphericity) bestaat uit het resultaat van <em>Mauchly’s test</em> voor de variabele Periode en de interactieterm tussen variabelen Vaksoort en Periode (<code class="docutils literal notranslate"><span class="pre">Vaksoort:Periode</span></code>). Het derde deel (Sphericity Corrections) bestaat uit de resultaten gecorrigeerd voor het feit dat er niet is voldaan aan de assumptie van sphericiteit.</p>
+<p>Bij een p-waarde kleiner dan 0,05, toont <em>Mauchly’s test</em> dat de assumptie van sphericiteit geschonden is. In de output is er voldaan aan de assumptie van sphericiteit voor de variabele Periode (<em>p</em> = 0,862). Voor deze onafhankelijke variabele hoeft er dus geen correctie gebruikt te worden en kan de output bij <code class="docutils literal notranslate"><span class="pre">$ANOVA</span></code> bekeken worden om de significantie te bepalen. Er is geen resultaat van <em>Mauchly’s test</em> voor de variabele Vaksoort, omdat hier maar één verschilscore is en er dus per definitie aan de assumptie is voldaan. Voor de interactieterm moet dus een correctie gevonden worden. <em>Mauchly’s test</em> laat ten slotte zien dat er niet voldaan is aan de assumptie van sphericiteit voor de interactieterm tussen Vaksoort en Periode (<em>p</em> = 0,006).</p>
+<p>Er zijn twee mogelijke correcties als er geen sphericiteit is: de Greenhouse-Geisser (GG) en Huynh-Feldt (HF) correctie. De Greenhouse-Geisser correctie staat bekend als conservatief, wat betekent dat de correctie een relatief lage kans op een type I fout heeft. In andere woorden, het zal niet vaak gebeuren dat deze correctie een significant effect aantoont als dat er in werkelijkheid niet is. De Huynh-Feldt correctie staat echter bekend als liberaal, wat betekent dat er een relatief hoge kans op een type I fout is. De toetsstatistiek en p-waarde van beide correcties zijn in de output te vinden onder Sphericity Corrections.</p>
+<!-- ## TEKSTBLOK: Sphericiteit1.R -->
+<p>Houd de volgende richtlijnen aan bij het interpreteren van de <em>factoriële repeated measures ANOVA</em> als er niet aan sphericiteit is voldaan:</p>
+<ul class="simple">
+<li><p>Als beide correcties significant zijn, rapporteer de (conservatieve) Greenhouse-Geisser correctie.</p></li>
+<li><p>Als beide correcties niet significant zijn, rapporteer de (liberale) Huynh-Feldt correctie.</p></li>
+<li><p>Als de een significant is en de ander niet, bereken de gemiddelde p-waarde van beide correcties.</p>
+<ul>
+<li><p>Als deze p-waarde significant is, rapporteer dan de significante correctie.</p></li>
+<li><p>Als deze p-waarde niet significant is, rapporteer dan de niet significante correctie.</p></li>
+</ul>
+</li>
+</ul>
+<p>In de voorbeeldoutput is voor het interactie-effect tussen Vaksoort en Periode de p-waarde van de Greenhouse-Geisser correctie (<code class="docutils literal notranslate"><span class="pre">0.0553387</span></code>) groter dan 0,05 en de p-waarde van de Huynh-Feldt correctie (<code class="docutils literal notranslate"><span class="pre">0.0430724</span></code>) kleiner dan 0,05. Het gemiddelde van beide p-waarden is 0,0492056, wat betekent dat er een significant resultaat is. Rapporteer in dit geval dus de (significante) Huynh-Feldt correctie, i.e. <em>F</em> = 1,01, <em>p</em> = 0,049.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="effectmaat">
+<h1>Effectmaat<a class="headerlink" href="#effectmaat" title="Permalink to this headline">¶</a></h1>
+<p>De p-waarde geeft aan of het verschil tussen groepen significant is. De grootte van het verschil of effect is echter ook relevant. Een effectmaat is een gestandaardiseerde maat die de grootte van een effect weergeeft, zodat effecten van verschillende onderzoeken met elkaar vergeleken kunnen worden.<a class="footnote-reference brackets" href="#id36" id="id11">11</a> Voor de <em>factoriële repeated measures ANOVA</em> wordt de effectmaat <em>partial eta squared</em> vaak gebruikt.<a class="footnote-reference brackets" href="#id37" id="id12">4</a></p>
+<p>De effectmaat <em>partial eta squared</em> (partial <em>η^2^</em>) berekent de proportie van de onverklaarde variantie (variantie die niet door de andere variabelen wordt verklaard) in de afhankelijke variabele die verklaard wordt door de onafhankelijke variabele.<a class="footnote-reference brackets" href="#id37" id="id13">4</a> Voor de variabele Vooropleiding geeft de partial eta squared dus de proportie verklaarde variantie weer van de variantie die niet verklaard is door de variabele Geslacht en de interactie tussen de variabelen Vooropleiding en Geslacht. De partial eta squared van alle termen van het model tellen dus niet per se op tot 1.<a class="footnote-reference brackets" href="#id37" id="id14">4</a> Een indicatie om partial <em>η^2^</em> te interpreteren is: rond 0,01 is een klein effect, rond 0,06 is een gemiddeld effect en rond 0,14 is een groot effect.<a class="footnote-reference brackets" href="#id38" id="id15">5</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="post-hoc-toetsen">
+<h1>Post-hoc toetsen<a class="headerlink" href="#post-hoc-toetsen" title="Permalink to this headline">¶</a></h1>
+<p>De eerste stap van de <em>factoriële repeated measures ANOVA</em> is het toetsen van hoofdeffecten en interactie-effecten. De volgende stap bestaat uit het bepalen welke groepen van elkaar verschillen, zowel bij <em>simple effects analyse</em> als bij het interpreteren van hoofdeffecten, en wordt gedaan met post-hoc toetsen. De post-hoc toetsen voeren meestal een correctie voor de p-waarden uit, omdat er meerdere toetsen tegelijkertijd worden gebruikt. Meerdere toetsen tegelijkertijd uitvoeren verhoogt de kans dat een van de nulhypotheses onterecht wordt verworpen en er bij toeval een verband wordt ontdekt dat er niet is (type I fout). In deze toetspagina wordt de <em>Bonferroni correctie</em> gebruikt. Deze correctie past de p-waarde aan door de p-waarde te vermenigvuldigen met het aantal uitgevoerde toetsen en verlaagt hiermee de kans op een type I fout. Een andere uitleg hiervan is dat het significantieniveau gedeeld wordt door het aantal toetsen wat leidt tot een lager significantieniveau en dus een strengere toets. Er zijn ook andere opties voor een correctie op de p-waarden.<a class="footnote-reference brackets" href="#id36" id="id16">11</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering">
+<h1>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Dataset-inladen.R-->
+<p>Er is een dataset ingeladen met de cijfers per periode per vaksoort voor eerstejaars studenten van de bachelor Leisure Management genaamd <code class="docutils literal notranslate"><span class="pre">Resultaten_Leisure_Management</span></code>.</p>
+<!-- ## /TEKSTBLOK: Dataset-inladen.R-->
+<div class="section" id="de-data-bekijken">
+<h2>De data bekijken<a class="headerlink" href="#de-data-bekijken" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Data-bekijken.R -->
+<p>Gebruik <code class="docutils literal notranslate"><span class="pre">head()</span></code> en <code class="docutils literal notranslate"><span class="pre">tail()</span></code> om de structuur van de data te bekijken.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken.R -->
+<!-- ## OPENBLOK: Data-bekijken.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Eerste 5 observaties</span>
+<span class="n">head</span><span class="p">(</span><span class="n">Resultaten_Leisure_Management</span><span class="p">)</span>
+
+<span class="c1">## Laatste 5 observaties</span>
+<span class="n">tail</span><span class="p">(</span><span class="n">Resultaten_Leisure_Management</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken.R -->
+<!-- ## TEKSTBLOK: Data-beschrijven.R -->
+<p>Inspecteer voor alle groepen het gemiddelde, de standaardafwijking, de mediaan en het aantal observaties om meer inzicht te krijgen. Gebruik hiervoor de functie <code class="docutils literal notranslate"><span class="pre">descr</span></code> en <code class="docutils literal notranslate"><span class="pre">stby</span></code> van het package <code class="docutils literal notranslate"><span class="pre">summarytools</span></code> om de beschrijvende statistieken per groep weer te geven. Voer de gewenste statistieken in met het argument <code class="docutils literal notranslate"><span class="pre">stats</span> <span class="pre">=</span> <span class="pre">c(&quot;mean&quot;,&quot;sd&quot;,&quot;med&quot;,&quot;n.valid&quot;)</span></code>.</p>
+<!-- ## /TEKSTBLOK: Data-beschrijven.R -->
+<!-- ## OPENBLOK: Data-beschrijven-1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gemiddelde, standaardafwijking, mediaan en aantal observaties</span>
+<span class="n">library</span><span class="p">(</span><span class="n">summarytools</span><span class="p">)</span>
+
+<span class="k">with</span><span class="p">(</span><span class="n">Resultaten_Leisure_Management</span><span class="p">,</span> 
+     <span class="n">stby</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">Cijfers</span><span class="p">,</span> 
+          <span class="nb">list</span><span class="p">(</span><span class="n">Vaksoort</span><span class="p">,</span> <span class="n">Periode</span><span class="p">),</span> 
+          <span class="n">descr</span><span class="p">,</span> 
+          <span class="n">stats</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;sd&quot;</span><span class="p">,</span> <span class="s2">&quot;med&quot;</span><span class="p">,</span> <span class="s2">&quot;n.valid&quot;</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven-1.R -->
+<p>Maak vervolgens een grafiek met de gemiddelden voor de verschillende groepen.</p>
+<!-- ## OPENBLOK: Data-beschrijven2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Resultaten_Leisure_Management</span><span class="p">,</span> 
+       <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Periode</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Cijfers</span><span class="p">,</span> <span class="n">group</span> <span class="o">=</span> <span class="n">Vaksoort</span><span class="p">,</span> <span class="n">colour</span> <span class="o">=</span> <span class="n">Vaksoort</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">stat_summary</span><span class="p">(</span><span class="n">fun</span> <span class="o">=</span> <span class="n">mean</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s2">&quot;point&quot;</span><span class="p">)</span> <span class="o">+</span>  
+  <span class="n">stat_summary</span><span class="p">(</span><span class="n">fun</span> <span class="o">=</span> <span class="n">mean</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s2">&quot;line&quot;</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">group</span> <span class="o">=</span> <span class="n">Vaksoort</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">scale_color_manual</span><span class="p">(</span><span class="n">values</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;darkorange&quot;</span><span class="p">,</span> <span class="s2">&quot;deepskyblue&quot;</span><span class="p">))</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven2.R -->
+<p><em>Figuur 3.  Gemiddelde cijfers per groep op basis van Vaksoort en Periode voor de dataset Resultaten_Leisure_Management.</em></p>
+<p>Op basis van de beschrijvende statistieken en de grafiek (Figuur 3) lijken er verschillen tussen de groepen te zijn. De praktijkvakken hebben in elke periode een hoger gemiddelde dan de theorievakken. In periode 1 en 2 is het verschil tussen beide soorten vakken een stuk groter dan in periode 3 en 4. Voor theorievakken is het cijfer in periode 3 en 4 een stuk hoger dan in periode 1 en 2, maar voor praktijkvakken is dit verschil niet groot. De lijnen van de vaksoorten theorie en praktijk lopen niet parallel dus er lijkt een interactie-effect te zijn. De <em>factoriële repeated measures ANOVA</em> zal dit interactie-effect toetsen.</p>
+</div>
+<div class="section" id="id17">
+<h2>Normaliteit<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<p>De <em>factoriële repeated measures ANOVA</em> vereist dat de verdeling van de afhankelijke variabele de normale verdeling benaderd in elke groep die gevormd wordt door de onafhankelijke variabelen. Toets deze assumptie met behulp van een histogram en de <em>Kolmogorov-Smirnov</em> en <em>Shapiro-Wilk test</em>.</p>
+<div class="section" id="histogram">
+<h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">¶</a></h3>
+<p>Visualiseer de verdeling van de gemiddelde cijfers binnen elke groep met behulp van een histogram.<a class="footnote-reference brackets" href="#id39" id="id18">9</a> Focus bij het analyseren van een histogram op de symmetrie van de verdeling, de hoeveelheid toppen (modaliteit) en mogelijke outliers. Een normale verdeling is symmetrisch, heeft één top en geen outliers.<a class="footnote-reference brackets" href="#id40" id="id19">16</a><sup>, </sup><a class="footnote-reference brackets" href="#id41" id="id20">17</a></p>
+<!-- ## OPENBLOK: Histogram.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Histogram met ggplot</span>
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Resultaten_Leisure_Management</span><span class="p">,</span>
+  <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Cijfers</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">geom_histogram</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">y</span> <span class="o">=</span> <span class="o">..</span><span class="n">density</span><span class="o">..</span><span class="p">),</span>
+                 <span class="n">binwidth</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span>
+                 <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;grey30&quot;</span><span class="p">,</span>
+                 <span class="n">fill</span> <span class="o">=</span> <span class="s2">&quot;#0089CF&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">Periode</span> <span class="o">+</span> <span class="n">Vaksoort</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">geom_density</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">.2</span><span class="p">,</span> <span class="n">adjust</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">ylab</span><span class="p">(</span><span class="s2">&quot;Cijfer&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Histogram.R -->
+<p><em>Figuur 4.  Histogrammen van de verdelingen van de gemiddelde cijfers per groep op basis van Vaksoort en Periode.</em></p>
+<p>De verdelingen van de acht groepen, te zien in Figuur 4, zijn redelijk symmetrisch, hebben geen outliers en zijn allen eentoppig. De verdelingen zijn dus bij benadering normaal.</p>
+</div>
+<div class="section" id="toetsen-van-normaliteit">
+<h3>Toetsen van normaliteit<a class="headerlink" href="#toetsen-van-normaliteit" title="Permalink to this headline">¶</a></h3>
+<p>Voer een toets uit om te controleren of de data normaal verdeeld zijn. Twee veelgebruikte toetsen zijn: de <em>Kolmogorov-Smirnov test</em> en de <em>Shapiro-Wilk test</em>.</p>
+<div class="section" id="kolmogorov-smirnov-test">
+<h4>Kolmogorov-Smirnov test<a class="headerlink" href="#kolmogorov-smirnov-test" title="Permalink to this headline">¶</a></h4>
+<p>De <em>Kolmogorov-Smirnov test</em> toetst het verschil tussen twee verdelingen. Standaard toetst deze toets het verschil tussen een normale verdeling en de verdeling van de steekproef. De Lilliefors correctie is vereist als het gemiddelde en de standaardafwijking niet van tevoren bekend of bepaald zijn, wat meestal het geval is bij een steekproef. Als de p-waarde kleiner dan 0,05 is, is de verdeling van de data significant verschillend van de normale verdeling.<a class="footnote-reference brackets" href="#id42" id="id21">18</a></p>
+<!-- ## OPENBLOK: KStest.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="s2">&quot;nortest&quot;</span><span class="p">)</span>
+
+<span class="k">with</span><span class="p">(</span><span class="n">Resultaten_Leisure_Management</span><span class="p">,</span> 
+     <span class="n">by</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">Cijfers</span><span class="p">,</span> 
+        <span class="nb">list</span><span class="p">(</span><span class="n">Vaksoort</span><span class="p">,</span> <span class="n">Periode</span><span class="p">),</span> 
+        <span class="n">lillie</span><span class="o">.</span><span class="n">test</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: KStest.R -->
+<p>De p-waarde is groter dan 0,05 voor elke groep; er zijn dus geen significante verschillen gevonden tussen de verdelingen van de steekproef en de normale verdeling. De <em>factoriële repeated measures ANOVA</em> kan uitgevoerd worden.</p>
+</div>
+<div class="section" id="shapiro-wilk-test">
+<h4>Shapiro-Wilk test<a class="headerlink" href="#shapiro-wilk-test" title="Permalink to this headline">¶</a></h4>
+<p>De <em>Shapiro-Wilk test</em> is een soortgelijke toets als de <em>Kolmogorov-Smirnov test</em> en vooral geschikt bij kleine steekproeven (<em>n</em> &lt; 50). Als de p-waarde kleiner dan 0,05 is, is de verdeling van de data significant verschillend van de normale verdeling.<a class="footnote-reference brackets" href="#id42" id="id22">18</a></p>
+<!-- ## OPENBLOK: Shapiro-Wilk-test.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span><span class="p">(</span><span class="n">Resultaten_Leisure_Management</span><span class="p">,</span> 
+     <span class="n">by</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">Cijfers</span><span class="p">,</span> 
+        <span class="nb">list</span><span class="p">(</span><span class="n">Vaksoort</span><span class="p">,</span> <span class="n">Periode</span><span class="p">),</span> 
+        <span class="n">shapiro</span><span class="o">.</span><span class="n">test</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Shapiro-Wilk-test.R -->
+<p>De p-waarde is groter dan 0,05 voor elke groep; er zijn dus geen significante verschillen gevonden tussen de verdelingen van de steekproef en de normale verdeling. De <em>factoriële repeated measures ANOVA</em> kan uitgevoerd worden.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id23">
+<h2>Sphericiteit<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: LeveneTest1.R -->
+<p>Toets met <em>Mauchly’s test</em> de assumptie van sphericiteit. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">ezANOVA()$Mauchly's</span> <span class="pre">Test</span> <span class="pre">for</span> <span class="pre">Sphericity</span></code> van het package <code class="docutils literal notranslate"><span class="pre">ez</span></code> met als argumenten de dataset <code class="docutils literal notranslate"><span class="pre">Resultaten_Leisure_Management</span></code>, de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">dv</span> <span class="pre">=</span> <span class="pre">Cijfers</span></code>, de variabele die de deelnemers aangeeft <code class="docutils literal notranslate"><span class="pre">wid</span> <span class="pre">=</span> <span class="pre">Studentnummer</span></code> en de onafhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">within</span> <span class="pre">=</span> <span class="pre">list(Vaksoort,</span> <span class="pre">Periode)</span></code>.</p>
+<!-- ## /TEKSTBLOK: LeveneTest1.R -->
+<!-- ## OPENBLOK: Levenes-test.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>library(ez)
+
+ezANOVA(Resultaten_Leisure_Management, 
+        dv = Cijfers, 
+        wid = Studentnummer,
+        within = list(Vaksoort, Periode))$`Mauchly&#39;s Test for Sphericity`
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Levenes-test.R -->
+<!-- ## CLOSEDBLOK: Levenes-test.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Levenes-test.R -->
+<!-- ## TEKSTBLOK: Levenes-test.R -->
+<ul class="simple">
+<li><p>Voor de onafhankelijke variabele Periode is er voldaan aan de assumptie van sphericiteit, <em>W</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Mauchly_W_Periode</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">p_Periode</span></code><a class="footnote-reference brackets" href="#id42" id="id24">18</a></p></li>
+<li><p>Voor de interactieterm van Periode en Vaksoort is er voldaan aan de assumptie van sphericiteit, <em>W</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Mauchly_W_Int</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">p_Int</span></code></p></li>
+<li><p>Er hoeft in beide gevallen geen correctie uitgevoerd te worden voor de <em>factoriële repeated measures ANOVA</em></p></li>
+</ul>
+<!-- ## TEKSTBLOK: Levenes-test.R -->
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="factoriele-repeated-measures-anova">
+<h1>Factoriële repeated measures ANOVA<a class="headerlink" href="#factoriele-repeated-measures-anova" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: ANOVA-toets.R -->
+<p>Voer de <em>factoriële repeated measures ANOVA</em> uit om de vraag te beantwoorden of er verschillen zijn tussen theorie- en praktijkvakken en tussen de vier onderwijsperioden wat betreft de cijfers van eerstejaars studenten van de bachelor Leisure Management. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">ezANOVA()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">ez</span></code> met als argumenten de dataset <code class="docutils literal notranslate"><span class="pre">Resultaten_Leisure_Management</span></code>, de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">dv</span> <span class="pre">=</span> <span class="pre">Cijfers</span></code>, de variabele die de deelnemers aangeeft <code class="docutils literal notranslate"><span class="pre">wid</span> <span class="pre">=</span> <span class="pre">Studentnummer</span></code> en de onafhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">within</span> <span class="pre">=</span> <span class="pre">list(Vaksoort,</span> <span class="pre">Periode)</span></code>.</p>
+<!-- ## /TEKSTBLOK: ANOVA-toets.R -->
+<!-- ## OPENBLOK: ANOVA-toets.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">ez</span><span class="p">)</span>
+
+<span class="n">ezANOVA</span><span class="p">(</span><span class="n">Resultaten_Leisure_Management</span><span class="p">,</span> 
+        <span class="n">dv</span> <span class="o">=</span> <span class="n">Cijfers</span><span class="p">,</span> 
+        <span class="n">wid</span> <span class="o">=</span> <span class="n">Studentnummer</span><span class="p">,</span>
+        <span class="n">within</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">Vaksoort</span><span class="p">,</span> <span class="n">Periode</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: ANOVA-toets.R -->
+<!-- ## CLOSEDBLOK: ANOVA-toets4.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: ANOVA-toets4.R -->
+<!-- ## TEKSTBLOK: ANOVA-toets5.R -->
+<ul class="simple">
+<li><p>Er is een significant interactie-effect van Vaksoort en Periode op Cijfers, <em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF1</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF2</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vF_waarde</span></code>, <em>p</em> &lt; 0,0001, <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vEsq</span></code>.</p></li>
+<li><p>De p-waarde is kleiner dan 0,05, dus de nulhypothese dat er geen interactie-effect is wordt verworpen.<a class="footnote-reference brackets" href="#id42" id="id25">18</a></p></li>
+<li><p>Er is een klein tot gemiddeld effect van de interactie tussen Vaksoort en Periode op Cijfers</p></li>
+<li><p>Omdat er een significant interactie-effect is, hoeven de hoofdeffecten niet geïnterpreteerd te worden. De volgende stap is een <em>simple effects analyse</em> om te interactie verder te onderzoeken.</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: ANOVA-toets5.R -->
+<div class="section" id="simple-effects-analyse">
+<h2>Simple effects analyse<a class="headerlink" href="#simple-effects-analyse" title="Permalink to this headline">¶</a></h2>
+<p>Voer een <em>simple effects analyse</em> uit om het interactie-effect te interpreteren. Vergelijk eerst de verschillen tussen de vier onderwijsperioden voor elke categorie van de variabele Vaksoort (theorie- en praktijkvakken dus). Vergelijk daarna de verschillen tussen theorie- en praktijkvakken voor elke onderwijsperiode.</p>
+<div class="section" id="periode">
+<h3>Periode<a class="headerlink" href="#periode" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: SimEff1.R -->
+<p>Maak eerst een aparte dataset voor de groepen theorie en praktijk, voer vervolgens de post-hoc toets uit en bereken de gemiddelden per onderwijsperiode. Gebruik voor de post-hoc toetsen de functie <code class="docutils literal notranslate"><span class="pre">pairwise.t.test()</span></code> met als argumenten de afhankelijk variabele <code class="docutils literal notranslate"><span class="pre">Theorie_Resultaten_Leisure_Management$Cijfers</span></code>, de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Theorie_Resultaten_Leisure_Management$Periode</span></code>, het argument <code class="docutils literal notranslate"><span class="pre">paired</span> <span class="pre">=</span> <span class="pre">TRUE</span></code> omdat er een gepaarde vergelijking gemaakt wordt  en de gebruikte methode om te corrigeren voor meerdere toetsen <code class="docutils literal notranslate"><span class="pre">p.adjust.method</span> <span class="pre">=</span> <span class="pre">&quot;bonferroni&quot;</span></code>.</p>
+<!-- ## /TEKSTBLOK: SimEff1.R -->
+<!-- ## OPENBLOK: SimEff2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Maak een dataset met theorievakken en een dataset met praktijkvakken
+Theorie_Resultaten_Leisure_Management &lt;- Resultaten_Leisure_Management[Resultaten_Leisure_Management$Vaksoort == &quot;Theorie&quot;,]
+
+Praktijk_Resultaten_Leisure_Management &lt;- Resultaten_Leisure_Management[Resultaten_Leisure_Management$Vaksoort == &quot;Praktijk&quot;,]
+
+# Voer de post-hoc toetsen uit
+pairwise.t.test(Theorie_Resultaten_Leisure_Management$Cijfers,
+                Theorie_Resultaten_Leisure_Management$Periode,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+pairwise.t.test(Praktijk_Resultaten_Leisure_Management$Cijfers,
+                Praktijk_Resultaten_Leisure_Management$Periode,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+# Bereken het gemiddelde per groep voor beide datasets
+with(Theorie_Resultaten_Leisure_Management, 
+     by(data = Cijfers, 
+        list(Periode), 
+        mean))
+
+with(Praktijk_Resultaten_Leisure_Management, 
+     by(data = Cijfers, 
+        list(Periode), 
+        mean))
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: SimEff2.R -->
+<!-- ## CLOSEDBLOK: SimEff3.R -->
+<div class="highlight-{r, notranslate"><div class="highlight"><pre><span></span># Maak een dataset met theorievakken en een dataset met praktijkvakken
+Theorie_Resultaten_Leisure_Management &lt;- Resultaten_Leisure_Management[Resultaten_Leisure_Management$Vaksoort == &quot;Theorie&quot;,]
+
+Praktijk_Resultaten_Leisure_Management &lt;- Resultaten_Leisure_Management[Resultaten_Leisure_Management$Vaksoort == &quot;Praktijk&quot;,]
+
+# Voer de post-hoc toetsen uit
+Posthoc_Periode_Theorie &lt;- pairwise.t.test(Theorie_Resultaten_Leisure_Management$Cijfers,
+                Theorie_Resultaten_Leisure_Management$Periode,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)$p.value
+
+Posthoc_Periode_Praktijk &lt;- pairwise.t.test(Praktijk_Resultaten_Leisure_Management$Cijfers,
+                Praktijk_Resultaten_Leisure_Management$Periode,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)$p.value
+
+# Bereken het gemiddelde per groep voor beide datasets
+Mean_T &lt;- with(Theorie_Resultaten_Leisure_Management, 
+     by(data = Cijfers, 
+        list(Periode), 
+        mean))
+
+Mean_P &lt;- with(Praktijk_Resultaten_Leisure_Management, 
+     by(data = Cijfers, 
+        list(Periode), 
+        mean))
+
+```
+&lt;!-- ## /CLOSEDBLOK: SimEff3.R --&gt;
+
+&lt;!-- ## TEKSTBLOK: SimEff4.R --&gt;
+Voor de theorievakken  zijn de volgende vergelijkingen getoetst[^18]:
+
+* Onderwijsperiode 1 versus 2: het gemiddelde cijfer in periode 1 (`r Round_and_format(Mean_T[1])`) en periode 2 (`r Round_and_format(Mean_T[2])`) zijn niet significant verschillend (*p* = 1,00)
+* Onderwijsperiode 1 versus 3: het gemiddelde cijfer in periode 1 (`r Round_and_format(Mean_T[1])`) en periode 3 (`r Round_and_format(Mean_T[3])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Onderwijsperiode 1 versus 4: het gemiddelde cijfer in periode 1 (`r Round_and_format(Mean_T[1])`) en periode 4 (`r Round_and_format(Mean_T[4])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Onderwijsperiode 2 versus 3: het gemiddelde cijfer in periode 2 (`r Round_and_format(Mean_T[2])`) en periode 3 (`r Round_and_format(Mean_T[3])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Onderwijsperiode 2 versus 4: het gemiddelde cijfer in periode 2 (`r Round_and_format(Mean_T[2])`) en periode 4 (`r Round_and_format(Mean_T[4])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Onderwijsperiode 3 versus 4: het gemiddelde cijfer in periode 3 (`r Round_and_format(Mean_T[3])`) en periode 4 (`r Round_and_format(Mean_T[4])`) zijn niet significant verschillend (*p* = 1,00)
+</pre></div>
+</div>
+<p>Voor de praktijkvakken zijn de volgende vergelijkingen getoetst<a class="footnote-reference brackets" href="#id42" id="id26">18</a>:</p>
+<ul class="simple">
+<li><p>Onderwijsperiode 1 versus 2: het gemiddelde cijfer in periode 1 (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_P[1])</span></code>) en periode 2 (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_P[2])</span></code>) zijn niet significant verschillend (<em>p</em> = 1,00)</p></li>
+<li><p>Onderwijsperiode 1 versus 3: het gemiddelde cijfer in periode 1 (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_P[1])</span></code>) en periode 3 (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_P[3])</span></code>) zijn niet significant verschillend (<em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Posthoc_Periode_Praktijk[2,1],3)</span></code>)</p></li>
+<li><p>Onderwijsperiode 1 versus 4: het gemiddelde cijfer in periode 1 (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_P[1])</span></code>) en periode 4 (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_P[4])</span></code>) zijn niet significant verschillend (<em>p</em> = 1,00)</p></li>
+<li><p>Onderwijsperiode 2 versus 3: het gemiddelde cijfer in periode 2 (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_P[2])</span></code>) en periode 3 (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_P[3])</span></code>) zijn niet significant verschillend (<em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Posthoc_Periode_Praktijk[2,2],3)</span></code>)</p></li>
+<li><p>Onderwijsperiode 2 versus 4: het gemiddelde cijfer in periode 2 (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_P[2])</span></code>) en periode 4 (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_P[4])</span></code>) zijn niet significant verschillend (<em>p</em> = 1,00)</p></li>
+<li><p>Onderwijsperiode 3 versus 4: het gemiddelde cijfer in periode 3 (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_P[3])</span></code>) en periode 4 (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_P[4])</span></code>) zijn niet significant verschillend (<em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Posthoc_Periode_Praktijk[3,3],3)</span></code>)</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: SimEff4.R -->
+</div>
+<div class="section" id="vaksoort">
+<h3>Vaksoort<a class="headerlink" href="#vaksoort" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: SimEff5.R -->
+<p>Maak eerst aparte datasets voor periode 1, 2, 3 en 4 en voer vervolgens de post-hoc toets uit. Gebruik voor de post-hoc toetsen de functie <code class="docutils literal notranslate"><span class="pre">pairwise.t.test()</span></code> met als argumenten de afhankelijk variabele <code class="docutils literal notranslate"><span class="pre">P1_Resultaten_Leisure_Management$Cijfers</span></code>, de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">P1_Resultaten_Leisure_Management$Vaksoort</span></code>, het argument <code class="docutils literal notranslate"><span class="pre">paired</span> <span class="pre">=</span> <span class="pre">TRUE</span></code> omdat er een gepaarde vergelijking gemaakt wordt  en de gebruikte methode om te corrigeren voor meerdere toetsen <code class="docutils literal notranslate"><span class="pre">p.adjust.method</span> <span class="pre">=</span> <span class="pre">&quot;bonferroni&quot;</span></code>.</p>
+<!-- ## /TEKSTBLOK: SimEff5.R -->
+<!-- ## OPENBLOK: SimEff6.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Maak een dataset voor elke onderwijsperiode
+P1_Resultaten_Leisure_Management &lt;- Resultaten_Leisure_Management[Resultaten_Leisure_Management$Periode == &quot;1&quot;,]
+
+P2_Resultaten_Leisure_Management &lt;- Resultaten_Leisure_Management[Resultaten_Leisure_Management$Periode == &quot;2&quot;,]
+
+P3_Resultaten_Leisure_Management &lt;- Resultaten_Leisure_Management[Resultaten_Leisure_Management$Periode == &quot;3&quot;,]
+
+P4_Resultaten_Leisure_Management &lt;- Resultaten_Leisure_Management[Resultaten_Leisure_Management$Periode == &quot;4&quot;,]
+
+# voer de post-hoc toetsen uit
+pairwise.t.test(P1_Resultaten_Leisure_Management$Cijfers,
+                P1_Resultaten_Leisure_Management$Vaksoort,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+pairwise.t.test(P2_Resultaten_Leisure_Management$Cijfers,
+                P2_Resultaten_Leisure_Management$Vaksoort,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+pairwise.t.test(P3_Resultaten_Leisure_Management$Cijfers,
+                P3_Resultaten_Leisure_Management$Vaksoort,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+pairwise.t.test(P4_Resultaten_Leisure_Management$Cijfers,
+                P4_Resultaten_Leisure_Management$Vaksoort,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+# Bereken het gemiddelde per groep
+with(Resultaten_Leisure_Management, 
+     by(data = Cijfers, 
+        list(Periode, Vaksoort), 
+        mean))
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: SimEff6.R -->
+<!-- ## CLOSEDBLOK: SimEff7.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: SimEff7.R -->
+<!-- ## TEKSTBLOK: SimEff8.R -->
+<ul class="simple">
+<li><p>Onderwijsperiode 1: het gemiddelde cijfer voor het theorievak (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vaksoort[1,2])</span></code>) en voor het praktijkvak (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vaksoort[1,1])</span></code>) zijn significant verschillend (<em>p</em> &lt; 0,0001)</p></li>
+<li><p>Onderwijsperiode 2: het gemiddelde cijfer voor het theorievak (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vaksoort[2,2])</span></code>) en voor het praktijkvak (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vaksoort[2,1])</span></code>) zijn significant verschillend (<em>p</em> &lt; 0,0001)</p></li>
+<li><p>Onderwijsperiode 3: het gemiddelde cijfer voor het theorievak (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vaksoort[3,2])</span></code>) en voor het praktijkvak (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vaksoort[3,1])</span></code>) zijn niet significant verschillend (<em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(posthoc_P3,3)</span></code>)</p></li>
+<li><p>Onderwijsperiode 4: het gemiddelde cijfer voor het theorievak (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vaksoort[4,2])</span></code>) en voor het praktijkvak (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vaksoort[4,1])</span></code>) zijn niet significant verschillend (<em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(posthoc_P4,3)</span></code>)</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: SimEff8.R --></div>
+</div>
+<div class="section" id="illustratie-van-post-hoc-toetsing-bij-hoofdeffecten-zonder-interactie-effect">
+<h2>Illustratie van post-hoc toetsing bij hoofdeffecten zonder interactie-effect<a class="headerlink" href="#illustratie-van-post-hoc-toetsing-bij-hoofdeffecten-zonder-interactie-effect" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: PHtest1.R -->
+<p>In de huidige casus worden de hoofdeffecten niet geïnterpreteerd vanwege het significante interactie-effect. Om toch te illustreren hoe het interpreteren van hoofdeffecten zonder een significant interactie-effect werkt, wordt de bijbehorende post-hoc toetsing toch geïllustreerd. Hiervoor wordt  een nieuwe dataset <code class="docutils literal notranslate"><span class="pre">Hoofdeffecten_Resultaten_Leisure_Management</span></code> gebruikt.</p>
+<!-- ## /TEKSTBLOK: PHtest1.R -->
+<!-- ## OPENBLOK: PHtest2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">ez</span><span class="p">)</span>
+
+<span class="n">ezANOVA</span><span class="p">(</span><span class="n">Hoofdeffecten_Resultaten_Leisure_Management</span><span class="p">,</span> 
+        <span class="n">dv</span> <span class="o">=</span> <span class="n">Cijfers</span><span class="p">,</span> 
+        <span class="n">wid</span> <span class="o">=</span> <span class="n">Studentnummer</span><span class="p">,</span>
+        <span class="n">within</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">Vaksoort</span><span class="p">,</span> <span class="n">Periode</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: PHtest2.R -->
+<!-- ## CLOSEDBLOK: PHtest3.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: PHtest3.R --><!-- ## TEKSTBLOK: PHtest4.R -->
+<p>Er is geen significant interactie-effect van Vaksoort en Periode op Cijfers, <em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF1_H</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF2_H</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vF_waarde_H</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">vp_H</span></code>, <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vEsq_H</span></code>.<a class="footnote-reference brackets" href="#id42" id="id27">18</a> De hoofdeffecten van Vaksoort (<em>p</em> &lt; 0,0001) en Periode (<em>p</em> &lt; 0,0001) zijn wel significant.<a class="footnote-reference brackets" href="#id42" id="id28">18</a> Voer daarom post-hoc toetsen uit voor beide variabelen.</p>
+<p>Gebruik voor de post-hoc toetsen de functie <code class="docutils literal notranslate"><span class="pre">pairwise.t.test()</span></code> met als argumenten de afhankelijk variabele <code class="docutils literal notranslate"><span class="pre">Hoofdeffecten_Resultaten_Leisure_Management$Cijfers</span></code>, de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Hoofdeffecten_Resultaten_Leisure_Management$Vaksoort</span></code> of <code class="docutils literal notranslate"><span class="pre">Hoofdeffecten_Resultaten_Leisure_Management$Periode</span></code>, het argument <code class="docutils literal notranslate"><span class="pre">paired</span> <span class="pre">=</span> <span class="pre">TRUE</span></code> omdat er een gepaarde vergelijking gemaakt wordt en de gebruikte methode om te corrigeren voor meerdere toetsen <code class="docutils literal notranslate"><span class="pre">p.adjust.method</span> <span class="pre">=</span> <span class="pre">&quot;bonferroni&quot;</span></code>.</p>
+<!-- ## /TEKSTBLOK: PHtest4.R -->
+<!-- ## OPENBLOK: PHtest5.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Voer de post-hoc toetsen uit voor de variabele Vaksoort
+pairwise.t.test(Hoofdeffecten_Resultaten_Leisure_Management$Cijfers,
+                Hoofdeffecten_Resultaten_Leisure_Management$Vaksoort,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+# Bereken het gemiddelde cijfer voor beide vaksoorten
+with(Hoofdeffecten_Resultaten_Leisure_Management, 
+     by(data = Cijfers, 
+        list(Vaksoort), 
+        mean))
+
+# Voer de post-hoc toetsen uit voor de variabele Periode
+pairwise.t.test(Hoofdeffecten_Resultaten_Leisure_Management$Cijfers,
+                Hoofdeffecten_Resultaten_Leisure_Management$Periode,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+# Bereken het gemiddelde cijfer voor de vier perioden
+with(Hoofdeffecten_Resultaten_Leisure_Management, 
+     by(data = Cijfers, 
+        list(Periode), 
+        mean))
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: PHtest5.R -->
+<!-- ## CLOSEDBLOK: PHtest6.R -->
+<div class="highlight-{r, notranslate"><div class="highlight"><pre><span></span>PH_Vaksoort &lt;- pairwise.t.test(Hoofdeffecten_Resultaten_Leisure_Management$Cijfers,
+                Hoofdeffecten_Resultaten_Leisure_Management$Vaksoort,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)$p.value
+
+PH_Periode &lt;- pairwise.t.test(Hoofdeffecten_Resultaten_Leisure_Management$Cijfers,
+                Hoofdeffecten_Resultaten_Leisure_Management$Periode,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)$p.value
+
+# Bereken het gemiddelde cijfer voor beide vaksoorten
+H_mean_Vaksoort &lt;- with(Hoofdeffecten_Resultaten_Leisure_Management, 
+     by(data = Cijfers, 
+        list(Vaksoort), 
+        mean))
+
+# Bereken het gemiddelde cijfer voor de vier perioden
+H_mean_Periode &lt;- with(Hoofdeffecten_Resultaten_Leisure_Management, 
+     by(data = Cijfers, 
+        list(Periode), 
+        mean))
+
+```
+&lt;!-- ## /CLOSEDBLOK: PHtest6.R --&gt;
+
+&lt;!-- ## TEKSTBLOK: PHtest7.R --&gt;
+De verschillen voor de groepen van de onafhankelijke variabele Vaksoort zijn[^18]:
+
+* Het gemiddelde cijfer voor het theorievak (`r Round_and_format(H_mean_Vaksoort[2])`) en voor het praktijkvak (`r Round_and_format(H_mean_Vaksoort[1])`) zijn significant verschillend (*p* &lt; 0,0001)
+
+De verschillen voor de groepen van de onafhankelijke variabele Periode zijn[^18]:
+
+* Onderwijsperiode 1 versus 2: het gemiddelde cijfer in periode 1 (`r Round_and_format(H_mean_Periode[1])`) en periode 2 (`r Round_and_format(H_mean_Periode[2])`) zijn niet significant verschillend (*p* = 1,00)
+* Onderwijsperiode 1 versus 3: het gemiddelde cijfer in periode 1 (`r Round_and_format(H_mean_Periode[1])`) en periode 3 (`r Round_and_format(H_mean_Periode[3])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Onderwijsperiode 1 versus 4: het gemiddelde cijfer in periode 1 (`r Round_and_format(H_mean_Periode[1])`) en periode 4 (`r Round_and_format(H_mean_Periode[4])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Onderwijsperiode 2 versus 3: het gemiddelde cijfer in periode 2 (`r Round_and_format(H_mean_Periode[2])`) en periode 3 (`r Round_and_format(H_mean_Periode[3])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Onderwijsperiode 2 versus 4: het gemiddelde cijfer in periode 2 (`r Round_and_format(H_mean_Periode[2])`) en periode 4 (`r Round_and_format(H_mean_Periode[4])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Onderwijsperiode 3 versus 4: het gemiddelde cijfer in periode 3 (`r Round_and_format(H_mean_Periode[3])`) en periode 4 (`r Round_and_format(H_mean_Periode[4])`) zijn niet significant verschillend (*p* = 1,00)
+
+&lt;!-- ## /TEKSTBLOK: PHtest7.R --&gt;
+
+Visualiseer de gemiddelden per groep om de resultaten ook visueel weer te geven. In de grafiek in Figuur 5 is te zien dat de lijnen redelijk parallel lopen wat overeenkomt met het feit dat er geen significant interactie-effect is. Het hoofdeffect van de variabele Vaksoort is duidelijk zichtbaar: de gemiddeldes van de praktijkvakken liggen voor alle onderwijsperioden hoger dan de gemiddeldes van de theorievakken. Dit komt overeen met de significante verschillen voor elke periode tussen beide groepen op de post-hoc toets. Het hoofdeffect van de variabele Periode is ook zichtbaar. De gemiddeldes van periode 1 en 2 verschillen niet veel van elkaar, net zoals de gemiddeldes van periode 3 en 4. De gemiddelde cijfers in periode 3 en 4 zijn echter een stuk hoger dan de gemiddelde cijfers in periode 1 en 2, wat ook bevestigd wordt door de significante post-hoc toetsen voor deze vergelijkingen.
+
+&lt;!-- ## OPENBLOK: PHtest8.R --&gt;
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Hoofdeffecten_Resultaten_Leisure_Management</span><span class="p">,</span> 
+       <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Periode</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Cijfers</span><span class="p">,</span> <span class="n">group</span> <span class="o">=</span> <span class="n">Vaksoort</span><span class="p">,</span> <span class="n">colour</span> <span class="o">=</span> <span class="n">Vaksoort</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">stat_summary</span><span class="p">(</span><span class="n">fun</span> <span class="o">=</span> <span class="n">mean</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s2">&quot;point&quot;</span><span class="p">)</span> <span class="o">+</span>  
+  <span class="n">stat_summary</span><span class="p">(</span><span class="n">fun</span> <span class="o">=</span> <span class="n">mean</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s2">&quot;line&quot;</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">group</span> <span class="o">=</span> <span class="n">Vaksoort</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">scale_color_manual</span><span class="p">(</span><span class="n">values</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;darkorange&quot;</span><span class="p">,</span> <span class="s2">&quot;deepskyblue&quot;</span><span class="p">))</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: PHtest8.R -->
+<p><em>Figuur 5.  Gemiddelde cijfers per groep op basis van Vaksoort en Periode voor de dataset Hoofdeffecten_Resultaten_Leisure_Management.</em></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="rapportage">
+<h1>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Rapportage.R -->
+<p>De <em>factoriële repeated measures ANOVA</em> is uitgevoerd om te toetsen of er verschillen zijn tussen theorie- en praktijkvakken en tussen de vier onderwijsperioden wat betreft de cijfers van eerstejaars studenten van de bachelor Leisure Management. De resultaten lieten zien dat er een significant interactie-effect was tussen Vaksoort en Periode op de gemiddelde cijfers van de studenten, <em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF1</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF2</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vF_waarde</span></code>, <em>p</em> &lt; 0,0001, <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vEsq</span></code>.</p>
+<p>Om dit effect verder te onderzoeken, is er een <em>simple effects analyse</em> uitgevoerd met behulp van post-hoc toetsen met een Bonferroni-correctie voor meerdere toetsen. Uit deze analyse bleek dat de gemiddelde cijfers voor theorievakken alleen in periode 1 en 2 significant lager zijn dan de gemiddelde cijfers van de praktijkvakken. In periode 3 en 4 zijn er geen significante verschillen tussen beide vaksoorten. Ook zijn er voor praktijkvakken geen significante verschillen tussen de gemiddelde cijfers van de vier perioden. Voor de theorievakken zijn de gemiddelde cijfers in periode 1 en 2 significant lager in vergelijking tot de gemiddelde cijfers in periode 3 en 4. De gemiddelde cijfers verschillen niet significant tussen periode 1 en 2 en tussen periode 3 en 4 voor theorievakken. In Figuur 6 zijn de gemiddeldes voor alle groepen weergegeven om de resultaten te ondersteunen.</p>
+<p>Samenvattend suggereren de resultaten dat er in periode 1 en 2 hogere cijfers worden gehaald voor de praktijkvakken, maar dat dit verschil er niet meer is in periode 3 en 4.</p>
+<!-- ## /TEKSTBLOK: Rapportage.R -->
+<!-- ## CLOSEDBLOK: Rapportage2.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Rapportage2.R -->
+<p><em>Figuur 6.  Gemiddelde cijfers per groep op basis van Vaksoort en Periode voor de dataset Resultaten_Leisure_Management.</em></p>
+<!-- ## CLOSEDBLOK: Footer.R --><!-- ## /CLOSEDBLOK: Footer.R -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id29"><span class="brackets"><a class="fn-backref" href="#id1">19</a></span></dt>
+<dd><p>Met een deelnemer wordt het object bedoeld dat geobserveerd wordt, bijvoorbeeld een student, een inwoner van Nederland, een opleiding of een organisatie. Met een observatie wordt de waarde bedoeld die de deelnemer heeft voor een bepaalde variabele. Een deelnemer heeft dus meestal een observatie voor meerdere variabelen.</p>
+</dd>
+<dt class="label" id="id30"><span class="brackets">1</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id5">2</a>)</span></dt>
+<dd><p>Laerd statistics (2018). <em>Two-way repeated measures ANOVA using SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/two-way-repeated-measures-anova-using-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/two-way-repeated-measures-anova-using-spss-statistics.php</a>.</p>
+</dd>
+<dt class="label" id="id31"><span class="brackets">10</span><span class="fn-backref">(<a href="#id3">1</a>,<a href="#id4">2</a>)</span></dt>
+<dd><p>Field, A. (2013). <em>Discovering statistics using IBM SPSS statistics</em>.
+Sage. Pagina 507-542.</p>
+</dd>
+<dt class="label" id="id32"><span class="brackets"><a class="fn-backref" href="#id6">7</a></span></dt>
+<dd><p>Laerd statistics (2018). <em>Testing for Normality using SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/testing-for-normality-using-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/testing-for-normality-using-spss-statistics.php</a>.</p>
+</dd>
+<dt class="label" id="id33"><span class="brackets"><a class="fn-backref" href="#id7">8</a></span></dt>
+<dd><p>Universiteit van Amsterdam (14 juli 2014). <em>Normaliteit</em>. <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Normaliteit">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id34"><span class="brackets"><a class="fn-backref" href="#id8">2</a></span></dt>
+<dd><p>Er zijn verschillende opties om variabelen te transformeren, zoals de logaritme, wortel of inverse (1 gedeeld door de variabele) nemen van de variabele. Zie <em>Discovering statistics using IBM SPSS statistics</em> van Field (2013) pagina 201-210 voor meer informatie over welke transformaties wanneer gebruikt kunnen worden.</p>
+</dd>
+<dt class="label" id="id35"><span class="brackets"><a class="fn-backref" href="#id9">21</a></span></dt>
+<dd><p>Field, A. (2013). <em>Discovering statistics using IBM SPSS statistics</em>. Sage.</p>
+</dd>
+<dt class="label" id="id36"><span class="brackets">11</span><span class="fn-backref">(<a href="#id10">1</a>,<a href="#id11">2</a>,<a href="#id16">3</a>)</span></dt>
+<dd><p>Field, A., Miles, J., &amp; Field, Z. (2012). <em>Discovering statistics using R</em>. London: Sage publications.</p>
+</dd>
+<dt class="label" id="id37"><span class="brackets">4</span><span class="fn-backref">(<a href="#id12">1</a>,<a href="#id13">2</a>,<a href="#id14">3</a>)</span></dt>
+<dd><p>Tabachnick, B.G. &amp; Fidell, L.S. (2013). <em>Using multivariate statistics</em>. Sixth Edition, Pearson. Pagina 54 - 55.</p>
+</dd>
+<dt class="label" id="id38"><span class="brackets"><a class="fn-backref" href="#id15">5</a></span></dt>
+<dd><p>Allen, P. &amp; Bennett, K. (2012). <em>SPSS A practical Guide version 20.0</em>. Cengage Learning Australia Pty Limited. Pagina 84.</p>
+</dd>
+<dt class="label" id="id39"><span class="brackets"><a class="fn-backref" href="#id18">9</a></span></dt>
+<dd><p>De breedte van de staven van het histogram wordt vaak automatisch bepaald, maar kan handmatig aangepast worden. Aangezien de breedte van de staven bepalend zijn voor de indruk die de visualisatie geeft, is het verstandig om hier goed op te letten.</p>
+</dd>
+<dt class="label" id="id40"><span class="brackets"><a class="fn-backref" href="#id19">16</a></span></dt>
+<dd><p>Outliers (13 augustus 2016). <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Outliers">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id41"><span class="brackets"><a class="fn-backref" href="#id20">17</a></span></dt>
+<dd><p>Outliers kunnen bepalend zijn voor de uitkomst van toetsen. Bekijk of de outliers valide outliers zijn en niet een meetfout of op een andere manier incorrect verkregen data. Het weghalen van outliers kan de uitkomst ook vertekenen, daarom is het belangrijk om verwijderde outliers te melden in een rapport.</p>
+</dd>
+<dt class="label" id="id42"><span class="brackets">18</span><span class="fn-backref">(<a href="#id21">1</a>,<a href="#id22">2</a>,<a href="#id24">3</a>,<a href="#id25">4</a>,<a href="#id26">5</a>,<a href="#id27">6</a>,<a href="#id28">7</a>)</span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./r"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="29%20Factoriele%20ANOVA%20R.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="31%20ANCOVA%20R.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

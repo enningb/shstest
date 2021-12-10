@@ -3,6 +3,94 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
+
+parts:
+  - caption: Algemeen
+    chapters:
+      - file: Begrippenlijst.md
+      - file: Over.md
+      - file: Verantwoording.md
+      - file: toetsmatrix-1.md
+        title: Toetsmatrix 1 (R)
+      - file: toetsmatrix-html.ipynb
+        title: Toetshtml
+  - caption: Python
+    chapters:
+      - file: python/01 One sample t-toets-Python.ipynb
+        title: One sample t-toets
+      - file: python/02 Gepaarde t-toets-Python.ipynb
+        title: Gepaarde t-toets
+      - file: python/03 Ongepaarde t-toets-Python.ipynb
+        title: Ongepaarde t-toets
+      - file: python/04 Repeated measures ANOVA-Python.ipynb
+        title: Repeated measures ANOVA
+      - file: python/04-Repeated-measures-ANOVA-Python.ipynb
+        title: Repeated measures ANOVA
+      - file: python/05 One-way ANOVA-Python.ipynb
+        title: One-way ANOVA
+      - file: python/06 Tekentoets I-Python.ipynb
+        title: Tekentoets I
+      - file: python/07 Wilcoxon signed rank toets I-Python.ipynb
+        title: Wilcoxon signed rank toets I
+      - file: python/08 Mann-Whitney U toets I-Python.ipynb
+        title: Mann-Whitney U toets I
+      - file: python/08 Mann-Whitney U toets-Python.ipynb
+        title: Mann-Whitney U toets
+      - file: python/09 Friedmans ANOVA I-Python.ipynb
+        title: Friedmans ANOVA I
+      - file: python/10 Kruskal Wallis toets I-Python.ipynb
+        title: Kruskal Wallis toets I
+      - file: python/10 Kruskal Wallis toets-Python.ipynb
+        title: Kruskal Wallis toets
+      - file: python/10-Kruskal-Wallis-toets-Python.ipynb
+        title: Kruskal-Wallis-toets
+      - file: python/11 Chi-kwadraat toets voor goodness of fit en binomiaaltoets-Python.ipynb
+        title: Chi-kwadraat toets voor goodness of fit en binomiaaltoets
+      - file: python/12 McNemar toets-Python.ipynb
+      - file: python/13 Chi-kwadraat toets en Fishers exact toets-Python.ipynb
+      - file: python/13 Chi-kwadraat toets voor onafhankelijkheid en Fishers exact toets-Python.ipynb
+      - file: python/13 Chi-kwadraat toets voor onafhankelijkheid en Fishers exacte toets-Python.ipynb
+      - file: python/15 Cochrans Q toets-Python.ipynb
+      - file: python/16 Chi-kwadraat toets voor onafhankelijkheid en Fisher-Freeman-Halton exact toets I-Python.ipynb
+      - file: python/16 Chi-kwadraat toets voor onafhankelijkheid en Fisher-Freeman-Halton exacte toets I-Python.ipynb
+      - file: python/18 Bhapkar toets-Python.ipynb
+      - file: python/21 Chi-kwadraat toets voor goodness of fit en multinomiaaltoets-Python.ipynb
+      - file: python/26 Tekentoets II-Python.ipynb
+      - file: python/27 Moods mediaan toets-Python.ipynb
+  - caption: R
+    chapters:
+      - file: r/01 One sample t-toets R.Rmd
+        title: One sample t-toets
+      - file: r/02 Gepaarde t-toets R.ipynb
+        title: Gepaarde t-toets
+      - file: r/03 Ongepaarde t-toets R.ipynb
+      - file: r/04 Repeated measures ANOVA R.ipynb
+      - file: r/05 One-way ANOVA R.ipynb
+      - file: r/06 Tekentoets I R.ipynb
+      - file: r/07 Wilcoxon signed rank toets I R.ipynb
+      - file: r/08 Mann-Whitney U toets I R.ipynb
+      - file: r/09 Friedmans ANOVA I R.ipynb
+      - file: r/10 Kruskal Wallis toets I R.ipynb
+      - file: r/11 Chi-kwadraat toets voor goodness of fit en binomiaaltoets R.ipynb
+      - file: r/12 McNemar toets R.ipynb
+      - file: r/13 Chi-kwadraat toets voor onafhankelijkheid en Fishers exacte toets R.ipynb
+      - file: r/15 Cochrans Q toets R.ipynb
+      - file: r/16 Chi-kwadraat toets voor onafhankelijkheid en Fisher-Freeman-Halton exacte toets I R.ipynb
+      - file: r/18 Bhapkar toets R.ipynb
+      - file: r/20 Multilevel multinomiale logistische regressie R.ipynb
+      - file: r/21 Chi-kwadraat toets voor goodness of fit en multinomiaaltoets R.ipynb
+      - file: r/22 Wilcoxon signed rank toets II R.ipynb
+      - file: r/23 Mann-Whitney U toets II R.ipynb
+      - file: r/24 Friedmans ANOVA II R.ipynb
+      - file: r/25 Kruskal Wallis toets II R.ipynb
+      - file: r/26 Tekentoets II R.ipynb
+      - file: r/27 Moods mediaan toets R.ipynb
+      - file: r/28 Multipele lineaire regressie R.ipynb
+      - file: r/29 Factoriele ANOVA R.ipynb
+      - file: r/30 Factoriele repeated measures ANOVA R.ipynb
+      - file: r/31 ANCOVA R.ipynb
+      - file: r/32 Mixed ANOVA R.ipynb
+      - file: r/41 Logistische regressie R.ipynb
+      - file: r/47 Multinomiale logistische regressie R.ipynb
+      - file: r/53 Ordinale logistische regressie R.ipynb
+      - file: r/58 MANOVA R.ipynb

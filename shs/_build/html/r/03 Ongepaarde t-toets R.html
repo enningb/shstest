@@ -1,0 +1,1099 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="04%20Repeated%20measures%20ANOVA%20R.html" />
+    <link rel="prev" title="Toepassing" href="02%20Gepaarde%20t-toets%20R.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/r/03 Ongepaarde t-toets R.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fr/03 Ongepaarde t-toets R.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumpties">
+   Assumpties
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#normaliteit">
+     Normaliteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wel-of-geen-gepoolde-variantie">
+     Wel of geen gepoolde variantie
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering">
+   Uitvoering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-data-bekijken">
+     De data bekijken
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visuele-inspectie-van-normaliteit">
+     Visuele inspectie van normaliteit
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#histogram">
+       Histogram
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#q-q-plot">
+       Q-Q plot
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#boxplot">
+       Boxplot
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#toetsen-van-normaliteit">
+     Toetsen van normaliteit
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kolmogorov-smirnov">
+       Kolmogorov-Smirnov
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#shapiro-wilk-test">
+       Shapiro-Wilk Test
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ongepaarde-t-toets">
+     Ongepaarde t-toets
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#effectmaat-cohen-s-d">
+       Effectmaat: Cohen’s d
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rapportage">
+   Rapportage
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-924f26e6aa13&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span>exists<span class="o">(</span><span class="s2">&quot;Substitute_var&quot;</span><span class="o">))</span> <span class="o">{</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.R -->
+<!-- ## /CLOSEDBLOK: Reticulate.R -->
+<!-- ## OPENBLOK: Data-aanmaken.R --><!-- ## /OPENBLOK: Data-aanmaken.R -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<p>Gebruik de <em>ongepaarde t-toets</em> om de gemiddelden van twee onafhankelijke groepen te vergelijken.<a class="footnote-reference brackets" href="#id18" id="id1">1</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id = "casus">
+Vanaf 2011 heeft de opleiding Taalwetenschap een Bindend Studieadvies (BSA) die de selectiviteit van het eerste jaar moet vergroten. De studieadviseur vraagt zich af of het gemiddelde cijfer van de opleiding Taalwetenschap op 1 februari, na invoering van het BSA, veranderd is. De data is beschikbaar voor het cohort gestart in 2010 en voor het cohort gestart in 2011.
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is.</p>
+<p><em>H~0~</em>: Het gemiddelde tentamencijfer dat de studenten halen aan de opleiding Taalwetenschap is niet veranderd na de invoer van het BSA, µ~0~ = µ~1~</p>
+<p><em>H~A~</em>: Het gemiddelde tentamencijfer dat de studenten halen aan de opleiding Taalwetenschap is veranderd na de invoer van het BSA, µ~0~ ≠ µ~1~</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="assumpties">
+<h1>Assumpties<a class="headerlink" href="#assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Voor een valide resultaat moet de data aan een aantal voorwaarden voldoen voordat de toets uitgevoerd kan worden.</p>
+<div class="section" id="normaliteit">
+<h2>Normaliteit<a class="headerlink" href="#normaliteit" title="Permalink to this headline">¶</a></h2>
+<p>De <em>ongepaarde t-toets</em> gaat ervan uit dat de afhankelijke variabele normaal verdeeld is voor alle groepen. Als elke groep een aantal observaties (<em>n</em>) heeft dat groter dan 100 is,  ga er dan vanuit dat de <em>ongepaarde t-toets</em> robuust genoeg is om uit te voeren zonder dat de afhankelijke variabele een normale verdeling volgt.</p>
+<p>Controleer de assumptie van normaliteit met de volgende stappen:</p>
+<ol class="simple">
+<li><p>Controleer de afhankelijke variabele per groep visueel met een histogram, een boxplot en een Q-Q plot.</p></li>
+<li><p>Toets of de afhankelijke variabele voor beide groepen normaal verdeeld is met de <em>Kolmogorov-Smirnov test</em> of bij een kleinere steekproef (<em>n</em> &lt; 50) met de <em>Shapiro-Wilk test</em>.<a class="footnote-reference brackets" href="#id19" id="id2">3</a><sup>, </sup><a class="footnote-reference brackets" href="#id20" id="id3">4</a></p></li>
+</ol>
+<p>De eerste stap heeft als doel een goede indruk te krijgen van de verdeling van de steekproef. In de tweede stap wordt de assumptie van normaliteit getoetst. De statistische toets laat zien of de verdeling van de observaties van een groep voldoet aan de assumptie van normaliteit. Voor beide groepen moet er voldaan zijn aan de assumptie van normaliteit.</p>
+<!-- ## TEKSTBLOK: Link1.R-->
+<p>Als blijkt dat de afhankelijke variabele niet normaal verdeeld is voor één van of allebei de groepen, transformeer<a class="footnote-reference brackets" href="#id21" id="id4">5</a> dan de afhankelijke variabele en bepaal daarna of deze wel normaal verdeeld is of gebruik de <span class="xref myst">Mann-Whitney U toets</span>.<a class="footnote-reference brackets" href="#id22" id="id5">6</a><sup>, </sup><a class="footnote-reference brackets" href="#id23" id="id6">7</a></p>
+<!-- ## /TEKSTBLOK: Link1.R-->
+</div>
+<div class="section" id="wel-of-geen-gepoolde-variantie">
+<h2>Wel of geen gepoolde variantie<a class="headerlink" href="#wel-of-geen-gepoolde-variantie" title="Permalink to this headline">¶</a></h2>
+<p>De <em>ongepaarde t-toets</em> kan met en zonder gepoolde variantie uitgevoerd worden. Bij een gepoolde variantie is de berekening van de variantie van het verschil in gemiddelden anders en wordt aangenomen dat de varianties van beide steekproeven even groot zijn. Deze aanname is te toetsen met de <em>Levene’s test</em>, waarbij een significant resultaat aangeeft dat er een verschil is in de varianties van beide groepen. De hedendaagse consensus is echter om altijd deze aanname niet te toetsen en de <em>ongepaarde t-toets</em> zonder gepoolde variantie uit te voeren.<a class="footnote-reference brackets" href="#id24" id="id7">8</a> Een gepoolde variantie zorgt ervoor dat het onderscheidend vermogen<a class="footnote-reference brackets" href="#id25" id="id8">14</a> van de <em>ongepaarde t-toets</em> iets hoger is als de varianties van beide groepen ongeveer gelijk zijn, maar geeft verkeerde resultaten als de varianties van elkaar afwijken. Daarnaast heeft <em>Levene’s test</em> een laag onderscheidend vermogen, wat betekent dat het lastig is om ongelijke varianties goed te toetsen. Gebruik daarom de <em>ongepaarde t-toets</em> zonder gepoolde variantie; deze staat ook wel bekend als <em>Welch’s t-toets</em>.<a class="footnote-reference brackets" href="#id24" id="id9">8</a></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering">
+<h1>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Dataset-inladen.R-->
+<p>Er is een dataset ingeladen met gemiddelde cijfers van eerstejaarsstudenten bij de opleiding Taalwetenschap: <code class="docutils literal notranslate"><span class="pre">Cijfers_gemiddeld</span></code>. De dataset bevat cijfers van 180 studenten begonnen in 2010 en cijfers van 160 studenten begonnen in 2011.</p>
+<!-- ## /TEKSTBLOK: Dataset-inladen.R-->
+<div class="section" id="de-data-bekijken">
+<h2>De data bekijken<a class="headerlink" href="#de-data-bekijken" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Data-bekijken.R -->
+<p>Gebruik <code class="docutils literal notranslate"><span class="pre">head()</span></code> en <code class="docutils literal notranslate"><span class="pre">tail()</span></code> om de structuur van de data te bekijken.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken.R -->
+<!-- ## OPENBLOK: Data-bekijken.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Eerste 6 observaties</span>
+<span class="n">head</span><span class="p">(</span><span class="n">Cijfers_gemiddeld</span><span class="p">)</span>
+
+<span class="c1">## Laatste 6 observaties</span>
+<span class="n">tail</span><span class="p">(</span><span class="n">Cijfers_gemiddeld</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken.R -->
+<p>Selecteer beide groepen en sla deze op in een vector om deze makkelijker aan te kunnen roepen.</p>
+<!-- ## OPENBLOK: Data-selecteren.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>Cijfers_2010 &lt;- Cijfers_gemiddeld$Cijfers[Cijfers_gemiddeld$Cohort == &quot;2010&quot;]
+Cijfers_2011 &lt;- Cijfers_gemiddeld$Cijfers[Cijfers_gemiddeld$Cohort == &quot;2011&quot;]
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-selecteren.R -->
+<!-- ## TEKSTBLOK: Data-beschrijven.R-->
+<p>Inspecteer de data met <code class="docutils literal notranslate"><span class="pre">length()</span></code>, <code class="docutils literal notranslate"><span class="pre">mean()</span></code>en <code class="docutils literal notranslate"><span class="pre">sd()</span></code> om meer inzicht te krijgen in de data.</p>
+<!-- ## /TEKSTBLOK: Data-beschrijven.R-->
+<!-- ## OPENBLOK: Data-beschrijven-inladen.R -->
+<!-- ## /OPENBLOK: Data-beschrijven-inladen.R -->
+<div class="col-container">
+  <div class="col">
+<!-- ## OPENBLOK: Data-beschrijven-1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Aantallen, gemiddelde en standaarddeviatie 2010</span>
+<span class="n">length</span><span class="p">(</span><span class="n">Cijfers_2010</span><span class="p">)</span>
+<span class="n">mean</span><span class="p">(</span><span class="n">Cijfers_2010</span><span class="p">)</span>
+<span class="n">sd</span><span class="p">(</span><span class="n">Cijfers_2010</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven-1.R -->
+  </div>
+  <div class ="col">
+<!-- ## OPENBLOK: Data-beschrijven-2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Aantallen, gemiddelde en standaarddeviatie 2011</span>
+<span class="n">length</span><span class="p">(</span><span class="n">Cijfers_2011</span><span class="p">)</span>
+<span class="n">mean</span><span class="p">(</span><span class="n">Cijfers_2011</span><span class="p">)</span>
+<span class="n">sd</span><span class="p">(</span><span class="n">Cijfers_2011</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven-2.R -->
+  </div>
+</div>
+<!-- ## CLOSEDBLOK: Data-beschrijven-3.R --><!-- ## /CLOSEDBLOK: Data-beschrijven-3.R -->
+<!-- ## TEKSTBLOK: Data-beschrijven-4.R -->
+<ul class="simple">
+<li><p>Gemiddeld tentamencijfer 2010 (standaarddeviatie): <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vMean_t0</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vSD_t0</span></code>). <em>n</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vN_t0</span></code>.</p></li>
+<li><p>Gemiddeld tentamencijfer 2011 (standaarddeviatie): <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vMean_t1</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vSD_t1</span></code>). <em>n</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vN_t1</span></code>.</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Data-beschrijven-4.R -->
+</div>
+<div class="section" id="visuele-inspectie-van-normaliteit">
+<h2>Visuele inspectie van normaliteit<a class="headerlink" href="#visuele-inspectie-van-normaliteit" title="Permalink to this headline">¶</a></h2>
+<p>Geef de verdeling van de tentamencijfers van beide groepen visueel weer met een histogram, Q-Q plot en boxplot.</p>
+<div class="section" id="histogram">
+<h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">¶</a></h3>
+<p>Focus bij het analyseren van een histogram<a class="footnote-reference brackets" href="#id26" id="id10">18</a> op de symmetrie van de verdeling, de hoeveelheid toppen (modaliteit) en mogelijke uitbijters. Een normale verdeling is symmetrisch, heeft één top en geen uitbijters.<a class="footnote-reference brackets" href="#id27" id="id11">9</a><sup>, </sup><a class="footnote-reference brackets" href="#id28" id="id12">10</a></p>
+<!-- ## OPENBLOK: Histogram.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Histogram met ggplot2</span>
+<span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Cijfers_gemiddeld</span><span class="p">,</span>
+  <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Cijfers</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">geom_histogram</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">y</span> <span class="o">=</span> <span class="o">..</span><span class="n">density</span><span class="o">..</span><span class="p">),</span>
+                 <span class="n">binwidth</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                 <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;grey30&quot;</span><span class="p">,</span>
+                 <span class="n">fill</span> <span class="o">=</span> <span class="s2">&quot;#0089CF&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">Cohort</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">geom_density</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">.2</span><span class="p">,</span> <span class="n">adjust</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">ylab</span><span class="p">(</span><span class="s2">&quot;Frequentiedichtheid&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">scale_x_continuous</span><span class="p">(</span>
+    <span class="n">labels</span> <span class="o">=</span> <span class="k">as</span><span class="o">.</span><span class="n">character</span><span class="p">(</span><span class="n">seq</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)),</span>
+    <span class="n">breaks</span> <span class="o">=</span> <span class="n">seq</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">coord_fixed</span><span class="p">(</span><span class="n">ylim</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">),</span>
+              <span class="n">xlim</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span>
+              <span class="n">ratio</span> <span class="o">=</span> <span class="mi">22</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Taalwetenschap gemiddelde cijfers voor en na de BSA&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Histogram.R -->
+<p>Beide histogrammen laten een verdeling zien die redelijk symmetrisch is, één top heeft en geen uitbijters. Daarom zijn beide verdelingen bij benadering normaal verdeeld.</p>
+</div>
+<div class="section" id="q-q-plot">
+<h3>Q-Q plot<a class="headerlink" href="#q-q-plot" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: QQplot.R-->
+<p>Gebruik <code class="docutils literal notranslate"><span class="pre">qqnorm()</span></code> en <code class="docutils literal notranslate"><span class="pre">qqline()</span></code> met <code class="docutils literal notranslate"><span class="pre">pch</span> <span class="pre">=</span> <span class="pre">1</span></code>om een Q-Q plot te maken, met als datapunten kleine cirkels.</p>
+<!-- ## /TEKSTBLOK: QQplot.R-->
+<p>Als over het algemeen de meeste datapunten op de lijn liggen, kan aangenomen worden dat de data normaal verdeeld is.</p>
+<div class ="col-container">
+  <div class = "col"> 
+<!-- ## OPENBLOK: QQplot-t1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">qqnorm</span><span class="p">(</span><span class="n">Cijfers_2010</span><span class="p">,</span> <span class="n">pch</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+       <span class="n">main</span> <span class="o">=</span> <span class="s2">&quot;Normaal Q-Q plot van tentamencijfers 2010&quot;</span><span class="p">,</span>
+       <span class="n">ylab</span> <span class="o">=</span> <span class="s2">&quot;Kwantielen in data&quot;</span><span class="p">,</span>
+       <span class="n">xlab</span> <span class="o">=</span> <span class="s2">&quot;Theoretische kwantielen&quot;</span><span class="p">)</span>
+<span class="n">qqline</span><span class="p">(</span><span class="n">Cijfers_2010</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: QQplot-t1.R -->
+  </div>
+  <div class = "col">
+<!-- ## OPENBLOK: QQplot-t2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">qqnorm</span><span class="p">(</span><span class="n">Cijfers_2011</span><span class="p">,</span> <span class="n">pch</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+       <span class="n">main</span> <span class="o">=</span> <span class="s2">&quot;Normaal Q-Q plot van tentamencijfers 2011&quot;</span><span class="p">,</span>
+       <span class="n">ylab</span> <span class="o">=</span> <span class="s2">&quot;Kwantielen in data&quot;</span><span class="p">,</span>
+       <span class="n">xlab</span> <span class="o">=</span> <span class="s2">&quot;Theoretische kwantielen&quot;</span><span class="p">)</span>
+<span class="n">qqline</span><span class="p">(</span><span class="n">Cijfers_2011</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: QQplot-t2.R -->
+  </div>
+</div>
+<p>Voor beide Q-Q plots liggen de meeste datapunten op of vlakbij de lijn. Hoewel er bij de uiteinden van de verdeling wat afwijkingen zijn, duidt deze grafiek op een goede benadering van de normaalverdeling voor beide cohorten.</p>
+</div>
+<div class="section" id="boxplot">
+<h3>Boxplot<a class="headerlink" href="#boxplot" title="Permalink to this headline">¶</a></h3>
+<p>De box geeft de middelste 50% van de tentamencijfers weer. De zwarte lijn binnen de box is de mediaan. In de staarten of snorreharen zitten de eerste 25% en de laatste 25%. Cirkels visualiseren mogelijke uitbijters.<a class="footnote-reference brackets" href="#id27" id="id13">9</a> Hoe meer de boxen overlappen, hoe waarschijnlijker er geen significant verschil is tussen de groepen.</p>
+<!-- ## OPENBLOK: Boxplot.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">boxplot</span><span class="p">(</span><span class="n">Cijfers</span> <span class="o">~</span> <span class="n">Cohort</span><span class="p">,</span> <span class="n">Cijfers_gemiddeld</span><span class="p">,</span>
+        <span class="n">main</span> <span class="o">=</span> <span class="s2">&quot;Tentamencijfers Taalwetenschap voor en na de BSA&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Boxplot.R -->
+<p>De boxplotten geven de spreiding weer van het gemiddelde tentamencijfer voor de BSA en na de BSA. De boxplotten en de staarten lijken symmetrisch, wat een teken is van een bij benadering normale verdeling. Het cohort van 2011 heeft een aantal mogelijke uitbijters.<a class="footnote-reference brackets" href="#id28" id="id14">10</a></p>
+</div>
+</div>
+<div class="section" id="toetsen-van-normaliteit">
+<h2>Toetsen van normaliteit<a class="headerlink" href="#toetsen-van-normaliteit" title="Permalink to this headline">¶</a></h2>
+<p>Om te controleren of de afhankelijke variabele voor beide groepen normaal verdeeld is, kan de normaliteit getoetst worden. Twee veelgebruikte toetsen zijn: de <em>Kolmogorov-Smirnov test</em> en de <em>Shapiro-Wilk test</em>.</p>
+<div class="section" id="kolmogorov-smirnov">
+<h3>Kolmogorov-Smirnov<a class="headerlink" href="#kolmogorov-smirnov" title="Permalink to this headline">¶</a></h3>
+<p>De <em>Kolmogorov-Smirnov test</em> toetst het verschil tussen twee verdelingen. Standaard toetst deze test het verschil tussen een normale verdeling en de verdeling van de steekproef. De Lilliefors correctie is vereist als het gemiddelde en de standaardafwijking niet van tevoren bekend of bepaald zijn, wat meestal het geval is bij een steekproef. Als de p-waarde kleiner dan 0,05 is, is de verdeling van de steekproef significant verschillend van de normale verdeling.</p>
+<!-- ## TEKSTBLOK: Lilliefors-test1.R -->
+<!-- ## /TEKSTBLOK: Lilliefors-test1.R -->
+<!-- ## OPENBLOK: Library-nortest.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">nortest</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Library-nortest.R -->
+<div class="col-container">
+  <div class = "col">
+<!-- ## OPENBLOK: Lilliefors-test-1.R -->
+``` {r Lilliefors Test-1, warning=FALSE}
+lillie.test(Cijfers_2010)
+```
+<!-- ## /OPENBLOK: Lilliefors-test-1.R -->
+  </div>
+  <div class = "col">
+<!-- ## OPENBLOK: Lilliefors-test-2.R -->
+``` {r Lilliefors Test-2, warning=FALSE}
+lillie.test(Cijfers_2011)
+```
+<!-- ## /OPENBLOK: Lilliefors-test-2.R -->
+  </div>
+</div>
+<p>Bij deze casus is van beide groepen de p-waarde groter dan 0,05, dus er zijn geen significante verschillen gevonden tussen de verdeling van de steekproef en de normale verdeling. De <em>ongepaarde t-toets</em> kan uitgevoerd worden.</p>
+</div>
+<div class="section" id="shapiro-wilk-test">
+<h3>Shapiro-Wilk Test<a class="headerlink" href="#shapiro-wilk-test" title="Permalink to this headline">¶</a></h3>
+<p>De <em>Shapiro-Wilk test</em> is een soortgelijke test als de <em>Kolmogorov-Smirnov test</em> en vooral geschikt bij kleine steekproeven (<em>n</em> &lt; 50). Als de p-waarde kleiner dan 0,05 is, is de verdeling van de steekproef significant verschillend van de normale verdeling.</p>
+<!-- ## TEKSTBLOK: Shapiro-Wilk-test.R -->
+<p>Er zijn twee subsets van <code class="docutils literal notranslate"><span class="pre">Cijfers_gemiddeld</span></code> ingeladen: <code class="docutils literal notranslate"><span class="pre">Cijfers_2010_n30</span></code> en <code class="docutils literal notranslate"><span class="pre">Cijfers_2011_n30</span></code>. Beide subsets bevatten <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">length(Cijfers_2010_n30)</span></code> studenten. Voor relatief kleine steekproeven als deze is de <em>Shapiro-Wilk Test</em> geschikt.</p>
+<!-- ## /TEKSTBLOK: Shapiro-Wilk-test.R -->
+<div class = "col-container">
+  <div class="col">
+<!-- ## OPENBLOK: Shapiro-Wilk-test-1.R -->
+``` {r Shapiro-Wilk Test-1, warning=FALSE}
+shapiro.test(Cijfers_2010_n30)
+```
+<!-- ## /OPENBLOK: Shapiro-Wilk-test-1.R -->
+  </div>
+  <div class="col">
+<!-- ## OPENBLOK: Shapiro-Wilk-test-2.R -->
+``` {r Shapiro-Wilk Test-2, warning=FALSE}
+shapiro.test(Cijfers_2011_n30)
+```
+<!-- ## /OPENBLOK: Shapiro-Wilk-test-2.R -->
+  </div>
+</div>
+<p>De p-waarde is groter dan 0,05 voor beide groepen, dus er zijn geen significante verschillen gevonden tussen de verdeling van de steekproef en de normale verdeling. De <em>ongepaarde t-toets</em> kan uitgevoerd worden.</p>
+</div>
+</div>
+<div class="section" id="ongepaarde-t-toets">
+<h2>Ongepaarde t-toets<a class="headerlink" href="#ongepaarde-t-toets" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: T-test.R -->
+<p>Voer een ongepaarde <code class="docutils literal notranslate"><span class="pre">t.test()</span></code> uit met <code class="docutils literal notranslate"><span class="pre">paired</span> <span class="pre">=</span> <span class="pre">FALSE</span></code> (vanwege de ongepaarde groepen) en <code class="docutils literal notranslate"><span class="pre">var.equal</span> <span class="pre">=</span> <span class="pre">FALSE</span></code> (omdat de varianties niet per se aan elkaar gelijk zijn). Het eerste argument bestaat uit de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Cijfers</span></code> en de groepvariabele <code class="docutils literal notranslate"><span class="pre">Cohort</span></code>.</p>
+<!-- ## /TEKSTBLOK: T-test.R -->
+<!-- ## OPENBLOK: T-test.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="o">.</span><span class="n">test</span><span class="p">(</span><span class="n">Cijfers</span> <span class="o">~</span> <span class="n">Cohort</span><span class="p">,</span> <span class="n">Cijfers_gemiddeld</span><span class="p">,</span> 
+       <span class="n">paired</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">,</span>
+       <span class="n">alternative</span> <span class="o">=</span> <span class="s2">&quot;two.sided&quot;</span><span class="p">,</span>
+       <span class="n">var</span><span class="o">.</span><span class="n">equal</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: T-test.R -->
+<!-- ## CLOSEDBLOK: T-test.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: T-test.R -->
+<!-- ## TEKSTBLOK: T-test2.R -->
+<ul class="simple">
+<li><p><em>t</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vT_waarde</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vP</span></code></p></li>
+<li><p>De p-waarde is groter dan 0,05, dus de H~0~ wordt niet verworpen <a class="footnote-reference brackets" href="#id29" id="id15">11</a></p></li>
+<li><p>Vrijheidsgraden: <em>df</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF</span></code>, niet gelijk aan aantal observaties min één bij een ongepaarde t-toets zonder gepoolde varianties</p></li>
+<li><p>95%-betrouwbaarheidsinterval: bij het herhalen van het experiment met verschillende steekproeven van de populatie zal 95% van de betrouwbaarheidsintervallen de daadwerkelijke parameter bevatten, het verschil tussen de hoogte van de cijfers voor en na de BSA  cursus, µ~verschil~ = µ~T2011~ - µ~T2010~. In deze casus is het interval tussen <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vConf.int1</span></code> en <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vConf.int2</span></code>. Aangezien 0 in dit interval zit, is er geen significant verschil tussen beide gemiddelden in 2010 en 2011.</p></li>
+<li><p>Het gemiddelde van de steekproef is in 2010 <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vMean_t0</span></code></p></li>
+<li><p>Het gemiddelde van de steekproef is in 2011 <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vMean_t1</span></code></p></li>
+</ul>
+<!-- ## /TEKSTBLOK: T-test2.R -->
+<div class="section" id="effectmaat-cohen-s-d">
+<h3>Effectmaat: Cohen’s d<a class="headerlink" href="#effectmaat-cohen-s-d" title="Permalink to this headline">¶</a></h3>
+<p>De p-waarde geeft aan of het verschil tussen twee groepen significant is. De grootte van het verschil of effect is echter ook relevant. Een effectmaat is een gestandaardiseerde maat die de grootte van een effect weergeeft, zodat effecten van verschillende onderzoeken met elkaar vergeleken kunnen worden.<a class="footnote-reference brackets" href="#id30" id="id16">12</a> Een veel gebruikte effectmaat is Cohen’s <em>d</em>. Cohen’s <em>d</em> geeft een gestandaardiseerd verschil weer: het verschil in gemiddelden tussen twee groepen gecorrigeerd voor de gecombineerde standaardafwijking van de twee groepen. Een indicatie om <em>d</em> te interpreteren is: rond 0,3 is het een klein effect, rond 0,5 is het een gemiddeld effect en rond 0,8 is het een groot effect.<a class="footnote-reference brackets" href="#id31" id="id17">13</a></p>
+<p>In dit voorbeeld is de p-waarde groter dan 0,05, dus is een effectmaat uitrekenen onnodig. Pas de volgende stappen toe bij een p-waarde kleiner dan 0,05.</p>
+<!-- ## TEKSTBLOK: Cohen-d.R -->
+<p>Gebruik de functie <code class="docutils literal notranslate"><span class="pre">cohensD()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">lsr</span></code> met de argumenten <code class="docutils literal notranslate"><span class="pre">Cijfers</span> <span class="pre">~</span> <span class="pre">Cohort</span></code> waarbij <code class="docutils literal notranslate"><span class="pre">Cijfers</span></code> de afhankelijke variabele is en <code class="docutils literal notranslate"><span class="pre">Cohort</span></code> de onafhankelijke variabele die de groepen aangeeft, het argument <code class="docutils literal notranslate"><span class="pre">Cijfers_gemiddeld</span></code> dat de dataset aangeeft en het argument <code class="docutils literal notranslate"><span class="pre">method</span> <span class="pre">=</span> <span class="pre">unequal</span></code> omdat er niet aangenomen wordt dat de varianties aan elkaar gelijk zijn.</p>
+<!-- ## /TEKSTBLOK: Cohen-d.R -->
+<!-- ## OPENBLOK: Cohens-d-test.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">lsr</span><span class="p">)</span>
+<span class="n">cohensD</span><span class="p">(</span><span class="n">Cijfers</span> <span class="o">~</span> <span class="n">Cohort</span><span class="p">,</span> <span class="n">Cijfers_gemiddeld</span><span class="p">,</span> <span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;unequal&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Cohens-d-test.R -->
+<!-- ## CLOSEDBLOK: Cohens-d-test.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Cohens-d-test.R -->
+<!-- ## TEKSTBLOK: Cohens-d-test.R -->
+<p><em>d</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vD_waarde</span></code>. De sterkte van het effect van het BSA op het cijfer is verwaarloosbaar.</p>
+<!-- ## /TEKSTBLOK: Cohens-d-test.R -->
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="rapportage">
+<h1>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Rapportage.R -->
+<p>Een <em>ongepaarde t-toets</em> is uitgevoerd om te toetsen of het gemiddelde tentamencijfer is veranderd na de invoer van het BSA. Het verschil tussen het gemiddelde tentamencijfer van cohort 2010 (<em>M~2010~</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vMean_t0</span></code>,  <em>SD~2010~</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vSD_t0</span></code>) en het gemiddelde tentamencijfer van cohort 2011 (<em>M~2011~</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vMean_t1</span></code>,  <em>SD~2011~</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vSD_t1</span></code>) is niet significant, <em>t</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vT_waarde</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vP</span></code>. Het 95% betrouwbaarheidsinterval voor het verschil tussen het gemiddelde van beide groepen loopt van <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vConf.int1</span></code> tot <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vConf.int2</span></code>. Het gemiddelde tentamencijfer lijkt niet veranderd te zijn na de invoering van het BSA.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cohort</p></th>
+<th class="head"><p>N</p></th>
+<th class="head"><p>M</p></th>
+<th class="head"><p>SD</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2010</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vN_t0</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vMean_t0</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vSD_t0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>2011</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vN_t1</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vMean_t1</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vSD_t1</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<!-- ## /TEKSTBLOK: Rapportage.R -->
+<p><em>Tabel 1. Groepsgrootte, gemiddeld tentamencijfer en standaarddeviatie per cohort</em></p>
+<!-- ## CLOSEDBLOK: Footer.R --><!-- ## /CLOSEDBLOK: Footer.R -->
+<!-- ## TEKSTBLOK: Extra-Bron.R -->
+<!-- ## /TEKSTBLOK: Extra-Bron.R -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Van Geloven, N. (25 mei 2016). <em>T-toets</em> <a class="reference external" href="https://wikistatistiek.amc.nl/index.php/T-toets#ongepaarde_t-toets">Wiki Statistiek Academisch Medisch Centrum</a>.</p>
+</dd>
+<dt class="label" id="id19"><span class="brackets"><a class="fn-backref" href="#id2">3</a></span></dt>
+<dd><p>Laerd statistics. (2018). <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/testing-for-normality-using-spss-statistics.php">Testing for Normality using SPSS Statistics</a>.</p>
+</dd>
+<dt class="label" id="id20"><span class="brackets"><a class="fn-backref" href="#id3">4</a></span></dt>
+<dd><p>Normaliteit. (14 juli 2014). <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Normaliteit">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id21"><span class="brackets"><a class="fn-backref" href="#id4">5</a></span></dt>
+<dd><p>Er zijn verschillende opties om variabelen te transformeren, zoals de logaritme, wortel of inverse (1 gedeeld door de variabele) nemen van de variabele. Zie <em>Discovering statistics using IBM SPSS statistics</em> van Field (2013) pagina 201-210 voor meer informatie over welke transformaties wanneer gebruikt kunnen worden.</p>
+</dd>
+<dt class="label" id="id22"><span class="brackets"><a class="fn-backref" href="#id5">6</a></span></dt>
+<dd><p>Van Geloven, N. (13 maart 2018). <em>Mann-Whitney U toets</em> <a class="reference external" href="https://wikistatistiek.amc.nl/index.php/Mann-Whitney_U_toets">Wiki Statistiek Academisch Medisch Centrum</a>.</p>
+</dd>
+<dt class="label" id="id23"><span class="brackets"><a class="fn-backref" href="#id6">7</a></span></dt>
+<dd><p>De <span class="xref myst">Mann-Whitney U toets</span> maakt een rangschikking van de data. Hierdoor is de test verdelingsvrij en is normaliteit geen assumptie. Ook zijn uitbijters minder van invloed op het eindresultaat. Toch wordt er voor deze test minder vaak gekozen, doordat bij het maken van een rankschikking de data informatie verliest. Als de data wel normaal verdeeld is, heeft de <span class="xref myst">Mann-Whitney U toets</span> minder onderscheidend vermogen dan wanneer de <em>ongepaarde t-toets</em> uitgevoerd zou worden.</p>
+</dd>
+<dt class="label" id="id24"><span class="brackets">8</span><span class="fn-backref">(<a href="#id7">1</a>,<a href="#id9">2</a>)</span></dt>
+<dd><p>Lakens, D. (26 januari 2015). <em>Always use Welch’s t-test instead of Student’s t-test</em>. <a class="reference external" href="http://daniellakens.blogspot.com/2015/01/always-use-welchs-t-test-instead-of.html">The 20% Statistician</a>.</p>
+</dd>
+<dt class="label" id="id25"><span class="brackets"><a class="fn-backref" href="#id8">14</a></span></dt>
+<dd><p>Onderscheidend vermogen, in het Engels power genoemd, is de kans dat de nulhypothese verworpen wordt wanneer de alternatieve hypothese ‘waar’ is.</p>
+</dd>
+<dt class="label" id="id26"><span class="brackets"><a class="fn-backref" href="#id10">18</a></span></dt>
+<dd><p>De breedte van de staven van het histogram wordt vaak automatisch bepaald, maar kan handmatig aangepast worden. Aangezien de breedte van de staven bepalend zijn voor de indruk die de visualisatie geeft, is het verstandig om hier goed op te letten.</p>
+</dd>
+<dt class="label" id="id27"><span class="brackets">9</span><span class="fn-backref">(<a href="#id11">1</a>,<a href="#id13">2</a>)</span></dt>
+<dd><p>Outliers (13 augustus 2016). <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Outliers">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id28"><span class="brackets">10</span><span class="fn-backref">(<a href="#id12">1</a>,<a href="#id14">2</a>)</span></dt>
+<dd><p>Uitbijters kunnen bepalend zijn voor de uitkomst van toetsen. Bekijk of de uitbijters valide uitbijters zijn en niet een meetfout of op een andere manier incorrect verkregen data. Het weghalen van uitbijters kan de uitkomst ook vertekenen, daarom is het belangrijk om verwijderde uitbijters te melden in een rapport.</p>
+</dd>
+<dt class="label" id="id29"><span class="brackets"><a class="fn-backref" href="#id15">11</a></span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+<dt class="label" id="id30"><span class="brackets"><a class="fn-backref" href="#id16">12</a></span></dt>
+<dd><p>Field, A., Miles, J., &amp; Field, Z. (2012). <em>Discovering statistics using R</em>. London: Sage publications.</p>
+</dd>
+<dt class="label" id="id31"><span class="brackets"><a class="fn-backref" href="#id17">13</a></span></dt>
+<dd><p>Marshall, E., &amp; Boggis, E. (2016). <em>The statistics tutor’s quick guide to commonly used statistical tests</em>. <a class="reference external" href="http://www.statstutor.ac.uk/resources/uploaded/tutorsquickguidetostatistics.pdf">http://www.statstutor.ac.uk/resources/uploaded/tutorsquickguidetostatistics.pdf</a>.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./r"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="02%20Gepaarde%20t-toets%20R.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="04%20Repeated%20measures%20ANOVA%20R.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

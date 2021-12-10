@@ -1,0 +1,1515 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="47%20Multinomiale%20logistische%20regressie%20R.html" />
+    <link rel="prev" title="Toepassing" href="32%20Mixed%20ANOVA%20R.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/r/41 Logistische regressie R.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fr/41 Logistische regressie R.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#logistische-regressie">
+   Logistische regressie
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-achtergrond-van-logistische-regressie">
+     De achtergrond van logistische regressie
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#maximum-likelihood">
+     Maximum likelihood
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#likelihood-ratio-toets-voor-significantie-regressiemodel">
+     Likelihood ratio toets voor significantie regressiemodel
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#individuele-predictors-toetsen-en-interpreteren-met-de-wald-toets">
+     Individuele predictors toetsen en interpreteren met de Wald toets
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#predictors-vergelijkingen-door-standaardisatie">
+     Predictors vergelijkingen door standaardisatie
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#voorspellen-op-basis-van-het-regressiemodel">
+     Voorspellen op basis van het regressiemodel
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitleg-assumpties">
+   Uitleg assumpties
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#outliers">
+     Outliers
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#boxplots-en-standaardiseren">
+       Boxplots en standaardiseren
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gestandaardiseerde-residuen">
+       Gestandaardiseerde residuën
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mahalanobis-afstand">
+       Mahalanobis afstand
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#cook-s-afstand">
+       Cook’s afstand
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lineariteit-box-tidwell">
+     Lineariteit: Box-Tidwell
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multicollineariteit">
+     Multicollineariteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#observaties-per-variabele">
+     Observaties per variabele
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#overdispersie">
+     Overdispersie
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toetsing-assumpties">
+   Toetsing assumpties
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id51">
+     Outliers
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id52">
+       Boxplots en standaardiseren
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id53">
+       Gestandaardiseerde residuën
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mahalanobis-distance">
+       Mahalanobis distance
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id54">
+       Cook’s afstand
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id55">
+     Lineariteit: Box-Tidwell
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id57">
+     Multicollineariteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id58">
+     Observaties per variabele
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id59">
+     Overdispersie
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering">
+   Uitvoering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#significantie-regressiemodel">
+     Significantie regressiemodel
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#significantie-en-interpretatie-coefficienten">
+     Significantie en interpretatie coëfficiënten
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sterkte-van-de-relatie-tussen-de-predictor-en-afhankelijke-variabele">
+     Sterkte van de relatie tussen de predictor en afhankelijke variabele
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering-likelihood-ratio-toets-voor-vergelijking-twee-regressiemodellen">
+   Uitvoering likelihood ratio toets voor vergelijking twee regressiemodellen
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#voorspellen-en-classificeren">
+   Voorspellen en classificeren
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rapportage">
+   Rapportage
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-924f26e6aa13&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span>exists<span class="o">(</span><span class="s2">&quot;Substitute_var&quot;</span><span class="o">))</span> <span class="o">{</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.R -->
+<!-- ## /CLOSEDBLOK: Reticulate.R -->
+<!-- ## OPENBLOK: Data-aanmaken.R --><!-- ## /OPENBLOK: Data-aanmaken.R -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<p>Gebruik <em>logistische regressie</em> om te toetsen of een binaire afhankelijke variabele voorspeld kan worden met twee of meer onafhankelijke variabelen (predictors) en om te toetsen of er een relatie is tussen een predictor en de afhankelijke variabele in aanwezigheid van andere predictors.<a class="footnote-reference brackets" href="#id66" id="id1">1</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id = "casus">
+<p>Vanuit het tutoraat van de opleiding Elektrotechniek van een hogeschool wil de studieloopbaanbegeleider meer persoonsgerichte begeleiding aanbieden om studenten te helpen nominaal af te studeren. Op basis van achtergrondkenmerken van de student en resultaten in het eerste studiejaar wil hij een inschatting maken van de kans dat iemand uitvalt in het eerste studiejaar. De variabelen waarvan hij vermoedt dat er een relatie is met uitval zijn geslacht, gemiddeld eindexamencijfer middelbare school, wel of geen vooropleiding in het mbo en de leeftijd van een student aan het begin van het eerste studiejaar. De studieloopbaanbegeleider zou graag op basis van data uit willen zoeken welke van deze variabelen echt gerelateerd zijn aan uitval. Deze informatie kan hij gebruiken om studenten waar de kans op uitval groter is al vroeg in het vizier te krijgen en de juiste begeleiding aan te bieden.</p>
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is. Bij <em>logistische regressie</em> wordt er een hypothese opgesteld voor het complete model en hypotheses voor de individuele predictors.</p>
+<p>Hypotheses regressiemodel:</p>
+<p><em>H~0~</em>: Geen enkele predictor van de predictors geslacht, gemiddeld eindexamencijfer middelbare school, wel of geen vooropleiding in het mbo en leeftijd is gerelateerd aan de afhankelijke variabele uitval in het eerste jaar (<span class="math notranslate nohighlight">\(\beta_1 = \beta_2 = \beta_3 = \beta_4 = 0\)</span>).</p>
+<p><em>H~A~</em>: Ten minste een van de predictors geslacht, gemiddeld eindexamencijfer middelbare school, wel of geen vooropleiding in het mbo en leeftijd is gerelateerd aan de afhankelijke variabele uitval in het eerste jaar (Ten minste één <span class="math notranslate nohighlight">\(\beta_i \neq 0, i = 1, 2, 3, 4\)</span>).</p>
+<p>Hypotheses individuele predictors (met als voorbeeld de predictor gemiddeld eindexamencijfer middelbare school):</p>
+<p><em>H~0~</em>: Het gemiddeld eindexamencijfer middelbare school heeft geen voorspellende waarde voor wel of niet uitvallen in het eerste jaar in aanwezigheid van de andere predictoren geslacht en eindexamencijfer Wiskunde (<span class="math notranslate nohighlight">\(\beta = 0\)</span>).</p>
+<p><em>H~A~</em>: Het gemiddeld eindexamencijfer middelbare school heeft voorspellende waarde voor wel of niet uitvallen in het eerste jaar in aanwezigheid van de andere predictoren geslacht en eindexamencijfer Wiskunde (<span class="math notranslate nohighlight">\(\beta \neq 0\)</span>).</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="logistische-regressie">
+<h1>Logistische regressie<a class="headerlink" href="#logistische-regressie" title="Permalink to this headline">¶</a></h1>
+<p>Het doel van <em>logistische regressie</em> is het voorspellen van een binaire afhankelijke variabele op basis van meerdere onafhankelijke variabelen, ook wel predictors genoemd.<a class="footnote-reference brackets" href="#id66" id="id2">1</a> Bij <em>multipele lineaire regressie</em> wordt het voorspellen van een afhankelijke variabele gedaan met behulp van een regressievergelijking waarin de afhankelijke variabele een lineaire combinatie is van de predictors, i.e.</p>
+<div class="math notranslate nohighlight">
+\[ y_i = \beta_0 + \beta_1 * x_{1i} + \beta_2 * x_{2i} + e_i\]</div>
+<p>met <span class="math notranslate nohighlight">\(y_i\)</span> als afhankelijke variabele, <span class="math notranslate nohighlight">\(\beta_0\)</span> als intercept, <span class="math notranslate nohighlight">\(x_{1i}\)</span> en <span class="math notranslate nohighlight">\(x_{2i}\)</span> als predictors, <span class="math notranslate nohighlight">\(\beta_{1}\)</span> en <span class="math notranslate nohighlight">\(\beta_{2}\)</span> als regressiecoefficiënten van predictors, <span class="math notranslate nohighlight">\(e_i\)</span> als residu of error en <span class="math notranslate nohighlight">\(i\)</span> als indicator van de deelnemer<a class="footnote-reference brackets" href="#id67" id="id3">19</a> uit de steekproef. De intercept <span class="math notranslate nohighlight">\(\beta_0\)</span> geeft de waarde van de afhankelijke variabele weer als alle predictors gelijk aan nul zijn. De regressiecoefficiënten <span class="math notranslate nohighlight">\(\beta_1\)</span> en <span class="math notranslate nohighlight">\(\beta_2\)</span> geven de relatie tussen de afhankelijke variabele en de predictor weer. De residu of error <span class="math notranslate nohighlight">\(e_i\)</span> is het verschil tussen de geobserveerde waarde van de afhankelijke variabele en de voorspelde waarde op basis van het regressiemodel.</p>
+<p>Bij <em>logistische regressie</em> is de afhankelijke variabele echter binair en heeft dus twee mogelijkheden. Daarom wordt de regressievergelijking zo aangepast dat de kans op een van beide mogelijkheden voorspeld wordt. In deze casus wordt bijvoorbeeld de kans voorspeld dat een student uitvalt in het eerste jaar van de bachelor Elektrotechniek. In onderstaande paragraaf wordt in meer details aan de hand van een aantal wiskundige formules uitgelegd hoe <em>logistische regressie</em> werkt. Zonder deze paragraaf te lezen is de toetspagina ook goed te begrijpen. De geïnteresseerde lezer kan
+hier wat meer begrip op doen over de achtergrond van <em>logistische regressie</em>.</p>
+<div class="section" id="de-achtergrond-van-logistische-regressie">
+<h2>De achtergrond van logistische regressie<a class="headerlink" href="#de-achtergrond-van-logistische-regressie" title="Permalink to this headline">¶</a></h2>
+<p>Bij logistische regressie wordt de kans op een van beide mogelijkheden van de binaire afhankelijke variabele voorspeld op basis van de predictors. In deze casus gaat het bijvoorbeeld om de kans op uitval van een student Elektrotechniek in het eerste studiejaar. Voor een algemene logistische regressievergelijking is dit wiskundig te schrijven als</p>
+<div class="math notranslate nohighlight">
+\[ P(Y_i = 1) = \pi = \frac{1}{1 + \exp( - [\beta_0 + \beta_1 * x_{1i} + \beta_2 * x_{2i}])}\]</div>
+<p>wat inhoudt dat de kans dat de afhankelijke variabele voor persoon <span class="math notranslate nohighlight">\(i\)</span> (<span class="math notranslate nohighlight">\(Y_i\)</span>) gelijk is aan 1 (<span class="math notranslate nohighlight">\(P(Y_i =1)\)</span>) gemodelleerd is als een (op het oog wat ingewikkelde) functie van de predictors <span class="math notranslate nohighlight">\(x_{1i}\)</span> en <span class="math notranslate nohighlight">\(x_{2i}\)</span>. Deze kans wordt ook wel met het symbool <span class="math notranslate nohighlight">\(\pi\)</span> aangegeven.</p>
+<p>Om de regressievergelijking duidelijker in beeld te hebben, kan bovenstaande vergelijking omgeschreven worden naar</p>
+<div class="math notranslate nohighlight">
+\[ \ln(\frac{\pi}{1 - \pi})  = \beta_0 + \beta_1 * x_{1i} + \beta_2 * x_{2i}\]</div>
+<p>waarin <span class="math notranslate nohighlight">\(\pi\)</span> dus de kans is. Het omzetten van de kans <span class="math notranslate nohighlight">\(\pi\)</span> naar <span class="math notranslate nohighlight">\(\ln(\frac{\pi}{1 - \pi})\)</span> wordt de logit transformatie of simpelweg de logit genoemd. Dit laat zien wat er bij <em>logistische regressie</em> gebeurt. Met behulp van de regressievergelijking wordt de logit van de kans <span class="math notranslate nohighlight">\(\pi\)</span> voorspeld en daarna wordt de logit van <span class="math notranslate nohighlight">\(\pi\)</span> omgezet in de kans <span class="math notranslate nohighlight">\(\pi\)</span> zelf. Op deze manier is het mogelijk om een regressievergelijking te gebruiken om de kans op een bepaalde uitkomst te bepalen. De logit transformatie wordt in de context van regressiemodellen ook wel een link-functie genoemd.<a class="footnote-reference brackets" href="#id68" id="id4">10</a></p>
+<p>De residuën van het regressiemodel zijn de verschillen tussen de geobserveerde categorie en de voorspelde kans voor die categorie. Als de afhankelijke variabele Uitval zo gecodeerd is dat het de waarde 1 heeft bij uitval en de waarde 0 bij geen uitval, dan voorspelt het regressiemodel de kans op uitval. Een voorspelde kans van 0,82 voor een student die daadwerkelijk uitval, levert een residu op van 1 - 0,82 = 0,18.</p>
+</div>
+<div class="section" id="maximum-likelihood">
+<h2>Maximum likelihood<a class="headerlink" href="#maximum-likelihood" title="Permalink to this headline">¶</a></h2>
+<p>Bij <em>multipele lineaire regressie</em> worden de regressiecoëfficiënten bepaald door de som van de gekwadrateerde residuën zo klein mogelijk te maken. Deze methode heet <em>ordinary least squares</em> (OLS) en zorgt ervoor dat de voorspellingen van het regressiemodel zo dichtbij als mogelijk zitten bij de echte observaties. Voor meer informatie, zie de <span class="xref myst">toetspagina</span>. Bij <em>logistische regressie</em> wordt ook geprobeerd om de voorspellingen van het regressiemodel zo dichtbij de observaties te krijgen als mogelijk, maar er wordt een andere methode<a class="footnote-reference brackets" href="#id69" id="id5">20</a> gebruikt. Deze methode heet <em>maximum likelihood</em> schatting en heeft als gevolg dat er ook andere statistische toetsen gebruikt worden. Om modellen te vergelijken wordt bij <em>logistische regressie</em> de <em>likelihood ratio toets</em> gebruikt in plaats van de F-toets. Om regressiecoëfficiënten te toetsen, wordt de <em>Wald toets</em> gebruikt in plaats van de t-toets.<a class="footnote-reference brackets" href="#id70" id="id6">2</a><sup>,</sup><a class="footnote-reference brackets" href="#id68" id="id7">10</a></p>
+</div>
+<div class="section" id="likelihood-ratio-toets-voor-significantie-regressiemodel">
+<h2>Likelihood ratio toets voor significantie regressiemodel<a class="headerlink" href="#likelihood-ratio-toets-voor-significantie-regressiemodel" title="Permalink to this headline">¶</a></h2>
+<p>Bij <em>maximum likelihood</em> schatting laat de likelihood van het model zien hoe dichtbij de voorspellingen van het model bij de observaties zitten. De likelihood is hoger voor een model waarin de voorspellingen dichterbij de observaties zitten. Op basis van de likelihood wordt het gehele regressiemodel statistisch getoetst en kunnen (geneste) modellen onderling vergeleken worden.</p>
+<p>De eerste vraag bij <em>logistische regressie</em> is of het model betere voorspellingen geeft dan een model zonder predictors. Daarom wordt het voorgestelde model vergeleken met een interceptmodel, een model waarin er geen predictors zijn en dus alleen de intercept gebruikt wordt om voorspellingen te maken. De verwachting is dat het voorgestelde model betere voorspellingen genereert en dus een hogere likelihood heeft. De significantie van dit verschil wordt getoetst met een <em>likelihood ratio</em> toets. De getoetste nulhypothese is dat de regressiecoëfficiënten van alle predictors gelijk aan nul zijn, wat wil zeggen dat de predictors niet zorgen voor betere voorspellingen. De getoetste alternatieve hypothese is dat minimaal een van de regressiecoëfficiënten van de predictors niet gelijk aan nul is, wat wil zeggen dat het model betere voorspellingen genereert. Als het verschil tussen beide modellen significant is, kunnen de individuele predictors getoetst worden. Als de toename niet significant is, is de analyse afgelopen en is de conclusie dat het voorgestelde model niet in staat is om de afhankelijke variabele beter te voorspellen dan een model zonder predictors.<a class="footnote-reference brackets" href="#id70" id="id8">2</a><sup>,</sup><a class="footnote-reference brackets" href="#id68" id="id9">10</a></p>
+<p>De <em>likelihood ratio</em> toets kan ook gebruikt worden om verschillende regressiemodellen onderling te vergelijken. Hierbij wordt getoetst of er een verschil is tussen de likelihood (de kwaliteit van het model) van beide modellen. Er kan bijvoorbeeld in eerste instantie een model met twee predictors getoetst worden om vervolgens te toetsen of de voorspellingen van het regressiemodel nog beter worden met twee extra predictors. Het verschil in likelihood tussen het model met twee en vier predictors wordt dan getoetst met een chi-kwadraat toets. Hierbij is de nulhypothese dat de extra toegevoegde predictors een regressiecoëfficiënt van nul hebben en de alternatieve hypothese dat minimaal een van de regressiecoëfficiënten van de extra predictors niet gelijk aan nul is. Een eis voor deze toets is dat beide modellen genest zijn. Bij geneste modellen is het ene model te schrijven als een versie van het andere model na het verwijderen van een aantal predictors. In deze casus zou er een model opgesteld kunnen worden waarin alleen de variabelen Eindexamencijfer en Vooropleiding predictors zijn van uitval en een model waarin de de variabelen Geslacht, Eindexamencijfer, Vooropleiding en Leeftijd predictors zijn van uitval. Dit zijn geneste modellen, omdat het eerste model (alleen Eindexamencijfer en Vooropleiding als predictor) een versie is van het tweede model na het verwijderen van de predictors Geslacht en Leeftijd. Het model waarbij de predictors verwijderd zijn, wordt als het ware gereduceerd. Daarom wordt dit het gereduceerde model genoemd. Het model waar de predictors niet verwijderd zijn, wordt het uitgebreide model genoemd. Om modellen met een <em>likelihood ratio</em> te vergelijken, moeten ze dus genest zijn. In andere woorden, het verschil tussen beide regressiemodellen moet dus toe te wijzen zijn aan het toevoegen of verwijderen van een of meerdere predictors.<a class="footnote-reference brackets" href="#id70" id="id10">2</a><sup>,</sup><a class="footnote-reference brackets" href="#id68" id="id11">10</a></p>
+<p>Bij <em>logistische regressie</em> is de effectmaat gebaseerd op een vergelijking van de likelihood van het voorgestelde model ten opzichte van de likelihood van het interceptmodel. Een veelgebruikte versie hiervan is Nagelkerke’s <span class="math notranslate nohighlight">\(R^2\)</span> (<span class="math notranslate nohighlight">\(R_N^2\)</span>) welke waardes aanneemt tussen 0 en 1. Nagelkerke’s <span class="math notranslate nohighlight">\(R^2\)</span> is een maat die aangeeft hoe goed een model is. Let op dat Nagelkerke’s <span class="math notranslate nohighlight">\(R^2\)</span> niet geïnterpreteerd kan worden als verklaarde variantie (zoals <span class="math notranslate nohighlight">\(R^2\)</span> bij <em>multipele lineaire regressie</em>). Een juiste interpretatie is de verklaarde variatie of model fit.<a class="footnote-reference brackets" href="#id70" id="id12">2</a></p>
+</div>
+<div class="section" id="individuele-predictors-toetsen-en-interpreteren-met-de-wald-toets">
+<h2>Individuele predictors toetsen en interpreteren met de Wald toets<a class="headerlink" href="#individuele-predictors-toetsen-en-interpreteren-met-de-wald-toets" title="Permalink to this headline">¶</a></h2>
+<p>Als de <em>likelihood ratio</em> toets aantoont dat het regressiemodel betere voorspellingen geeft dan het interceptmodel, kunnen de predictors getoetst worden. De regressiecoefficiënten van de predictors en de intercept worden getoetst met een <em>Wald toets</em> waarbij de nulhypothese is dat de coefficiënt gelijk aan nul is (<span class="math notranslate nohighlight">\(\beta = 0\)</span>) en de (tweezijdige) alternatieve hypothese dat de coefficiënt niet gelijk aan nul is (<span class="math notranslate nohighlight">\(\beta \neq 0\)</span>). Er kan ook een eenzijdige alternatieve hypothese opgesteld worden, bijvoorbeeld als er de verwachting is dat de coefficiënt positief of negatief is. De <em>Wald-toets</em> toont in feite aan of er wel of geen relatie is tussen de predictor en afhankelijke variabele in de aanwezigheid van de andere predictoren van het regressiemodel. Bij de <em>Wald-toets</em> is de gebruikte toetsstatistiek de z-score.<a class="footnote-reference brackets" href="#id70" id="id13">2</a></p>
+<p>De regressiecoëfficiënten bij <em>logistische regressie</em> worden geïnterpreteerd in termen van odds ratios. Odds is een Engelse term en is een variant van kans, namelijk de kans op een gebeurtenis gedeeld door 1 minus de kans op een gebeurtenis (<span class="math notranslate nohighlight">\(\frac{\pi}{1 - \pi}\)</span>). Bij een kans van  2/3 is de odds <span class="math notranslate nohighlight">\(\frac{2/3}{1 - 2/3} = \frac{2/3}{1/3} = 2\)</span>. Bij het opgooien van een muntje is de kans op zowel kop als munt 0,5. De odds van zowel kop of munt zijn dus <span class="math notranslate nohighlight">\(\frac{1/2}{1 - 1/2} = \frac{1/2}{1/2} = 1\)</span>. Een odds ratio is een ratio van twee odds. In de huidige casus wordt onderzocht of geslacht gerelateerd is aan uitval. Stel dat de odds op uitval 1/2 is voor mannen en 1/4 is voor vrouwen. Dan is de odds ratio voor de variabele Geslacht <span class="math notranslate nohighlight">\(\frac{1/2}{1/4} = 2\)</span>. De odds dat mannen uitvallen is dus twee keer zo hoog als de odds dat vrouwen uitvallen. Dit is de manier om de odds ratio te interpreteren.<a class="footnote-reference brackets" href="#id70" id="id14">2</a></p>
+<p>Regressiecoëfficiënten zijn gelijk aan de logaritme van de odds ratio van de bijbehorende predictor. De odds ratio zelf wordt berekend door de exponent te nemen van de regressiecoëfficiënt. Let bij het interpreteren van odds ratios op dat de betekenis verschillend is voor continue en categorische predictors. In beide gevallen geldt echter dat een toename van één eenheid van de predictor resulteert in een odds die vermenigvuldigd wordt met de exponent van de regressiecoëfficiënt <span class="math notranslate nohighlight">\(\exp(\beta)\)</span>. De odds zijn dus <span class="math notranslate nohighlight">\(\exp(\beta)\)</span> keer zo hoog na een toename van één eenheid van de predictor. Een voorbeeld van de interpretatie van regressiecoëfficiënten is handig voor de huidige casus. Voor elke predictor is een verzonnen waarde van de regressiecoëfficiënt gemaakt die geïnterpreteerd wordt. De intercept wordt bij <em>logistische regressie</em> meestal niet geïnterpreteerd.<a class="footnote-reference brackets" href="#id70" id="id15">2</a></p>
+<ul class="simple">
+<li><p>Geslacht (<span class="math notranslate nohighlight">\(\beta = 0,405\)</span>): De regressiecoefficiënt van de variabele Geslacht is gelijk aan 0,405. De odds ratio van deze predictor is dus <span class="math notranslate nohighlight">\(exp(0,405) = 1,5\)</span>. De variabele Geslacht is zo opgesteld dat het mannen vergelijkt ten opzichte van vrouwen als referentiecategorie. Als de overige predictors gelijkblijven is de odds van uitval voor mannen 1,5 keer zo hoog als de odds van uitval van vrouwen. In een regressiemodel worden categorische variabelen omgezet in binaire variabelen met de waarden 0 en 1, omdat dat nodig is om het model te fitten. De variabele Geslacht zou bijvoorbeeld gecodeerd kunnen worden met een 1 voor mannen en een 0 voor vrouwen. Let goed op hoe de categorieën gecodeerd zijn, i.e. welke categorie de waarde 1 en 0 hebben. Dit bepaalt namelijk de interpretatie.</p></li>
+<li><p>Eindexamencijfer (<span class="math notranslate nohighlight">\(\beta = 0,182\)</span>): De coëfficient van de variabele Eindexamencijfer is gelijk aan 0,182. De odds ratio van deze predictor is dus <span class="math notranslate nohighlight">\(exp(0,182) = 1,2\)</span>. Als de overige predictors gelijkblijven is de odds van uitval 1,2 keer zo hoog bij een toename van het gemiddeld eindexamencijfer met één punt.</p></li>
+<li><p>Vooropleiding (<span class="math notranslate nohighlight">\(\beta = -0,693\)</span>): De regressiecoefficiënt van de variabele Vooropleiding is gelijk aan -0,693. De odds ratio van deze predictor is dus <span class="math notranslate nohighlight">\(exp(-0,693) = 0,5\)</span>. De variabele Vooropleiding is zo opgesteld dat het de vooropleiding mbo vergelijkt ten opzichte van de vooropleiding havo als referentiecategorie. Als de overige predictors gelijkblijven is de odds van uitval voor studenten met de vooropleiding mbo 0,5 keer zo hoog als de odds van uitval voor studenten met havo als vooropleiding. De odds van uitval voor studenten met een mbo vooropleiding is dus eigenlijk 2 (1 / 0,5 = 2) keer zo laag als de odds van uitval voor studenten met een havo vooropleiding. In een regressiemodel worden categorische variabelen omgezet in binaire variabelen met de waarden 0 en 1, omdat dat nodig is om het model te fitten. De variabele Vooropleiding zou bijvoorbeeld gecodeerd kunnen worden met een 1 voor mbo en een 0 voor havo. Let goed op hoe de categorieën gecodeerd zijn, i.e. welke categorie de waarde 1 en 0 hebben. Dit bepaalt namelijk de interpretatie.</p></li>
+<li><p>Leeftijd (<span class="math notranslate nohighlight">\(\beta = -0,105\)</span>): De coëfficient van de variabele Leeftijd is gelijk aan -0,105. De odds ratio van deze predictor is dus <span class="math notranslate nohighlight">\(exp(-0,105) = 0,9\)</span>. Als de overige predictors gelijkblijven is de odds van uitval 0,9 keer zo hoog bij een toename van Leeftijd met één jaar. De odds van uitval is dus eigenlijk 1.11 (1 / 0,9) keer zo laag bij een toename van één jaar in leeftijd.</p></li>
+</ul>
+</div>
+<div class="section" id="predictors-vergelijkingen-door-standaardisatie">
+<h2>Predictors vergelijkingen door standaardisatie<a class="headerlink" href="#predictors-vergelijkingen-door-standaardisatie" title="Permalink to this headline">¶</a></h2>
+<p>Op basis van de regressievergelijking en de Wald-toetsen kan bepaald worden of predictors gerelateerd zijn aan de afhankelijke variabele en wat de invloed van een verandering van de predictor is op de afhankelijke variabele. Een andere relevante vraag is welke predictor het sterkst gerelateerd is aan de afhankelijke variabele. Op basis van de regressiecoëfficienten kan dit niet bepaald worden, omdat de schaal van de predictors verschilt. Het gemiddeld eindexamencijfer varieert tussen de 1 en 10 (waarschijnlijk zijn de meeste waarden hoger dan 5,5) terwijl de variabele Geslacht gelijk is aan een 1 of een 0.</p>
+<p>Standaardiseer de predictors om de predictors onderling te kunnen vergelijken. Standaardiseren houdt in dat de variabelen getransformeerd worden zodat ze een gemiddelde van 0 hebben en een standaardafwijking van 1. Dit wordt gedaan door voor alle observaties van een variabele eerst het gemiddelde af te trekken en daarna te delen door de standaardafwijking, i.e. <span class="math notranslate nohighlight">\(\frac{x_i - \mu}{\sigma}\)</span>. Als het regressiemodel opnieuw geschat wordt met gestandaardiseerde variabelen, kunnen de coëfficiënten onderling vergeleken worden op basis van hun grootte. Een grotere (absolute waarde van de) coëfficient betekent een sterkere relatie met de afhankelijke variabele. De coëfficiënt is nu te interpreteren in termen van standaardafwijkingen. Een toename van één eenheid van de predictor staat voor een toename van een standaardafwijking van deze predictor. Deze toename van één standaardafwijking resulteert in een verandering van de odds die gelijk is aan de exponent van de bijbehorende (gestandaardiseerde) regressiecoëfficiënt.<a class="footnote-reference brackets" href="#id70" id="id16">2</a><sup>,</sup><a class="footnote-reference brackets" href="#id71" id="id17">11</a> De predictor met de hoogste absolute waarde van de regressiecoëfficiënt is het sterkst gerelateerd aan de afhankelijke variabele.</p>
+</div>
+<div class="section" id="voorspellen-op-basis-van-het-regressiemodel">
+<h2>Voorspellen op basis van het regressiemodel<a class="headerlink" href="#voorspellen-op-basis-van-het-regressiemodel" title="Permalink to this headline">¶</a></h2>
+<p>Een regressiemodel maakt het mogelijk om een afhankelijke variabele te voorspellen op basis van een aantal predictors. Als van een student bekend is wat zijn geslacht, gemiddeld eindexamencijfer, vooropleiding en leeftijd is, kan een voorspelling gemaakt worden van de kans dat die student uitvalt in het eerste studiejaar. Voor alle deelnemers in de steekproef is er een voorspelling. De regressievergelijking maakt het echter ook mogelijk om voor nieuwe deelnemers een voorspelling te maken. Dit wordt een out-of-sample voorspelling genoemd omdat de nieuwe deelnemer niet in de steekproef zit waarop het regressiemodel wordt geschat. Als de studieloopbaanbegeleider een jaar later uitval wil voorspellen van de nieuwe studenten, kan hij de regressievergelijking van het jaar ervoor gebruiken. Een out-of-sample voorspelling geeft vaak een goede indicatie van de kwaliteit van het regressiemodel, omdat de nieuwe deelnemer niet gebruikt zijn om het model te schatten. Als het doel is om het regressiemodel te gebruiken voor het voorspellen van nieuwe deelnemers, dan is de kwaliteit van de out-of-sample voorspellingen van belang.<a class="footnote-reference brackets" href="#id70" id="id18">2</a></p>
+<p>Bij <em>logistische regressie</em> wordt de kans op een gebeurtenis voorspeld, in de huidige casus is dat de kans op uitval in het eerste studiejaar. Een kans kan waarden aannemen tussen 0 en 1. De geobserveerde waarden zijn echter binair: wel of geen uitval, dus een 0 of een 1 numeriek gezien. Het voorspellen van een categorische variabele wordt classificatie genoemd en is ook mogelijk met een logistisch regressiemodel. Met behulp van een grenswaarde kunnen de studenten geclassificeerd worden in de categorieën uitval en geen uitval op basis van hun voorspelde kans. Meestal wordt de grenswaarde 0,5 gebruikt om deelnemers te classificeren. Alle deelnemers met een voorspelde kans hoger dan 0,5 (<span class="math notranslate nohighlight">\(\pi &gt; 0,5\)</span>) worden toegewezen aan de categorie met numerieke waarde 1; de deelnemers met een voorspelde kans van 0,5 of lager (<span class="math notranslate nohighlight">\(\pi \leq 0,5\)</span>) de waarde 0. Studenten met een voorspelde kans hoger dan 0,5 worden dan in de categorie uitval geclassificeerd en studenten met een voorspelde kans gelijk of lager dan 0,5 in de categorie geen uitval. Er kan natuurlijk ook een andere grenswaarde gebruikt worden om te classificeren op basis van de voorspelde kansen.<a class="footnote-reference brackets" href="#id72" id="id19">12</a></p>
+<p>Op basis van de classificaties en de geobserveerde waarden kan een classificatietabel gemaakt worden. Hierin worden de geobserveerde waarden voor de variabele uitval uitgezet tegenover de geclassificeerde waarden. Een voorbeeld van een classificatietabel voor de huidige casus is te zien in Tabel 1. In de cel linksboven is te zien dat er 40 studenten zijn waarvoor uitval voorspeld is en die ook daadwerkelijk uitgevallen zijn, dit zijn de ware positieven. De cel rechtsonder bevat 150 studenten waarvoor geen uitval is voorspeld en die ook daadwerkelijk niet uitgevallen zijn, dit zijn de ware negatieven. Beide cellen bevatten dus alle studenten die correct geclassificeerd zijn. De cel rechtsboven bevat de studenten die wel uitgevallen zijn, maar waarvoor geen uitval was voorspeld. Dit zijn de vals negatieven aangezien ze als geen uitval (negatief) zijn voorspeld, maar uiteindelijk wel uitgevallen zijn. Ten slotte bevat de cel linksonder de studenten die niet uitgevallen zijn, maar waarvoor wel uitval was voorspeld. Dit zijn de vals positieven aangezien ze als uitval (positief) zijn voorspeld, maar uiteindelijk niet uitgevallen zijn.<a class="footnote-reference brackets" href="#id72" id="id20">12</a></p>
+<p>||                      | Voorspelling    |
+|————-| ——————– | ————-| ————|
+||                            | Uitval | geen uitval|
+|<strong>Observaties</strong>| Uitval      | 40 (ware positieven)    | 10 (valse negatieven)         |
+|               | Geen uitval | 50 (valse positieven)   | 150 (ware negatieven)        |</p>
+<p><em>Tabel 1. Classificatietabel van de observaties en classificaties van de uitval van studenten in het eerste jaar van de bachelor Elektrotechniek.</em></p>
+<p>Op basis van de classificatiematrix kunnen allerlei maten worden berekend die de kwaliteit van de classificatie aangeven. Bekende maten zijn de accuraatheid, de sensitiviteit en de specificiteit:</p>
+<ul class="simple">
+<li><p>Accuraatheid: de proportie observaties die correct geclassificeerd is. Te bereken door het aantal ware positieven en ware negatieven te delen door het totaal aantal observaties. In Tabel 1 is de accuraatheid <span class="math notranslate nohighlight">\(\frac{40 + 150}{40 + 10 + 50 +150} = 0,76\)</span>.</p></li>
+<li><p>Sensitiviteit: de proportie positieven die correct geclassificeerd is. Te berekenen door het aantal ware positieven te delen door het totaal aantal positieven. In Tabel 1 is de sensitiviteit <span class="math notranslate nohighlight">\(\frac{40}{40 + 10} = 0,80\)</span> .</p></li>
+<li><p>Specificiteit: de proportie negatieven die correct geclassificeerd is. Te berekenen door het aantal ware negatieven te delen door het totaal aantal negatieven. In Tabel 1 is de specificiteit <span class="math notranslate nohighlight">\(\frac{150}{150 + 50} = 0,75\)</span>.</p></li>
+</ul>
+<p>De waarden van de classificatietabel hangen af van de grenswaarde die gebruikt wordt om met de voorspelde kansen te classificeren. Het aanpassen van de grenswaarde zorgt dus voor veranderingen in de sensitiviteit en specificiteit. Als een logistisch regressiemodel gebruikt wordt om te classificeren, kan de grenswaarde dus gebruikt worden om een gewenste sensitiviteit en specificiteit te krijgen. Als de studieloopbaanbegeleider het belangrijk vind om alle studenten die dreigen uit te vallen in zicht te krijgen, is het belangrijk dat uitval goed voorspeld wordt en er dus een hoge sensitiviteit is. Als hij meer waarde hecht aan het correct voorspellen van studenten die niet uitvallen, dan is de specificiteit belangrijker.<a class="footnote-reference brackets" href="#id72" id="id21">12</a></p>
+<p>Er is een maat die de kwaliteit van de classificaties weergeeft onafhankelijk van de grenswaarde die gekozen is. Deze maat heet de Area Under the Curve (AUC) die gebaseerd is op de ROC-curve<a class="footnote-reference brackets" href="#id73" id="id22">21</a>. Een AUC van 0,5 betekent dat de classificaties niet beter zijn dan een willekeurige keuze voor de ene of de andere optie. Een AUC 1 betekent dat de classificatie perfect is. Op deze manier kan de kwaliteit van de classificaties voor verschillende modellen vergeleken worden onafhankelijk van de gekozen grenswaarde.<a class="footnote-reference brackets" href="#id72" id="id23">12</a></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitleg-assumpties">
+<h1>Uitleg assumpties<a class="headerlink" href="#uitleg-assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Om een valide resultaat te vinden met <em>logistische regressie</em>, dient er aan een aantal assumpties voldaan te worden.<a class="footnote-reference brackets" href="#id66" id="id24">1</a><sup>,</sup><a class="footnote-reference brackets" href="#id70" id="id25">2</a> In deze sectie worden de assumpties allen toegelicht en worden de opties bij het niet voldoen aan de assumptie weergegeven. Verderop in de toetspagina worden de assumpties getoetst met de dataset van de onderwijscasus.</p>
+<div class="section" id="outliers">
+<h2>Outliers<a class="headerlink" href="#outliers" title="Permalink to this headline">¶</a></h2>
+<p>Voordat gestart kan worden met <em>logistische regressie</em>, moet de data gescreend worden op de aanwezigheid van outliers. Outliers (uitbijters) zijn observaties die sterk afwijken van de overige observaties. Univariate outliers zijn observaties die afwijken voor één specifieke variabele, zoals een student die twintig jaar over zijn studie heeft gedaan. Multivariate outliers zijn observaties die afwijken door de combinatie van meerdere variabelen, zoals een persoon van 18 jaar met een inkomen van €100.000,-. De leeftijd van 18 jaar is geen outlier op zichzelf en een inkomen van €100.000,- is dat ook niet. Echter, de combinatie van beide zorgt ervoor dat de observatie vrij onwaarschijnlijk is.<a class="footnote-reference brackets" href="#id74" id="id26">9</a></p>
+<p>Na het vinden van een outlier is de volgende stap om een goede oplossing voor te outlier te bedenken. Het is van belang hier goed over na te denken en niet zomaar een outlier te verwijderen met als enige argument dat het een outlier is. In het algemeen kan er onderscheid gemaakt worden tussen onmogelijke en onwaarschijnlijke outliers.<a class="footnote-reference brackets" href="#id75" id="id27">3</a> Een onmogelijke outlier is een observatie die technisch gezien niet kan kloppen, bijvoorbeeld een leeftijd van 1000 jaar, een negatief salaris of een man die zwanger is. Bij deze outliers is het een optie om de waarde te vervangen als er een overduidelijke fout bij het invoeren van de data is gemaakt. Een andere optie is de waarde te verwijderen. Een onwaarschijnlijke outlier is een observatie die technisch gezien wel kan, maar heel erg afwijkt van de overige observaties. De rijksten der aarde zijn in de stad of het dorp waar zij wonen qua vermogen waarschijnlijk een outlier. Maar het zijn bestaande personen dus het verwijderen van de observatie zou hier foutief zijn. Opties in deze situatie zijn om te overwegen de variabele(n) te transformeren, de outlier gewoon mee te nemen in de analyse of de analyse met en zonder de outlier uit te voeren en beide te rapporteren. Ook is het niet verboden om de outlier toch te verwijderen, maar het is in dat geval wel van belang dit transparant te rapporteren en op een goede wijze te beargumenteren.<a class="footnote-reference brackets" href="#id75" id="id28">3</a></p>
+<p>Bij <em>logistische regressie</em> zijn er vier nuttige methoden om outliers te vinden.<a class="footnote-reference brackets" href="#id74" id="id29">9</a></p>
+<div class="section" id="boxplots-en-standaardiseren">
+<h3>Boxplots en standaardiseren<a class="headerlink" href="#boxplots-en-standaardiseren" title="Permalink to this headline">¶</a></h3>
+<p>Begin voor de analyse met het screenen van de variabelen in de dataset op de aanwezigheid van univariate outliers. Voor continue variabelen bestaat deze screening uit het visualiseren van de variabele met een boxplot en het standaardiseren<a class="footnote-reference brackets" href="#id76" id="id30">4</a> van de variabele. Als een observatie een gestandaardiseerde score van groter dan 3 of kleiner dan -3 heeft, wordt deze beschouwd als een outlier. In dat geval wijkt de observatie namelijk meer dan drie standaardafwijkingen af van het gemiddelde van de variabele. Gebruik zowel de boxplot als de standaardisering om outliers te vinden voor continue variabelen.<a class="footnote-reference brackets" href="#id75" id="id31">3</a></p>
+<p>Bij categorische variabelen hebben boxplots en standaardisatie geen zin, omdat het geen variabelen met een continue schaal zijn. Bij categorische variabelen is het nuttig om een overzicht te maken van de bestaande categorieën en bijbehorende aantallen observaties en is het nuttig om te onderzoeken of elke observatie slechts in één categorie past. Doe dit met behulp van tabellen.</p>
+</div>
+<div class="section" id="gestandaardiseerde-residuen">
+<h3>Gestandaardiseerde residuën<a class="headerlink" href="#gestandaardiseerde-residuen" title="Permalink to this headline">¶</a></h3>
+<p>De residuën van een logistisch regressiemodel zijn de verschillen tussen de observaties van de afhankelijke variabele en de voorspelde kans. Als er een groot verschil is tussen observatie en voorspelling, zou dat kunnen wijzen op een univariate outlier. Standaardiseer daarom de residuën en onderzoek met een grafiek of er outliers zijn. Als een gestandaardiseerde residu een score van groter dan 3 of kleiner dan -3 heeft, wordt deze beschouwd als een outlier. Op deze manier kunnen outliers bij het regressiemodel kunnen worden geïdentificeerd.<a class="footnote-reference brackets" href="#id74" id="id32">9</a></p>
+</div>
+<div class="section" id="mahalanobis-afstand">
+<h3>Mahalanobis afstand<a class="headerlink" href="#mahalanobis-afstand" title="Permalink to this headline">¶</a></h3>
+<p>Multivariate outliers zijn deelnemers met een combinatie van observaties op verschillende variabelen die erg afwijken van de overige deelnemers. Deze multivariate outliers kunnen geïdentificeerd worden met de Mahalanobis afstand. De Mahalanobis afstand is een maat die aangeeft in hoeverre de observaties van een deelnemer voor alle predictors afwijken van de gemiddeldes van de predictors. Het is een maat voor een afstand tussen twee punten als meerdere variabelen worden gebruikt. Bereken de Mahalanobis afstand voor elke deelnemer en vergelijk deze met de criteriumwaarde. De criteriumwaarde wordt bepaald op basis van de chi-kwadraat score bij een aantal vrijheidsgraden dat gelijk is aan het aantal predictors en een significantieniveau van 0,001 (of een zelf gekozen significantieniveau). In de code wordt toegelicht hoe de criteriumwaarde bepaald kan worden.<a class="footnote-reference brackets" href="#id74" id="id33">9</a></p>
+</div>
+<div class="section" id="cook-s-afstand">
+<h3>Cook’s afstand<a class="headerlink" href="#cook-s-afstand" title="Permalink to this headline">¶</a></h3>
+<p>De Mahalanobis afstand geeft aan in hoeverre een deelnemer afwijkt van de andere deelnemers wat betreft de waardes van de predictorvariabelen. Een andere manier om multivariate outliers te vinden is te bepalen hoeveel invloed een deelnemer heeft op de schattingen van het regressiemodel. Als de uitkomsten van het regressiemodel sterk veranderen als een bepaalde deelnemer weggelaten wordt uit de dataset, dan is deze deelnemer invloedrijk. Met behulp van Cook’s afstand worden invloedrijke deelnemers ontdekt. Als Cook’s afstand groter dan 1 is, wordt de deelnemer beschouwd als invloedrijk.</p>
+<p>Hoewel de Mahalanobis afstand en Cook’s afstand beide multivariate outliers identificeren, verschillen ze in het soort outlier waarop de focus ligt. Bij de Mahalanobis afstand worden afwijkende datapunten gevonden en bij Cook’s distance invloedrijke datapunten. Het is echter niet zo dat een afwijkend datapunt ook tegelijkertijd invloedrijk is en dat een invloedrijk datapunt ook afwijkt. Een afwijkend datapunt kan ondanks zijn afwijking van de de overige datapunten toch op een juiste manier voorspeld worden. En een invloedrijk datapunt hoeft niet per se sterk af te wijken van de overige datapunten wat betreft de waardes voor de predictorvariabelen. Houdt hier rekening mee bij het bepalen hoe om te gaan met de gevonden outlier(s).<a class="footnote-reference brackets" href="#id74" id="id34">9</a></p>
+</div>
+</div>
+<div class="section" id="lineariteit-box-tidwell">
+<h2>Lineariteit: Box-Tidwell<a class="headerlink" href="#lineariteit-box-tidwell" title="Permalink to this headline">¶</a></h2>
+<p>Bij <em>logistische regressie</em> is de regressievergelijking zo opgesteld dat er een lineaire relatie is tussen elke predictor en de logit van de afhankelijke variabele. Een lineaire relatie houdt in dat de toename of afname van de (logit van de) afhankelijke variabele als gevolg van de toename van de predictor constant is. In tegenstelling tot <em>multipele lineaire regressie</em> kan bij <em>logistische regressie</em> geen grafiek gemaakt worden om een lineaire relatie te onderzoeken, omdat de afhankelijke variabele binair is. In plaats daarvan is er een statistische toets om te onderzoeken of er een lineaire relatie is tussen de predictor en de logit van de afhankelijke variabele. Bij deze <em>Box-Tidwell test</em> wordt er voor elke continue predictor een extra term toegevoegd die bestaat uit het product van de predictor en de logaritme van de predictor. Voor de predictor leeftijd zou dit dus betekenen dat er een extra variabele wordt (Leeftijd * ln[Leeftijd]). Voeg deze interactietermen voor alle continue predictors toe en toets of de regressiecoëfficiënten van deze interactietermen significant zijn. Als dit zo is, dan is er voor die predictor niet voldaan aan de assumptie van lineariteit. Een oplossing hiervoor is het transformeren<a class="footnote-reference brackets" href="#id77" id="id35">5</a> van de variabele.<a class="footnote-reference brackets" href="#id78" id="id36">6</a></p>
+</div>
+<div class="section" id="multicollineariteit">
+<h2>Multicollineariteit<a class="headerlink" href="#multicollineariteit" title="Permalink to this headline">¶</a></h2>
+<p>Multicollineariteit houdt in dat er een hoge correlatie tussen twee of meerdere predictors is. Er is perfecte multicollineariteit als één predictor een lineaire combinatie is van een of meerdere andere predictors. In andere woorden, de predictor is precies te berekenen op basis van andere predictor(s). In dat geval kan de regressievergelijking niet wiskundig bepaald worden en werkt <em>logistische regressie</em> niet. Dit komt zeer weinig voor en is vaak makkelijk op te lossen door goed naar de variabelen die het veroorzaken te kijken en een variabele te transformeren of te verwijderen.<a class="footnote-reference brackets" href="#id74" id="id37">9</a></p>
+<p>Bij een hoog niveau van multicollineariteit kan de regressievergelijking wel geschat worden, maar zijn de uitkomsten minder betrouwbaar. De standaardfouten van de regressiecoëfficiënten worden groter bij meer multicollineariteit en dit levert bij hoge multicollineariteit problemen op. Ook is het lastig om te ontdekken wat per predictor de bijdrage is aan de voorspellingen van de afhankelijke variabele, omdat bepaalde predictors sterk gecorreleerd zijn en overlappen in het deel van de variantie dat ze verklaren.<a class="footnote-reference brackets" href="#id74" id="id38">9</a></p>
+<p>Multicollineariteit wordt getoetst met de Variance Inflation Factor (VIF) die meet hoe sterk elke predictor gecorreleerd is met de andere predictors. Als de VIF van een predictor hoger dan 10 is, is er multicollineariteit voor die predictor.<a class="footnote-reference brackets" href="#id74" id="id39">9</a><sup>,</sup><a class="footnote-reference brackets" href="#id79" id="id40">7</a> Multicollineariteit kan opgelost worden door een van de predictors die het veroorzaakt te verwijderen uit het model. Een andere optie is een principale componenten analyse (PCA) uitvoeren op de predictoren zodat er een onderliggende variabele gecreëerd wordt (zie Field<a class="footnote-reference brackets" href="#id74" id="id41">9</a> voor meer informatie).</p>
+</div>
+<div class="section" id="observaties-per-variabele">
+<h2>Observaties per variabele<a class="headerlink" href="#observaties-per-variabele" title="Permalink to this headline">¶</a></h2>
+<p>Bij <em>logistische regressie</em> is de afhankelijke variabele binair wat betekent dat de variabele twee mogelijkheden heeft. Dit kan een probleem opleveren als er categorische predictors zijn. Voor elke categorie van een categorische predictor moeten er observaties zijn voor beide mogelijkheden van de afhankelijke variabele. Deze assumptie kan onderzocht worden door een kruistabel te maken voor de combinatie van elke categorische predictor en de afhankelijke variabele. Een voorbeeld van een dergelijke kruistabel is te zien in Tabel 2 voor de afhankelijke variabele uitval en predictor vooropleiding. In deze kruistabel is te zien dat er binnen de categorie <code class="docutils literal notranslate"><span class="pre">mbo</span></code> van de predictor vooropleiding nul deelnemers zijn die uitvallen. Deze categorie bevat dus een lege cel en voldoet niet aan de assumptie.<a class="footnote-reference brackets" href="#id70" id="id42">2</a><sup>,</sup><a class="footnote-reference brackets" href="#id78" id="id43">6</a></p>
+<p>||                      | Vooropleiding    |
+|————-| ——————– | ————-| ————|
+||                            | mbo | havo|
+|<strong>Uitval</strong>     | Uitval      | 0     | 40         |
+|               | Geen uitval | 50    | 160        |</p>
+<p><em>Tabel 2. Kruistabel van de observaties voor de afhankelijke variabele Uitval en predictor Vooropleiding waarbij voor de categorie mbo niet alle waarden van de afhankelijke variabele aanwezig zijn.</em></p>
+<p>Daarnaast is het met een binaire afhankelijke variabele mogelijk dat er een categorische predictor is die perfect de waarde van de afhankelijke variabele voorspelt. Een voorbeeld hiervan is te zien in Tabel 3, wederom voor de afhankelijke variabele uitval en predictor vooropleiding. De categorie <code class="docutils literal notranslate"><span class="pre">mbo</span></code> bevat alleen studenten die uitgevallen zijn en de categorie <code class="docutils literal notranslate"><span class="pre">havo</span></code> alleen studenten die niet uitgevallen zijn. De predictor vooropleiding voorspelt dus perfect of een student wel of niet gaat uitvallen. Dit fenomeen wordt <em>complete separation</em> genoemd en komt af en toe voor als er heel veel predictors aanwezig zijn en weinig observaties. Als dit gebeurt, dan werkt de <em>maximum likelihood</em> methode niet.<a class="footnote-reference brackets" href="#id78" id="id44">6</a></p>
+<p>||                      | Vooropleiding    |
+|————-| ——————– | ————-| ————|
+||                            | mbo | havo|
+|<strong>Uitval</strong>     | Uitval      | 50     | 0          |
+|               | Geen uitval | 0      | 200        |</p>
+<p><em>Tabel 3. Kruistabel van de observaties voor de afhankelijke variabele Uitval en predictor Vooropleiding waarbij er sprake is van complete separation.</em></p>
+<p>Het gevolg van de assumptie voor observaties per variabele zijn dat er extreem hoge regressiecoëfficiënten en standaardfouten worden gevonden of dat de <em>maximum likelihood</em> methode niet werkt. Toets daarom deze assumptie door voor elke categorische predictor een kruistabel te maken met de afhankelijke variabele en onderzoek of er lege cellen zijn en of er <em>complete separation</em> plaatsvindt. Als er niet aan deze assumptie voldaan is, dan zijn er meerdere oplossingen mogelijk. De categorie die problemen geeft bij de categorische predictor kan verwijderd worden of worden samengevoegd met een andere categorie. Daarnaast kan de hele predictor verwijderd worden. Ten slotte is meer data verzamelen ook een optie als dit mogelijk is.<a class="footnote-reference brackets" href="#id78" id="id45">6</a></p>
+</div>
+<div class="section" id="overdispersie">
+<h2>Overdispersie<a class="headerlink" href="#overdispersie" title="Permalink to this headline">¶</a></h2>
+<p>Bij <em>logistische regressie</em> wordt aangenomen dat de residuën niet gecorreleerd zijn. Dit is in principe het geval als alle deelnemers willekeurig in de steekproef zijn opgenomen. Als deelnemers meerdere keren gemeten zijn of gematcht zijn met andere deelnemers, dan is hier geen sprake van en zijn er waarschijnlijk gecorreleerde residuën. <em>Logistische regressie</em> is dan niet de juiste analysemethoden, maar <em>multilevel logistische regressie</em> kan hiervoor wel gebruikt worden. Bij <em>logistische regressie</em> wordt daarom getoetst of er overdispersie is. Overdispersie betekent dat de variantie in de voorspelde kansen groter is dan op basis van het model wordt verwacht. Het gevolg is dat de standaardfouten te laag zijn en er een hogere kans is op type I fouten (onterecht verwerpen van de nulhypothese) bij het toetsen van de significantie van regressiecoëfficiënten.<a class="footnote-reference brackets" href="#id70" id="id46">2</a><sup>,</sup><a class="footnote-reference brackets" href="#id78" id="id47">6</a></p>
+<p>De dispersieparameter geeft aan of er sprake is van overdispersie. De dispersieparameter hoort in de buurt van 1 te zitten. Als de parameter hoger dan 2 is, is er sprake van overdispersie. De gevolgen van overdispersie kunnen verholpen worden door de standaardfouten van de regressiecoëfficiënten te herschalen op basis van de overdispersie. Het onderzoeken van de dispersieparameter en het corrigeren in het geval van overdispersie worden toegelicht bij het toetsen van de assumpties in deze toetspagina.<a class="footnote-reference brackets" href="#id70" id="id48">2</a></p>
+<p>Er kan ook sprake zijn van onderdispersie: de situatie waarin de variantie in voorspelde kansen kleiner is dan op basis van het model wordt verwacht. Dit leidt tot meer conservatieve toetsen voor de regressiecoëfficiënten en een erg lage kans op type I fouten. Deze situatie is minder erg dan overdispersie en er wordt in dit geval meestal geen correctie uitgevoerd. Dezelfde correctie als bij overdispersie kan echter wel uitgevoerd worden en zorgt er in dit geval voor dat de significantietoetsen minder conservatief worden.<a class="footnote-reference brackets" href="#id70" id="id49">2</a><sup>,</sup><a class="footnote-reference brackets" href="#id78" id="id50">6</a></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="toetsing-assumpties">
+<h1>Toetsing assumpties<a class="headerlink" href="#toetsing-assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Voer <em>logistische regressie</em> uit om te onderzoeken of de uitval in het eerste jaar van de bachelor Elektrotechniek te voorspellen is op basis van het geslacht, gemiddeld eindexamencijfer, de vooropleiding en de leeftijd van studenten. Start met het toetsen van de assumpties en voer vervolgens de <em>logistische regressie</em> uit als hieraan voldaan is.</p>
+<!-- ## TEKSTBLOK: Uitvoering1.R -->
+<p>Voer eerst de <em>logistische regressie</em> uit omdat deze nodig is voor het toetsen van assumpties en sla het resultaat op. Interpreteer de resultaten pas na het toetsen van de assumpties. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">glm()</span></code> met als eerste argument de regressievergelijking <code class="docutils literal notranslate"><span class="pre">Uitval</span> <span class="pre">~</span> <span class="pre">Leeftijd</span> <span class="pre">+</span> <span class="pre">Geslacht</span> <span class="pre">+</span> <span class="pre">Vooropleiding</span> <span class="pre">+</span> <span class="pre">Eindexamencijfer</span></code> met links van de tilde de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Uitval</span></code> en rechts de vier onafhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">Geslacht</span></code>, <code class="docutils literal notranslate"><span class="pre">Eindexamencijfer</span></code>, <code class="docutils literal notranslate"><span class="pre">Vooropleiding</span></code> en <code class="docutils literal notranslate"><span class="pre">Leeftijd</span></code>. Het tweede argument is de dataset <code class="docutils literal notranslate"><span class="pre">Uitval_Elektrotechniek</span></code> en het derde argument <code class="docutils literal notranslate"><span class="pre">family</span> <span class="pre">=</span> <span class="pre">&quot;binomial&quot;</span></code> geeft aan dat er een <em>logistische regressie</em> uitgevoerd moet worden.</p>
+<!-- ## /TEKSTBLOK: Uitvoering1.R -->
+<!-- ## OPENBLOK: Uitvoering2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Regressiemodel</span> <span class="o">&lt;-</span> <span class="n">glm</span><span class="p">(</span><span class="n">Uitval</span> <span class="o">~</span> <span class="n">Geslacht</span> <span class="o">+</span> <span class="n">Eindexamencijfer</span> <span class="o">+</span> <span class="n">Vooropleiding</span> <span class="o">+</span> <span class="n">Leeftijd</span><span class="p">,</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">Uitval_Elektrotechniek</span><span class="p">,</span>
+    <span class="n">family</span> <span class="o">=</span> <span class="s2">&quot;binomial&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Uitvoering2.R -->
+<div class="section" id="id51">
+<h2>Outliers<a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id52">
+<h3>Boxplots en standaardiseren<a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: Outlier1.R -->
+<p>Onderzoek of er univariate outliers zijn met behulp van boxplots en gestandaardiseerde scores voor continue variabelen en tabellen voor categorische variabelen. Begin met de boxplot voor de variabelen <code class="docutils literal notranslate"><span class="pre">Leeftijd</span></code> en <code class="docutils literal notranslate"><span class="pre">Eindexamencijfer</span></code>.</p>
+<!-- ## /TEKSTBLOK: Outlier1.R -->
+<!-- ## OPENBLOK: Outlier2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Maak een boxplot van de continue variabelen in de dataset</span>
+<span class="n">boxplot</span><span class="p">(</span><span class="n">Uitval_Elektrotechniek</span><span class="p">[,</span><span class="n">c</span><span class="p">(</span><span class="s2">&quot;Leeftijd&quot;</span><span class="p">,</span> 
+                                  <span class="s2">&quot;Eindexamencijfer&quot;</span><span class="p">)],</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;Leeftijd&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Eindexamencijfer&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier2.R -->
+<p>Voor beide variabelen zijn er geen onmogelijke scores en zijn er geen grote afwijkingen. Op basis van de gestandaardiseerde scores kan onderzocht worden of er toch nog een outlier is. Onderzoek de gestandaardiseerde scores door een functie te schrijven die het aantal observaties per variabele telt met een gestandaardiseerde score hoger dan 3 of lager dan -3. Pas deze functie vervolgens toe op de drie continue variabelen in de dataset.</p>
+<!-- ## OPENBLOK: Outlier3.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Maak een functie om het aantal observaties met een gestandaardiseerde score hoger dan 3 of lager dan -3 te tellen
+Outlier_standaardiseren &lt;- function(variabele){
+  # Standaardiseer de variabele met de scale functie
+  Z_score &lt;- scale(variabele)
+  # Tel het aantal observaties met een absolute score hoger dan 3
+  Aantal_outliers &lt;- sum(abs(Z_score) &gt; 3)
+  # Retourneer dit aantal
+  return(Aantal_outliers)
+}
+
+# Tel voor de continue variabelen het aantal observaties met een gestandaardiseerde score hoger dan 3 of lager dan -3
+Outlier_standaardiseren(Uitval_Elektrotechniek$Eindexamencijfer)
+Outlier_standaardiseren(Uitval_Elektrotechniek$Leeftijd)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier3.R --><p>Beide variabelen hebben nul observaties met een gestandaardiseerde score hoger dan 3 of lager dan -3. Er zijn in deze stap voor de continue variabelen geen outliers gevonden.</p>
+<p>Geslacht, Vooropleiding en Uitval zijn de categorische variabelen in deze dataset. Maak een tabel met de frequenties voor alle categoriëen van deze variabelen om te onderzoeken of hier afwijkende waardes zijn.</p>
+<!-- ## OPENBLOK: Outlier4.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>table(Uitval_Elektrotechniek$Uitval)
+table(Uitval_Elektrotechniek$Geslacht)
+table(Uitval_Elektrotechniek$Vooropleiding)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier4.R -->
+<p>Voor alle drie de categorische variabelen zijn er geen categorieën met opmerkelijke waarden. Er zijn hier dus ook geen outliers.</p>
+</div>
+<div class="section" id="id53">
+<h3>Gestandaardiseerde residuën<a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: Outlier5.R -->
+<p>Onderzoek of er outliers zijn met behulp van de gestandaardiseerde residuën van het regressiemodel. Vind eerst de residuën met de functie <code class="docutils literal notranslate"><span class="pre">rstandard</span></code> met als argument <code class="docutils literal notranslate"><span class="pre">Regressiemodel</span></code> (het object van het regressiemodel). Maak vervolgens een plot en tel het aantal gestandaardiseerde residuën met een waarde hoger dan 3 of lager dan -3.</p>
+<!-- ## /TEKSTBLOK: Outlier5.R -->
+<!-- ## OPENBLOK: Outlier6.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sla de gestandaardiseerde residuën op</span>
+<span class="n">Residu_gestandaardiseerd</span> <span class="o">&lt;-</span> <span class="n">rstandard</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+
+<span class="c1"># Plot de gestandaardiseerde residuën</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">Residu_gestandaardiseerd</span><span class="p">,</span> <span class="n">xlab</span> <span class="o">=</span> <span class="s2">&quot;Volgorde&quot;</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">&quot;Gestandaardiseerde residuën&quot;</span><span class="p">)</span>
+
+<span class="c1"># Tel het aantal gestandaardiseerde residuën met een absolute waarde groter dan 3</span>
+<span class="nb">sum</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">Residu_gestandaardiseerd</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier6.R -->
+<p>Er zijn geen gestandaardiseerde residuën met een score hoger dan 3 of lager dan -3 wat er op wijst dat er geen outliers in de data zijn.</p>
+</div>
+<div class="section" id="mahalanobis-distance">
+<h3>Mahalanobis distance<a class="headerlink" href="#mahalanobis-distance" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: Outlier7.R -->
+<p>Onderzoek of er multivariate outliers zijn met behulp van de Mahalanobis distance met behulp van de functie <code class="docutils literal notranslate"><span class="pre">mahalanobis()</span></code>. De Mahalanobis afstand geeft aan in hoeverre een deelnemer afwijkt van het gemiddelde van alle deelnemers voor alle predictors samen. Een voorwaarde voor de functie is dat alle variabelen numeriek zijn. Zet daarom eerst de variabelen Geslacht en Vooropleiding om in een numerieke variabele met respectievelijk de waarde 1 voor vrouwen en 0 voor mannen en 1 voor mbo en 0 voor havo. Het omzetten van een categorische variabele in een of meer numerieke variabele heet dummycoderen; de variabelen worden vaak dummies genoemd.</p>
+<p>Neem vervolgens een subset van de dataset met alleen de predictors en gebruik deze voor de Mahalanobis afstand. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">mahalanobis()</span></code> met als argumenten de dataset <code class="docutils literal notranslate"><span class="pre">Subset</span></code>, de gemiddeldes van elke kolom berekend met <code class="docutils literal notranslate"><span class="pre">colMeans(Subset)</span></code> en de covariantiematrix van de dataset berekend met <code class="docutils literal notranslate"><span class="pre">cov(Subset)</span></code>.</p>
+<p>Bereken daarna de criteriumwaarde op basis van het gewenste significantieniveau en het aantal predictors. Plot de Mahalanobis afstanden en tel het aantal deelnemers met een Mahalanobis afstand groter dan de criteriumwaarde. Het gehanteerde significantieniveau is 0,001.</p>
+<!-- ## /TEKSTBLOK: Outlier7.R -->
+<!-- ## OPENBLOK: Outlier8.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Zet Geslacht om in een numerieke variabele met een 1 voor een vrouw en 0 voor een man
+Uitval_Elektrotechniek$Geslacht_dummy &lt;- as.numeric(Uitval_Elektrotechniek$Geslacht == &quot;Vrouw&quot;)
+Uitval_Elektrotechniek$Vooropleiding_dummy &lt;- as.numeric(Uitval_Elektrotechniek$Vooropleiding == &quot;havo&quot;)
+
+# Maak een subset van de dataset met alle predictors
+Subset &lt;- Uitval_Elektrotechniek[,c(&quot;Geslacht_dummy&quot;,
+                                    &quot;Eindexamencijfer&quot;,
+                                    &quot;Vooropleiding_dummy&quot;,
+                                    &quot;Leeftijd&quot;
+                                    )]
+
+# Bereken de Mahalanobis afstand voor elke deelnemer 
+Mahalanobis_afstanden &lt;- mahalanobis(Subset,
+            colMeans(Subset),
+            cov(Subset))
+
+# Bepaal de criteriumwaarde voor de Mahalanobis afstand met de functie qchisq() met als eerste argument 1 - het significantieniveau en als tweede argument het aantal predictors. In deze casus is het significantieniveau voor de Mahalanobis afstand 0.001 en het aantal predictors berekend met ncol(Subset).
+(Criteriumwaarde &lt;- qchisq(1 - 0.001, ncol(Subset)))
+
+# Plot de Mahalanobis afstanden
+plot(Mahalanobis_afstanden, xlab = &quot;Volgorde&quot;, ylab = &quot;Mahalanobis afstanden&quot;)
+
+# Tel het aantal Mahalanobis afstanden groter dan de criteriumwaarde
+sum(Mahalanobis_afstanden &gt; Criteriumwaarde)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier8.R -->
+<!-- ## TEKSTBLOK: Outlier9.R -->
+<p>Er zijn geen deelnemers met een Mahalanobis afstand groter dan de criteriumwaarde van <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Criteriumwaarde)</span></code>, dus er lijken geen multivariate outliers te zijn op basis van de Mahalanobis afstand.</p>
+<!-- ## /TEKSTBLOK: Outlier9.R -->
+</div>
+<div class="section" id="id54">
+<h3>Cook’s afstand<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: Outlier10.R -->
+<p>Onderzoek of er multivariate outliers zijn met behulp van Cook’s afstand. Cook’s afstand geeft aan hoeveel invloed het weglaten van een deelnemer heeft op de uitkomsten van het regressiemodel. Gebruik hiervoor de functie <code class="docutils literal notranslate"><span class="pre">cooks.distance</span></code> met als argument  <code class="docutils literal notranslate"><span class="pre">Regressiemodel</span></code> (het object van het regressiemodel). Plot de Cook’s afstanden daarna en tel het aantal Cook’s afstanden dat groter is dan de criteriumwaarde van 1.</p>
+<!-- ## /TEKSTBLOK: Outlier10.R -->
+<!-- ## OPENBLOK: Outlier11.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bepaal Cook&#39;s afstand voor elke deelnemer</span>
+<span class="n">Cooks_afstand</span> <span class="o">&lt;-</span>  <span class="n">cooks</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+
+<span class="c1"># Plot Cook&#39;s afstanden</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">Cooks_afstand</span><span class="p">,</span> <span class="n">xlab</span> <span class="o">=</span> <span class="s2">&quot;Volgorde&quot;</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">&quot;Cook&#39;s afstanden&quot;</span><span class="p">)</span>
+
+<span class="c1"># Tel het aantal Cook&#39;s afstanden groter dan de criteriumwaarde van 1</span>
+<span class="nb">sum</span><span class="p">(</span><span class="n">Cooks_afstand</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier11.R -->
+<p>Er zijn geen deelnemers met een Cook’s afstand groter dan de criteriumwaarde van 1. Er lijken dus geen invloedrijke datapunten of multivariate outliers te zijn.</p>
+</div>
+</div>
+<div class="section" id="id55">
+<h2>Lineariteit: Box-Tidwell<a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h2>
+<p>Voer de <em>Box-Tidwell test</em> uit om te onderzoeken of er een lineaire relatie is tussen de continue predictors en de logit van de afhankelijke variabele. Maak eerst voor elke continue predictor een nieuwe variabele aan die bestaat uit het product van de predictor met de logaritme (<code class="docutils literal notranslate"><span class="pre">log()</span></code>) van de predictor. Voeg daarna deze nieuwe interactietermen toe aan de regressievergelijking en voer de <em>logistische regressie</em> uit. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">glm()</span></code> met als eerste argument de regressievergelijking <code class="docutils literal notranslate"><span class="pre">Uitval</span> <span class="pre">~</span> <span class="pre">Geslacht</span> <span class="pre">+</span> <span class="pre">Eindexamencijfer</span> <span class="pre">+</span> <span class="pre">Vooropleiding</span> <span class="pre">+</span> <span class="pre">Leeftijd</span> <span class="pre">+</span> <span class="pre">Leeftijd_log_leeftijd</span> <span class="pre">+</span> <span class="pre">Eindexamencijfer_log_eindexamencijfer</span></code> met links van de tilde de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Uitval</span></code> en rechts de vier onafhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">Geslacht</span></code>, <code class="docutils literal notranslate"><span class="pre">Eindexamencijfer</span></code>, <code class="docutils literal notranslate"><span class="pre">Vooropleiding</span></code> en <code class="docutils literal notranslate"><span class="pre">Leeftijd</span></code> en de interactietermen <code class="docutils literal notranslate"><span class="pre">Leeftijd_log_leeftijd</span></code> en <code class="docutils literal notranslate"><span class="pre">Eindexamencijfer_log_eindexamencijfer</span></code>. Het tweede argument is de dataset <code class="docutils literal notranslate"><span class="pre">Uitval_Elektrotechniek</span></code> en het derde argument <code class="docutils literal notranslate"><span class="pre">family</span> <span class="pre">=</span> <span class="pre">&quot;binomial&quot;</span></code> geeft aan dat er een <em>logistische regressie</em> uitgevoerd moet worden.</p>
+<!-- ## OPENBLOK: AssLineariteit1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Maak de interactievariabelen aan voor de continue predictors Leeftijd en Eindexamencijfer
+Uitval_Elektrotechniek$Leeftijd_log_leeftijd &lt;- Uitval_Elektrotechniek$Leeftijd * log(Uitval_Elektrotechniek$Leeftijd)
+Uitval_Elektrotechniek$Eindexamencijfer_log_eindexamencijfer &lt;- Uitval_Elektrotechniek$Eindexamencijfer * log(Uitval_Elektrotechniek$Eindexamencijfer)
+
+# Voeg deze interactievariabelen toe aan het regressiemodel en toets het regressiemodel
+Regressiemodel_Box_Tidwell &lt;- glm(Uitval ~ Geslacht + Eindexamencijfer + Vooropleiding + Leeftijd + Leeftijd_log_leeftijd + Eindexamencijfer_log_eindexamencijfer,
+    data = Uitval_Elektrotechniek,
+    family = &quot;binomial&quot;)
+
+# Bekijk de significantie van de regressiecoëfficiënten
+summary(Regressiemodel_Box_Tidwell)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssLineariteit1.R -->
+<!-- ## CLOSEDBLOK: AssLineariteit2.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: AssLineariteit2.R -->
+<p>Zowel de predictor Leeftijd (<em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(BT$coefficients[6,3])</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(BT$coefficients[6,4])</span></code>) als de predictor Eindexamencijfer (<em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(BT$coefficients[7,3])</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(BT$coefficients[7,4])</span></code>) heeft geen significante interactieterm.<a class="footnote-reference brackets" href="#id80" id="id56">8</a> Er is dus voldaan aan de assumptie van lineariteit.</p>
+</div>
+<div class="section" id="id57">
+<h2>Multicollineariteit<a class="headerlink" href="#id57" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: AssMulticollineariteit1.R -->
+<p>Onderzoek of er sprake is van multicollineariteit met behulp van Variance Inflation Factors (VIFs). Bereken de VIFs voor elke predictor met de functie <code class="docutils literal notranslate"><span class="pre">VIF()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">DescTools</span></code> waarbij de functie als argument <code class="docutils literal notranslate"><span class="pre">Regressiemodel</span></code> (het object van het regressiemodel) heeft.</p>
+<!-- ## /TEKSTBLOK: AssMulticollineariteit1.R -->
+<!-- ## OPENBLOK: AssMulticollineariteit2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">DescTools</span><span class="p">)</span>
+
+<span class="c1"># Bereken de VIF voor elke predictor</span>
+<span class="n">VIF</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssMulticollineariteit2.R -->
+<p>Geen enkele van de VIFs is hoger dan 10, dus er is voldaan aan de assumptie van multicollineariteit.</p>
+</div>
+<div class="section" id="id58">
+<h2>Observaties per variabele<a class="headerlink" href="#id58" title="Permalink to this headline">¶</a></h2>
+<p>Onderzoek met behulp van kruistabellen de assumptie over observaties per variabele. Maak voor elke categorische predictor een kruistabel met de afhankelijke variabele en onderzoek of voor elk niveau van de categorische predictors beide waarden van de afhankelijke variabele aanwezig zijn.</p>
+<!-- ## OPENBLOK: ObsperVar1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Maak de kruistabel voor de predictor Geslacht</span>
+<span class="k">with</span><span class="p">(</span><span class="n">Uitval_Elektrotechniek</span><span class="p">,</span>
+     <span class="n">table</span><span class="p">(</span><span class="n">Geslacht</span><span class="p">,</span>
+           <span class="n">Uitval</span><span class="p">))</span>
+
+<span class="c1"># Maak de kruistabel voor de predictor Vooropleiding</span>
+<span class="k">with</span><span class="p">(</span><span class="n">Uitval_Elektrotechniek</span><span class="p">,</span>
+     <span class="n">table</span><span class="p">(</span><span class="n">Vooropleiding</span><span class="p">,</span>
+           <span class="n">Uitval</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: ObsperVar1.R -->
+<p>Voor alle categorieën van beide predictors zijn er studenten die wel en niet uitvallen. Dus beide waarden van de afhankelijke variabele zijn aanwezig in alle categorieën. Er is dus ook geen sprake van <em>complete separation</em> dus er is aan deze assumptie voldaan.</p>
+</div>
+<div class="section" id="id59">
+<h2>Overdispersie<a class="headerlink" href="#id59" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Dispersie1.R -->
+<p>Bereken de dispersieparameter om te bepalen of er sprake is van overdispersie. Voer hiervoor de <em>logistische regressie</em> uit met behulp van de functie <code class="docutils literal notranslate"><span class="pre">glm()</span></code> met als derde argument <code class="docutils literal notranslate"><span class="pre">family</span> <span class="pre">=</span> <span class="pre">&quot;quasibinomial&quot;</span></code> die ervoor zorgt dat de resultaten gecorrigeerd worden voor de dispersie. Het eerste argument is de regressievergelijking <code class="docutils literal notranslate"><span class="pre">Uitval</span> <span class="pre">~</span> <span class="pre">Geslacht</span> <span class="pre">+</span> <span class="pre">Eindexamencijfer</span> <span class="pre">+</span>&#160; <span class="pre">Vooropleiding</span> <span class="pre">+</span> <span class="pre">Leeftijd</span></code> met links van de tilde de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Uitval</span></code> en rechts de vier onafhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">Geslacht</span></code>, <code class="docutils literal notranslate"><span class="pre">Eindexamencijfer</span></code>, <code class="docutils literal notranslate"><span class="pre">Vooropleiding</span></code> en <code class="docutils literal notranslate"><span class="pre">Leeftijd</span></code>. Het tweede argument is de dataset <code class="docutils literal notranslate"><span class="pre">Uitval_Elektrotechniek</span></code>.</p>
+<!-- ## /TEKSTBLOK: Dispersie1.R -->
+<!-- ## OPENBLOK: Dispersie2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Fit het regressiemodel
+Regressiemodel_dispersie &lt;- glm(Uitval ~ Geslacht + Eindexamencijfer +  Vooropleiding + Leeftijd,
+    data = Uitval_Elektrotechniek,
+    family = &quot;quasibinomial&quot;)
+
+# Print de waarde van de dispersieparameter
+summary(Regressiemodel_dispersie)$dispersion
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Dispersie2.R -->
+<p>Er is sprake van onderdispersie, aangezien de dispersieparameter (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(summary(Regressiemodel_dispersie)$dispersion)</span></code>) kleiner dan 1 is. Het verschil met 1 is echter niet zo groot en bij onderdispersie wordt er in het algemeen geen correctie uitgevoerd. Voor de <em>logistische regressie</em> in deze casus wordt daarom geen correctie uitgevoerd vanwege onderdispersie.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering">
+<h1>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Uitvoering1.R -->
+<p>Als alle assumpties zijn getoetst en aan alle assumpties is voldaan, kan de <em>logistische regressie</em> uitgevoerd worden. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">glm()</span></code> met als eerste argument de regressievergelijking <code class="docutils literal notranslate"><span class="pre">Uitval</span> <span class="pre">~</span> <span class="pre">Geslacht</span> <span class="pre">+</span> <span class="pre">Eindexamencijfer</span> <span class="pre">+</span> <span class="pre">Vooropleiding</span> <span class="pre">+</span> <span class="pre">Leeftijd</span></code> met links van de tilde de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Uitval</span></code> en rechts de vier onafhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">Geslacht</span></code>, <code class="docutils literal notranslate"><span class="pre">Eindexamencijfer</span></code>, <code class="docutils literal notranslate"><span class="pre">Vooropleiding</span></code> en <code class="docutils literal notranslate"><span class="pre">Leeftijd</span></code>. Het tweede argument is de dataset <code class="docutils literal notranslate"><span class="pre">Uitval_Elektrotechniek</span></code> en het derde argument <code class="docutils literal notranslate"><span class="pre">family</span> <span class="pre">=</span> <span class="pre">&quot;binomial&quot;</span></code> geeft aan dat er een <em>logistische regressie</em> uitgevoerd moet worden. Voer daarna de <em>likelihood ratio toets</em> uit met behulp van de functie <code class="docutils literal notranslate"><span class="pre">lrtest()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">lmtest</span></code> met als argument het object van het regressiemodel (<code class="docutils literal notranslate"><span class="pre">Regressiemodel</span></code>). Sla het model op en presenteer vervolgens een overzicht van de resultaten met de functie <code class="docutils literal notranslate"><span class="pre">summary()</span></code>. Bepaal de 95%-betrouwbaarheidsintervallen van de regressiecoëfficiënten met de functie <code class="docutils literal notranslate"><span class="pre">confint()</span></code>. Bereken ten slotte de Nagelkerke <span class="math notranslate nohighlight">\(R^2\)</span> met behulp van de functie <code class="docutils literal notranslate"><span class="pre">Nagelkerke()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">fmsb</span></code>.</p>
+<!-- ## /TEKSTBLOK: Uitvoering1.R -->
+<!-- ## OPENBLOK: Uitvoering2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Voer de multipele lineaire regressie uit</span>
+<span class="n">Regressiemodel</span> <span class="o">&lt;-</span> <span class="n">glm</span><span class="p">(</span><span class="n">Uitval</span> <span class="o">~</span> <span class="n">Geslacht</span> <span class="o">+</span> <span class="n">Eindexamencijfer</span> <span class="o">+</span> <span class="n">Vooropleiding</span> <span class="o">+</span> <span class="n">Leeftijd</span><span class="p">,</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">Uitval_Elektrotechniek</span><span class="p">,</span>
+    <span class="n">family</span> <span class="o">=</span> <span class="s2">&quot;binomial&quot;</span><span class="p">)</span>
+
+<span class="c1"># Voer de likelihood ratio toets uit</span>
+<span class="n">library</span><span class="p">(</span><span class="n">lmtest</span><span class="p">)</span>
+<span class="n">lrtest</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+
+<span class="c1"># Presenteer de resultaten</span>
+<span class="n">summary</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+
+<span class="c1"># Presenteer de 95%-betrouwbaarheidsintervallen</span>
+<span class="n">confint</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+
+<span class="c1"># Bereken de odds ratio van alle regressiecoëfficiënten door de exponent te nemen</span>
+<span class="n">exp</span><span class="p">(</span><span class="n">coef</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">))</span>
+
+<span class="c1"># Bepaal de Nagelkerke R2</span>
+<span class="n">library</span><span class="p">(</span><span class="n">fmsb</span><span class="p">)</span>
+<span class="n">NagelkerkeR2</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Uitvoering2.R -->
+<!-- ## CLOSEDBLOK: Uitvoering3.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Uitvoering3.R -->
+<div class="section" id="significantie-regressiemodel">
+<h2>Significantie regressiemodel<a class="headerlink" href="#significantie-regressiemodel" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Ftoets1.R -->
+<p>Bepaal als eerste stap de significantie van het regressiemodel met behulp van de <em>likelihood ratio toets</em>. De <em>likelihood ratio toets</em> voor het regressiemodel laat een significant verschil zien tussen het voorgestelde model en een model met alleen een intercept, <em>χ^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(LR_test$Chisq[2])</span></code>, <em>df</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">-1</span> <span class="pre">*</span> <span class="pre">LR_test$Df[2]</span></code>, <em>p</em> &lt; 0,0001, <span class="math notranslate nohighlight">\(R^2_N\)</span> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(100</span> <span class="pre">*</span> <span class="pre">R2)</span></code>.<a class="footnote-reference brackets" href="#id80" id="id60">8</a> De nulhypothese dat geen enkele predictor van de predictors Geslacht, Eindexamencijfer, Leeftijd en Vooropleiding is gerelateerd aan de afhankelijke variabele Uitval kan verworpen worden. De Nagelkerke <span class="math notranslate nohighlight">\(R^2\)</span> is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(100*R2)</span></code>. Omdat de <em>likelihood ratio toets</em> voor het gehele model significant is, kunnen de coëfficiënten geinterpreteerd worden.</p>
+<!-- ## TEKSTBLOK: Ftoets1.R -->
+</div>
+<div class="section" id="significantie-en-interpretatie-coefficienten">
+<h2>Significantie en interpretatie coëfficiënten<a class="headerlink" href="#significantie-en-interpretatie-coefficienten" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Coefficienten1.R -->
+<p>Voor de intercept en de regressiecoëfficiënten van de predictors zijn de geschatte coëfficiënt (<code class="docutils literal notranslate"><span class="pre">Estimate</span></code>), de standaardfout van de geschatte coëfficiënt (<code class="docutils literal notranslate"><span class="pre">Std.</span> <span class="pre">Error</span></code>) en de z-statistiek (<code class="docutils literal notranslate"><span class="pre">z</span> <span class="pre">value</span></code>) en p-waarde (<code class="docutils literal notranslate"><span class="pre">Pr(&gt;|z|)</span></code>) van de <em>Wald toets</em> voor de regressiecoëfficiënt weergegeven:</p>
+<ul class="simple">
+<li><p>Geslacht: de geschatte waarde voor de regressiecoëfficiënt van de variabele Geslacht is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,1])</span></code> en is significant verschillend van 0 (<em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,3])</span></code>, <em>p</em> &lt; 0,001).<a class="footnote-reference brackets" href="#id80" id="id61">8</a> De hoofdcategorie van de variabele Geslacht is <code class="docutils literal notranslate"><span class="pre">Vrouw</span></code>, aangezien de variabele in de resultaten weergegeven is als <code class="docutils literal notranslate"><span class="pre">GeslachtVrouw</span></code>. Dit betekent dat de referentiecategorie <code class="docutils literal notranslate"><span class="pre">Man</span></code> is. Als de overige predictors gelijkblijven is de odds van uitval voor vrouwen <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(exp(Reg$coefficients[2,1]))</span></code> keer zo hoog als de odds van uitval voor mannen.</p></li>
+<li><p>Eindexamencijfer: de geschatte waarde voor de regressiecoëfficiënt van de variabele Eindexamencijfer_Wiskunde is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,1])</span></code> en is significant verschillend van 0 (<em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,3])</span></code>, <em>p</em> &lt; 0,0001).<a class="footnote-reference brackets" href="#id80" id="id62">8</a> De odds ratio van deze predictor is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(exp(Reg$coefficients[3,1]))</span></code>. Als de overige predictors gelijkblijven is de odds van uitval <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(exp(Reg$coefficients[3,1]))</span></code> keer zo hoog bij een toename van het gemiddeld eindexamencijfer met één punt.  De odds van uitval is dus eigenlijk <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(1</span> <span class="pre">/</span> <span class="pre">exp(Reg$coefficients[3,1]))</span></code> (1 / <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(exp(Reg$coefficients[3,1]))</span></code>) keer zo laag bij een toename van het gemiddeld eindexamencijfer met één punt.</p></li>
+<li><p>Vooropleiding: de geschatte waarde voor de regressiecoëfficiënt van de variabele Vooropleiding is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,1])</span></code> en is significant verschillend van 0 (<em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,3])</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,4])</span></code>).<a class="footnote-reference brackets" href="#id80" id="id63">8</a> Aangezien deze coëfficiënt niet significant is, hoeft hij niet geïnterpreteerd te worden.</p></li>
+<li><p>Leeftijd: de geschatte waarde voor de regressiecoëfficiënt van de variabele Leeftijd is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[5,1])</span></code> en is significant verschillend van 0 (<em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[5,3])</span></code>, <em>p</em> &lt; 0,0001).<a class="footnote-reference brackets" href="#id80" id="id64">8</a> De odds ratio van deze predictor is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(exp(Reg$coefficients[5,1]))</span></code>. Als de overige predictors gelijkblijven is de odds van uitval <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(exp(Reg$coefficients[5,1]))</span></code> keer zo hoog bij een toename van leeftijd met één jaar.</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Coefficienten1.R -->
+</div>
+<div class="section" id="sterkte-van-de-relatie-tussen-de-predictor-en-afhankelijke-variabele">
+<h2>Sterkte van de relatie tussen de predictor en afhankelijke variabele<a class="headerlink" href="#sterkte-van-de-relatie-tussen-de-predictor-en-afhankelijke-variabele" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: CoefficientenStd1.R -->
+<p>De regressiecoëfficiënten van de predictors Eindexamencijfer_Wiskunde en Aantal_Hoorcolleges zijn significant verschillend van nul en dragen dus bij aan het voorspellen van het eindcijfer Methoden &amp; Statistiek. Met behulp van de gestandaardiseerde regressiecoëfficiënten kan bepaald worden welke predictor het sterkst gerelateerd is aan de afhankelijke variabele.</p>
+<p>Standaardiseer alle predictors met de functie <code class="docutils literal notranslate"><span class="pre">scale()</span></code> met als argument de predictor. Een voorwaarde voor de functie is dat alle variabelen numeriek zijn. Zet daarom eerst de variabelen <code class="docutils literal notranslate"><span class="pre">Geslacht</span></code> en <code class="docutils literal notranslate"><span class="pre">Vooropleiding</span></code> om in een numerieke variabele. Het omzetten van een categorische variabele in een of meer numerieke variabele heet dummycoderen; de variabelen worden vaak dummies genoemd. Gebruik vervolgens de gestandaardiseerde om de <em>logistische regressie</em> uit te voeren met de functie <code class="docutils literal notranslate"><span class="pre">glm()</span></code> op dezelfde manier als eerder is gedaan.</p>
+<!-- ## /TEKSTBLOK: CoefficientenStd1.R -->
+<!-- ## OPENBLOK: CoefficientenStd2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Zet de variabelen om in een numerieke variabele met een 1 voor een man en 0 voor een vrouw
+Uitval_Elektrotechniek$Geslacht_dummy &lt;- as.numeric(Uitval_Elektrotechniek$Geslacht == &quot;Vrouw&quot;)
+Uitval_Elektrotechniek$Vooropleiding_dummy &lt;- as.numeric(Uitval_Elektrotechniek$Vooropleiding == &quot;havo&quot;)
+
+# Standaardiseer de predictors
+Uitval_Elektrotechniek$Geslacht_dummy_stand &lt;- scale(Uitval_Elektrotechniek$Geslacht_dummy)
+Uitval_Elektrotechniek$Vooropleiding_dummy_stand &lt;- scale(Uitval_Elektrotechniek$Vooropleiding_dummy)
+Uitval_Elektrotechniek$Leeftijd_stand &lt;- scale(Uitval_Elektrotechniek$Leeftijd)
+Uitval_Elektrotechniek$Eindexamencijfer_stand &lt;- scale(Uitval_Elektrotechniek$Eindexamencijfer)
+
+# Stel het regressiemodel op met Geslacht als numerieke variabele
+Regressiemodel_gestandaardiseerd &lt;- glm(Uitval ~ Geslacht_dummy_stand + Eindexamencijfer_stand +  Vooropleiding_dummy_stand + Leeftijd_stand,
+    data = Uitval_Elektrotechniek,
+    family = &quot;binomial&quot;)
+
+# Laat de gestandaardiseerde coefficienten zien
+coefficients(Regressiemodel_gestandaardiseerd)
+
+# Laat de gestandaardiseerde odds ratios zien
+exp(coefficients(Regressiemodel_gestandaardiseerd))
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: CoefficientenStd2.R -->
+<!-- ## CLOSEDBLOK: CoefficientenStd3.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: CoefficientenStd3.R -->
+<!-- ## TEKSTBLOK: CoefficientenStd4.R -->
+<p>De gestandaardiseerde regressiecoëfficiënt is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[3])</span></code> voor de predictor Geslacht, <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[2])</span></code> voor de predictor Eindexamencijfer, <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[4])</span></code> voor de predictor Vooropleiding en <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[5])</span></code> voor de predictor Leeftijd. De leeftijd van een student heeft dus de meeste invloed op uitval. De invloed van Geslacht en Eindexamencijfer is ongeveer even groot. De gestandaardiseerde odds ratio van de predictor Leeftijd laat zien dat een toename van één standaardafwijking in de leeftijd van een student resulteert in een <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(exp(Coefficienten_std[5]))</span></code> zo hoge odds dat de student uitvalt, als de overige predictors gelijk blijven.</p>
+<!-- ## /TEKSTBLOK: CoefficientenStd4.R -->
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering-likelihood-ratio-toets-voor-vergelijking-twee-regressiemodellen">
+<h1>Uitvoering likelihood ratio toets voor vergelijking twee regressiemodellen<a class="headerlink" href="#uitvoering-likelihood-ratio-toets-voor-vergelijking-twee-regressiemodellen" title="Permalink to this headline">¶</a></h1>
+<p>De <em>likelihood ratio toets</em> wordt bij <em>logistische regressie</em> gebruikt om de significantie van het gehele regressiemodel te toetsen ten opzichte van het interceptmodel. Deze <em>likelihood ratio toets</em> kan ook gebruikt worden om te toetsen of twee geneste regressiemodellen onderling verschillen qua model fit. Hoewel deze vergelijking in de casus niet voorbijkomt, wordt deze toch geïllustreerd. Vergelijk hiervoor een model met de predictoren Eindexamencijfer en Vooropleiding met een model met de predictors Geslacht, Eindexamencijfer, Vooropleiding en Leeftijd.</p>
+<!-- ## TEKSTBLOK: ModellenVergelijken1.R -->
+<p>Voer de <em>likelihood ratio toets</em> uit met de functie <code class="docutils literal notranslate"><span class="pre">lrtest()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">lmtest</span></code> met als argumenten de modelobjecten van de resultaten van de twee regressiemodellen die worden vergeleken (<code class="docutils literal notranslate"><span class="pre">Model_1</span></code> en <code class="docutils literal notranslate"><span class="pre">Model_2</span></code>). Voer eerst de <em>logistische regressie</em> uit voor beide modellen en vergelijk ze daarna. Bereken ten slotte de Nagelkerke <span class="math notranslate nohighlight">\(R^2\)</span> met de functie <code class="docutils literal notranslate"><span class="pre">NagelkerkeR2(Model_1)$R2</span></code> met als argument het modelobject waarvan de verklaarde variatie berekend moet worden.</p>
+<!-- ## /TEKSTBLOK: ModellenVergelijken1.R -->
+<!-- ## OPENBLOK: ModellenVergelijken2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Stel het regressiemodel op met Vooropleiding en Eindexamencijfer als predictor
+Model_1 &lt;- glm(Uitval ~ Eindexamencijfer + Vooropleiding,
+    data = Uitval_Elektrotechniek,
+    family = &quot;binomial&quot;)
+
+# Stel het regressiemodel op met alle predictors
+Model_2 &lt;- glm(Uitval ~ Geslacht + Eindexamencijfer + Vooropleiding + Leeftijd,
+    data = Uitval_Elektrotechniek,
+    family = &quot;binomial&quot;)
+
+# Voer de likelihood ratio toets uit
+library(lmtest)
+lrtest(Model_1, Model_2)
+
+# Bereken de verklaarde variatie (%) van model 1
+library(fmsb)
+100*NagelkerkeR2(Model_1)$R2
+
+# Bereken de verklaarde variatie (%) van model 2
+100*NagelkerkeR2(Model_2)$R2
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: ModellenVergelijken2.R -->
+<!-- ## CLOSEDBLOK: ModellenVergelijken3.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: ModellenVergelijken3.R -->
+<!-- ## TEKSTBLOK: ModellenVergelijken4.R -->
+<p>De <em>likelihood ratio toets</em> toont aan dat er een significant verschil is in de model fit tussen beide modellen, <em>χ^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Vergelijking$Chisq[2])</span></code>, <em>df</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">-1</span> <span class="pre">*</span> <span class="pre">Vergelijking$Df[2]</span></code>, <em>p</em> &lt; 0,0001.<a class="footnote-reference brackets" href="#id80" id="id65">8</a> Het regressiemodel met predictors Vooropleiding en Eindexamencijfer verklaart slechts <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(R2_model1)</span></code>% van de variatie in uitval en het regressiemodel met vier predictoren verklaart <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(R2_model2)</span></code>% van de variatie. Het verschil in verklaarde variatie is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(R2_model2</span> <span class="pre">-</span> <span class="pre">R2_model1)</span></code>%. Het model met het Geslacht, Eindexamencijfer, Vooropleiding en Leeftijd als predictors heeft dus een significant betere model fit dan het model met alleen Vooropleiding en Eindexamencijfer als predictors.</p>
+<!-- ## /TEKSTBLOK: ModellenVergelijken4.R -->
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="voorspellen-en-classificeren">
+<h1>Voorspellen en classificeren<a class="headerlink" href="#voorspellen-en-classificeren" title="Permalink to this headline">¶</a></h1>
+<p>Op basis van het logistisch regressiemodel kan voor iedere student de kans op uitval voorspeld worden. De voorspelde kans kan direct vergeleken worden met de observaties om te onderzoeken hoe goed het model voorspeld. Daarnaast is het ook mogelijk om de studenten te classificeren in de categorieën Uitval en Geen uitval op basis van de voorspelde kans. Met behulp van de classificaties kan een classificatietabel gemaakt worden waarmee de kwaliteit van de voorspelkracht van het model beoordeeld kan worden.</p>
+<p>Bepaal eerst de voorspelde kansen met de functie <code class="docutils literal notranslate"><span class="pre">predict()</span></code> met als argumenten het object van het regressie model <code class="docutils literal notranslate"><span class="pre">Regressiemodel</span></code> en <code class="docutils literal notranslate"><span class="pre">type</span> <span class="pre">=</span> <span class="pre">response</span></code> om aan te geven dat de voorspelde kans bepaald moet worden. Classificeer daarna de studenten op basis van de voorspelde kans met de functie <code class="docutils literal notranslate"><span class="pre">ifelse()</span></code> met als eerste argument de conditie die gecheckt wordt <code class="docutils literal notranslate"><span class="pre">Voorspelde_kans</span> <span class="pre">&gt;</span> <span class="pre">0.5</span></code>, als tweede argument de classificatie als de student aan de conditie voldoet (<code class="docutils literal notranslate"><span class="pre">&quot;Uitval&quot;</span></code>) en als derde argument de classificatie als de student niet aan de conditie voldoet (<code class="docutils literal notranslate"><span class="pre">&quot;Geen</span> <span class="pre">uitval&quot;</span></code>). De conditie stelt dat de voorspelde kans groter dan 0,5 moet zijn. In dat geval is Uitval de classificatie voor die student. Als de kans 0,5 of kleiner is, dan is Geen uitval de classificatie voor die student. Maak daarna een classificatietabel voor de classificaties en observaties van de studenten Elektrotechniek. Bereken op basis van de classificatietabel de accuraatheid, sensitiviteit en specificiteit van de classificaties. Bereken ten slotte de Area Under the Curve (AUC) van het logistisch regressiemodel met behulp van de functie <code class="docutils literal notranslate"><span class="pre">roc()$auc</span></code> van het package <code class="docutils literal notranslate"><span class="pre">pROC</span></code> met als argumenten de observaties <code class="docutils literal notranslate"><span class="pre">Uitval_Elektrotechniek$Uitval_dummy</span></code> en de voorspelde kansen <code class="docutils literal notranslate"><span class="pre">Voorspelde_kans</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Bepaal de voorspelde kansen
+Voorspelde_kans &lt;- predict(Regressiemodel,
+                           type = &quot;response&quot;)
+
+# Classificeer de studenten op basis van de voorspelde kans
+Classificaties &lt;- ifelse(Voorspelde_kans &gt; 0.5,
+                         &quot;Uitval&quot;,
+                         &quot;Geen uitval&quot;)
+
+# Maak een classificatietabel
+Tabel &lt;- table(Classificaties = Classificaties,
+      Observaties = Uitval_Elektrotechniek$Uitval)
+print(Tabel)
+
+# Bereken de accuraatheid
+Accuraatheid &lt;- (Tabel[&quot;Uitval&quot;,&quot;Uitval&quot;] + Tabel[&quot;Geen uitval&quot;,&quot;Geen uitval&quot;]) / sum(Tabel)
+Accuraatheid
+
+# Bereken de sensitiviteit
+Sensitiviteit &lt;- Tabel[&quot;Uitval&quot;,&quot;Uitval&quot;] / (Tabel[&quot;Uitval&quot;,&quot;Uitval&quot;] + Tabel[&quot;Geen uitval&quot;,&quot;Uitval&quot;])
+Sensitiviteit
+
+# Bereken de specificiteit
+Specificiteit &lt;- Tabel[&quot;Geen uitval&quot;,&quot;Geen uitval&quot;] / (Tabel[&quot;Geen uitval&quot;,&quot;Geen uitval&quot;] + Tabel[&quot;Uitval&quot;,&quot;Geen uitval&quot;])
+Specificiteit
+
+# Maak een numerieke versie van de variabele Uitval met een 1 voor Uitval en een 0 voor Geen uitval
+Uitval_Elektrotechniek$Uitval_dummy &lt;- as.numeric(Uitval_Elektrotechniek$Uitval == &quot;Uitval&quot;)
+
+# Bereken de Area Under the Curve (AUC)
+library(pROC)
+roc(Uitval_Elektrotechniek$Uitval_dummy,
+    Voorspelde_kans)$auc
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove_input docutils container">
+</div>
+<p>De classificatietabel laat zien dat de meeste studenten correct geclassificeerd zijn. De sensitiviteit is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Sensitiviteit)</span></code>, dus van de studenten die daadwerkelijk uitvallen is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format_0decimals(100</span> <span class="pre">*</span> <span class="pre">Sensitiviteit)</span></code>% correct geclassificeerd. De specificiteit is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Specificiteit)</span></code>, dus van de studenten die niet uitvallen is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format_0decimals(100</span> <span class="pre">*</span> <span class="pre">Specificiteit)</span></code>% correct geclassificeerd. Dit laat zien dat het model er beter in is om het niet uitvallen van studenten te classificeren dan het uitvallen van studenten. De Area Under the Curve van het logistisch regressiemodel is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(AUC)</span></code>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="rapportage">
+<h1>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Rapportage1.R -->
+<p>Een <em>logistische regressie</em> is uitgevoerd om te onderzoeken of de vooropleiding, de leeftijd, het geslacht en het gemiddeld eindexamencijfer van studenten die starten met de bachelor Elektrotechniek gerelateerd is aan het wel of niet uitvallen in het eerste jaar van deze opleiding. Uit het toetsen van de assumpties van <em>logistische regressie</em> bleek dat er aan alle assumpties is voldaan. De resultaten van de <em>logistische regressie</em> zijn te vinden in Tabel 1.</p>
+<p>De <em>likelihood ratio toets</em> voor het regressiemodel laat zien dat het opgestelde regressiemodel minimaal één coëfficiënt heeft die significant verschilt van nul, <em>χ^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(LR_test$Chisq[2])</span></code>, <em>df</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">-1</span> <span class="pre">*</span> <span class="pre">LR_test$Df[2]</span></code>, <em>p</em> &lt; 0,0001, <span class="math notranslate nohighlight">\(R^2_N\)</span> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(100</span> <span class="pre">*</span> <span class="pre">R2)</span></code>. Het gemiddeld eindexamencijfer (<em>β</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,1])</span></code>, <em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,3])</span></code>, <em>p</em> &lt; 0,0001), de leeftijd (<em>β</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[5,1])</span></code>, <em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[5,3])</span></code>, <em>p</em> &lt; 0,0001) en het geslacht (<em>β</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,1])</span></code>, <em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,3])</span></code>, <em>p</em> &lt; 0,0001) zijn significante predictors van het eindcijfer voor het vak, maar de vooropleiding van de student is dit niet (<em>β</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,1])</span></code>, <em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,3])</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,4])</span></code>). De gestandaardiseerde coëfficiënten laten zien dat de leeftijd van de student het sterkst gerelateerd is aan de kans op uitval. Om in te schatten of een student extra ondersteuning kan krijgen omdat de kans op uitval hoger is, kan de studieloopbaanbegeleider dus rekening houden met het geslacht, de leeftijd en het gemiddeld eindexamencijfer van studenten, maar hoeft hij geen rekening te houden met de vooropleiding.</p>
+<!-- ## /TEKSTBLOK: Rapportage1.R -->
+<!-- ## TEKSTBLOK: Rapportage2.R -->
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Coëfficiënt</p></th>
+<th class="head"><p>Standaard- fout</p></th>
+<th class="head"><p>z</p></th>
+<th class="head"><p>p-waarde</p></th>
+<th class="head"><p>95%-betrouwbaar- heidsinterval</p></th>
+<th class="head"><p>Gestandaardiseerde coëfficiënt</p></th>
+<th class="head"><p>Odds ratio</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Intercept</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[1,1])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[1,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[1,3])</span></code></p></td>
+<td><p>&lt; 0,0001*</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[1,1])</span></code> - <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[1,2])</span></code></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>Geslacht (Vrouw)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,1])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,3])</span></code></p></td>
+<td><p>&lt; 0,01*</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[2,1])</span></code> - <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[2,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(exp(Reg$coefficients[2,1]))</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Eindexamencijfer</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,1])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,3])</span></code></p></td>
+<td><p>&lt; 0,0001*</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[3,1])</span></code> - <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[3,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[3])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(exp(Reg$coefficients[3,1]))</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Vooropleiding (mbo)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,1])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,3])</span></code></p></td>
+<td><p>&lt; 0,0001*</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[4,1])</span></code> - <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[4,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[4])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(exp(Reg$coefficients[4,1]))</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Leeftijd</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[5,1])</span></code>0</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[5,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[5,3])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[5,4])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[5,1])</span></code> - <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[5,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[5])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(exp(Reg$coefficients[5,1]))</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><em>Tabel 1. Regressiecoëfficiënten en bijbehorende standaardfouten, z-statistieken, p-waardes, 95%-betrouwbaarheidsintervallen, gestandaardiseerde coëfficiënten en odds ratios.</em></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<!-- ## /TEKSTBLOK: Rapportage2.R -->
+<!-- ## CLOSEDBLOK: Footer.R --><!-- ## /CLOSEDBLOK: Footer.R -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id66"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>,<a href="#id24">3</a>)</span></dt>
+<dd><p>Laerd Statistics (2018). <em>Binomial Logistic Regression using SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/binomial-logistic-regression-using-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/binomial-logistic-regression-using-spss-statistics.php</a></p>
+</dd>
+<dt class="label" id="id67"><span class="brackets"><a class="fn-backref" href="#id3">19</a></span></dt>
+<dd><p>Met een deelnemer wordt het object bedoeld dat geobserveerd wordt, bijvoorbeeld een student, een inwoner van Nederland, een opleiding of een organisatie. Met een observatie wordt de waarde bedoeld die de deelnemer heeft voor een bepaalde variabele. Een deelnemer heeft dus meestal een observatie voor meerdere variabelen.</p>
+</dd>
+<dt class="label" id="id68"><span class="brackets">10</span><span class="fn-backref">(<a href="#id4">1</a>,<a href="#id7">2</a>,<a href="#id9">3</a>,<a href="#id11">4</a>)</span></dt>
+<dd><p>Stat 501. <em>15.1 - Logistic Regression</em>. <a class="reference external" href="https://online.stat.psu.edu/stat501/lesson/15/15.1">PennState Eberly College of Science</a>.</p>
+</dd>
+<dt class="label" id="id69"><span class="brackets"><a class="fn-backref" href="#id5">20</a></span></dt>
+<dd><p>De reden hiervoor is wiskundig van aard.</p>
+</dd>
+<dt class="label" id="id70"><span class="brackets">2</span><span class="fn-backref">(<a href="#id6">1</a>,<a href="#id8">2</a>,<a href="#id10">3</a>,<a href="#id12">4</a>,<a href="#id13">5</a>,<a href="#id14">6</a>,<a href="#id15">7</a>,<a href="#id16">8</a>,<a href="#id18">9</a>,<a href="#id25">10</a>,<a href="#id42">11</a>,<a href="#id46">12</a>,<a href="#id48">13</a>,<a href="#id49">14</a>)</span></dt>
+<dd><p>Field, A. (2013). <em>Discovering statistics using IBM SPSS statistics</em>. Sage. Pagina 760-813.</p>
+</dd>
+<dt class="label" id="id71"><span class="brackets"><a class="fn-backref" href="#id17">11</a></span></dt>
+<dd><p>Field, A. (2013). <em>Discovering statistics using IBM SPSS statistics</em>. Sage. Pagina 338-341.</p>
+</dd>
+<dt class="label" id="id72"><span class="brackets">12</span><span class="fn-backref">(<a href="#id19">1</a>,<a href="#id20">2</a>,<a href="#id21">3</a>,<a href="#id23">4</a>)</span></dt>
+<dd><p>James, G., Witten, D., Hastie, T. &amp; Tibshirani, R. (2013). <em>Introduction to Statistical Learning with applications in R</em>. Springer. Pagina 127-174.</p>
+</dd>
+<dt class="label" id="id73"><span class="brackets"><a class="fn-backref" href="#id22">21</a></span></dt>
+<dd><p>Een Receiver Operating Characteristic curve (ROC-curve) is een grafiek met op de x-as 1 minus de specificiteit en op de y-as de sensitiviteit van een classificatiemodel. De ROC-curve is de lijn met daarop punten voor alle combinaties van de sensitiviteit en 1 minus de specificiteit voor verschillende criteriumwaarden op basis waarvan geclassificeerd wordt. Het oppervlak onder de curve (Area Under the Curve; AUC) laat zien hoe goed het model in staat is te classificeren onafhankelijk van de criteriumwaarde die gebruikt wordt.</p>
+</dd>
+<dt class="label" id="id74"><span class="brackets">9</span><span class="fn-backref">(<a href="#id26">1</a>,<a href="#id29">2</a>,<a href="#id32">3</a>,<a href="#id33">4</a>,<a href="#id34">5</a>,<a href="#id37">6</a>,<a href="#id38">7</a>,<a href="#id39">8</a>,<a href="#id41">9</a>)</span></dt>
+<dd><p>Field, A. (2013). <em>Discovering statistics using IBM SPSS statistics</em>. Sage. Pagina 293-356.</p>
+</dd>
+<dt class="label" id="id75"><span class="brackets">3</span><span class="fn-backref">(<a href="#id27">1</a>,<a href="#id28">2</a>,<a href="#id31">3</a>)</span></dt>
+<dd><p>Universiteit van Amsterdam (13 augustus 2016). <em>Outliers</em>. <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Outliers">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id76"><span class="brackets"><a class="fn-backref" href="#id30">4</a></span></dt>
+<dd><p>Standaardiseren houdt in dat de variabelen getransformeerd worden zodat ze een gemiddelde van 0 hebben en een standaardafwijking van 1. Dit wordt gedaan door voor alle observaties van een variabele eerst het gemiddelde af te trekken en daarna te delen door de standaardafwijking, i.e. <span class="math notranslate nohighlight">\(\frac{x_i - \mu}{\sigma}\)</span>.</p>
+</dd>
+<dt class="label" id="id77"><span class="brackets"><a class="fn-backref" href="#id35">5</a></span></dt>
+<dd><p>Er zijn verschillende opties om variabelen te transformeren, zoals de logaritme, wortel of inverse (1 gedeeld door de variabele) nemen van de variabele. Zie <em>Discovering statistics using IBM SPSS statistics</em> van Field (2013) pagina 201-210 voor meer informatie over welke transformaties wanneer gebruikt kunnen worden.</p>
+</dd>
+<dt class="label" id="id78"><span class="brackets">6</span><span class="fn-backref">(<a href="#id36">1</a>,<a href="#id43">2</a>,<a href="#id44">3</a>,<a href="#id45">4</a>,<a href="#id47">5</a>,<a href="#id50">6</a>)</span></dt>
+<dd><p>Tabachnick, B.G. &amp; Fidell, L.S. (2013). <em>Using multivariate statistics</em>. Sixth Edition, Pearson. Pagina 443-446.</p>
+</dd>
+<dt class="label" id="id79"><span class="brackets"><a class="fn-backref" href="#id40">7</a></span></dt>
+<dd><p>Stat 501. <em>12.4 - Detecting Multicollinearity Using Variance Inflation Factors</em>. <a class="reference external" href="https://online.stat.psu.edu/stat501/lesson/12/12.4">PennState Eberly College of Science</a>.</p>
+</dd>
+<dt class="label" id="id80"><span class="brackets">8</span><span class="fn-backref">(<a href="#id56">1</a>,<a href="#id60">2</a>,<a href="#id61">3</a>,<a href="#id62">4</a>,<a href="#id63">5</a>,<a href="#id64">6</a>,<a href="#id65">7</a>)</span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./r"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="32%20Mixed%20ANOVA%20R.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="47%20Multinomiale%20logistische%20regressie%20R.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

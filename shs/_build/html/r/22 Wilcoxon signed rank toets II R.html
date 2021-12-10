@@ -1,0 +1,897 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="23%20Mann-Whitney%20U%20toets%20II%20R.html" />
+    <link rel="prev" title="Toepassing" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/r/22 Wilcoxon signed rank toets II R.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fr/22 Wilcoxon signed rank toets II R.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumpties">
+   Assumpties
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#effectmaat">
+   Effectmaat
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering">
+   Uitvoering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-data-bekijken">
+     De data bekijken
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-data-visualiseren">
+     De data visualiseren
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wilcoxon-signed-rank-toets">
+     Wilcoxon signed rank toets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rapportage">
+   Rapportage
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-924f26e6aa13&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span>exists<span class="o">(</span><span class="s2">&quot;Substitute_var&quot;</span><span class="o">))</span> <span class="o">{</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.R -->
+<!-- ## /CLOSEDBLOK: Reticulate.R -->
+<!-- ## OPENBLOK: Data-aanmaken.R --><!-- ## /OPENBLOK: Data-aanmaken.R -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<p>Gebruik de <em>Wilcoxon signed rank toets</em> om te toetsen of twee gepaarde groepen van elkaar verschillen op een ordinale<a class="footnote-reference brackets" href="#id11" id="id1">10</a> variabele. Als de variabele beter als nominaal<a class="footnote-reference brackets" href="#id12" id="id2">11</a> beschouwd kan worden, is de <em>McNemar toets</em> een alternatief. Bij de <em>McNemar toets</em> wordt echter geen rekening gehouden met de ordening van de categorieën van de ordinale variabele: de variabele wordt behandeld als een nominale variabele.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id ="casus">
+De hoofddocent van het vak ‘Speech schrijven’ van de bachelor Politicologie is benieuwd naar de effectiviteit van zijn eigen vak. Daarom laat hij studenten bij de eerste bijeenkomst van het vak een speech schrijven die zij beoordeelt als onvoldoende, voldoende, goed of uitstekend. Gedurende het vak leren studenten het schrijven van speeches vanuit verschillende perspectieven. Aan het einde van het vak schrijven studenten wederom een speech die op dezelfde wijze door de hoofddocent beoordeeld wordt. Op deze manier kan hij onderzoeken of zijn lessen ervoor zorgen dat studenten beter worden in het schrijven van speeches.
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is.</p>
+<p><em>H~0~</em>: Er is geen verschil tussen de (som van rangschikkingen van de) beoordelingen van de speeches geschreven door studenten aan het begin en aan het eind van het vak.</p>
+<p><em>H~A~</em>: Er is een verschil tussen de (som van rangschikkingen van de) beoordelingen van de speeches geschreven door studenten aan het begin en aan het eind van het vak. De beoordelingen zijn hoger voor een van de twee meetmomenten.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="assumpties">
+<h1>Assumpties<a class="headerlink" href="#assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Het meetniveau van de afhankelijke variabele is ordinaal<a class="footnote-reference brackets" href="#id11" id="id3">10</a> of continu.<a class="footnote-reference brackets" href="#id13" id="id4">1</a> In deze toetspagina staat een casus met ordinale data centraal; een casus met continue data met bijbehorende uitwerking zijn te vinden in <span class="xref myst">de Wilcoxon signed rank toets I</span>.</p>
+<p>Om de <em>Wilcoxon signed rank toets</em> uit te voeren met een ordinale afhankelijke variabele, moet deze variabele omgezet worden in getallen. Wanneer er vier categorieën zijn, worden ze genummerd van 1 tot en met 4 op basis van de ordening van de variabele. De categorieën onvoldoende, voldoende, goed en uitstekend worden dan omgezet in respectievelijk 1, 2, 3 en 4. Met behulp van deze getallen worden verschilscores berekend per deelnemer<a class="footnote-reference brackets" href="#id14" id="id5">19</a>. Een persoon die van voldoende naar uitstekend gaat, krijgt als verschilscore 2. Hierbij wordt impliciet aangenomen dat de afstand tussen alle categorieën even groot is. In andere woorden, het verschil tussen onvoldoende en voldoende is even groot als het verschil tussen voldoende en goed en tussen goed en uitstekend. Bij de <span class="xref myst">Bhapkar toets</span> wordt deze aanname niet gedaan, maar wordt de ordinale variabele als nominaal<a class="footnote-reference brackets" href="#id12" id="id6">11</a> beschouwd. De <em>Wilcoxon signed rank toets</em> maakt een rangschikking van de absolute waarden van de verschilscores en telt vervolgens de rangschikkingen op voor de positieve en negatieve verschilscores. Het verschil tussen de som van de positieve en negatieve rangschikkingen bepaalt de significantie van de toets.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="effectmaat">
+<h1>Effectmaat<a class="headerlink" href="#effectmaat" title="Permalink to this headline">¶</a></h1>
+<p>De p-waarde geeft aan of een (mogelijk) verschil tussen twee groepen significant is. De grootte van het verschil of effect is echter ook relevant. Een effectmaat is een gestandaardiseerde maat die de grootte van een effect weergeeft, zodat effecten van verschillende onderzoeken met elkaar vergeleken kunnen worden.<a class="footnote-reference brackets" href="#id15" id="id7">6</a></p>
+<p>De <em>Wilcoxon signed rank toets</em> heeft als effectmaat <em>r</em>. Een indicatie om <em>r</em> te interpreteren is: rond 0,1 is het een klein effect, rond 0,3 is het een gemiddeld effect en rond 0,5 is het een groot effect.<a class="footnote-reference brackets" href="#id16" id="id8">8</a> De effectmaat <em>r</em> wordt voor de <em>Wilcoxon signed rank toets</em> berekend door de <em>z</em>-waarde behorend bij de p-waarde van de toets te delen door de wortel van het aantal deelnemers, i.e. <span class="math notranslate nohighlight">\(\frac{z}{\sqrt{N}}\)</span>.<a class="footnote-reference brackets" href="#id16" id="id9">8</a> Een correlatie tussen twee variabelen wordt vaak ook aangeduid met het symbool <em>r</em>. Beide zijn effectmaten, maar er is verder geen verband tussen de correlatie en de effectmaat van de <em>Wilcoxon signed rank toets</em>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering">
+<h1>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="de-data-bekijken">
+<h2>De data bekijken<a class="headerlink" href="#de-data-bekijken" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Data-bekijken.R -->
+<p>Er is data ingeladen met de beoordeling van studenten van het vak ‘Speech schrijven’ aan het begin en eind van het vak. Gebruik <code class="docutils literal notranslate"><span class="pre">head()</span></code> en <code class="docutils literal notranslate"><span class="pre">tail()</span></code> om de structuur van de data te bekijken.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken.R -->
+<!-- ## OPENBLOK: Data-bekijken.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Eerste 6 observaties</span>
+<span class="n">head</span><span class="p">(</span><span class="n">Beoordelingen_speech_schrijven</span><span class="p">)</span>
+
+<span class="c1">## Laatste 6 observaties</span>
+<span class="n">tail</span><span class="p">(</span><span class="n">Beoordelingen_speech_schrijven</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken.R -->
+<!-- ## TEKSTBLOK: Data-kruistabel1.R -->
+<p>Een kruistabel geeft de aantallen observaties weer voor de combinaties van de categorieën van de variabelen <code class="docutils literal notranslate"><span class="pre">Meetmoment</span></code> en <code class="docutils literal notranslate"><span class="pre">Beoordeling</span></code>. In feite laat dit zien welke beoordelingen studenten krijgen aan het begin en eind van de cursus. Maak de kruistabel met de functie <code class="docutils literal notranslate"><span class="pre">table()</span></code> met als argumenten de variabele <code class="docutils literal notranslate"><span class="pre">Beoordelingen_speech_schrijven$Meetmoment</span></code>, die weergeeft of de speech aan het begin of eind van de cursus is geschreven en de variabele <code class="docutils literal notranslate"><span class="pre">Beoordelingen_speech_schrijven$Beoordeling</span></code> die de beoordeling weergeeft.</p>
+<!-- ## /TEKSTBLOK: Data-kruistabel1.R -->
+<!-- ## OPENBLOK: Data-kruistabel2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>## Maak een kruistabel
+Beoordelingen_kruistabel &lt;- table(Beoordelingen_speech_schrijven$Meetmoment, Beoordelingen_speech_schrijven$Beoordeling)
+
+## Bepaal de volgorde van de beoordelingen
+Volgorde &lt;- c(&quot;Onvoldoende&quot;, &quot;Voldoende&quot;, &quot;Goed&quot;, &quot;Uitstekend&quot;)
+
+## Print de kruistabel 
+print(Beoordelingen_kruistabel[,Volgorde])
+
+## Print een tabel met proporties; het tweede argument `1` zorgt ervoor dat de 
+## proporties per kolom berekend worden
+prop.table(Beoordelingen_kruistabel[,Volgorde], 1)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-kruistabel2.R -->
+<p>De kruistabel laat zien dat er aan het eind van het vak meer speeches als goed en uitstekend worden beoordeeld en minder speeches als onvoldoende of voldoende. Dit is ook te zien in de kruistabel met proporties.</p>
+<p>Naast de kruistabel, is de confusiematrix ook relevant om te bekijken. Bij een confusiematrix worden de beoordelingen van studenten aan het begin en eind van de cursus tegen elkaar uitgezet. Sla daarom de variabele <code class="docutils literal notranslate"><span class="pre">Beoordeling</span></code> apart op in twee vectoren: een voor het begin van het vak en een voor het eind. Maak daarna de confusiematrix.</p>
+<!-- ## OPENBLOK: Data-beschrijven.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>## Definieer de groepen
+Begin &lt;- Beoordelingen_speech_schrijven$Beoordeling[Beoordelingen_speech_schrijven$Meetmoment == &quot;Begin&quot;]
+Eind &lt;- Beoordelingen_speech_schrijven$Beoordeling[Beoordelingen_speech_schrijven$Meetmoment == &quot;Eind&quot;]
+
+## Bepaal de volgorde van de beoordelingen
+Volgorde &lt;- c(&quot;Onvoldoende&quot;, &quot;Voldoende&quot;, &quot;Goed&quot;, &quot;Uitstekend&quot;)
+
+## Maak een confusiematrix
+Beoordelingen_confusiematrix &lt;- table(Begin, Eind)
+
+## Print de confusiematrix 
+print(Beoordelingen_confusiematrix[Volgorde, Volgorde])
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven.R -->
+<p>De confusiematrix geeft informatie over de verschillen tussen de beoordelingen aan het begin en eind van het vak. Er zijn bijvoorbeeld 16 studenten die aan het begin goed als beoordeling ontvingen en aan het eind de beoordeling uitstekend.</p>
+</div>
+<div class="section" id="de-data-visualiseren">
+<h2>De data visualiseren<a class="headerlink" href="#de-data-visualiseren" title="Permalink to this headline">¶</a></h2>
+<p>Maak een staafdiagram om de verdeling van de beoordelingen aan het begin en eind van het vak visueel weer te geven.</p>
+<!-- ## OPENBLOK: Histogram1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Histogram met ggplot2</span>
+<span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Beoordelingen_speech_schrijven</span><span class="p">,</span>
+  <span class="n">aes</span><span class="p">(</span><span class="n">Beoordeling</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">geom_bar</span><span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;grey30&quot;</span><span class="p">,</span>
+                 <span class="n">fill</span> <span class="o">=</span> <span class="s2">&quot;#0089CF&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">scale_x_discrete</span><span class="p">(</span><span class="n">limits</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;Onvoldoende&quot;</span><span class="p">,</span> <span class="s2">&quot;Voldoende&quot;</span><span class="p">,</span> <span class="s2">&quot;Goed&quot;</span><span class="p">,</span> <span class="s2">&quot;Uitstekend&quot;</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">Meetmoment</span><span class="p">,</span> <span class="n">labeller</span> <span class="o">=</span> <span class="n">labeller</span><span class="p">(</span><span class="n">Meetmoment</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">Begin</span> <span class="o">=</span> <span class="s2">&quot;Begin van het vak&quot;</span><span class="p">,</span> <span class="n">Eind</span> <span class="o">=</span> <span class="s2">&quot;Eind van het vak&quot;</span><span class="p">)))</span> <span class="o">+</span>
+  <span class="n">ylab</span><span class="p">(</span><span class="s2">&quot;Frequentie&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Beoordeling van het speech schrijven aan het begin en eind van het vak&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Histogram1.R -->
+<p>Aan het eind van het vak zijn er meer speeches als goed en uitstekend beoordeeld in vergelijking tot het begin van het vak. Daarnaast zijn er minder speeches als onvoldoende en voldoende beoordeeld.</p>
+</div>
+<div class="section" id="wilcoxon-signed-rank-toets">
+<h2>Wilcoxon signed rank toets<a class="headerlink" href="#wilcoxon-signed-rank-toets" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Wilcoxon-signed-rank-toets.R -->
+<p>Voer de <em>Wilcoxon signed rank toets</em> uit om de vraag te beantwoorden of de beoordelingen van het schrijven van speeches bij het vak ‘Speech schrijven’ verschillen tussen het begin en eind van het vak. Zet eerst de categorische variabele <code class="docutils literal notranslate"><span class="pre">Beoordeling</span></code> om in een numerieke variabele door de categorieën onvoldoende, voldoende, goed en uitstekend om te zetten in respectievelijk 1, 2, 3 en 4. Gebruik daarna de functie <code class="docutils literal notranslate"><span class="pre">wilcox.test()</span></code> met als eerste argument <code class="docutils literal notranslate"><span class="pre">Beoordeling</span> <span class="pre">~</span> <span class="pre">Meetmoment</span></code> waarin <code class="docutils literal notranslate"><span class="pre">Beoordeling</span></code> de afhankelijke variabele is en <code class="docutils literal notranslate"><span class="pre">Meetmoment</span></code> de onafhankelijke variabele is die twee meetmomenten aangeeft. Gebruik het argument <code class="docutils literal notranslate"><span class="pre">paired</span> <span class="pre">=</span> <span class="pre">TRUE</span></code> om aan te geven dat de twee meetmomenten aan elkaar gepaard zijn.  Toets tweezijdig door het argument <code class="docutils literal notranslate"><span class="pre">alternative</span> <span class="pre">=</span> <span class="pre">&quot;two.sided&quot;</span></code> te gebruiken.</p>
+<!-- ## /TEKSTBLOK: Wilcoxon-signed-rank-toets.R -->
+<!-- ## OPENBLOK: Wilcoxon-signed-rank-toets.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Zet de categorieën om in getallen
+Beoordelingen_speech_schrijven$Beoordeling_numeriek[Beoordelingen_speech_schrijven$Beoordeling == &quot;Onvoldoende&quot;] &lt;- 1
+Beoordelingen_speech_schrijven$Beoordeling_numeriek[Beoordelingen_speech_schrijven$Beoordeling == &quot;Voldoende&quot;] &lt;- 2
+Beoordelingen_speech_schrijven$Beoordeling_numeriek[Beoordelingen_speech_schrijven$Beoordeling == &quot;Goed&quot;] &lt;- 3
+Beoordelingen_speech_schrijven$Beoordeling_numeriek[Beoordelingen_speech_schrijven$Beoordeling == &quot;Uitstekend&quot;] &lt;- 4
+
+# Maak de variabele numeriek
+Beoordelingen_speech_schrijven$Beoordeling_numeriek &lt;- as.numeric(Beoordelingen_speech_schrijven$Beoordeling_numeriek)
+
+# Voer de wilcoxon signed rank toets uit
+wilcox.test(Beoordeling_numeriek ~ Meetmoment, Beoordelingen_speech_schrijven, 
+            paired = TRUE, alternative = &quot;two.sided&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Wilcoxon-signed-rank-toets.R -->
+<!-- ## OPENBLOK: Wilcoxon-signed-rank-toets2.R -->
+<p>Bereken de effectmaat <em>r</em> vervolgens op basis van de p-waarde van de <em>Wilcoxon signed rank toets</em>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Sla de p-waarde op
+pwaarde &lt;- wilcox.test(Beoordeling_numeriek ~ Meetmoment, Beoordelingen_speech_schrijven, 
+            paired = TRUE, alternative = &quot;two.sided&quot;)$p.value
+
+# Bereken de effectgrootte voor een tweezijdige toets
+r &lt;- abs(qnorm(pwaarde/2)) / sqrt(length(Beoordelingen_speech_schrijven))
+# Bereken de effectgrootte voor een eenzijdige toets
+#r &lt;- abs(qnorm(pwaarde)) / sqrt(length(Beoordelingen_speech_schrijven))
+
+# Print de effectgrootte
+paste(&quot;De effectmaat is&quot;, r)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Wilcoxon-signed-rank-toets2.R -->
+<p>Bereken de aantallen en de sommen van positieve en negatieve rangschikkingen op basis van de verschilscores.</p>
+<!-- ## OPENBLOK: Wilcoxon-signed-rank-toets3.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Bereken de verschilscores
+Verschilscores &lt;- Beoordelingen_speech_schrijven$Beoordeling_numeriek[Beoordelingen_speech_schrijven$Meetmoment == &quot;Eind&quot;] - Beoordelingen_speech_schrijven$Beoordeling_numeriek[Beoordelingen_speech_schrijven$Meetmoment == &quot;Begin&quot;]
+
+# Rangschik de absolute waarden van de verschilscores
+Rangschikkingen &lt;- rank(abs(Verschilscores))
+
+# Maak een vector met daarin de tekens (plus of min) van de verschilscores)
+Tekens &lt;- sign(Verschilscores)
+
+# Bereken het aantal en de som van de positieve rangschikkingen
+N_positief &lt;- length(Tekens[Tekens == 1])
+Som_positief &lt;- sum(Rangschikkingen[Tekens == 1])
+
+# Bereken het aantal en de som van de negatieve rangschikkingen
+N_negatief &lt;- length(Tekens[Tekens == -1])
+Som_negatief &lt;- sum(Rangschikkingen[Tekens == -1])
+
+# Print de resultaten
+N_positief
+Som_positief
+N_negatief
+Som_negatief
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Wilcoxon-signed-rank-toets3.R --><!-- ## CLOSEDBLOK: Wilcoxon-signed-rank-toets.R --><!-- ## /CLOSEDBLOK: Wilcoxon-signed-rank-toets.R -->
+<!-- ## TEKSTBLOK: Wilcoxon-signed-rank-toets4.R -->
+<ul class="simple">
+<li><p><em>V</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vVstatistic</span></code>, <em>p</em> &lt; 0,0001 , <em>r</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(r)</span></code></p></li>
+<li><p>p-waarde &lt; 0,05, dus de H~0~ wordt verworpen<a class="footnote-reference brackets" href="#id17" id="id10">9</a></p></li>
+<li><p>Het aantal positieve rangschikkingen is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">N_positief</span></code>; de som is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">format(round(Som_positief),</span> <span class="pre">scientific</span> <span class="pre">=</span> <span class="pre">FALSE)</span></code></p></li>
+<li><p>Het aantal negatieve rangschikkingen is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">N_negatief</span></code>; de som is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">round(Som_negatief)</span></code></p></li>
+<li><p>De som van de positieve rangschikkingen is hoger dan de som van de negatieve rangschikkingen. Er zijn dus hogere beoordelingen aan het eind van het vak in vergelijking tot het begin van het vak.</p></li>
+<li><p>Effectmaat is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(r)</span></code>, dus een groot effect</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Wilcoxon-signed-rank-toets4.R -->
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="rapportage">
+<h1>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Rapportage.R -->
+<p>De <em>Wilcoxon signed rank toets</em> is uitgevoerd om de vraag te beantwoorden of er verschil is tussen de beoordelingen van het schrijven van speeches aan het begin en eind van het vak ‘Speech schrijven’. De resultaten van de toets laten zien dat er een significant verschil is tussen het de beoordelingen aan het begin en eind van het vak, <em>V</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vVstatistic</span></code>, <em>p</em> &lt; 0,0001, <em>r</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(r)</span></code>. Er zijn <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">N_positief</span></code> studenten met een hogere beoordeling aan het eind van het vak (som van rangschikkingen is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">format(round(Som_positief),</span> <span class="pre">scientific</span> <span class="pre">=</span> <span class="pre">FALSE)</span></code>) en er zijn <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">N_negatief</span></code> studenten met een lagere beoordeling aan het eind van het vak. Studenten lijken dus beter speeches te schrijven aan het eind vak het vak.</p>
+<!-- ## /TEKSTBLOK: Rapportage.R -->
+<!-- ## CLOSEDBLOK: Footer.R --><!-- ## /CLOSEDBLOK: Footer.R -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id11"><span class="brackets">10</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id3">2</a>)</span></dt>
+<dd><p>Een ordinale variabele is een categorische variabele waarbij de categorieën geordend kunnen worden. Een voorbeeld is de variabele beoordeling met de categorieën Onvoldoende, Voldoende, Goed en Uitstekend.</p>
+</dd>
+<dt class="label" id="id12"><span class="brackets">11</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id6">2</a>)</span></dt>
+<dd><p>Een nominale variabele is een categorische variabele waarbij de categorieën niet geordend kunnen worden. Een voorbeeld is de variabele windstreek (noord, oost, zuid, west) en geslacht (man of vrouw).</p>
+</dd>
+<dt class="label" id="id13"><span class="brackets"><a class="fn-backref" href="#id4">1</a></span></dt>
+<dd><p>Laerd Statistics (2018). <em>Wilcoxon Signed-Rank Test using SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/wilcoxon-signed-rank-test-using-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/wilcoxon-signed-rank-test-using-spss-statistics.php</a></p>
+</dd>
+<dt class="label" id="id14"><span class="brackets"><a class="fn-backref" href="#id5">19</a></span></dt>
+<dd><p>Met een deelnemer wordt het object bedoeld dat geobserveerd wordt, bijvoorbeeld een student, een inwoner van Nederland, een opleiding of een organisatie. Met een observatie wordt de waarde bedoeld die de deelnemer heeft voor een bepaalde variabele. Een deelnemer heeft dus meestal een observatie voor meerdere variabelen.</p>
+</dd>
+<dt class="label" id="id15"><span class="brackets"><a class="fn-backref" href="#id7">6</a></span></dt>
+<dd><p>Field, A., Miles, J., &amp; Field, Z. (2012). <em>Discovering statistics using R</em>. London: Sage publications.</p>
+</dd>
+<dt class="label" id="id16"><span class="brackets">8</span><span class="fn-backref">(<a href="#id8">1</a>,<a href="#id9">2</a>)</span></dt>
+<dd><p>Allen, P. &amp; Bennett, K. (2012). <em>SPSS A practical Guide version 20.0</em>. Cengage Learning Australia Pty Limited.</p>
+</dd>
+<dt class="label" id="id17"><span class="brackets"><a class="fn-backref" href="#id10">9</a></span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./r"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="23%20Mann-Whitney%20U%20toets%20II%20R.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

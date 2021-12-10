@@ -1,0 +1,1444 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="29%20Factoriele%20ANOVA%20R.html" />
+    <link rel="prev" title="Toepassing" href="27%20Moods%20mediaan%20toets%20R.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/r/28 Multipele lineaire regressie R.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fr/28 Multipele lineaire regressie R.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multipele-lineaire-regressie">
+   Multipele lineaire regressie
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#f-toets-voor-significantie-regressiemodel">
+     F-toets voor significantie regressiemodel
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#individuele-predictors-toetsen-en-interpreteren">
+     Individuele predictors toetsen en interpreteren
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#predictors-vergelijkingen-door-standaardisatie">
+     Predictors vergelijkingen door standaardisatie
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#voorspellen-op-basis-van-het-regressiemodel">
+     Voorspellen op basis van het regressiemodel
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitleg-assumpties">
+   Uitleg assumpties
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#outliers">
+     Outliers
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#boxplots-en-standaardiseren">
+       Boxplots en standaardiseren
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#gestandaardiseerde-residuen">
+       Gestandaardiseerde residuën
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mahalanobis-afstand">
+       Mahalanobis afstand
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#cook-s-afstand">
+       Cook’s afstand
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lineariteit">
+     Lineariteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#normaliteit-van-residuen">
+     Normaliteit van residuën
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#homoskedasticiteit">
+     Homoskedasticiteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multicollineariteit">
+     Multicollineariteit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bootstrappen">
+   Bootstrappen
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toetsing-assumpties">
+   Toetsing assumpties
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id33">
+     Outliers
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id34">
+       Boxplots en standaardiseren
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id35">
+       Gestandaardiseerde residuën
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mahalanobis-distance">
+       Mahalanobis distance
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id36">
+       Cook’s afstand
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id37">
+     Lineariteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#normaliteit">
+     Normaliteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id39">
+     Homoskedasticiteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id40">
+     Multicollineariteit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering">
+   Uitvoering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#significantie-regressiemodel">
+     Significantie regressiemodel
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#significantie-en-interpretatie-coefficienten">
+     Significantie en interpretatie coëfficiënten.
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sterkte-van-de-relatie-tussen-de-predictor-en-afhankelijke-variabele">
+     Sterkte van de relatie tussen de predictor en afhankelijke variabele
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering-f-toets-voor-vergelijking-twee-regressiemodellen">
+   Uitvoering F-toets voor vergelijking twee regressiemodellen
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering-bootstrappen">
+   Uitvoering bootstrappen
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rapportage">
+   Rapportage
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-924f26e6aa13&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span>exists<span class="o">(</span><span class="s2">&quot;Substitute_var&quot;</span><span class="o">))</span> <span class="o">{</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.R -->
+<!-- ## /CLOSEDBLOK: Reticulate.R -->
+<!-- ## OPENBLOK: Data-aanmaken.R --><!-- ## /OPENBLOK: Data-aanmaken.R -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<p>Gebruik <em>multipele lineaire regressie</em> om te toetsen of een continue afhankelijke variabele voorspeld kan worden met twee of meer onafhankelijke variabelen (predictors) en om te toetsen of er een relatie is tussen een predictor en de afhankelijke variabele in aanwezigheid van andere predictors.<a class="footnote-reference brackets" href="#id47" id="id1">1</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id = "casus">
+<p>De docent van het vak Methoden &amp; Statistiek van de bachelor Onderwijskunde wil zijn studenten ervan overtuigen dat het nuttig is om naar zijn colleges te komen. Hij wil daarom onderzoeken of er een relatie is tussen het aantal colleges dat studenten volgen en het eindcijfer voor zijn vak. Daarnaast vermoedt hij dat het eindexamencijfer voor Wiskunde ook gerelateerd is aan het eindcijfer voor het vak en dat er man-vrouw verschillen zouden kunnen zijn. Op basis van de data van vorig jaar onderzoekt hij of er een relatie is tussen het aantal hoorcolleges dat studenten volgen, waarbij hij rekening houdt met het eindexamencijfer Wiskunde en man-vrouw verschillen. Met de resultaten hiervan hoopt hij zijn studenten ervan te overtuigen om de hoorcolleges van het vak bij te wonen.</p>
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is. Bij <em>multipele lineaire regressie</em> wordt er een hypothese opgesteld voor het complete model en hypotheses voor de individuele predictors.</p>
+<p>Hypotheses regressiemodel:</p>
+<p><em>H~0~</em>: Geen enkele predictor van de predictors geslacht, eindexamencijfer Wiskunde en aantal gevolgde hoorcolleges is gerelateerd aan de afhankelijke variabele eindcijfer Methoden &amp; Statistiek (<span class="math notranslate nohighlight">\(\beta_1 = \beta_2 = \beta_3 = 0\)</span>).</p>
+<p><em>H~A~</em>: Ten minste een van de predictors geslacht, eindexamencijfer Wiskunde en aantal gevolgde hoorcolleges is gerelateerd aan de afhankelijke variabele eindcijfer Methoden &amp; Statistiek (Ten minste één <span class="math notranslate nohighlight">\(\beta_i \neq 0, i = 1, 2, 3\)</span>).</p>
+<p>Hypotheses individuele predictors (met als voorbeeld de predictor aantal hoorcolleges):</p>
+<p><em>H~0~</em>: Het aantal hoorcolleges heeft geen voorspellende waarde voor het eindcijfer Methoden &amp; Statistiek in aanwezigheid van de andere predictoren geslacht en eindexamencijfer Wiskunde (<span class="math notranslate nohighlight">\(\beta = 0\)</span>).</p>
+<p><em>H~A~</em>: Het aantal hoorcolleges heeft voorspellende waarde voor het eindcijfer Methoden &amp; Statistiek in aanwezigheid van de andere predictoren geslacht en eindexamencijfer Wiskunde (<span class="math notranslate nohighlight">\(\beta \neq 0\)</span>).</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="multipele-lineaire-regressie">
+<h1>Multipele lineaire regressie<a class="headerlink" href="#multipele-lineaire-regressie" title="Permalink to this headline">¶</a></h1>
+<p>Het doel van <em>multipele lineaire regressie</em> is het voorspellen van een afhankelijke variabele op basis van meerdere onafhankelijke variabelen, ook wel predictors genoemd.<a class="footnote-reference brackets" href="#id47" id="id2">1</a> Het voorspellen van een afhankelijke variabele wordt gedaan met behulp van een regressievergelijking waarin de afhankelijke variabele een lineaire combinatie is van de predictors, i.e.</p>
+<div class="math notranslate nohighlight">
+\[ y_i = \beta_0 + \beta_1 * x_{1i} + \beta_2 * x_{2i} + e_i\]</div>
+<p>met <span class="math notranslate nohighlight">\(y_i\)</span> als afhankelijke variabele, <span class="math notranslate nohighlight">\(\beta_0\)</span> als intercept, <span class="math notranslate nohighlight">\(x_{1i}\)</span> en <span class="math notranslate nohighlight">\(x_{2i}\)</span> als predictors, <span class="math notranslate nohighlight">\(\beta_{1}\)</span> en <span class="math notranslate nohighlight">\(\beta_{2}\)</span> als regressiecoefficiënten van predictors, <span class="math notranslate nohighlight">\(e_i\)</span> als residu of error en <span class="math notranslate nohighlight">\(i\)</span> als indicator van de deelnemer<a class="footnote-reference brackets" href="#id48" id="id3">19</a> uit de steekproef. De intercept <span class="math notranslate nohighlight">\(\beta_0\)</span> geeft de waarde van de afhankelijke variabele weer als alle predictors gelijk aan nul zijn. De regressiecoefficiënten <span class="math notranslate nohighlight">\(\beta_1\)</span> en <span class="math notranslate nohighlight">\(\beta_2\)</span> geven de relatie tussen de afhankelijke variabele en de predictor weer. De residu of error <span class="math notranslate nohighlight">\(e_i\)</span> is het verschil tussen de geobserveerde waarde van de afhankelijke variabele en de voorspelde waarde op basis van het regressiemodel. Voor de huidige casus is de volgende regressievergelijking op te stellen:</p>
+<div class="math notranslate nohighlight">
+\[ EindcijferM\&amp;S_i = \beta_0 + \beta_1 * Geslacht_i + \beta_2 * EindexamencijferWiskunde_i + \beta_3 * Aantal Hoorcolleges_i + e_i\]</div>
+<p>De regressiecoefficiënten (<span class="math notranslate nohighlight">\(\beta_0\)</span>, <span class="math notranslate nohighlight">\(\beta_1\)</span>, <span class="math notranslate nohighlight">\(\beta_2\)</span> en <span class="math notranslate nohighlight">\(\beta_3\)</span>) worden geschat door de waardes voor deze coefficiënten te vinden waarbij de som van de kwadraten van de residu <span class="math notranslate nohighlight">\(e_i\)</span> zo klein mogelijk is. Multipele regressie wordt daarom ook wel ordinary least squares (OLS) regressie genoemd, omdat het de oplossing vind met de kleinste kwadraten van de residuën.<a class="footnote-reference brackets" href="#id49" id="id4">2</a> De reden dat het kwadraat van de residuën gebruikt wordt is dat dit ervoor zorgt dat ook een negatief residu positief gemaakt kan worden. De methode kan als volgt visueel weergegeven worden:</p>
+<div class = "col-container">
+  <div class="col">
+<!-- ## CLOSEDBLOK: Regressie1.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Regressie1.R -->
+  </div>
+  <div class = "col">
+<!-- ## CLOSEDBLOK: Regressie2.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Regressie2.R -->
+  </div>
+</div>
+<p><em>Figuur 1.  Illustratie van multipele lineaire regressie met behulp van een interceptmodel (links) en een regressiemodel (rechts) waarbij de punten de observaties zijn, de blauwe lijn de voorspelling van het model en de zwarte lijn het residu.</em></p>
+<p>Beide figuren laten een manier zien om een goede voorspelling te maken. De punten zijn de observaties, de blauwe lijn is de voorspelling en de zwarte lijnen zijn het verschil tussen observatie en voorspelling oftewel het residu. In de linkerfiguur wordt de voorspelling gemaakt met behulp van alleen een intercept (horizontale lijn), dit heet een interceptmodel. Echter, in de rechterfiguur wordt de voorspelling gemaakt door een lijn te trekken waarbij de kwadraten van de residuën zo klein mogelijk zijn. Het trekken van de best passende lijn is in feite wat er gedaan wordt bij <em>multipele lineaire regressie</em>.</p>
+<div class="section" id="f-toets-voor-significantie-regressiemodel">
+<h2>F-toets voor significantie regressiemodel<a class="headerlink" href="#f-toets-voor-significantie-regressiemodel" title="Permalink to this headline">¶</a></h2>
+<p>Een maat om de kwaliteit van de voorspellingen van het regressiemodel te kwantificeren is de verklaarde variantie van de afhankelijke variabele. De verklaarde variantie - ook wel <span class="math notranslate nohighlight">\(R^2\)</span> genoemd - wordt berekend als 1 minus de onverklaarde variantie. De onverklaarde variantie wordt berekend door de som van gekwadrateerde residuën van het regressiemodel te delen door de som van gekwadrateerde residuën van het interceptmodel. De kwaliteit van het regressiemodel wordt dus altijd vergeleken ten opzichte van het interceptmodel. Een goed regressiemodel heeft kleine residuën, wat leidt tot een lage onverklaarde variantie en dus een hoge verklaarde variantie.<a class="footnote-reference brackets" href="#id49" id="id5">2</a></p>
+<p>De eerste vraag bij <em>multipele lineaire regressie</em> is of het model betere voorspellingen geeft dan een model zonder predictors. Daarom wordt het voorgestelde model vergeleken met een interceptmodel. Er is de verwachting van een toename in verklaarde variantie als beide modellen vergeleken worden. De significantie van deze toename wordt getoetst met een F-toets. De getoetste nulhypothese is dat de verklaarde variantie nul is (<span class="math notranslate nohighlight">\(R^2 = 0\)</span>) en de getoetste alternatieve hypothese is dat de verklaarde variantie groter dan nul is (<span class="math notranslate nohighlight">\(R^2 &gt; 0\)</span>). Als de toename in verklaarde variantie significant is, kunnen de individuele predictors getoetst worden. Als de toename niet significant is, is de analyse afgelopen en is de conclusie dat het voorgestelde model niet in staat is om de afhankelijke variabele beter te voorspellen dan een model zonder predictors. De verklaarde variantie <span class="math notranslate nohighlight">\(R^2\)</span> wordt ook gebruikt als effectmaat bij <em>multipele lineaire regressie</em>. Een verklaarde variantie rond 0,02 kan geïnterpreteerd worden als een klein effect, rond 0,13 als een gemiddeld effect en rond 0,26 als een groot effect.<a class="footnote-reference brackets" href="#id49" id="id6">2</a></p>
+<p>De F-toets kan ook gebruikt worden om verschillende regressiemodellen onderling te vergelijken. Hierbij wordt getoetst of er een verschil is tussen de verklaarde variantie van beide modellen. Er kan bijvoorbeeld in eerste instantie een model met twee predictors getoetst worden en daarna toetsen of de voorspellingen van het regressiemodel nog beter worden met twee extra predictors. Het verschil in verklaarde variantie tussen het model met twee en vier predictors wordt dan getoetst met een F-toets. Hierbij is de nulhypothese dat het verschil in verklaarde variantie nul is (<span class="math notranslate nohighlight">\(\Delta R^2 = 0\)</span>) en de alternatieve hypothese dat het verschil in verklaarde variantie groter dan nul is (<span class="math notranslate nohighlight">\(\Delta R^2 &gt; 0\)</span>).</p>
+<p>Een eis voor deze toets is dat beide modellen genest zijn. Bij geneste modellen is het ene model te schrijven als een versie van het andere model na het verwijderen van een aantal predictors.
+In deze casus zou er een model opgesteld kunnen worden waarin alleen de variabele eindexamencijfer Wiskunde een predictor is van het eindcijfer Methoden &amp; Statistiek en een model waarin de de variabelen geslacht, aantal gevolgde hoorcolleges en eindexamencijfer Wiskunde predictors zijn van statistiek. Dit zijn geneste modellen, omdat het eerste model (alleen eindexamencijfer Wiskunde als predictor) een versie is van het tweede model na het verwijderen van de predictors geslacht en aantal gevolgde hoorcolleges. Het model waarbij de predictors verwijderd zijn, wordt als het ware gereduceerd. Daarom wordt dit het gereduceerde model genoemd. Het model waar de predictors niet verwijderd zijn, wordt het uitgebreide model genoemd. Om modellen met een F-toets te vergelijken, moeten ze dus genest zijn. In andere woorden, het verschil tussen beide regressiemodellen moet dus toe te wijzen zijn aan het toevoegen of verwijderen van een of meerdere predictors.<a class="footnote-reference brackets" href="#id49" id="id7">2</a></p>
+</div>
+<div class="section" id="individuele-predictors-toetsen-en-interpreteren">
+<h2>Individuele predictors toetsen en interpreteren<a class="headerlink" href="#individuele-predictors-toetsen-en-interpreteren" title="Permalink to this headline">¶</a></h2>
+<p>Als de F-toets aantoont dat het regressiemodel betere voorspellingen geeft dan het interceptmodel, kunnen de predictors getoetst worden. De regressiecoefficiënten van de predictors en de intercept worden getoetst met een t-toets waarbij de nulhypothese is dat de coefficiënt gelijk aan nul is (<span class="math notranslate nohighlight">\(\beta = 0\)</span>) en de (tweezijdige) alternatieve hypothese dat de coefficiënt niet gelijk aan nul is (<span class="math notranslate nohighlight">\(\beta \neq 0\)</span>). Er kan ook een eenzijdige alternatieve hypothese opgesteld worden, bijvoorbeeld als er verwacht wordt dat de coefficiënt positief of negatief is. De t-toets toont in feite aan of er wel of geen relatie is tussen de predictor en afhankelijke variabele in de aanwezigheid van de andere predictoren van het regressiemodel.<a class="footnote-reference brackets" href="#id49" id="id8">2</a></p>
+<p>Op basis van de geschatte regressiecoefficiënten kan de regressievergelijking ingevuld worden. Op basis van de data zou bijvoorbeeld de volgende regressievergelijking gemaakt kunnen worden</p>
+<div class="math notranslate nohighlight">
+\[ EindcijferM\&amp;S_i = 3 + 0,5 * Geslacht_i + 0,4 * EindexamencijferWiskunde_i + 0,3 * AantalHoorcolleges_i  +  e_i\]</div>
+<p>waarbij alle regressiecoefficiënten significant zijn. Neem aan dat de variabele Geslacht de waarde 1 heeft voor vrouwen en 0 voor mannen. De regressiecoefficiënten geven informatie over de relatie van predictoren met de afhankelijke variabele:</p>
+<ul class="simple">
+<li><p>Intercept (<span class="math notranslate nohighlight">\(\beta_0\)</span>): De intercept geeft de waarde van de afhankelijke variabele weer als alle predictors gelijk aan nul zijn. Als een deelnemer dus de waarde 0 voor Geslacht heeft (dus een man is) en een 0 voor Eindexamencijfer_Wiskunde heeft, dan is het voorspelde eindcijfer Methoden &amp; Statistiek een 3. De intercept geeft soms geen realistische waarde voor de afhankelijke variabele omdat het onwaarschijnlijk is dat de predictor gelijk is aan nul. Met een eindexamencijfer Wiskunde dat gelijk is aan een nul zou iemand nooit bij de bachelor Onderwijskunde terecht kunnen komen. An sich is dit geen groot probleem, omdat het niet altijd nodig is de intercept te kunnen interpreteren. Een oplossing is het centeren van de predictors wat inhoudt dat per predictor het gemiddelde van die predictor van alle waarden wordt afgehaald. Op die manier ontstaat een predictor met een gemiddelde van nul. In die situatie is de intercept gelijk aan de voorspelde waarde van de afhankelijke variabele voor een deelnemer die voor alle predictors gelijk is aan het gemiddelde. Het is in feite de voorspelde waarde voor een gemiddelde deelnemer en daarom erg interessant.</p></li>
+<li><p>Geslacht (<span class="math notranslate nohighlight">\(\beta_1\)</span>): De coefficiënt van de variabele Geslacht is gelijk aan 0,5. Als de overige predictors gelijkblijven is het eindcijfer Methoden &amp; Statistiek 0,5 punten hoger voor vrouwen dan voor mannen. Immers, het product van predictor en coëfficient is <span class="math notranslate nohighlight">\(0,5 * 0 = 0\)</span> voor mannen en <span class="math notranslate nohighlight">\(0,5 * 1 = 0,5\)</span> voor vrouwen. In een regressiemodel worden categorische variabelen omgezet in binaire variabelen met de waarden 0 en 1, omdat dat nodig is om het model te fitten. De variabele Geslacht zou bijvoorbeeld gecodeerd kunnen worden met een 1 voor mannen en een 0 voor vrouwen. Let goed op hoe de categorieën gecodeerd zijn, i.e. welke categorie de waarde 1 en 0 hebben. Dit bepaalt namelijk de interpretatie.</p></li>
+<li><p>Eindexamencijfer_Wiskunde: De coëfficient van de variabele Eindexamencijfer_Wiskunde is gelijk aan 0,4. Dit betekent dat een toename van 1 van de variabele Eindexamencijfer_Wiskunde zorgt voor een toename van 0,4 op de afhankelijke variabele Eindcijfer Methoden &amp; Statistiek als de andere predictors gelijkblijven. Er is dus een positieve relatie tussen het eindexamencijfer Wiskunde en het eindcijfer Methoden &amp; Statistiek. Een deelnemer met een eindexamencijfer Wiskunde dat één punt hoger is dan een andere deelnemer zal dus een voorspelde waarde voor het eindcijfer Methoden &amp; Statistiek hebben van 0,4 punt hoger als de overige predictors gelijkblijven.</p></li>
+<li><p>Aantal_Hoorcolleges: De coëfficient van de variabele Aantal_Hoorcolleges is gelijk aan 0,3. Dit betekent dat een toename van 1 van de variabele Aantal_Hoorcolleges zorgt voor een toename van 0,3 op de afhankelijke variabele Eindcijfer Methoden &amp; Statistiek als de andere predictors gelijkblijven. Er is dus een positieve relatie tussen het aantal gevolgde hoorcolleges en het eindcijfer Methoden &amp; Statistiek. Een deelnemer met een extra gevolgd hoorcollege dan een andere deelnemer zal dus een voorspelde waarde voor het eindcijfer Methoden &amp; Statistiek hebben van 0,3 punt hoger als de overige predictors gelijkblijven.</p></li>
+</ul>
+</div>
+<div class="section" id="predictors-vergelijkingen-door-standaardisatie">
+<h2>Predictors vergelijkingen door standaardisatie<a class="headerlink" href="#predictors-vergelijkingen-door-standaardisatie" title="Permalink to this headline">¶</a></h2>
+<p>Op basis van de regressievergelijking en de t-toetsen kan bepaald worden of predictors gerelateerd zijn aan de afhankelijke variabele en wat de invloed van een verandering van de predictor is op de afhankelijke variabele. Een andere relevante vraag is welke predictor het sterkst gerelateerd is aan de afhankelijke variabele. Op basis van de regressiecoëfficienten kan dit niet bepaald worden, omdat de schaal van de predictors verschilt. Het eindexamencijfer Wiskunde varieert tussen de 1 en 10 terwijl de variabele Geslacht gelijk is aan een 1 of een 0.</p>
+<p>Standaardiseer de afhankelijke variabele en de predictors om de predictors onderling te kunnen vergelijken. Standaardiseren houdt in dat de variabelen getransformeerd worden zodat ze een gemiddelde van 0 hebben en een standaardafwijking van 1. Dit wordt gedaan door voor alle observaties van een variabele eerst het gemiddelde af te trekken en daarna te delen door de standaardafwijking, i.e. <span class="math notranslate nohighlight">\(\frac{x_i - \mu}{\sigma}\)</span>. Als het regressiemodel opnieuw geschat wordt met gestandaardiseerde variabelen, kunnen de coëfficiënten onderling vergeleken worden op basis van hun grootte. Een grotere (absolute waarde van de) coëfficient betekent een sterkere relatie met de afhankelijke variabele. De coëfficiënt is nu te interpreteren in termen van standaardafwijkingen. Een toename van één eenheid van de predictor staat voor een toename van een standaardafwijking van deze predictor. Deze toename van één standaardafwijking zorgt ervoor dat de afhankelijke variabele <span class="math notranslate nohighlight">\(b\)</span> standaardafwijkingen toeneemt waarbij <span class="math notranslate nohighlight">\(b\)</span> de coëfficiënt van de regressievergelijking met gestandaardiseerde variabelen is.<a class="footnote-reference brackets" href="#id49" id="id9">2</a> De predictor met de hoogste absolute waarde van de regressiecoëfficiënt is het sterkst gerelateerd aan de afhankelijke variabele.</p>
+</div>
+<div class="section" id="voorspellen-op-basis-van-het-regressiemodel">
+<h2>Voorspellen op basis van het regressiemodel<a class="headerlink" href="#voorspellen-op-basis-van-het-regressiemodel" title="Permalink to this headline">¶</a></h2>
+<p>Een regressiemodel maakt het mogelijk om een afhankelijke variabele te voorspellen op basis van een aantal predictors. Als van een student bekend is wat zijn geslacht, eindexamencijfer Wiskunde en aantal gevolgde hoorcolleges is, kan een voorspelling gemaakt worden van het eindcijfer Methoden &amp; Statistiek voor die student. Voor alle deelnemers in de steekproef is er een voorspelling. De regressievergelijking maakt het echter ook mogelijk om voor nieuwe deelnemers een voorspelling te maken. Dit wordt een out-of-sample voorspelling genoemd omdat de nieuwe deelnemer niet in de steekproef zit waarop het regressiemodel wordt geschat. Als de docent een jaar later de eindcijfers wilt voorspellen van de studenten die zijn vak volgen, kan hij de regressievergelijking van het jaar ervoor gebruiken. Een mannelijke student met een 7 als eindexamencijfer Wiskunde die 8 hoorcolleges volgt, heeft een voorspeld eindcijfer voor het vak Methoden &amp; Statistiek</p>
+<div class="math notranslate nohighlight">
+\[ EindcijferM\&amp;S_i = 3 + 0,5 * 0 + 0,4 * 7 + 0,3 * 8 = 8,2\]</div>
+<p>een 8,2. Een out-of-sample voorspelling geeft vaak een goede indicatie van de kwaliteit van het regressiemodel, omdat de nieuwe deelnemer niet gebruikt zijn om het model te schatten. Als het doel is om het regressiemodel te gebruiken voor het voorspellen van nieuwe deelnemers, dan is de kwaliteit van de out-of-sample voorspellingen van belang.<a class="footnote-reference brackets" href="#id49" id="id10">2</a></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitleg-assumpties">
+<h1>Uitleg assumpties<a class="headerlink" href="#uitleg-assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Om een valide resultaat te vinden met <em>multipele lineaire regressie</em>, dient er aan een aantal assumpties voldaan te worden.<a class="footnote-reference brackets" href="#id47" id="id11">1</a><sup>,</sup><a class="footnote-reference brackets" href="#id49" id="id12">2</a> In deze sectie worden de assumpties allen toegelicht en worden de opties bij het niet voldoen aan de assumptie weergegeven. Verderop in de toetspagina worden de assumpties getoetst met de dataset van de onderwijscasus.</p>
+<div class="section" id="outliers">
+<h2>Outliers<a class="headerlink" href="#outliers" title="Permalink to this headline">¶</a></h2>
+<p>Voordat gestart kan worden met <em>multipele lineaire regressie</em>, moet de data gescreend worden op de aanwezigheid van outliers. Outliers (uitbijters) zijn observaties die sterk afwijken van de overige observaties. Univariate outliers zijn observaties die afwijken voor één specifieke variabele, zoals een student die twintig jaar over zijn studie heeft gedaan. Multivariate outliers zijn observaties die afwijken door de combinatie van meerdere variabelen, zoals een persoon van 18 jaar met een inkomen van €100.000,-. De leeftijd van 18 jaar is geen outlier op zichzelf en een inkomen van €100.000,- is dat ook niet. Echter, de combinatie van beide zorgt ervoor dat de observatie vrij onwaarschijnlijk is.<a class="footnote-reference brackets" href="#id49" id="id13">2</a></p>
+<p>Na het vinden van een outlier is de volgende stap om een goede oplossing voor te outlier te bedenken. Het is van belang hier goed over na te denken en niet zomaar een outlier te verwijderen met als enige argument dat het een outlier is. In het algemeen kan er onderscheid gemaakt worden tussen onmogelijke en onwaarschijnlijke outliers.<a class="footnote-reference brackets" href="#id50" id="id14">3</a> Een onmogelijke outlier is een observatie die technisch gezien niet kan kloppen, bijvoorbeeld een leeftijd van 1000 jaar, een negatief salaris of een man die zwanger is. Bij deze outliers is het een optie om de waarde te vervangen als er een overduidelijke fout bij het invoeren van de data is gemaakt. Een andere optie is de waarde te verwijderen. Een onwaarschijnlijke outlier is een observatie die technisch gezien wel kan, maar heel erg afwijkt van de overige observaties. De rijksten der aarde zijn in de stad of het dorp waar zij wonen qua vermogen waarschijnlijk een outlier. Maar het zijn bestaande personen dus het verwijderen van de observatie zou hier foutief zijn. Opties in deze situatie zijn de variabele(n) te transformeren, de outlier gewoon mee te nemen in de analyse of de analyse met en zonder de outlier uit te voeren en beide te rapporteren. Ook is het niet verboden om de outlier toch te verwijderen, maar het is in dat geval wel van belang dit transparant te rapporteren en op een goede wijze te beargumenteren.<a class="footnote-reference brackets" href="#id50" id="id15">3</a></p>
+<p>Bij <em>multipele lineaire regressie</em> zijn er vier nuttige methoden om outliers te vinden.<a class="footnote-reference brackets" href="#id49" id="id16">2</a></p>
+<div class="section" id="boxplots-en-standaardiseren">
+<h3>Boxplots en standaardiseren<a class="headerlink" href="#boxplots-en-standaardiseren" title="Permalink to this headline">¶</a></h3>
+<p>Begin voor de analyse met het screenen van de variabelen in de dataset op de aanwezigheid van univariate outliers. Voor continue variabelen bestaat deze screening uit het visualiseren van de variabele met een boxplot en het standaardiseren<a class="footnote-reference brackets" href="#id51" id="id17">4</a> van de variabele. Als een observatie een gestandaardiseerde score van groter dan 3 of kleiner dan -3 heeft, wordt deze beschouwd als een outlier. In dat geval wijkt de observatie namelijk meer dan drie standaardafwijkingen af van het gemiddelde van de variabele. Gebruik zowel de boxplot als de standaardisering om outliers te vinden voor continue variabelen.<a class="footnote-reference brackets" href="#id50" id="id18">3</a></p>
+<p>Bij categorische variabelen hebben boxplots en standaardisatie geen zin, omdat het geen variabelen met een continue schaal zijn. Bij categorische variabelen is het nuttig om een overzicht te maken van de bestaande categorieën en bijbehorende aantallen observaties en is het nuttig om te onderzoeken of elke observatie slechts in één categorie past. Doe dit met behulp van tabellen.</p>
+</div>
+<div class="section" id="gestandaardiseerde-residuen">
+<h3>Gestandaardiseerde residuën<a class="headerlink" href="#gestandaardiseerde-residuen" title="Permalink to this headline">¶</a></h3>
+<p>De residuën van een regressiemodel zijn de verschillen tussen de observaties van de afhankelijke variabele en de voorspellingen. Als er een groot verschil is tussen observatie en voorspelling, zou dat kunnen wijzen op een univariate outlier. Standaardiseer daarom de residuën en onderzoek met een histogram of er outliers zijn. Als een observatie een gestandaardiseerde score van groter dan 3 of kleiner dan -3 heeft, wordt deze beschouwd als een outlier. Op deze manier kunnen outliers bij het regressiemodel kunnen worden geïdentificeerd.<a class="footnote-reference brackets" href="#id49" id="id19">2</a></p>
+</div>
+<div class="section" id="mahalanobis-afstand">
+<h3>Mahalanobis afstand<a class="headerlink" href="#mahalanobis-afstand" title="Permalink to this headline">¶</a></h3>
+<p>Multivariate outliers zijn deelnemers met een combinatie van observaties op verschillende variabelen die erg afwijken van de overige deelnemers. Deze multivariate outliers kunnen geïdentificeerd worden met de Mahalanobis afstand. De Mahalanobis afstand is een maat die aangeeft in hoeverre de observaties van een deelnemer voor alle predictors afwijken van de gemiddeldes van de predictors. Het is een maat voor een afstand tussen twee punten als meerdere variabelen worden gebruikt. Bereken de Mahalanobis afstand voor elke deelnemer en vergelijk deze met de criteriumwaarde. De criteriumwaarde wordt bepaald op basis van de chi-kwadraat score bij een aantal vrijheidsgraden dat gelijk is aan het aantal predictors en een significantieniveau van 0,001 (of een zelf gekozen significantieniveau). In de code wordt toegelicht hoe de criteriumwaarde bepaald kan worden.<a class="footnote-reference brackets" href="#id49" id="id20">2</a></p>
+</div>
+<div class="section" id="cook-s-afstand">
+<h3>Cook’s afstand<a class="headerlink" href="#cook-s-afstand" title="Permalink to this headline">¶</a></h3>
+<p>De Mahalanobis afstand geeft aan in hoeverre een deelnemer afwijkt van de andere deelnemers wat betreft de waardes van de predictorvariabelen. Een andere manier om multivariate outliers te vinden is te bepalen hoeveel invloed een deelnemer heeft op de schattingen van het regressiemodel. Als de uitkomsten van het regressiemodel sterk veranderen als een bepaalde deelnemer weggelaten wordt uit de dataset, dan is deze deelnemer invloedrijk. Met behulp van Cook’s afstand worden invloedrijke deelnemers ontdekt. Als Cook’s afstand groter dan 1 is, wordt de deelnemer beschouwd als invloedrijk.</p>
+<p>Hoewel de Mahalanobis afstand en Cook’s afstand beide multivariate outliers identificeren, verschillen ze in het soort outlier waarop de focus ligt. Bij de Mahalanobis afstand worden afwijkende datapunten gevonden en bij Cook’s distance invloedrijke datapunten. Het is echter niet zo dat een afwijkend datapunt ook tegelijkertijd invloedrijk is en dat een invloedrijk datapunt ook afwijkt. Een afwijkend datapunt kan ondanks zijn afwijking van de de overige datapunten toch op een juiste manier voorspeld worden. En een invloedrijk datapunt hoeft niet per se sterk af te wijken van de overige datapunten wat betreft de waardes voor de predictorvariabelen. Houdt hier rekening mee bij het bepalen hoe om te gaan met de gevonden outlier(s).<a class="footnote-reference brackets" href="#id49" id="id21">2</a></p>
+</div>
+</div>
+<div class="section" id="lineariteit">
+<h2>Lineariteit<a class="headerlink" href="#lineariteit" title="Permalink to this headline">¶</a></h2>
+<p>De regressievergelijking is zo opgesteld dat er een lineaire relatie is tussen elke predictor en de afhankelijke variabele. Een lineaire relatie houdt in dat de toename of afname van de afhankelijke variabele als gevolg van de toename van de predictor constant is: er is een rechte lijn door de data heen te trekken. Een voorbeeld van een lineaire en niet-lineaire relatie is weergegeven in onderstaande figuren. Bij de linkerfiguur kan er duidelijk een rechte lijn door de punten getrokken worden en is er dus sprake van een lineaire relatie. Bij de rechterfiguur is dit niet het geval, daar is er sprake van een curve in de relatie tussen predictor en afhankelijke variabele. De regressiecoëfficiënt van een niet-lineair verband is dan niet informatief, omdat er dan niet aan lineariteit voldaan is.<a class="footnote-reference brackets" href="#id49" id="id22">2</a><sup>,</sup><a class="footnote-reference brackets" href="#id52" id="id23">6</a></p>
+<p>De assumptie van lineariteit wordt onderzocht met behulp van scatter plots, zoals in onderstaande figuren. Deze assumptie hoeft alleen onderzocht te worden voor continue variabelen. Categorische variabelen worden in het regressiemodel omgezet naar variabelen met twee categorieën en met slechts twee categorieën kan niet onderzocht worden of er een lineaire relatie is. Als er geen lineaire relatie is, zijn er verschillende opties. De variabele kan op verschillende manieren getransformeerd<a class="footnote-reference brackets" href="#id53" id="id24">5</a> worden zodat er alsnog een lineaire relatie ontstaat. Als er geen geschikte transformatie gevonden kan worden, dan is het verwijderen van de variabele ook een optie, maar dit heeft logischerwijs niet de voorkeur.</p>
+<div class = "col-container">
+  <div class="col">
+<!-- ## CLOSEDBLOK: Lineariteit1.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Lineariteit1.R -->
+  </div>
+  <div class = "col">
+<!-- ## CLOSEDBLOK: Lineariteit2.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Lineariteit2.R -->
+  </div>
+</div>
+<p><em>Figuur 2.  Voorbeeld van een lineaire (links) en niet-lineaire (rechts) relatie tussen een afhankelijke variabele en een predictor.</em></p>
+</div>
+<div class="section" id="normaliteit-van-residuen">
+<h2>Normaliteit van residuën<a class="headerlink" href="#normaliteit-van-residuen" title="Permalink to this headline">¶</a></h2>
+<p>De residuën van het regressiemodel moeten normaal verdeeld zijn met een gemiddelde van ongeveer 0. Als er niet aan deze assumptie is voldaan, zijn de standaardfouten, betrouwbaarheidsintervallen en significantietoetsen van de regressiecoëfficiënten incorrect. De regressiecoëfficiënten zelf zijn echter wel betrouwbaar als deze assumptie wordt geschonden. De assumptie wordt getoetst door een histogram te maken van de gestandaardiseerde residuën. Als de verdeling van de gestandaardiseerde residuën sterk afwijkt van de normale verdeling, is de assumptie geschonden. Een oplossing hiervoor is het bootstrappen van de standaardfouten, betrouwbaarheidsintervallen en significantietoetsen. Een uitleg over bootstrappen volgt later in deze toetspagina.<a class="footnote-reference brackets" href="#id49" id="id25">2</a></p>
+</div>
+<div class="section" id="homoskedasticiteit">
+<h2>Homoskedasticiteit<a class="headerlink" href="#homoskedasticiteit" title="Permalink to this headline">¶</a></h2>
+<p>Homoskedasticiteit houdt in dat de variantie van de residuën niet afhangt van de waarden van de predictors. Als er niet voldaan is aan deze assumptie (dit heet heteroskedasticiteit), zijn de coëfficiënten nog steeds correct, maar de standaardfouten, betrouwbaarheidsintervallen en significantietoetsen van de coëfficiënten niet meer. Deze assumptie wordt getoetst door een scatter plot te maken van de voorspellingen van het regressiemodel versus de gestandaardiseerde residuën. Onderstaande figuur geeft een voorbeeld weer van homoskedasticiteit en heteroskedasticiteit. Bij heteroskedasticiteit is zichtbaar dat de variantie in de residuën toeneemt als de waarde van de voorspellingen toeneemt. Als deze assumptie geschonden is, is het bootstrappen van de standaardfouten, betrouwbaarheidsintervallen en significantietoetsen een oplossing. Een andere oplossing is het uitvoeren van weighted least squares regressie waarbij rekening wordt gehouden met de verschillen in variantie.<a class="footnote-reference brackets" href="#id49" id="id26">2</a></p>
+<div class = "col-container">
+  <div class="col">
+<!-- ## CLOSEDBLOK: Homoskedasticiteit1.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Homoskedasticiteit1.R -->
+  </div>
+  <div class = "col">
+<!-- ## CLOSEDBLOK: Homoskedasticiteit2.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Homoskedasticiteit2.R -->
+  </div>
+</div>
+*Figuur 3.  Voorbeeld van homoskedasticiteit (links) en heteroskedasticiteit (rechts) van residuën van een regressiemodel.*
+</div>
+<div class="section" id="multicollineariteit">
+<h2>Multicollineariteit<a class="headerlink" href="#multicollineariteit" title="Permalink to this headline">¶</a></h2>
+<p>Multicollineariteit houdt in dat er een hoge correlatie tussen twee of meerdere predictors is. Er is perfecte multicollineariteit als één predictor een lineaire combinatie is van een of meerdere andere predictors. In andere woorden, de predictor is precies te berekenen op basis van andere predictor(s). In dat geval kan de regressievergelijking niet wiskundig bepaald worden en werkt <em>multipele lineaire regressie</em> niet. Dit komt zeer weinig voor en is vaak makkelijk op te lossen door goed naar de variabelen die het veroorzaken te kijken en een variabele te transformeren of te verwijderen.<a class="footnote-reference brackets" href="#id49" id="id27">2</a></p>
+<p>Bij een hoog niveau van multicollineariteit kan de regressievergelijking wel geschat worden, maar zijn de uitkomsten minder betrouwbaar. De standaardfouten van de regressiecoëfficiënten worden groter bij meer multicollineariteit en dit levert bij hoge multicollineariteit problemen op. Ook is het lastig om te ontdekken wat per predictor de bijdrage is aan de voorspellingen van de afhankelijke variabele, omdat bepaalde predictors sterk gecorreleerd zijn en overlappen in het deel van de variantie dat ze verklaren.<a class="footnote-reference brackets" href="#id49" id="id28">2</a></p>
+<p>Multicollineariteit wordt getoetst met de Variance Inflation Factor (VIF) die meet hoe sterk elke predictor gecorreleerd is met de andere predictors. Als de VIF van een predictor hoger dan 10 is, is er multicollineariteit voor die predictor.<a class="footnote-reference brackets" href="#id49" id="id29">2</a><sup>,</sup><a class="footnote-reference brackets" href="#id54" id="id30">7</a> Multicollineariteit kan opgelost worden door een van de predictors die het veroorzaakt te verwijderen uit het model. Een andere optie is een principale componenten analyse (PCA) uitvoeren op de predictoren zodat er een onderliggende variabele gecreëerd wordt (zie Field<a class="footnote-reference brackets" href="#id49" id="id31">2</a> voor meer informatie).</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="bootstrappen">
+<h1>Bootstrappen<a class="headerlink" href="#bootstrappen" title="Permalink to this headline">¶</a></h1>
+<p>Als er niet voldaan is aan de assumpties van normaliteit of  homoskedasticiteit, dan zijn de standaardfouten, betrouwbaarheidsintervallen en significantietoetsen van het regressiemodel incorrect. Bootstrappen is hier een oplossing voor. Bij bootstrappen wordt de verdelingen van de parameters van het regressiemodel nagebootst. Als eerste stap wordt de steekproef gezien als een populatie waaruit een nieuwe steekproef getrokken kan worden. Deze steekproef is even groot als de echte steekproef, maar toch verschillend omdat het mogelijk is dezelfde deelnemer meerdere keren in de steekproef te hebben. Op basis van de nieuwe steekproef wordt het regressiemodel opnieuw geschat en is er een schatting van de regressiecoëfficiënten. Deze procedure wordt een groot aantal keer (10000) herhaald, waardoor er 10000 keer regressiecoëfficiënten worden bepaald. Met behulp van deze 10000 waarden van de regressiecoëfficiënten is er een verdeling gemaakt voor elke regressiecoëfficiënt waaruit de standaardfout en de betrouwbaarheidsintervallen kunnen worden berekend. Op basis van de betrouwbaarheidsintervallen kunnen er ook significantietoetsen worden uitgevoerd. Op deze manier is bootstrappen de oplossing voor <em>multipele lineaire regressie</em> als er niet voldaan is aan normaliteit of homoskedasticiteit.<a class="footnote-reference brackets" href="#id49" id="id32">2</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="toetsing-assumpties">
+<h1>Toetsing assumpties<a class="headerlink" href="#toetsing-assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Voer <em>multipele lineaire regressie</em> uit om te onderzoeken of het eindcijfer voor het vak Methoden &amp; Statistiek van de bachelor Onderwijskunde te voorspellen is op basis van het geslacht, eindexamencijfer Wiskunde en aantal gevolgde hoorcolleges. Start met het toetsen van de assumpties en voer vervolgens de <em>multipele lineaire regressie</em> uit als hieraan voldaan is.</p>
+<!-- ## TEKSTBLOK: Uitvoering1.R -->
+<p>Voer eerst de <em>multipele lineaire regressie</em> uit omdat deze nodig is voor het toetsen van assumpties en sla het resultaat op. Interpreteer de resultaten pas na het toetsen van de assumpties. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">lm()</span></code> met als eerste argument de regressievergelijking <code class="docutils literal notranslate"><span class="pre">Eindcijfer_MS</span> <span class="pre">~</span> <span class="pre">Geslacht</span> <span class="pre">+</span> <span class="pre">Eindexamencijfer_Wiskunde</span> <span class="pre">+</span> <span class="pre">Aantal_Hoorcolleges</span></code> met links van het golfteken de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Eindcijfer_MS</span></code> en rechts de drie onafhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">Eindexamencijfer_Wiskunde</span></code>, <code class="docutils literal notranslate"><span class="pre">Aantal_Hoorcolleges</span></code> en <code class="docutils literal notranslate"><span class="pre">Eindcijfer_MS</span></code>. Het tweede argument is de dataset <code class="docutils literal notranslate"><span class="pre">Studenten_Methoden_Statistiek</span></code>.</p>
+<!-- ## /TEKSTBLOK: Uitvoering1.R -->
+<!-- ## OPENBLOK: Uitvoering2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Regressiemodel</span> <span class="o">&lt;-</span> <span class="n">lm</span><span class="p">(</span><span class="n">Eindcijfer_MS</span> <span class="o">~</span> <span class="n">Geslacht</span> <span class="o">+</span> <span class="n">Eindexamencijfer_Wiskunde</span> <span class="o">+</span> <span class="n">Aantal_Hoorcolleges</span><span class="p">,</span> <span class="n">Studenten_Methoden_Statistiek</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Uitvoering2.R -->
+<div class="section" id="id33">
+<h2>Outliers<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id34">
+<h3>Boxplots en standaardiseren<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: Outlier1.R -->
+<p>Onderzoek of er univariate outliers zijn met behulp van boxplots en gestandaardiseerde scores voor continue variabelen en tabellen voor categorische variabelen. Begin met de boxplot voor de variabelen <code class="docutils literal notranslate"><span class="pre">Eindexamencijfer_Wiskunde</span></code>, <code class="docutils literal notranslate"><span class="pre">Aantal_Hoorcolleges</span></code> en <code class="docutils literal notranslate"><span class="pre">Eindcijfer_MS</span></code>.</p>
+<!-- ## /TEKSTBLOK: Outlier1.R -->
+<!-- ## OPENBLOK: Outlier2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Maak een boxplot van de continue variabelen in de dataset</span>
+<span class="n">boxplot</span><span class="p">(</span><span class="n">Studenten_Methoden_Statistiek</span><span class="p">[,</span><span class="n">c</span><span class="p">(</span><span class="s2">&quot;Eindexamencijfer_Wiskunde&quot;</span><span class="p">,</span>
+                                         <span class="s2">&quot;Aantal_Hoorcolleges&quot;</span><span class="p">,</span>
+                                         <span class="s2">&quot;Eindcijfer_MS&quot;</span><span class="p">)],</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;Cijfer Wiskunde&quot;</span><span class="p">,</span>
+                                         <span class="s2">&quot;Hoorcolleges&quot;</span><span class="p">,</span>
+                                         <span class="s2">&quot;Cijfer M&amp;S&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier2.R -->
+<p>Voor alle drie de variabelen zijn er geen onmogelijke scores en zijn er geen grote afwijkingen.</p>
+<p>Onderzoek de gestandaardiseerde scores door een functie te schrijven die het aantal observaties per variabele telt met een gestandaardiseerde score hoger dan 3 of lager dan -3. Pas deze functie vervolgens toe op de drie continue variabelen in de dataset.</p>
+<!-- ## OPENBLOK: Outlier3.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Maak een functie om het aantal observaties met een gestandaardiseerde score hoger dan 3 of lager dan -3 te tellen
+Outlier_standaardiseren &lt;- function(variabele){
+  # Standaardiseer de variabele met de scale functie
+  Z_score &lt;- scale(variabele)
+  # Tel het aantal observaties met een absolute score hoger dan 3
+  Aantal_outliers &lt;- sum(abs(Z_score) &gt; 3)
+  # Retourneer dit aantal
+  return(Aantal_outliers)
+}
+
+# Tel voor de continue variabelen het aantal observaties met een gestandaardiseerde score hoger dan 3 of lager dan -3
+Outlier_standaardiseren(Studenten_Methoden_Statistiek$Eindexamencijfer_Wiskunde)
+Outlier_standaardiseren(Studenten_Methoden_Statistiek$Aantal_Hoorcolleges)
+Outlier_standaardiseren(Studenten_Methoden_Statistiek$Eindcijfer_MS)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier3.R -->
+<p>Alle drie de variabelen hebben nul observaties met een gestandaardiseerde score hoger dan 3 of lager dan -3. Er zijn in de stap voor de continue variabelen geen outliers gevonden.</p>
+<p>Geslacht is de enige categorische variabele in deze dataset. Maak een tabel met de frequenties voor alle categoriëen van deze variabele om te onderzoeken of hier afwijkende waardes zijn.</p>
+<!-- ## OPENBLOK: Outlier4.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>table(Studenten_Methoden_Statistiek$Geslacht)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier4.R -->
+<p>De categorieën van de variabele Geslacht zijn <code class="docutils literal notranslate"><span class="pre">Man</span></code> en <code class="docutils literal notranslate"><span class="pre">Vrouw</span></code>; beide komen redelijk veel voor. Er zijn dus geen opmerkelijke waarden bij de variabele Geslacht.</p>
+</div>
+<div class="section" id="id35">
+<h3>Gestandaardiseerde residuën<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: Outlier5.R -->
+<p>Onderzoek of er outliers zijn met behulp van de gestandaardiseerde residuën van het regressiemodel. Vind eerst de residuën met de functie <code class="docutils literal notranslate"><span class="pre">rstandard</span></code> met als argument <code class="docutils literal notranslate"><span class="pre">Regressiemodel</span></code> (het object van het regressiemodel). Maak vervolgens een plot en tel het aantal gestandaardiseerde residuën met een waarde hoger dan 3 of lager dan -3.</p>
+<!-- ## /TEKSTBLOK: Outlier5.R -->
+<!-- ## OPENBLOK: Outlier6.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sla de gestandaardiseerde residuën op</span>
+<span class="n">Residu_gestandaardiseerd</span> <span class="o">&lt;-</span> <span class="n">rstandard</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+
+<span class="c1"># Maak een plot</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">Residu_gestandaardiseerd</span><span class="p">,</span> <span class="n">xlab</span> <span class="o">=</span> <span class="s2">&quot;Volgorde&quot;</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">&quot;Gestandaardiseerde residuën&quot;</span><span class="p">)</span>
+
+<span class="c1"># Tel het aantal gestandaardiseerde residuën met een absolute waarde groter dan 3</span>
+<span class="nb">sum</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">Residu_gestandaardiseerd</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier6.R -->
+<p>Er zijn geen gestandaardiseerde residuën met een score hoger dan 3 of lager dan -3 wat er op wijst dat er geen outliers in de data zijn.</p>
+</div>
+<div class="section" id="mahalanobis-distance">
+<h3>Mahalanobis distance<a class="headerlink" href="#mahalanobis-distance" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: Outlier7.R -->
+<p>Onderzoek of er multivariate outliers zijn met behulp van de Mahalanobis distance met behulp van de functie <code class="docutils literal notranslate"><span class="pre">mahalanobis()</span></code>. De Mahalanobis afstand geeft aan in hoeverre een deelnemer afwijkt van het gemiddelde van alle deelnemers voor alle predictors samen. Een voorwaarde voor de functie is dat alle variabelen numeriek zijn. Zet daarom eerst de variabele <code class="docutils literal notranslate"><span class="pre">Geslacht</span></code> om in een numerieke variabele met de waarde 1 voor vrouwen en 0 voor mannen. Het omzetten van een categorische variabele in een of meer numerieke variabele heet dummycoderen; de variabelen worden vaak dummies genoemd.</p>
+<p>Neem vervolgens een subset van de dataset met alleen de predictors en gebruik deze voor de mahalanobis afstand. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">mahalanobis()</span></code> met als argumenten de dataset <code class="docutils literal notranslate"><span class="pre">Subset</span></code>, de gemiddeldes van elke kolom berekend met <code class="docutils literal notranslate"><span class="pre">colMeans(Subset)</span></code> en de covariantiematrix van de dataset berekend met <code class="docutils literal notranslate"><span class="pre">cov(Subset)</span></code>.</p>
+<p>Bereken daarna de criteriumwaarde op basis van het gewenste significantieniveau en het aantal predictors. Plot de Mahalanobis afstanden en tel het aantal deelnemers met een Mahalanobis afstand groter dan de criteriumwaarde. Het gehanteerde significantieniveau is 0,001.</p>
+<!-- ## /TEKSTBLOK: Outlier7.R -->
+<!-- ## OPENBLOK: Outlier8.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Zet Geslacht om in een numerieke variabele met een 1 voor een vrouw en 0 voor een man
+Studenten_Methoden_Statistiek$Geslacht_numeriek &lt;- as.numeric(Studenten_Methoden_Statistiek$Geslacht == &quot;Vrouw&quot;)
+
+# Maak een subset van de dataset met alle predictors
+Subset &lt;- Studenten_Methoden_Statistiek[,c(&quot;Eindexamencijfer_Wiskunde&quot;,
+                                           &quot;Aantal_Hoorcolleges&quot;,
+                                           &quot;Eindcijfer_MS&quot;,
+                                           &quot;Geslacht_numeriek&quot;)]
+
+# Bereken de Mahalanobis afstand voor elke deelnemer 
+Mahalanobis_afstanden &lt;- mahalanobis(Subset,
+            colMeans(Subset),
+            cov(Subset))
+
+# Bepaal de criteriumwaarde voor de Mahalanobis afstand met de functie qchisq() met als eerste argument 1 - het significantieniveau en als tweede argument het aantal predictors. In deze casus is het significantieniveau voor de Mahalanobis afstand 0.001 en het aantal predictors berekend met ncol(Subset).
+(Criteriumwaarde &lt;- qchisq(1 - 0.001, ncol(Subset)))
+
+# Plot de Mahalanobis afstanden
+plot(Mahalanobis_afstanden, xlab = &quot;Volgorde&quot;, ylab = &quot;Mahalanobis afstanden&quot;)
+
+# Tel het aantal Mahalanobis afstanden groter dan de criteriumwaarde
+sum(Mahalanobis_afstanden &gt; Criteriumwaarde)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier8.R -->
+<!-- ## TEKSTBLOK: Outlier9.R -->
+<p>Er zijn geen deelnemers met een Mahalanobis afstand groter dan de criteriumwaarde van <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Criteriumwaarde)</span></code>, dus er lijken geen multivariate outliers te zijn op basis van de Mahalanobis afstand.</p>
+<!-- ## /TEKSTBLOK: Outlier9.R -->
+</div>
+<div class="section" id="id36">
+<h3>Cook’s afstand<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: Outlier10.R -->
+<p>Onderzoek of er multivariate outliers zijn met behulp van Cook’s afstand. Cook’s afstand geeft aan hoeveel invloed het weglaten van een deelnemer heeft op de uitkomsten van het regressiemodel. Gebruik hiervoor de functie <code class="docutils literal notranslate"><span class="pre">cooks.distance</span></code> met als argument  <code class="docutils literal notranslate"><span class="pre">Regressiemodel</span></code> (het object van het regressiemodel). Plot de Cook’s afstanden daarna en tel het aantal Cook’s afstanden dat groter is dan de criteriumwaarde van 1.</p>
+<!-- ## /TEKSTBLOK: Outlier10.R -->
+<!-- ## OPENBLOK: Outlier11.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bepaal Cook&#39;s afstand voor elke deelnemer</span>
+<span class="n">Cooks_afstand</span> <span class="o">&lt;-</span>  <span class="n">cooks</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+
+<span class="c1"># Plot Cook&#39;s afstanden</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">Cooks_afstand</span><span class="p">,</span> <span class="n">xlab</span> <span class="o">=</span> <span class="s2">&quot;Volgorde&quot;</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">&quot;Cook&#39;s afstanden&quot;</span><span class="p">)</span>
+
+<span class="c1"># Tel het aantal Cook&#39;s afstanden groter dan de criteriumwaarde van 1</span>
+<span class="nb">sum</span><span class="p">(</span><span class="n">Cooks_afstand</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier11.R -->
+<p>Er zijn geen deelnemers met een Cook’s afstand groter dan de criteriumwaarde van 1. Er lijken dus geen invloedrijke datapunten of multivariate outliers te zijn.</p>
+</div>
+</div>
+<div class="section" id="id37">
+<h2>Lineariteit<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h2>
+<p>Onderzoek of er een lineaire relatie is tussen de continue predictoren en de afhankelijke variabele met behulp van scatter plots.</p>
+<div class = "col-container">
+  <div class="col">
+<!-- ## OPENBLOK: AssLineariteit1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot</span><span class="p">(</span><span class="n">Eindcijfer_MS</span> <span class="o">~</span> <span class="n">Eindexamencijfer_Wiskunde</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">Studenten_Methoden_Statistiek</span><span class="p">,</span>
+     <span class="n">xlab</span> <span class="o">=</span> <span class="s2">&quot;Eindexamencijfer Wiskunde&quot;</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">&quot;Eindcijfer Methoden &amp; Statistiek&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssLineariteit1.R -->
+  </div>
+  <div class = "col">
+<!-- ## OPENBLOK: AssLineariteit2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot</span><span class="p">(</span><span class="n">Eindcijfer_MS</span> <span class="o">~</span> <span class="n">Aantal_Hoorcolleges</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">Studenten_Methoden_Statistiek</span><span class="p">,</span>
+     <span class="n">xlab</span> <span class="o">=</span> <span class="s2">&quot;Aantal hoorcolleges&quot;</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">&quot;Eindcijfer Methoden &amp; Statistiek&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssLineariteit2.R -->
+  </div>
+</div>
+<p>Bij beide predictors lijkt er een lineaire relatie te zijn met de afhankelijke variabele. Er is dus aan de assumptie van lineariteit voldaan.</p>
+</div>
+<div class="section" id="normaliteit">
+<h2>Normaliteit<a class="headerlink" href="#normaliteit" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: AssNormaliteit1.R -->
+<p>Onderzoek of de gestandaardiseerde residuën van het regressiemodel een normale verdeling volgen. Sla eerst de gestandaardiseerde residuën op met behulp van de functie <code class="docutils literal notranslate"><span class="pre">rstandard()</span></code> met als argument <code class="docutils literal notranslate"><span class="pre">Regressiemodel</span></code> (het object van het regressiemodel) en maak vervolgens een histogram<a class="footnote-reference brackets" href="#id55" id="id38">18</a> om de verdeling te inspecteren. Het is ook mogelijk om normaliteit te onderzoeken met behulp van een QQ-plot.</p>
+<!-- ## /TEKSTBLOK: AssNormaliteit1.R -->
+<!-- ## OPENBLOK: AssNormaliteit2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sla de gestandaardiseerde residuën op</span>
+<span class="n">Residu_gestandaardiseerd</span> <span class="o">&lt;-</span> <span class="n">rstandard</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+
+<span class="c1"># Maak een histogram</span>
+<span class="n">hist</span><span class="p">(</span><span class="n">Residu_gestandaardiseerd</span><span class="p">,</span> <span class="n">xlab</span> <span class="o">=</span> <span class="s2">&quot;Gestandaardiseerde residuën&quot;</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">&quot;Frequentie&quot;</span><span class="p">,</span> <span class="n">main</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssNormaliteit2.R -->
+<p>De verdeling van de gestandaardiseerde residuën lijkt een normaalverdeling te benaderen. Er is dus voldaan aan de assumptie van normaliteit.</p>
+</div>
+<div class="section" id="id39">
+<h2>Homoskedasticiteit<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: AssHomoskedasticiteit1.R -->
+<p>Toets de assumptie van homoskedasticiteit door te onderzoeken of de variantie ongeveer gelijk is voor alle waarden van de voorspellingen van de afhankelijke variabele. Maak hiervoor een plot van de gestandaardiseerde residuën versus de voorspellingen. De gestandaardiseerde residuën zijn te vinden met de functie <code class="docutils literal notranslate"><span class="pre">rstandard()</span></code> met als argument <code class="docutils literal notranslate"><span class="pre">Regressiemodel</span></code> (het object van het regressiemodel) en de voorspellingen met de functie <code class="docutils literal notranslate"><span class="pre">fitted()</span></code> met wederom als argument <code class="docutils literal notranslate"><span class="pre">Regressiemodel</span></code>.</p>
+<!-- ## /TEKSTBLOK: AssHomoskedasticiteit1.R -->
+<!-- ## OPENBLOK: AssHomoskedasticiteit2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sla de gestandaardiseerde residuën op</span>
+<span class="n">Residu_gestandaardiseerd</span> <span class="o">&lt;-</span> <span class="n">rstandard</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+
+<span class="c1"># Sla de voorspellingen op</span>
+<span class="n">Voorspellingen</span> <span class="o">&lt;-</span> <span class="n">fitted</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+
+<span class="c1"># Maak een scatter plot</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">Voorspellingen</span><span class="p">,</span> <span class="n">Residu_gestandaardiseerd</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">&quot;Gestandaardiseerde residuën&quot;</span><span class="p">,</span> <span class="n">xlab</span> <span class="o">=</span> <span class="s2">&quot;Voorspellingen&quot;</span><span class="p">,</span> <span class="n">main</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssHomoskedasticiteit2.R -->
+<p>De spreiding van de gestandaardiseerde residuën lijkt redelijk constant te zijn voor de verschillende waarden van de voorspellingen. Er is dus voldaan aan de assumptie van homoskedasticiteit.</p>
+</div>
+<div class="section" id="id40">
+<h2>Multicollineariteit<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: AssMulticollineariteit1.R -->
+<p>Onderzoek of er sprake is van multicollineariteit met behulp van Variance Inflation Factors (VIFs). Bereken de VIFs voor elke predictor met de functie <code class="docutils literal notranslate"><span class="pre">VIF()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">DescTools</span></code> waarbij de functie als argument <code class="docutils literal notranslate"><span class="pre">Regressiemodel</span></code> (het object van het regressiemodel) heeft.</p>
+<!-- ## /TEKSTBLOK: AssMulticollineariteit1.R -->
+<!-- ## OPENBLOK: AssMulticollineariteit2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">DescTools</span><span class="p">)</span>
+
+<span class="c1"># Bereken de VIF voor elke predictor</span>
+<span class="n">VIF</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssMulticollineariteit2.R -->
+<p>Geen enkele van de VIFs is hoger dan 10, dus er is voldaan aan de assumptie van multicollineariteit.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering">
+<h1>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Uitvoering1.R -->
+<p>Als alle assumpties zijn getoetst en aan alle assumpties is voldaan, kan de <em>multipele lineaire regressie</em> uitgevoerd worden. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">lm()</span></code> met als eerste argument de regressievergelijking <code class="docutils literal notranslate"><span class="pre">Eindcijfer_MS</span> <span class="pre">~</span> <span class="pre">Geslacht</span> <span class="pre">+</span> <span class="pre">Eindexamencijfer_Wiskunde</span> <span class="pre">+</span> <span class="pre">Aantal_Hoorcolleges</span></code> met links van het golfteken de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Eindcijfer_MS</span></code> en rechts de drie onafhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">Eindexamencijfer_Wiskunde</span></code>, <code class="docutils literal notranslate"><span class="pre">Aantal_Hoorcolleges</span></code> en <code class="docutils literal notranslate"><span class="pre">Eindcijfer_MS</span></code>. Het tweede argument is de dataset <code class="docutils literal notranslate"><span class="pre">Studenten_Methoden_Statistiek</span></code>. Sla het model op en presenteer vervolgens een overzicht van de resultaten met de functie <code class="docutils literal notranslate"><span class="pre">summary</span></code>. Bepaal de 95%-betrouwbaarheidsintervallen van de regressiecoëfficiënten met de functie <code class="docutils literal notranslate"><span class="pre">confint</span></code>.</p>
+<!-- ## /TEKSTBLOK: Uitvoering1.R -->
+<!-- ## OPENBLOK: Uitvoering2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Voer de multipele lineaire regressie uit</span>
+<span class="n">Regressiemodel</span> <span class="o">&lt;-</span> <span class="n">lm</span><span class="p">(</span><span class="n">Eindcijfer_MS</span> <span class="o">~</span> <span class="n">Geslacht</span> <span class="o">+</span> <span class="n">Eindexamencijfer_Wiskunde</span> <span class="o">+</span> <span class="n">Aantal_Hoorcolleges</span><span class="p">,</span>
+                     <span class="n">Studenten_Methoden_Statistiek</span><span class="p">)</span>
+
+<span class="c1"># Presenteer de resultaten</span>
+<span class="n">summary</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+
+<span class="c1"># Presenteer de 95%-betrouwbaarheidsintervallen</span>
+<span class="n">confint</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Uitvoering2.R -->
+<!-- ## CLOSEDBLOK: Uitvoering3.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Uitvoering3.R -->
+<div class="section" id="significantie-regressiemodel">
+<h2>Significantie regressiemodel<a class="headerlink" href="#significantie-regressiemodel" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Ftoets1.R -->
+<p>Bepaal als eerste stap de significantie van het regressiemodel met behulp van de F-toets. De F-toets voor het regressiemodel laat zien dat het opgestelde regressiemodel een significant hogere verklaarde variantie heeft dan het model met alleen een intercept, <em>F</em>(<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format_0decimals(F_toets[2])</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format_0decimals(F_toets[3])</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(F_toets[1])</span></code>, <em>p</em> &lt; 0,0001.<a class="footnote-reference brackets" href="#id56" id="id41">8</a> De nulhypothese dat geen enkele predictor van de predictors geslacht, eindexamencijfer Wiskunde en aantal gevolgde hoorcolleges is gerelateerd aan de afhankelijke variabele eindcijfer Methoden &amp; Statistiek kan verworpen worden. De verklaarde variantie <span class="math notranslate nohighlight">\(R^2\)</span> is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(100*R2)</span></code>. Omdat de F-toets voor het gehele model significant is, kunnen de coëfficiënten geinterpreteerd worden.</p>
+<!-- ## TEKSTBLOK: Ftoets1.R -->
+</div>
+<div class="section" id="significantie-en-interpretatie-coefficienten">
+<h2>Significantie en interpretatie coëfficiënten.<a class="headerlink" href="#significantie-en-interpretatie-coefficienten" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Coefficienten1.R -->
+<p>Voor de intercept en de regressiecoëfficiënten van de predictors zijn de geschatte coëfficiënt (<code class="docutils literal notranslate"><span class="pre">Estimate</span></code>), de standaardfout van de geschatte coëfficiënt (<code class="docutils literal notranslate"><span class="pre">Std.</span> <span class="pre">Error</span></code>) en de t-statistiek (<code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">value</span></code>) en p-waarde (<code class="docutils literal notranslate"><span class="pre">Pr(&gt;|t|)</span></code>) van de t-toets voor de regressiecoëfficiënt weergegeven:</p>
+<ul class="simple">
+<li><p>Intercept: de geschatte waarde voor de intercept is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[1,1])</span></code> en is significant verschillend van 0 (<em>t</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[1,3])</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[1,4])</span></code>)<a class="footnote-reference brackets" href="#id56" id="id42">8</a>. De intercept staat voor het voorspelde eindcijfer Methoden &amp; Statistiek als alle predictors een waarde van nul hebben. Een man met een 0 als eindexamencijfer Wiskunde die nul hoorcolleges volgt zal naar verwachting een <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[1,1])</span></code> behalen als eindcijfer voor het vak Methoden &amp; Statistiek.</p></li>
+<li><p>Geslacht: de geschatte waarde voor de regressiecoëfficiënt van de variabele Geslacht is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,1])</span></code> en is niet significant verschillend van 0 (<em>t</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,3])</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,4])</span></code>)<a class="footnote-reference brackets" href="#id56" id="id43">8</a>. De coëfficiënt hoeft dus niet geïnterpreteerd te worden.</p></li>
+<li><p>Eindexamencijfer_Wiskunde: de geschatte waarde voor de regressiecoëfficiënt van de variabele Eindexamencijfer_Wiskunde is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,1])</span></code> en is significant verschillend van 0 (<em>t</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,3])</span></code>, <em>p</em> &lt; 0,01)<a class="footnote-reference brackets" href="#id56" id="id44">8</a>. Als het eindexamencijfer Wiskunde met één punt toeneemt, neemt de voorspelling voor het eindcijfer Methoden &amp; Statistiek met <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,1])</span></code> toe.</p></li>
+<li><p>Aantal_Hoorcolleges: de geschatte waarde voor de regressiecoëfficiënt van de variabele Aantal_Hoorcolleges is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,1])</span></code> en is significant verschillend van 0 (<em>t</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,3])</span></code>, <em>p</em> &lt; 0,0001)<a class="footnote-reference brackets" href="#id56" id="id45">8</a>. Als een student een extra hoorcollege volgt, neemt de voorspelling voor het eindcijfer Methoden &amp; Statistiek met <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,1])</span></code> toe.</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Coefficienten1.R -->
+</div>
+<div class="section" id="sterkte-van-de-relatie-tussen-de-predictor-en-afhankelijke-variabele">
+<h2>Sterkte van de relatie tussen de predictor en afhankelijke variabele<a class="headerlink" href="#sterkte-van-de-relatie-tussen-de-predictor-en-afhankelijke-variabele" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: CoefficientenStd1.R -->
+<p>De regressiecoëfficiënten van de predictors Eindexamencijfer_Wiskunde en Aantal_Hoorcolleges zijn significant verschillend van nul en dragen dus bij aan het voorspellen van het eindcijfer Methoden &amp; Statistiek. Met behulp van de gestandaardiseerde regressiecoëfficiënten kan bepaald worden welke predictor het sterkst gerelateerd is aan de afhankelijke variabele. Gebruik hiervoor de functie <code class="docutils literal notranslate"><span class="pre">lm.beta()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">QuantPsyc</span></code> met als argument <code class="docutils literal notranslate"><span class="pre">Regressiemodel_numeriek</span></code> (het object van het regressiemodel). Een voorwaarde voor de functie is dat alle variabelen numeriek zijn. Zet daarom eerst de variabele <code class="docutils literal notranslate"><span class="pre">Geslacht</span></code> om in een numerieke variabele met de waarde 1 voor vrouwen en 0 voor mannen. Het omzetten van een categorische variabele in een of meer numerieke variabele heet dummycoderen; de variabelen worden vaak dummies genoemd. Gebruik de numerieke variabele <code class="docutils literal notranslate"><span class="pre">Geslacht_numeriek</span></code> vervolgens om de <em>multipele lineaire regressie</em> uit te voeren met de functie <code class="docutils literal notranslate"><span class="pre">lm()</span></code> op dezelfde manier als eerder is gedaan.</p>
+<!-- ## /TEKSTBLOK: CoefficientenStd1.R -->
+<!-- ## OPENBLOK: CoefficientenStd2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Laad het package QuantPsyc in
+library(QuantPsyc)
+
+# Zet Geslacht om in een numerieke variabele met een 1 voor een vrouw en 0 voor een man
+Studenten_Methoden_Statistiek$Geslacht_numeriek &lt;- as.numeric(Studenten_Methoden_Statistiek$Geslacht == &quot;Vrouw&quot;)
+
+# Stel het regressiemodel op met Geslacht als numerieke variabele
+Regressiemodel_numeriek &lt;- lm(Eindcijfer_MS ~ Geslacht_numeriek + Eindexamencijfer_Wiskunde + Aantal_Hoorcolleges, Studenten_Methoden_Statistiek)
+
+# Bereken de gestandaardiseerde coefficienten
+lm.beta(Regressiemodel_numeriek)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: CoefficientenStd2.R -->
+<!-- ## CLOSEDBLOK: CoefficientenStd3.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: CoefficientenStd3.R -->
+<!-- ## TEKSTBLOK: CoefficientenStd4.R -->
+<p>De gestandaardiseerde regressiecoëfficiënt is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[2])</span></code> voor de predictor Eindexamen_Wiskunde en <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[3])</span></code> voor de predictor Aantal_Hoorcolleges. Het aantal hoorcolleges heeft dus meer invloed op het eindcijfer Methoden &amp; Statistiek dan het eindexamencijfer Wiskunde. Een toename van één standaardafwijking in het aantal hoorcolleges resulteert in een toename van <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[3])</span></code> standaardafwijkingen in het eindcijfer Methoden &amp; Statistiek. De gestandaardiseerde regressiecoëfficiënt van de variabele Geslacht_numeriek hoeft niet geïnterpreteerd te worden omdat deze niet significant is (de significatietoetsen veranderen niet door standaardisatie).</p>
+<!-- ## /TEKSTBLOK: CoefficientenStd4.R -->
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering-f-toets-voor-vergelijking-twee-regressiemodellen">
+<h1>Uitvoering F-toets voor vergelijking twee regressiemodellen<a class="headerlink" href="#uitvoering-f-toets-voor-vergelijking-twee-regressiemodellen" title="Permalink to this headline">¶</a></h1>
+<p>De F-toets wordt bij <em>multipele lineaire regressie</em> gebruikt om de significantie van het gehele regressiemodel te toetsen ten opzichte van het interceptmodel. Deze F-toets kan ook gebruikt worden om te toetsen of twee geneste regressiemodellen onderling verschillen qua verklaarde variantie. Hoewel deze vergelijking in de casus niet voorbijkomt, wordt deze toch geïllustreerd. Vergelijk hierbij een model met als enige predictor het geslacht van de student met een model met de predictors Geslacht, Eindexamencijfer_Wiskunde en Aantal_Hoorcolleges.</p>
+<!-- ## TEKSTBLOK: ModellenVergelijken1.R -->
+<p>Voer de F-toets uit met de functie <code class="docutils literal notranslate"><span class="pre">anova()</span></code> met als argumenten de modelobjecten van de resultaten van de twee regressiemodellen die worden vergeleken (<code class="docutils literal notranslate"><span class="pre">Model_1</span></code> en <code class="docutils literal notranslate"><span class="pre">Model_2</span></code>). Voer eerst de <em>multipele lineaire regressie</em> uit voor beide modellen en vergelijk ze daarna. Bereken ten slotte de verklaarde variantie met de functie <code class="docutils literal notranslate"><span class="pre">summary()$r.squared</span></code> met als argument het modelobject waarvan de verklaarde variantie berekend moet worden.</p>
+<!-- ## /TEKSTBLOK: ModellenVergelijken1.R -->
+<!-- ## OPENBLOK: ModellenVergelijken2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Stel het regressiemodel op met alleen Geslacht als predictor
+Model_1 &lt;- lm(Eindcijfer_MS ~ Geslacht, 
+              Studenten_Methoden_Statistiek)
+
+# Stel het regressiemodel op met Geslacht, Eindexamencijfer_Wiskunde en Aantal_Hoorcolleges als predictors
+Model_2 &lt;- lm(Eindcijfer_MS ~ Geslacht + Eindexamencijfer_Wiskunde + Aantal_Hoorcolleges,
+              Studenten_Methoden_Statistiek)
+
+# Voer de F-toets uit om beide modellen te vergelijken
+anova(Model_1, Model_2)
+
+# Bereken verklaarde variantie (%) van model 1
+100*summary(Model_1)$r.squared
+
+# Bereken verklaarde variantie (%) van model 2
+100*summary(Model_2)$r.squared
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: ModellenVergelijken2.R -->
+<!-- ## CLOSEDBLOK: ModellenVergelijken3.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: ModellenVergelijken3.R -->
+<!-- ## TEKSTBLOK: ModellenVergelijken4.R -->
+<p>De F-toets toont aan dat er een significant verschil is in verklaarde variantie tussen beide modellen, <em>F</em>(<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format_0decimals(Vergelijking[2,1])</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format_0decimals(Vergelijking[2,3])</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Vergelijking[2,5])</span></code>, <em>p</em> &lt; 0,0001. Het regressiemodel met alleen Geslacht als predictor verklaart slechts <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(R2_model1)</span></code>% van de variantie in het eindcijfer Methoden &amp; Statistiek en het regressiemodel met drie predictoren verklaart <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(R2_model2)</span></code>% van de variantie. Het verschil in verklaarde variantie is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(R2_model2</span> <span class="pre">-</span> <span class="pre">R2_model1)</span></code>%. Het model met het geslacht, eindexamencijfer Wiskunde en aantal gevolgde hoorcolleges van een student als predictors verklaart dus significant meer variantie dan het model met alleen het geslacht van een student als predictor.</p>
+<!-- ## /TEKSTBLOK: ModellenVergelijken4.R -->
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering-bootstrappen">
+<h1>Uitvoering bootstrappen<a class="headerlink" href="#uitvoering-bootstrappen" title="Permalink to this headline">¶</a></h1>
+<p>Aangezien aan de assumpties van normaliteit en homoskedasticiteit is voldaan, hoeft er geen bootstrapping plaats te vinden. De methode wordt echter toch geïllustreerd voor de onderzoeksvraag in deze casus.</p>
+<!-- ## OPENBLOK: Bootstrap1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Laad het package car in</span>
+<span class="n">library</span><span class="p">(</span><span class="n">car</span><span class="p">)</span>
+
+<span class="c1"># Zet een seed zodat bij herhaling dezelfde resultaten uit de bootstrap komen</span>
+<span class="nb">set</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">12345</span><span class="p">)</span>
+
+<span class="c1"># Voer de multipele lineaire regressie uit</span>
+<span class="n">Regressiemodel</span> <span class="o">&lt;-</span> <span class="n">lm</span><span class="p">(</span><span class="n">Eindcijfer_MS</span> <span class="o">~</span> <span class="n">Geslacht</span> <span class="o">+</span> <span class="n">Eindexamencijfer_Wiskunde</span> <span class="o">+</span> <span class="n">Aantal_Hoorcolleges</span><span class="p">,</span>
+                     <span class="n">Studenten_Methoden_Statistiek</span><span class="p">)</span>
+
+<span class="c1"># Voer de bootstrap uit voor het regressiemodel</span>
+<span class="n">Bootstrap_resultaat</span> <span class="o">&lt;-</span> <span class="n">Boot</span><span class="p">(</span><span class="n">Regressiemodel</span><span class="p">,</span> <span class="n">R</span> <span class="o">=</span> <span class="mi">10000</span><span class="p">)</span>
+
+<span class="c1"># Presenteer de gebootstrapte standaardfouten van de regressiecoëfficiënten</span>
+<span class="n">summary</span><span class="p">(</span><span class="n">Bootstrap_resultaat</span><span class="p">)</span>
+
+<span class="c1"># Presenteer de 95%-betrouwbaarheidsintervallen van de regressiecoëfficiënten</span>
+<span class="n">confint</span><span class="p">(</span><span class="n">Bootstrap_resultaat</span><span class="p">,</span> <span class="nb">type</span> <span class="o">=</span> <span class="s2">&quot;bca&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Bootstrap1.R -->
+<!-- ## TEKSTBLOK: Bootstrap2.R -->
+<p>De resultaten van de bootstrap bevatten de originale waarde van de regressiecoëfficiënten (<code class="docutils literal notranslate"><span class="pre">original</span></code>), het verschil met de schatting van de regressiecoëfficiënt op basis van het gemiddelde van alle bootstrapwaarden (<code class="docutils literal notranslate"><span class="pre">bootBias</span></code>), de standaardfout van de regressiecoëfficiënt op basis van de bootstrap (<code class="docutils literal notranslate"><span class="pre">bootSE</span></code>) en de mediaan van alle bootstrapwaarden voor de regressiecoëfficiënt (<code class="docutils literal notranslate"><span class="pre">bootMed</span></code>). Van deze resultaten is de standaardfout het meest relevant omdat die incorrect is als de assumptie van normaliteit of homoskedasticiteit is geschonden.</p>
+<!-- ## /TEKSTBLOK: Bootstrap2.R -->
+<p>De 95%-betrouwbaarheidsintervallen van de regressiecoëfficiënten op basis van de bootstrap zijn ook weergegeven. Op basis van de 95%-betrouwbaarheidsintervallen kan de significantie van de regressiecoëfficiënten bepaald worden<a class="footnote-reference brackets" href="#id56" id="id46">8</a>. Als 0 in het interval zit, is de regressiecoëfficiënt niet significant verschillend van 0. Als 0 niet in het interval zit, is de regressiecoëfficiënt wel significant verschillend van 0 en kan de nulhypothese voor die regressiecoëfficiënt verworpen worden. De resultaten van de significantietoetsen op basis van de bootstrap komen overeen met de t-toetsen van het regressiemodel: de regressiecoëfficiënt van de variabele Geslacht is niet significant en de overige regressiecoëfficiënten wel.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="rapportage">
+<h1>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Rapportage1.R -->
+<p>Een <em>multipele lineaire regressie</em> is uitgevoerd om de vraag te beantwoorden of er een relatie is tussen het aantal gevolgde hoorcolleges en het eindcijfer van het vak Methoden &amp; Statistiek van de bachelor Onderwijskunde rekening houdend met het eindexamencijfer Wiskunde van studenten en man-vrouw verschillen. Uit het toetsen van de assumpties van <em>multipele lineaire regressie</em> bleek dat er aan alle assumpties is voldaan. De resultaten van de <em>multipele lineaire regressie</em> zijn te vinden in Tabel 1. De F-toets voor het regressiemodel laat zien dat het opgestelde regressiemodel minimaal één coëfficiënt heeft die significant verschilt van nul, <em>F</em>(<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format_0decimals(F_toets[2])</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format_0decimals(F_toets[3])</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(F_toets[1])</span></code>, <em>p</em> &lt; 0,0001. Het eindexamencijfer Wiskunde (<em>β</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,1])</span></code>, <em>t</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,3])</span></code>, <em>p</em> &lt; 0,01) en het aantal gevolgde hoorcolleges (<em>β</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,1])</span></code>, <em>t</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,3])</span></code>, <em>p</em> &lt; 0,0001) zijn significante predictors van het eindcijfer voor het vak, maar het geslacht van de student is dit niet (<em>β</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,1])</span></code>, <em>t</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,3])</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,4])</span></code>). Een toename van het eindexamencijfer Wiskunde leidt tot een toename van het voorspelde eindcijfer voor het vak van <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,1])</span></code> en het volgen van één extra hoorcollege tot een toename in het voorspelde eindcijfer van <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,1])</span></code>. De gestandaardiseerde coëfficiënten laten zien dat het aantal gevolgde hoorcolleges het sterkst gerelateerd is aan het eindcijfer. De docent van het vak Methoden &amp; Statistiek kan hieruit concluderen dat er geen man-vrouw verschillen zijn, dat studenten met een hoger eindexamencijfer Wiskunde beter presteren voor zijn vak, maar bovenal dat het volgen van het hoorcolleges de grootste invloed heeft op het eindcijfer.</p>
+<!-- ## /TEKSTBLOK: Rapportage1.R -->
+<!-- ## TEKSTBLOK: Rapportage2.R -->
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Coëfficiënt</p></th>
+<th class="head"><p>Standaard- fout</p></th>
+<th class="head"><p>t</p></th>
+<th class="head"><p>p-waarde</p></th>
+<th class="head"><p>95%-betrouwbaarheids- interval</p></th>
+<th class="head"><p>Gestandaardiseerde coëfficiënt</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Intercept</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[1,1])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[1,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[1,3])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[1,4])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[1,1])</span></code> - <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[1,2])</span></code></p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>Geslacht (vrouw)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,1])</span></code>0</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,3])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[2,4])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[2,1])</span></code> - <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[2,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[1])</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Eindexamencijfer_Wiskunde</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,1])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[3,3])</span></code></p></td>
+<td><p>&lt; 0,01*</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[3,1])</span></code> - <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[3,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[2])</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Aantal_Hoorcolleges</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,1])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Reg$coefficients[4,3])</span></code></p></td>
+<td><p>&lt; 0,0001*</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[4,1])</span></code> - <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(CI[4,2])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Coefficienten_std[3])</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><em>Tabel 1. Regressiecoëfficiënten en bijbehorende standaardfouten, t-statistieken, p-waardes,  95%-betrouwbaarheidsintervallen en gestandaardiseerde coëfficiënten.</em></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<!-- ## /TEKSTBLOK: Rapportage2.R -->
+<!-- ## CLOSEDBLOK: Footer.R --><!-- ## /CLOSEDBLOK: Footer.R -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id47"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>,<a href="#id11">3</a>)</span></dt>
+<dd><p>Laerd Statistics (2018). <em>Multiple Regression Analysis using SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/multiple-regression-using-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/multiple-regression-using-spss-statistics.php</a></p>
+</dd>
+<dt class="label" id="id48"><span class="brackets"><a class="fn-backref" href="#id3">19</a></span></dt>
+<dd><p>Met een deelnemer wordt het object bedoeld dat geobserveerd wordt, bijvoorbeeld een student, een inwoner van Nederland, een opleiding of een organisatie. Met een observatie wordt de waarde bedoeld die de deelnemer heeft voor een bepaalde variabele. Een deelnemer heeft dus meestal een observatie voor meerdere variabelen.</p>
+</dd>
+<dt class="label" id="id49"><span class="brackets">2</span><span class="fn-backref">(<a href="#id4">1</a>,<a href="#id5">2</a>,<a href="#id6">3</a>,<a href="#id7">4</a>,<a href="#id8">5</a>,<a href="#id9">6</a>,<a href="#id10">7</a>,<a href="#id12">8</a>,<a href="#id13">9</a>,<a href="#id16">10</a>,<a href="#id19">11</a>,<a href="#id20">12</a>,<a href="#id21">13</a>,<a href="#id22">14</a>,<a href="#id25">15</a>,<a href="#id26">16</a>,<a href="#id27">17</a>,<a href="#id28">18</a>,<a href="#id29">19</a>,<a href="#id31">20</a>,<a href="#id32">21</a>)</span></dt>
+<dd><p>Field, A. (2013). <em>Discovering statistics using IBM SPSS statistics</em>. Sage. Pagina 293-356.</p>
+</dd>
+<dt class="label" id="id50"><span class="brackets">3</span><span class="fn-backref">(<a href="#id14">1</a>,<a href="#id15">2</a>,<a href="#id18">3</a>)</span></dt>
+<dd><p>Universiteit van Amsterdam (13 augustus 2016). <em>Outliers</em>. <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Outliers">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id51"><span class="brackets"><a class="fn-backref" href="#id17">4</a></span></dt>
+<dd><p>Standaardiseren houdt in dat de variabelen getransformeerd worden zodat ze een gemiddelde van 0 hebben en een standaardafwijking van 1. Dit wordt gedaan door voor alle observaties van een variabele eerst het gemiddelde af te trekken en daarna te delen door de standaardafwijking, i.e. <span class="math notranslate nohighlight">\(\frac{x_i - \mu}{\sigma}\)</span>.</p>
+</dd>
+<dt class="label" id="id52"><span class="brackets"><a class="fn-backref" href="#id23">6</a></span></dt>
+<dd><p>Universiteit van Amsterdam (7 juli 2014). <em>Lineariteit</em>. <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Lineariteit">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id53"><span class="brackets"><a class="fn-backref" href="#id24">5</a></span></dt>
+<dd><p>Er zijn verschillende opties om variabelen te transformeren, zoals de logaritme, wortel of inverse (1 gedeeld door de variabele) nemen van de variabele. Zie <em>Discovering statistics using IBM SPSS statistics</em> van Field (2013) pagina 201-210 voor meer informatie over welke transformaties wanneer gebruikt kunnen worden.</p>
+</dd>
+<dt class="label" id="id54"><span class="brackets"><a class="fn-backref" href="#id30">7</a></span></dt>
+<dd><p>Stat 501. <em>12.4 - Detecting Multicollinearity Using Variance Inflation Factors</em>. <a class="reference external" href="https://online.stat.psu.edu/stat501/lesson/12/12.4">PennState Eberly College of Science</a>.</p>
+</dd>
+<dt class="label" id="id55"><span class="brackets"><a class="fn-backref" href="#id38">18</a></span></dt>
+<dd><p>De breedte van de staven van het histogram wordt vaak automatisch bepaald, maar kan handmatig aangepast worden. Aangezien de breedte van de staven bepalend zijn voor de indruk die de visualisatie geeft, is het verstandig om hier goed op te letten.</p>
+</dd>
+<dt class="label" id="id56"><span class="brackets">8</span><span class="fn-backref">(<a href="#id41">1</a>,<a href="#id42">2</a>,<a href="#id43">3</a>,<a href="#id44">4</a>,<a href="#id45">5</a>,<a href="#id46">6</a>)</span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./r"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="27%20Moods%20mediaan%20toets%20R.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="29%20Factoriele%20ANOVA%20R.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

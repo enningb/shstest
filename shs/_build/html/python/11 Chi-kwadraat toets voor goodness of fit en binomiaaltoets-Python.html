@@ -1,0 +1,912 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="12%20McNemar%20toets-Python.html" />
+    <link rel="prev" title="Toepassing" href="10-Kruskal-Wallis-toets-Python.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/python/11 Chi-kwadraat toets voor goodness of fit en binomiaaltoets-Python.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fpython/11 Chi-kwadraat toets voor goodness of fit en binomiaaltoets-Python.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumpties">
+   Assumpties
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#de-data-bekijken">
+   De data bekijken
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chi-kwadraat-toets-voor-goodness-of-fit">
+   Chi-kwadraat toets voor goodness of fit
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#asssumptie-verwachte-frequenties">
+     Asssumptie verwachte frequenties
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uitvoering">
+     Uitvoering
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rapportage">
+     Rapportage
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#binomiaaltoets">
+   Binomiaaltoets
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Uitvoering
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Rapportage
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>UsageError: Cell magic `%%R` not found.
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.py --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Reticulate.py -->
+<!-- ## OPENBLOK: Data-aanmaken.py --><!-- ## /OPENBLOK: Data-aanmaken.py -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<p>Gebruik de <em>Chi-kwadraat toets voor goodness of fit</em> om te onderzoeken of de geobserveerde frequenties van de categorieën van één categorische variabele overeenkomt met de verwachte frequenties van de categorische variabele.<a class="footnote-reference brackets" href="#id14" id="id1">6</a><sup>,</sup><a class="footnote-reference brackets" href="#id15" id="id2">7</a> Met deze toets kan een geobserveerd percentage met een bekend of verwacht percentage vergeleken worden. Gebruik de exacte <em>binomiaaltoets</em> bij een laag aantal observaties, dit wordt bij de assumpties toegelicht.<a class="footnote-reference brackets" href="#id16" id="id3">1</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id = "casus">
+De controller van een universiteit is geïnteresseerd in de instroom van studenten met een hbo vooropleiding. Zij wil weten of haar universiteit relatief veel studenten met een vooropleiding in het hbo heeft in vergelijking met het landelijke gemiddelde. Op de website van de VSNU vindt ze dat studenten met een hbo vooropleiding 11,13% uitmaken van de totale instroom voor Bachelors en Masters in het wetenschappelijk onderwijs (wo) in 2018.[^2] Ze wil weten of er op haar instelling naar verhouding evenveel hbo-studenten zijn als het landelijk gemiddelde.
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is.</p>
+<p>H~0~: De verdeling van de vooropleiding van de instromende studenten is gelijk aan de landelijke verdeling (11,13% met een hbo vooropleiding).</p>
+<p>H~A~: De verdeling van de vooropleiding van de instromende studenten is niet gelijk aan de landelijke verdeling (11,13% met een hbo vooropleiding).</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="assumpties">
+<h1>Assumpties<a class="headerlink" href="#assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Om de <em>Chi-kwadraat toets voor goodness of fit</em> uit te voeren, moet de variabele nominaal<a class="footnote-reference brackets" href="#id17" id="id4">9</a> of ordinaal<a class="footnote-reference brackets" href="#id18" id="id5">8</a> zijn.<a class="footnote-reference brackets" href="#id14" id="id6">6</a> De exacte <em>binomiaaltoets</em> vereist een binaire<a class="footnote-reference brackets" href="#id19" id="id7">3</a> variabele. In deze casus is de categorische variabele binair.</p>
+<p>De categorieën van de variabele mogen niet overlappen, wat wil zeggen dat elke observatie slechts in een van de categorieën past. Voor de <em>Chi-kwadraat toets voor goodness of fit</em> mag in niet meer dan 20% van de categorieën van de variabele de verwachte frequentie minder dan vijf zijn. Als dit wel het geval is, gebruik dan de <em>binomiaaltoets</em>.<a class="footnote-reference brackets" href="#id15" id="id8">7</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="de-data-bekijken">
+<h1>De data bekijken<a class="headerlink" href="#de-data-bekijken" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Data-bekijken1.py -->
+<p>Er is een dataset ingeladen genaamd <code class="docutils literal notranslate"><span class="pre">dfInstroom_2018_totaal</span></code>. Dit is een dataframe met studentnummers en een binaire variabele die laat zien of de student wel of geen hbo vooropleiding heeft.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken1.py -->
+<!-- ## OPENBLOK: Data-bekijken2.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Importeer nuttige packages</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">sps</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Eerste 5 observaties</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dfInstroom_2018_totaal</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Laatste 5 observaties</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dfInstroom_2018_totaal</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken2.py -->
+<p>Het is informatief om het percentage studenten met hbo vooropleiding in de data te bepalen.</p>
+<!-- ## OPENBLOK: Data-bekijken3.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Maak een tabel met percentages</span>
+<span class="n">Percentages</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">dfInstroom_2018_totaal</span><span class="p">[</span><span class="s1">&#39;hbo_vooropleiding&#39;</span><span class="p">],</span> <span class="n">columns</span> <span class="o">=</span> <span class="s1">&#39;count&#39;</span><span class="p">,</span>
+<span class="n">normalize</span> <span class="o">=</span> <span class="s1">&#39;columns&#39;</span><span class="p">)</span>
+
+<span class="c1"># Print de tabel</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Percentages</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken3.py -->
+<!-- ## TEKSTBLOK: Data-bekijken4.py -->
+<p>Het percentage studenten met hbo vooropleiding is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Percentages[1,</span> <span class="pre">1])</span></code>. Dit percentage lijkt hoger te liggen dan het landelijk percentage van 11,13%. De <em>Chi-kwadraat toets voor goodness of fit</em> of de <em>binomiaaltoets</em> toetst of dit verschil significant is.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken4.py -->
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="chi-kwadraat-toets-voor-goodness-of-fit">
+<h1>Chi-kwadraat toets voor goodness of fit<a class="headerlink" href="#chi-kwadraat-toets-voor-goodness-of-fit" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="asssumptie-verwachte-frequenties">
+<h2>Asssumptie verwachte frequenties<a class="headerlink" href="#asssumptie-verwachte-frequenties" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Assumptie.py -->
+<p>Het verwacht aantal observaties mag niet vijf of minder zijn in 20% van de categorieën van de categorische variabele. Aangezien er een binaire variabele getoetst wordt, mag geen van beide categorieën dus vijf of minder verwachte observaties hebben. Bereken het verwacht aantal observaties door de proporties van de nulhyothese (11,3% met hbo vooropleiding, dus 0,113 en 1 - 0,113) te vermenigvuldigen met het totaal aantal observaties in de dataset (<code class="docutils literal notranslate"><span class="pre">len(dfInstroom_2018_totaal)</span></code>).</p>
+<!-- ## /TEKSTBLOK: Assumptie.py --><!-- ## OPENBLOK: Assumptie1.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sla de verwachte proporties op in een vector</span>
+<span class="n">Verwachte_proporties</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.113</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="mf">0.113</span><span class="p">])</span>
+
+<span class="c1"># Bereken het verwachte aantal observaties door de verwachte proporties met het totaal aantal observaties te vermenigvuldigen</span>
+<span class="n">Verwacht_aantal_observaties</span> <span class="o">=</span> <span class="n">Verwachte_proporties</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">dfInstroom_2018_totaal</span><span class="p">)</span>
+
+<span class="c1"># Print het verwachte aantal observaties</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Verwacht_aantal_observaties</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Assumptie1.py -->
+<p>Geen van de verwachte frequenties is kleiner dan vijf, dus de <em>Chi-kwadraat toets voor goodness of fit</em> kan worden uitgevoerd.</p>
+</div>
+<div class="section" id="uitvoering">
+<h2>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h2>
+<p>Voer de <em>Chi-kwadraat toets voor goodness of fit</em>  uit om te onderzoeken of de verdeling van het aantal studenten met en zonder hbo vooropleiding overeenkomt met de landelijke verdeling waarbij het percentage studenten met hbo vooropleiding 11,13% is.</p>
+<!-- ## TEKSTBLOK: Chi-kwadraat1.py -->
+<p>Bereken eerst de aantallen observaties en verwachte aantallen observaties. Gebruik daarna de functie <code class="docutils literal notranslate"><span class="pre">chisquare()</span></code> van het <code class="docutils literal notranslate"><span class="pre">scipy.stats</span></code> package met als argumenten de aantallen observaties <code class="docutils literal notranslate"><span class="pre">Aantal_observaties</span></code>, de verwachte aantallen observaties <code class="docutils literal notranslate"><span class="pre">Verwacht_aantal_observaties</span></code> en <code class="docutils literal notranslate"><span class="pre">axis</span> <span class="pre">=</span> <span class="pre">None</span></code> om aan te geven dat alle waarden in de twee vorige argumenten van dezelfde dataset afkomstig zijn. Let goed op dat de volgorde van de aantallen observaties en de verwachte aantallen observaties dezelfde volgorde hebben zodat de toets de goede vergelijking maakt.</p>
+<!-- ## /TEKSTBLOK: Chi-kwadraat1.py --><!-- ## OPENBLOK: Chi-kwadraat2.py--><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Bereken de aantallen observaties</span>
+<span class="n">Aantal_observaties</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">dfInstroom_2018_totaal</span><span class="p">[</span><span class="s1">&#39;hbo_vooropleiding&#39;</span><span class="p">],</span> <span class="n">columns</span> <span class="o">=</span> <span class="s1">&#39;count&#39;</span><span class="p">)</span>
+
+<span class="c1">## Zet het aantal observaties om in een numpy array. Gebruik de toevoeging .T om de array om te zetten in een rij</span>
+<span class="n">Aantal_observaties</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Aantal_observaties</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+
+<span class="c1">## Bereken de verwachte aantallen observaties</span>
+<span class="n">Verwachte_proporties</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.113</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span> <span class="mf">0.113</span><span class="p">])</span>
+<span class="n">Verwacht_aantal_observaties</span> <span class="o">=</span> <span class="n">Verwachte_proporties</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">dfInstroom_2018_totaal</span><span class="p">)</span>
+
+<span class="c1">## voer de chi-kwadraat toets uit</span>
+<span class="n">sps</span><span class="o">.</span><span class="n">chisquare</span><span class="p">(</span><span class="n">Aantal_observaties</span><span class="p">,</span> <span class="n">Verwacht_aantal_observaties</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Chi-kwadraat2.py-->
+<!-- ## CLOSEDBLOK: Chi-kwadraat3.py--><!-- ## /CLOSEDBLOK: Chi-kwadraat3.py-->
+<!-- ## TEKSTBLOK: Chi-kwadraat4.py-->
+<ul class="simple">
+<li><p>χ^2^~<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vdf)</span></code>~ = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$chi2)</span></code>, <em>p</em> &lt; 0,0001</p></li>
+<li><p>De p-waarde is kleiner dan 0,05, dus de H~0~ wordt verworpen.<a class="footnote-reference brackets" href="#id20" id="id9">5</a></p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Chi-kwadraat4.py-->
+</div>
+<div class="section" id="rapportage">
+<h2>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Chi-kwadraat5.py-->
+<p>De <em>Chi-kwadraat toets voor goodness of fit</em> is uitgevoerd om te onderzoeken of de verdeling van het instromende aantal studenten van een universiteit met en zonder hbo vooropleiding verschilt van de landelijke verdeling waarbij het percentage studenten met een hbo vooropleiding 11,13% is. De verdeling van de instromende studenten van de universiteit is significant verschillend van de landelijke verdeling, χ^2^~<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vdf)</span></code>~ = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$chi2)</span></code>, <em>p</em> &lt; 0,0001. Het percentage instromende studenten met een hbo vooropleiding is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Proporties[1,</span> <span class="pre">1])</span></code>. Aan de hand van de resultaten kan geconcludeerd worden dat het percentage studenten met een hbo vooropleiding hoger ligt dan het landelijk gemiddelde van 11,13%.</p>
+<!-- ## /TEKSTBLOK: Chi-kwadraat5.py-->
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="binomiaaltoets">
+<h1>Binomiaaltoets<a class="headerlink" href="#binomiaaltoets" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id10">
+<h2>Uitvoering<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Binomiaaltoets1.py -->
+<p>Voer de <em>binomiaaltoets</em>  uit om te onderzoeken of de verdeling van het aantal studenten met en zonder hbo vooropleiding overeenkomt met de landelijke verdeling waarbij het percentage studenten met hbo vooropleiding 11,13% is. Deze toets is een alternatief voor de <em>Chi-kwadraat toets voor goodness of fit</em> bij lage verwachte aantallen observaties. Er is een subset <code class="docutils literal notranslate"><span class="pre">dfInstroom_2018_totaal_steekproef</span></code> van de dataset <code class="docutils literal notranslate"><span class="pre">dfInstroom_2018_totaal</span></code> ingeladen met daarin een lager aantal observaties.</p>
+<p>Maak een tabel van de variabele <code class="docutils literal notranslate"><span class="pre">hbo_vooropleiding</span></code> om het aantal observaties per categorie te tellen. Bereken het verwacht aantal observaties door de proporties van de nulhyothese (11,3% met hbo vooropleiding, dus 0,113 en 1 - 0,113) te vermenigvuldigen met het totaal aantal observaties in de dataset (<code class="docutils literal notranslate"><span class="pre">len(dfInstroom_2018_totaal)</span></code>).</p>
+<!-- ## /TEKSTBLOK: Binomiaaltoets1.py -->
+<!-- ## OPENBLOK: Binomiaaltoets2.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bereken de aantallen observaties</span>
+<span class="n">Aantal_observaties</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">dfInstroom_2018_totaal_steekproef</span><span class="p">[</span><span class="s1">&#39;hbo_vooropleiding&#39;</span><span class="p">],</span> <span class="n">columns</span> <span class="o">=</span> <span class="s1">&#39;count&#39;</span><span class="p">)</span>
+
+<span class="c1"># Print het aantal observaties</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Aantal_observaties</span><span class="p">)</span>
+
+<span class="c1"># Sla de verwachte proporties op in een vector</span>
+<span class="n">Verwachte_proporties</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.113</span><span class="p">,</span> <span class="mi">1</span> <span class="o">-</span> <span class="mf">0.113</span><span class="p">])</span>
+
+<span class="c1"># Bereken het verwachte aantal observaties door de verwachte proporties met het totaal aantal observaties te vermenigvuldigen</span>
+<span class="n">Verwacht_aantal_observaties</span> <span class="o">=</span> <span class="n">Verwachte_proporties</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">dfInstroom_2018_totaal_steekproef</span><span class="p">)</span>
+
+<span class="c1"># Print het verwachte aantal observaties</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Verwacht_aantal_observaties</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Binomiaaltoets2.py -->
+<!-- ## TEKSTBLOK: Binomiaaltoets3.py -->
+<p>Het aantal studenten met een hbo vooropleiding is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Aantal_observaties[1,</span> <span class="pre">1])</span></code> en het aantal zonder hbo vooropleiding <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Aantal_observaties[2,</span> <span class="pre">1])</span></code>. Het verwachte aantal observaties met een hbo vooropleiding is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Verwacht_aantal_observaties[1])</span></code> wat kleiner dan vijf is. Voer daarom de <em>binomiaaltoets</em> uit, aangezien meer dan 20% van de categorieën een verwacht aantal observaties van vijf of minder heeft.</p>
+<!-- ## /TEKSTBLOK: Binomiaaltoets3.py -->
+<!-- ## TEKSTBLOK: Binomiaaltoets4.py -->
+<p>Bereken eerst het aantal studenten met een hbo vooropleiding in de dataset en het totaal aantal studenten in de dataset. Voer daarna de <em>binomiaaltoets</em> uit met de functie <code class="docutils literal notranslate"><span class="pre">binom_._test()</span></code> van het <code class="docutils literal notranslate"><span class="pre">scipy</span></code> package met de argumenten <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">Aantal_hbo_vooropleiding</span></code> voor de hoeveelheid studenten met een hbo vooropleiding, <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">Aantal_observaties</span></code> voor de totale instroom van de universiteit, <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">=</span> <span class="pre">0.1113</span></code> voor de referentieproportie en  <code class="docutils literal notranslate"><span class="pre">alternative</span> <span class="pre">=</span> <span class="pre">two-sided</span></code> voor het soort toets (eenzijdig of tweezijdig). Bereken tenslotte handmatig de proportie studenten met een hbo vooropleiding.</p>
+<!-- ## /TEKSTBLOK: Binomiaaltoets4.py --><!-- ## OPENBLOK: Binomiaaltoets5.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bereken het aantal observaties met hbo vooropleiding</span>
+<span class="n">Aantal_hbo_vooropleiding</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">dfInstroom_2018_totaal_steekproef</span><span class="p">[</span><span class="s1">&#39;hbo_vooropleiding&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;ja&#39;</span><span class="p">)</span>
+
+<span class="c1"># Bereken het totaal aantal observaties</span>
+<span class="n">Aantal_observaties</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dfInstroom_2018_totaal_steekproef</span><span class="p">)</span>
+
+<span class="c1"># Voer de binomiaaltoets uit</span>
+<span class="n">sps</span><span class="o">.</span><span class="n">binom_test</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Aantal_hbo_vooropleiding</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="n">Aantal_observaties</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="mf">0.113</span><span class="p">,</span> <span class="n">alternative</span> <span class="o">=</span> <span class="s1">&#39;two-sided&#39;</span><span class="p">)</span>
+
+<span class="c1"># Bereken de proportie studenten met een hbo vooropleiding</span>
+<span class="n">Proportie_hbo_vooropleiding</span> <span class="o">=</span> <span class="n">Aantal_hbo_vooropleiding</span> <span class="o">/</span> <span class="n">Aantal_observaties</span>
+
+<span class="c1"># Print de proportie</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Proportie_hbo_vooropleiding</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Binomiaaltoets5.py -->
+<!-- ## CLOSEDBLOK: Binomiaaltoets6.py --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Binomiaaltoets6.py -->
+<!-- ## TEKSTBLOK: Binomiaaltoets7.py-->
+<ul class="simple">
+<li><p>de geschatte proportie studenten met een hbo vooropleiding in de data is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Proportie_hbo_vooropleiding)</span></code>.<a class="footnote-reference brackets" href="#id18" id="id11">8</a></p></li>
+<li><p>p-waarde = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$pval)</span></code>, dus de H~0~ kan niet worden verworpen.<a class="footnote-reference brackets" href="#id20" id="id12">5</a></p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Binomiaaltoets7.py--></div>
+<div class="section" id="id13">
+<h2>Rapportage<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Binomiaaltoets8.py-->
+<p>De <em>binomiaaltoets</em> is uitgevoerd om te onderzoeken of de verdeling van het instromende aantal studenten van een universiteit met en zonder hbo vooropleiding voor een dataset met een laag aantal observaties verschilt van de landelijke verdeling waarbij het percentage studenten met een hbo vooropleiding 11,13% is. De verdeling van het aantal instromende studenten met een zonder hbo vooropleiding is niet significant verschillend van de landelijke verdeling (<em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$pval)</span></code>), dus de nulhypothese kan niet verworpen worden. De schatting van het percentage is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Proportie_hbo_vooropleiding)</span></code>% en is niet significant verschillend van het landelijk gemiddelde van 11,13%. De resultaten suggereren dat het percentage studenten met een hbo vooropleiding niet hoger ligt dan het landelijk gemiddelde van 11,13%.</p>
+<!-- ## /TEKSTBLOK: Binomiaaltoets8.py-->
+<!-- ## CLOSEDBLOK: Footer.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Footer.R -->
+<!-- ## TEKSTBLOK: Extra-Bron.py -->
+<!-- ## /TEKSTBLOK: Extra-Bron.py -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id14"><span class="brackets">6</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id6">2</a>)</span></dt>
+<dd><p>Laerd Statistics (2018). <em>Chi-Square Goodness-of-Fit Test in SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/chi-square-goodness-of-fit-test-in-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/chi-square-goodness-of-fit-test-in-spss-statistics.php</a></p>
+</dd>
+<dt class="label" id="id15"><span class="brackets">7</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id8">2</a>)</span></dt>
+<dd><p>Allen, P. &amp; Bennett, K. (2012). <em>SPSS A practical Guide version 20.0</em>. Cengage Learning Australia Pty Limited.</p>
+</dd>
+<dt class="label" id="id16"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
+<dd><p>Agresti, A. (2003). <em>Categorical data analysis</em>. Vol. 482, John Wiley &amp; Sons.</p>
+</dd>
+<dt class="label" id="id17"><span class="brackets"><a class="fn-backref" href="#id4">9</a></span></dt>
+<dd><p>Een nominale variabele is een categorische variabele waarbij de categorieën niet geordend kunnen worden. Een voorbeeld is de variabele windstreek (noord, oost, zuid, west) en geslacht (man of vrouw).</p>
+</dd>
+<dt class="label" id="id18"><span class="brackets">8</span><span class="fn-backref">(<a href="#id5">1</a>,<a href="#id11">2</a>)</span></dt>
+<dd><p>Een ordinale variabele is een categorische variabele waarbij de categorieën geordend kunnen worden. Een voorbeeld is de variabele beoordeling met de categorieën Onvoldoende, Voldoende, Goed en Uitstekend.</p>
+</dd>
+<dt class="label" id="id19"><span class="brackets"><a class="fn-backref" href="#id7">3</a></span></dt>
+<dd><p>Binaire variabelen: twee elkaar uitsluitende waarden, zoals ja of nee, 0 of 1, aan of uit.</p>
+</dd>
+<dt class="label" id="id20"><span class="brackets">5</span><span class="fn-backref">(<a href="#id9">1</a>,<a href="#id12">2</a>)</span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./python"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="10-Kruskal-Wallis-toets-Python.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="12%20McNemar%20toets-Python.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

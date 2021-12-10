@@ -1,0 +1,966 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="08%20Mann-Whitney%20U%20toets-Python.html" />
+    <link rel="prev" title="Toepassing" href="07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/python/08 Mann-Whitney U toets I-Python.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fpython/08 Mann-Whitney U toets I-Python.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumpties">
+   Assumpties
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#verdeling-steekproeven">
+     Verdeling steekproeven
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#effectmaat">
+   Effectmaat
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering">
+   Uitvoering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-data-bekijken">
+     De data bekijken
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-data-visualiseren">
+     De data visualiseren
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mann-whitney-u-toets">
+     Mann-Whitney U toets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rapportage">
+   Rapportage
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.py --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>UsageError: Cell magic `%%R` not found.
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.py -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.py --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Reticulate.py -->
+<!-- ## OPENBLOK: Data-aanmaken.py --><!-- ## /OPENBLOK: Data-aanmaken.py -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: link1.py -->
+<p>Gebruik de <em>Mann-Whitney U toets</em> om te toetsen of de gemiddelde rangnummers van de verdelingen van twee ongepaarde groepen van elkaar verschillen.<a class="footnote-reference brackets" href="#id17" id="id1">1</a> De <em>Mann-Whitney U toets</em> is een alternatief voor de <span class="xref myst">ongepaarde t-toets</span> als de verdelingen niet normaal verdeeld zijn. Alleen als de verdelingen van beide groepen dezelfde vorm hebben, kan de <em>Mann-Whitney U toets</em> ook gebruikt worden om het verschil tussen de medianen van twee groepen te toetsen.<a class="footnote-reference brackets" href="#id18" id="id2">9</a> Gebruik <em>Mood’s mediaan toets</em> om medianen te toetsen bij twee ongepaarde groepen waarvan de verdelingen niet dezelfde vorm hebben.</p>
+<!-- ## /TEKSTBLOK: link1.py --></div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id ="casus">
+De onderwijsdirecteur van de opleiding Business Administration van een hogeschool vraagt zich af of er verschil is in de studieresultaten van studenten met een Nederlandse vooropleiding en een buitenlandse vooropleiding. Met name in het tweede studiejaar lijken er verschillen op te treden die hij wil begrijpen om mogelijke interventies met zijn docenten te bespreken. Hij vraagt zich af: ‘Verschilt het aantal studiepunten in het tweede studiejaar van studenten met een Nederlandse vooropleiding van het aantal studiepunten in het tweede studiejaar van studenten met een buitenlandse vooropleiding?
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is.</p>
+<p><em>H~0~</em>: Er is geen verschil in het gemiddelde rangnummer van het behaalde aantal studiepunten in het tweede jaar tussen studenten met een buitenlandse vooropleiding en een Nederlandse vooropleiding.</p>
+<p><em>H~A~</em>: Er is een verschil in  gemiddelde rangnummer van het behaalde aantal studiepunten in het tweede jaar tussen studenten met een buitenlandse vooropleiding en een Nederlandse vooropleiding. Eén van beide verdelingen bevat hogere waarden betreffende het behaalde aantal studiepunten.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="assumpties">
+<h1>Assumpties<a class="headerlink" href="#assumpties" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: link2.py -->
+<p>Het meetniveau van de afhankelijke variabele is ordinaal<a class="footnote-reference brackets" href="#id19" id="id3">12</a> of continu.<a class="footnote-reference brackets" href="#id18" id="id4">9</a> In deze toetspagina staat een casus met continue data centraal; een casus met ordinale data met bijbehorende uitwerking is te vinden in de <span class="xref myst">Mann-Whitney U toets II</span>.</p>
+<p>De <em>Mann-Whitney U toets</em> hoeft - in tegenstelling tot de <span class="xref myst">ongepaarde t-toets</span> - niet te voldoen aan de assumptie van normaliteit.  Daarnaast hebben uitbijters minder invloed op het eindresultaat dan bij de <span class="xref myst">ongepaarde t-toets</span>. Daarentegen, als de data wel normaal verdeeld is, heeft de <em>Mann-Whitney U toets</em> minder onderscheidend vermogen<a class="footnote-reference brackets" href="#id20" id="id5">2</a> dan de <span class="xref myst">ongepaarde t-toets</span>. Vandaar dat ondanks het voordeel van de grotere robuustheid er toch minder vaak voor de <em>Mann-Whitney U toets</em> gekozen wordt.</p>
+<!-- ## /TEKSTBLOK: link2.py -->
+<div class="section" id="verdeling-steekproeven">
+<h2>Verdeling steekproeven<a class="headerlink" href="#verdeling-steekproeven" title="Permalink to this headline">¶</a></h2>
+<p>De <em>Mann-Whitney U toets</em> schrijft geen assumpties voor over de verdeling van de twee ongepaarde groepen.<a class="footnote-reference brackets" href="#id18" id="id6">9</a> In principe toetst de <em>Mann-Whitney U toets</em> een hypothese over het verschil tussen het gemiddelde rangnummer van de verdelingen van twee ongepaarde groepen. De <em>Mann-Whitney U toets</em> maakt een rangschikking van alle observaties van beide groepen samengevoegd en telt vervolgens apart de rangnummers op voor de observaties in beide groepen. Met behulp van de groepsgroottes kan ook het gemiddelde rangnummer van beide groepen berekend worden. Het verschil tussen de gemiddelde rangnummers in beide groepen bepaalt de significantie van de toets.<a class="footnote-reference brackets" href="#id21" id="id7">10</a>  Daarom kan de <em>Mann-Whitney U toets</em> gezien worden als een toets die het gemiddelde rangnummer van twee groepen vergelijkt.</p>
+<p>Als de verdelingen van de groepen niet dezelfde vorm hebben, doet de <em>Mann-Whitney U toets</em> een uitspraak over het verschil tussen verdelingen. Een verschil tussen verdelingen kan meerdere oorzaken hebben. De top of toppen van de verdelingen kunnen verschillend zijn, maar ook de spreiding van de verdeling kan verschillen.<a class="footnote-reference brackets" href="#id18" id="id8">9</a> In alle gevallen is er echter een verschil tussen het gemiddelde rangnummer van de verdelingen. In andere woorden, de ene verdeling bevat hogere waarden dan de andere verdeling. Benoem daarom het gemiddelde rangnummer van beide groepen in de rapportage en visualiseer de verdeling van beide groepen om duidelijk te maken op welke manier de verdelingen van elkaar verschillen.</p>
+<p>Als de verdelingen van beide ongepaarde groepen echter dezelfde vorm hebben, toetst de <em>Mann-Whitney U toets</em> ook een hypothese over het verschil tussen de medianen. Immers, het enige verschil tussen de verdeling is in dat geval een verschuiving van de verdeling, dus een verandering van de mediaan. In dat geval heeft de <em>Mann-Whitney U toets</em> een hoger onderscheidend vermogen<a class="footnote-reference brackets" href="#id20" id="id9">2</a> dan <em>Mood’s mediaan toets</em> om medianen te toetsen.<a class="footnote-reference brackets" href="#id21" id="id10">10</a></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="effectmaat">
+<h1>Effectmaat<a class="headerlink" href="#effectmaat" title="Permalink to this headline">¶</a></h1>
+<p>De p-waarde geeft aan of een (mogelijk) verschil tussen twee groepen significant is. De grootte van het verschil of effect is echter ook relevant. Een effectmaat is een gestandaardiseerde maat die de grootte van een effect weergeeft, zodat effecten van verschillende onderzoeken met elkaar vergeleken kunnen worden.<a class="footnote-reference brackets" href="#id22" id="id11">3</a></p>
+<p>De <em>Mann-Whitney U toets</em> heeft als effectmaat <em>r</em>. Een indicatie om <em>r</em> te interpreteren is: rond 0,1 is het een klein effect, rond 0,3 is het een gemiddeld effect en rond 0,5 is het een groot effect.<a class="footnote-reference brackets" href="#id23" id="id12">5</a> De effectmaat <em>r</em> wordt voor de <em>Mann-Whitney U toets</em> berekend door de
+<em>z</em>-waarde behorend bij de <em>p</em>-waarde van de toets te delen door de wortel van
+het aantal observaties, i.e. <span class="math notranslate nohighlight">\(\frac{z}{\sqrt{N}}\)</span>.<a class="footnote-reference brackets" href="#id23" id="id13">5</a> Een correlatie tussen twee variabelen wordt vaak ook aangeduid met het symbool <em>r</em>. Beide zijn effectmaten, maar er is verder geen verband tussen de correlatie en de effectmaat van de <em>Wilcoxon signed rank toets</em>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering">
+<h1>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Dataset-inladen.py -->
+<p>Er is data ingeladen met het aantal studiepunten dat studenten in het tweede jaar halen. <code class="docutils literal notranslate"><span class="pre">dfPunten_jaar2_NL</span></code> bevat Nederlandse studenten, <code class="docutils literal notranslate"><span class="pre">dfPunten_jaar2_inter</span></code> bevat internationale studenten.</p>
+<!-- ## /TEKSTBLOK: Dataset-inladen.py -->
+<div class="section" id="de-data-bekijken">
+<h2>De data bekijken<a class="headerlink" href="#de-data-bekijken" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Data-bekijken.py -->
+<p>Gebruik <code class="docutils literal notranslate"><span class="pre">&lt;dataframe&gt;.head()</span></code> en <code class="docutils literal notranslate"><span class="pre">&lt;dataframe&gt;.tail()</span></code> om de structuur van de data te bekijken.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken.py -->
+<!-- ## OPENBLOK: Data-bekijken.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pandas library importeren</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Eerste 6 observaties</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dfStudiepunten_studiejaar2</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Laatste 6 observaties</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dfStudiepunten_studiejaar2</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken.py -->
+<!-- ## TEKSTBLOK: Data-beschrijven.py -->
+<p>Bekijk de grootte, de mediaan en de kwantielen van de data met <code class="docutils literal notranslate"><span class="pre">np.size()</span></code> en <code class="docutils literal notranslate"><span class="pre">np.quantile()</span></code>. De mediaan en kwantielen worden vaak gebruikt als maat wanneer een verdeling niet symmetrisch is.</p>
+<!-- ## /TEKSTBLOK: Data-beschrijven.py -->
+<!-- ## OPENBLOK: Data-selecteren.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Studiepunten_Nederlands</span> <span class="o">=</span> <span class="n">dfStudiepunten_studiejaar2</span><span class="p">[</span><span class="n">dfStudiepunten_studiejaar2</span><span class="p">[</span><span class="s2">&quot;Vooropleiding&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Nederlands&quot;</span><span class="p">][</span><span class="s2">&quot;Studiepunten&quot;</span><span class="p">]</span>
+<span class="n">Studiepunten_buitenlands</span> <span class="o">=</span> <span class="n">dfStudiepunten_studiejaar2</span><span class="p">[</span><span class="n">dfStudiepunten_studiejaar2</span><span class="p">[</span><span class="s2">&quot;Vooropleiding&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;buitenlands&quot;</span><span class="p">][</span><span class="s2">&quot;Studiepunten&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-selecteren.py -->
+<!-- ## OPENBLOK: Numpy-inladen.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Numpy-inladen.py -->
+<div class="col-container">
+  <div class="col">
+<!-- ## OPENBLOK: Data-beschrijven-1.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">Studiepunten_Nederlands</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="n">Studiepunten_Nederlands</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven-1.py -->
+  </div>
+  <div class="col">
+<!-- ## OPENBLOK: Data-beschrijven-2.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">Studiepunten_buitenlands</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="n">Studiepunten_buitenlands</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven-2.py -->
+  </div>
+</div>
+<!-- ## CLOSEDBLOK: Data-beschrijven-3.py -->
+``` {python data beschrijven als object, include=FALSE, echo=TRUE}
+## Onderstaand zijn de dynamische variabelen te vinden
+q_NL = np.quantile(Studiepunten_Nederlands, [0, 0.25, 0.5, 0.75, 1])
+q_Inter = np.quantile(Studiepunten_buitenlands, [0, 0.25, 0.5, 0.75, 1])
+<p>vN_NL = len(Studiepunten_Nederlands)
+vN_Inter = len(Studiepunten_buitenlands)</p>
+<p>vQ1_NL = q_NL[1]
+vQ1_Inter = q_Inter[1]</p>
+<p>vQ2_NL = q_NL[2]
+vQ2_Inter = q_Inter[2]</p>
+<p>vQ3_NL = q_NL[3]
+vQ3_Inter = q_Inter[3]</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;!-- ## /CLOSEDBLOK: Data-beschrijven-3.py --&gt;
+
+&lt;!-- ## TEKSTBLOK: Data-beschrijven2.py --&gt;
+* Mediaan studenten Nederlandse vooropleiding: `r Round_and_format(py$vQ2_NL)`, *n* = `r py$vN_NL`.
+* Mediaan studenten buitenlandse vooropleiding: `r Round_and_format(py$vQ2_Inter)`, *n* = `r py$vN_Inter`.
+
+&lt;!-- ## /TEKSTBLOK: Data-beschrijven2.py --&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="de-data-visualiseren">
+<h2>De data visualiseren<a class="headerlink" href="#de-data-visualiseren" title="Permalink to this headline">¶</a></h2>
+<p>Maak een histogram<a class="footnote-reference brackets" href="#id24" id="id14">18</a> om de verdeling van het aantal studiepunten in het tweede jaar voor studenten met een Nederlandse en buitenlandse vooropleiding visueel weer te geven.<a class="footnote-reference brackets" href="#id25" id="id15">13</a></p>
+<!-- ## OPENBLOK: Histogram1.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Histogram met matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+<span class="n">sub1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">title1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Nederlandse vooropleiding&quot;</span><span class="p">)</span>
+<span class="n">hist1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">Studiepunten_Nederlands</span><span class="p">,</span> <span class="n">density</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">edgecolor</span> <span class="o">=</span> <span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">29</span><span class="p">)</span>
+
+<span class="n">sub2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">title2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Buitenlandse vooropleiding&quot;</span><span class="p">)</span>
+<span class="n">hist2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">Studiepunten_buitenlands</span><span class="p">,</span> <span class="n">density</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">edgecolor</span> <span class="o">=</span> <span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">31</span><span class="p">)</span>
+
+<span class="n">main</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Studiepunten van studenten Business Administration in het tweede jaar&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Histogram1.py -->
+<p>Beide histogrammen bevatten een grote groep studenten met een laag aantal studiepunten (twaalf of minder). De overige studenten volgen een ietwat scheve verdeling met de top rond de vijftig studiepunten. De verdelingen van beide groepen studenten hebben echter niet dezelfde vorm. De frequentie van het aantal studenten rond de vijftig studiepunten is veel hoger voor de studenten met Nederlandse vooropleiding, terwijl de frequentie van het aantal studenten met twaalf of minder studiepunten juist hoger is voor de studenten met een buitenlandse vooropleiding. De <em>Mann-Whitney U toets</em> kan in dit geval dus niet gebruikt worden om een uitspraak te doen over de significantie van het verschil van de medianen van beide groepen.</p>
+</div>
+<div class="section" id="mann-whitney-u-toets">
+<h2>Mann-Whitney U toets<a class="headerlink" href="#mann-whitney-u-toets" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Mann-Whitney-U-toets-1.py -->
+<p>Gebruik de functie <code class="docutils literal notranslate"><span class="pre">mannwhitneyu()</span></code> van het <code class="docutils literal notranslate"><span class="pre">scipy</span></code> package om een <em>Mann-Whitney U toets</em> te doen. Het eerste argument bevat het aantal studiepunten van studenten met een Nederlandse vooropleiding <code class="docutils literal notranslate"><span class="pre">Studiepunten_Nederlands</span></code>; het tweede argument het aantal studiepunten van studenten met een buitenlandse vooropleiding <code class="docutils literal notranslate"><span class="pre">Studiepunten_buitenlands</span></code>. Voer daarna het argument <code class="docutils literal notranslate"><span class="pre">alternative</span> <span class="pre">=</span> <span class="pre">'two-sided'</span></code> vanwege de tweezijdige alternatieve hypothese.</p>
+<!-- ## /TEKSTBLOK: Mann-Whitney-U-toets-1.py -->
+<!-- ## OPENBLOK: Mann-Whitney-U-toets-2.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="n">sp</span><span class="o">.</span><span class="n">mannwhitneyu</span><span class="p">(</span><span class="n">Studiepunten_Nederlands</span><span class="p">,</span> 
+<span class="n">Studiepunten_buitenlands</span><span class="p">,</span>
+<span class="n">alternative</span> <span class="o">=</span> <span class="s1">&#39;two-sided&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Mann-Whitney-U-toets-2.py -->
+<!-- ## CLOSEDBLOK: Mann-Whitney-U-toets-3.py --><!-- ## /CLOSEDBLOK: Mann-Whitney-U-toets-3.py -->
+<p>Bereken vervolgens de effectmaat <em>r</em> op basis van de p-waarde van de <em>Mann-Whitney U toets</em>.</p>
+<!-- ## OPENBLOK: Mann-Whitney-U-toets-4.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sla de p-waarde op</span>
+<span class="n">stat</span><span class="p">,</span> <span class="n">pval</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">wilcoxon</span><span class="p">(</span><span class="n">Alumni_jaarinkomens_T2</span><span class="p">,</span> <span class="n">Alumni_jaarinkomens_T1</span><span class="p">,</span> <span class="n">alternative</span> <span class="o">=</span> <span class="s1">&#39;two-sided&#39;</span><span class="p">)</span>
+
+<span class="c1"># Bereken de effectgrootte voor een tweezijdige toets</span>
+<span class="n">Effectmaat</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="n">pval</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Alumni_jaarinkomens_T1</span><span class="p">))</span>
+<span class="c1"># Bereken de effectgrootte voor een eenzijdige toets</span>
+<span class="c1">#r = sp.norm.ppf(pval) / np.sqrt(len(Alumni_jaarinkomens_T1))</span>
+
+<span class="c1"># Print de effectgrootte (vaak weergegeven als absolute waarde)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">Effectmaat</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Mann-Whitney-U-toets-4.py -->
+<p>Bereken ten slotte het gemiddelde rangnummer van beide groepen. Beoordeel op basis van de gemiddelde rangnummers welke groep hogere waardes bevat.</p>
+<!-- ## OPENBLOK: Mann-Whitney-U-toets-5.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#dfStudiepunten_studiejaar2[dfStudiepunten_studiejaar2[&quot;Vooropleiding&quot;] == &quot;Nederlands&quot;][&quot;Studiepunten&quot;]</span>
+<span class="n">vvv</span> <span class="o">=</span> <span class="n">dfStudiepunten_studiejaar2</span><span class="p">[</span><span class="s2">&quot;Vooropleiding&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Nederlands&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vvv</span><span class="p">)</span>
+
+<span class="n">dfStudiepunten_studiejaar2</span><span class="p">[</span><span class="o">-</span><span class="n">vvv</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sla de studiepunten variabele op in vector</span>
+<span class="n">Studiepunten_vector</span> <span class="o">=</span> <span class="n">dfStudiepunten_studiejaar2</span><span class="p">[</span><span class="s2">&quot;Studiepunten&quot;</span><span class="p">]</span>
+
+<span class="c1"># Rangschik de studiepunten</span>
+<span class="n">Rangnummers</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">rankdata</span><span class="p">(</span><span class="n">dfStudiepunten_studiejaar2</span><span class="p">[</span><span class="s2">&quot;Studiepunten&quot;</span><span class="p">])</span>
+
+<span class="c1"># Bepaal de index met daarin studenten met een Nederlandse vooropleiding</span>
+<span class="n">Vooropleiding_Nederlands</span> <span class="o">=</span> <span class="n">dfStudiepunten_studiejaar2</span><span class="p">[</span><span class="s2">&quot;Vooropleiding&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Nederlands&quot;</span>
+
+<span class="c1"># Bereken gemiddelde rangnummers</span>
+<span class="n">N_positief</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Studiepunten_vector</span><span class="p">[</span><span class="n">Vooropleiding_Nederlands</span> <span class="o">==</span> <span class="kc">True</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">N_positief</span><span class="p">)</span>
+<span class="n">Rangnummer_Nederlandse_vooropleiding</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">Rangnummers</span><span class="p">[</span><span class="n">Vooropleiding_Nederlands</span> <span class="o">==</span> <span class="kc">True</span><span class="p">])</span> <span class="o">/</span> <span class="n">N_positief</span>
+
+<span class="n">N_negatief</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Studiepunten_vector</span><span class="p">[</span><span class="n">Vooropleiding_Nederlands</span> <span class="o">==</span> <span class="kc">False</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">N_positief</span><span class="p">)</span>
+<span class="n">Rangnummer_buitenlandse_vooropleiding</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">Rangnummers</span><span class="p">[</span><span class="n">Vooropleiding_Nederlands</span> <span class="o">==</span> <span class="kc">False</span><span class="p">])</span> <span class="o">/</span> <span class="n">N_negatief</span>
+
+<span class="c1"># Print gemiddelde rangnummers</span>
+<span class="n">Rangnummer_Nederlandse_vooropleiding</span>
+<span class="n">Rangnummer_buitenlandse_vooropleiding</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Mann-Whitney-U-toets-5.py -->
+<!-- ## TEKSTBLOK: Mann-Whitney-U-toets-6.py -->
+<ul class="simple">
+<li><p><em>W</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$stat)</span></code>, <em>p</em> = &lt; 0,0001, <em>r</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(abs(py$Effectmaat))</span></code></p></li>
+<li><p><em>p</em>-waarde &lt; 0,05, dus de H~0~ wordt verworpen.<a class="footnote-reference brackets" href="#id26" id="id16">8</a></p></li>
+<li><p>Effectmaat is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(abs(py$Effectmaat))</span></code>, dus een klein tot gemiddeld effect</p></li>
+<li><p>Het gemiddelde rangnummer is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Rangnummer_Nederlandse_vooropleiding)</span></code> (<em>n</em>=<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">py$N_positief</span></code>) voor studenten met een Nederlandse vooropleiding en <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Rangnummer_buitenlandse_vooropleiding)</span></code> (<em>n</em>=<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">py$N_negatief</span></code>) voor studenten met een buitenlandse vooropleiding. De verdeling van studenten met een Nederlandse vooropleiding bevat dus hogere waarden dan de verdeling van studenten met een buitenlandse vooropleiding.</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Mann-Whitney-U-toets-6.py --></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="rapportage">
+<h1>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Rapportage.py -->
+<p>De <em>Mann-Whitney U toets</em> is uitgevoerd om te toetsen of het behaalde aantal studiepunten in het tweede jaar van de bachelor Business Administration hetzelfde is voor studenten met buitenlandse vooropleiding als voor studenten met Nederlandse vooropleiding. Uit de resultaten kan afgelezen worden dat er een significant verschil is tussen de verdelingen van het aantal studiepunten van studenten met een buitenlandse vooropleiding en met een Nederlandse vooropleiding, <em>W</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$stat)</span></code>, <em>p</em> &lt; 0,0001, <em>r</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(abs(py$Effectmaat))</span></code>. Er is een klein tot gemiddeld effect van het verschil in het land van vooropleiding op het aantal studiepunten. Het gemiddelde rangnummer is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Rangnummer_Nederlandse_vooropleiding)</span></code> (<em>n</em>=<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">py$N_positief</span></code>) voor studenten met een Nederlandse vooropleiding en <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Rangnummer_buitenlandse_vooropleiding)</span></code> (<em>n</em>=<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">py$N_negatief</span></code>) voor studenten met een buitenlandse vooropleiding. Studenten met een Nederlandse vooropleiding lijken dus een hoger aantal studiepunten te halen in het tweede jaar dan studenten met een buitenlandse vooropleiding.</p>
+<!-- ## /TEKSTBLOK: Rapportage.py -->
+<!-- ## CLOSEDBLOK: Footer.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Footer.R -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id17"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Van Geloven, N. (13 maart 2018). <em>Mann-Whitney U toets</em>. <a class="reference external" href="https://wikistatistiek.amc.nl/index.php/Mann-Whitney_U_toets">Wiki Statistiek Academisch Medisch Centrum</a>.</p>
+</dd>
+<dt class="label" id="id18"><span class="brackets">9</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id4">2</a>,<a href="#id6">3</a>,<a href="#id8">4</a>)</span></dt>
+<dd><p>Laerd Statistics (2018). <em>Mann-Whitney U Test using SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/mann-whitney-u-test-using-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/mann-whitney-u-test-using-spss-statistics.php</a></p>
+</dd>
+<dt class="label" id="id19"><span class="brackets"><a class="fn-backref" href="#id3">12</a></span></dt>
+<dd><p>Een ordinale variabele is een categorische variabele waarbij de categorieën geordend kunnen worden. Een voorbeeld is de variabele beoordeling met de categorieën Onvoldoende, Voldoende, Goed en Uitstekend.</p>
+</dd>
+<dt class="label" id="id20"><span class="brackets">2</span><span class="fn-backref">(<a href="#id5">1</a>,<a href="#id9">2</a>)</span></dt>
+<dd><p>Onderscheidend vermogen, in het Engels power genoemd, is de kans dat de nulhypothese verworpen wordt wanneer de alternatieve hypothese ‘waar’ is.</p>
+</dd>
+<dt class="label" id="id21"><span class="brackets">10</span><span class="fn-backref">(<a href="#id7">1</a>,<a href="#id10">2</a>)</span></dt>
+<dd><p>Field, A. (2013). <em>Discovering statistics using IBM SPSS statistics</em>. Sage.</p>
+</dd>
+<dt class="label" id="id22"><span class="brackets"><a class="fn-backref" href="#id11">3</a></span></dt>
+<dd><p>Field, A., Miles, J., &amp; Field, Z. (2012). <em>Discovering statistics using R</em>. London: Sage publications.</p>
+</dd>
+<dt class="label" id="id23"><span class="brackets">5</span><span class="fn-backref">(<a href="#id12">1</a>,<a href="#id13">2</a>)</span></dt>
+<dd><p>Allen, P. &amp; Bennett, K. (2012). <em>SPSS A practical Guide version 20.0</em>. Cengage Learning Australia Pty Limited.</p>
+</dd>
+<dt class="label" id="id24"><span class="brackets"><a class="fn-backref" href="#id14">18</a></span></dt>
+<dd><p>De breedte van de staven van het histogram wordt vaak automatisch bepaald, maar kan handmatig aangepast worden. Aangezien de breedte van de staven bepalend zijn voor de indruk die de visualisatie geeft, is het verstandig om hier goed op te letten.</p>
+</dd>
+<dt class="label" id="id25"><span class="brackets"><a class="fn-backref" href="#id15">13</a></span></dt>
+<dd><p>De breedte van de staven van het histogram worden hier automatisch bepaald, maar kunnen handmatig aangepast worden. Aangezien de breedte van de staven bepalend zijn voor de indruk die de visualisatie geeft, is het verstandig om hier goed op te letten.</p>
+</dd>
+<dt class="label" id="id26"><span class="brackets"><a class="fn-backref" href="#id16">8</a></span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./python"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="08%20Mann-Whitney%20U%20toets-Python.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

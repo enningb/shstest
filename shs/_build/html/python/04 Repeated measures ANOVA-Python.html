@@ -1,0 +1,1232 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="04-Repeated-measures-ANOVA-Python.html" />
+    <link rel="prev" title="Toepassing" href="03%20Ongepaarde%20t-toets-Python.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../r/58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/python/04 Repeated measures ANOVA-Python.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fpython/04 Repeated measures ANOVA-Python.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumpties">
+   Assumpties
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#normaliteit">
+     Normaliteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sphericiteit">
+     Sphericiteit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#effectmaat">
+   Effectmaat
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#eta-squared">
+     Eta squared
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#post-hoc-toetsen">
+   Post-hoc toetsen
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering">
+   Uitvoering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-data-bekijken">
+     De data bekijken
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visuele-inspectie-van-normaliteit">
+     Visuele inspectie van normaliteit
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#histogram">
+       Histogram
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#q-q-plot">
+       Q-Q plot
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#boxplot">
+       Boxplot
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#toetsen-van-normaliteit">
+     Toetsen van normaliteit
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kolmogorov-smirnov">
+       Kolmogorov-Smirnov
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#shapiro-wilk-test">
+       Shapiro-Wilk Test
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#repeated-measures-anova">
+     Repeated measures ANOVA
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#post-hoc-toets">
+     Post-hoc toets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rapportage">
+   Rapportage
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>UsageError: Cell magic `%%R` not found.
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.py --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Reticulate.py -->
+<!-- ## OPENBLOK: Data-aanmaken.py --><!-- ## /OPENBLOK: Data-aanmaken.py -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<p>Gebruik de <em>repeated measures ANOVA</em> om gemiddelden te vergelijken van een groep bij twee of meer herhaalde metingen of om gemiddelden van twee of meer gepaarde groepen te vergelijken.<a class="footnote-reference brackets" href="#id22" id="id1">1</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id = "casus">
+<p>De opleidingsdirecteur van de bachelor Technische Natuurkunde van een universiteit hoort vanuit de opleidingscommissie dat de eerstejaars studenten de studielast van de eerste onderwijsperiode als erg hoog ervaren. Om te onderzoeken hoe deze ervaren studielast verminderd kan worden, wil hij onderzoeken hoeveel tijd de studenten per week besteden aan hun vakken. Met behulp van een vragenlijst over de studiebelasting in het eerste jaar verzamelt hij gegevens van het aantal uur per week dat eerstejaars studenten besteden aan de vakken in de eerste onderwijsperiode: Lineaire Algebra, Relativiteitstheorie en Kosmologie. Op deze manier kan hij onderzoeken of er verschillen in de tijdsbesteding aan de verschillende vakken zijn en om te bepalen van welke vakken de studielast aangepast moet worden.</p>
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is.</p>
+<p><em>H~0~</em>: Het gemiddeld aantal studieuren per week van eerstejaars studenten van de bachelor Technische Natuurkunde is hetzelfde voor de drie vakken in de eerste onderwijsperiode</p>
+<p><em>H~A~</em>: Het gemiddeld aantal studieuren per week van eerstejaars studenten van de bachelor Technsiche Natuurkunde is niet hetzelfde voor de drie vakken in de eerste onderwijsperiode</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="assumpties">
+<h1>Assumpties<a class="headerlink" href="#assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Om een valide toetsresultaat te bereiken met de <em>repeated measures ANOVA</em> moet de data aan een aantal voorwaarden voldoen: normaliteit, sphericiteit en onafhankelijkheid.<a class="footnote-reference brackets" href="#id22" id="id2">1</a> Onafhankelijkheid houdt in dat de herhaalde metingen van de deelnemers<a class="footnote-reference brackets" href="#id23" id="id3">12</a> onafhankelijk van elkaar zijn.</p>
+<div class="section" id="normaliteit">
+<h2>Normaliteit<a class="headerlink" href="#normaliteit" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: link1.py -->
+<p>De assumptie van normaliteit houdt in dat er een normale
+verdeling van de afhankelijke variabele is in elke groep. Wanneer er duidelijke afwijkingen van normaliteit zijn,
+is het transformeren van de data een optie.<a class="footnote-reference brackets" href="#id24" id="id4">2</a> Een andere optie is het gebruik van de nonparametrische
+<span class="xref myst">Friedman’s ANOVA</span> waar normaliteit geen assumptie is.<a class="footnote-reference brackets" href="#id25" id="id5">3</a> Controleer de assumptie van normaliteit voor elke groep met de volgende stappen:</p>
+<ol class="simple">
+<li><p>Controleer de data visueel met een histogram, een boxplot of een Q-Q plot.</p></li>
+<li><p>Toets of de data normaal verdeeld zijn met de <em>Kolmogorov-Smirnov test</em> of bij een kleinere steekproef (n &lt; 50) met de <em>Shapiro-Wilk test</em>.<a class="footnote-reference brackets" href="#id26" id="id6">4</a><sup>, </sup><a class="footnote-reference brackets" href="#id27" id="id7">5</a></p></li>
+</ol>
+<!-- ## /TEKSTBLOK: link1.py -->
+<p>De eerste stap heeft als doel een goede indruk te krijgen van de verdeling van de steekproef. In de tweede stap wordt de assumptie van normaliteit getoetst. De statistische toets laat zien of de verdeling van de observaties van een groep voldoet aan de assumptie van normaliteit. Voor alle groepen moet er voldaan zijn aan de assumptie van normaliteit.</p>
+<p>Als er niet voldaan is aan normaliteit, is het transformeren van de data een optie.<a class="footnote-reference brackets" href="#id24" id="id8">2</a> Een andere optie is het gebruik van de nonparametrische <span class="xref myst">Friedman’s ANOVA</span> waar normaliteit geen assumptie is.<a class="footnote-reference brackets" href="#id25" id="id9">3</a> De <em>repeated measures ANOVA</em> is echter ook een robuuste toets ten opzichte van de assumptie van normaliteit. Als elke groep een aantal observaties (<em>n</em>) heeft dat groter dan 100 is,  ga er dan vanuit dat de <em>repeated measures ANOVA</em> robuust genoeg is om uit te voeren zonder dat de afhankelijke variabele een normale verdeling volgt.</p>
+</div>
+<div class="section" id="sphericiteit">
+<h2>Sphericiteit<a class="headerlink" href="#sphericiteit" title="Permalink to this headline">¶</a></h2>
+<p>De assumptie van sphericiteit houdt in dat de variantie van de verschilscores tussen groepen van metingen ongeveer aan elkaar gelijk zijn.<a class="footnote-reference brackets" href="#id28" id="id10">6</a> In deze casus zijn dat de verschilscores tussen de drie vakken: Lineaire Algebra minus Relativiteitstheorie, Relativiteitstheorie minus Kosmologie en Kosmologie minus Lineaire Algebra. Toets deze assumptie met <em>Mauchly’s test</em>. Wanneer de data niet aan de assumptie voldoen, geeft de gewone <em>repeated measures ANOVA</em> een verkeerd resultaat. Er zijn echter correcties die gebruikt kunnen worden wanneer de data niet aan sphericiteit voldoen. Een voorbeeld van mogelijke output van <em>Mauchly’s test</em> in R is hieronder weergegeven.</p>
+<!-- ## CLOSEDBLOK: Sphericiteit.py --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Sphericiteit.py -->
+<!-- ## TEKSTBLOK: Sphericiteit1.py -->
+<p>Bij een p-waarde &lt; 0,05, toont <em>Mauchly’s test</em> dat de assumptie van sphericiteit geschonden is. In de output is dit te zien aan de p-waarde van 0,0051 onder <code class="docutils literal notranslate"><span class="pre">$Mauchly's</span> <span class="pre">Test</span> <span class="pre">for</span> <span class="pre">Sphericity</span></code>. Er zijn twee mogelijke correcties wanneer er geen sphericiteit is: de Greenhouse-Geisser (GG) en Huynh-Feldt (HF) correctie. De Greenhouse-Geisser correctie staat bekend als conservatief, wat betekent dat de correctie een relatief lage kans op een type I fout heeft. In andere woorden, het zal niet vaak gebeuren dat deze correctie een significant effect aantoont wanneer dat er in werkelijkheid niet is. De Huynh-Feldt correctie staat echter bekend als liberaal, wat betekent dat er een relatief hoge kans op een type I fout is. De teststatistiek en p-waarde van beide correcties zijn in de output te vinden onder <code class="docutils literal notranslate"><span class="pre">$Sphericity</span> <span class="pre">Corrections</span></code>.</p>
+<!-- ## /TEKSTBLOK: Sphericiteit1.py -->
+<p>Houd de volgende richtlijnen aan bij het interpreteren van de <em>repeated measures ANOVA</em> wanneer niet aan sphericiteit is voldaan:</p>
+<ul class="simple">
+<li><p>Wanneer beide correcties significant zijn, rapporteer de (conservatieve) Greenhouse-Geisser correctie.</p></li>
+<li><p>Wanneer beide correcties niet significant zijn, rapporteer de (liberale) Huynh-Feldt correctie.</p></li>
+<li><p>Wanneer de een significant is en de ander niet, bereken de gemiddelde p-waarde van beide correcties.</p>
+<ul>
+<li><p>Wanneer deze p-waarde significant is, rapporteer dan de significante correctie.</p></li>
+<li><p>Wanneer deze p-waarde niet significant is, rapporteer dan de niet significante correctie.</p></li>
+</ul>
+</li>
+</ul>
+<p>In de voorbeeldoutput is de p-waarde van de Greenhouse-Geisser correctie groter dan 0,05 en de p-waarde van de Huynh-Feldt correctie kleiner dan 0,05. Het gemiddelde van beide p-waarden is 0,049855, wat betekent dat er een significant resultaat is. Rapporteer in dit geval dus de (significante) Huynh-Feldt correctie, i.e. <em>F</em> = 0,56, <em>p</em> &lt; 0,05.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="effectmaat">
+<h1>Effectmaat<a class="headerlink" href="#effectmaat" title="Permalink to this headline">¶</a></h1>
+<p>De p-waarde geeft aan of het verschil tussen groepen van metingen significant is. De grootte van het verschil of effect is echter ook relevant. Een effectmaat is een gestandaardiseerde maat die de grootte van een effect weergeeft, zodat effecten van verschillende onderzoeken met elkaar vergeleken kunnen worden.<a class="footnote-reference brackets" href="#id28" id="id11">6</a> Voor de <em>repeated measures ANOVA</em> wordt de effectmaat eta squared vaak gebruikt.</p>
+<div class="section" id="eta-squared">
+<h2>Eta squared<a class="headerlink" href="#eta-squared" title="Permalink to this headline">¶</a></h2>
+<p>De effectmaat eta squared (<em>η^2^</em>) berekent de proportie van de variantie in de afhankelijke variabele die verklaard wordt door de onafhankelijke variabele. In deze casus berekent het de proportie van de variantie in het aantal uren studeren die verklaard kan worden door het vak in de eerste onderwijsperiode. Een indicatie om <em>η^2^</em> te interpreteren is: rond 0,01 is een klein effect, rond 0,06 is een gemiddeld effect en rond 0,14 is een groot effect.<a class="footnote-reference brackets" href="#id29" id="id12">7</a></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="post-hoc-toetsen">
+<h1>Post-hoc toetsen<a class="headerlink" href="#post-hoc-toetsen" title="Permalink to this headline">¶</a></h1>
+<p>De <em>repeated measures ANOVA</em> toetst of één of meerdere van de gemiddelden anders is dan de andere gemiddelden. Voer een post-hoc toets uit om te bepalen welke groepen van metingen significant verschillen.</p>
+<p>Gebruik een correctie voor de p-waarden, omdat er meerdere toetsen tegelijkertijd worden gebruikt. Meerdere toetsen tegelijkertijd uitvoeren verhoogt de kans dat een van de nulhypotheses onterecht wordt verworpen en er bij toeval een verband wordt ontdekt dat er niet is (type I fout). In deze toetspagina wordt de <em>Bonferroni correctie</em> gebruikt. Deze correctie past de p-waarde aan door de p-waarde te vermenigvuldigen met het aantal uitgevoerde toetsen en verlaagt hiermee de kans op een type I fout. Een andere uitleg hiervan is dat het significantieniveau gedeeld wordt door het aantal toetsen wat leidt tot een lager significantieniveau en dus een strengere toets. Er zijn ook andere opties voor een correctie op de p-waarden.<a class="footnote-reference brackets" href="#id28" id="id13">6</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering">
+<h1>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Dataset-inladen.py -->
+<p>Er is een dataset <code class="docutils literal notranslate"><span class="pre">dfStudieuren_technische_natuurkunde</span></code> ingeladen met het aantal studieuren van eerstejaars studenten van de bachelor Technische Natuurkunde voor de drie vakken in de eerste onderwijsperiode.</p>
+<!-- ## /TEKSTBLOK: Dataset-inladen.py -->
+<div class="section" id="de-data-bekijken">
+<h2>De data bekijken<a class="headerlink" href="#de-data-bekijken" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Data-bekijken.py -->
+<p>Gebruik <code class="docutils literal notranslate"><span class="pre">&lt;dataframe&gt;.head()</span></code> en <code class="docutils literal notranslate"><span class="pre">&lt;dataframe&gt;.tail()</span></code> om de structuur van de data te bekijken.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken.py -->
+<!-- ## OPENBLOK: Data-bekijken1.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Eerste 5 observaties</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dfStudieuren_technische_natuurkunde</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Laatste 5 observaties</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dfStudieuren_technische_natuurkunde</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken1.py -->
+<p>Selecteer de drie groepen van metingen en sla deze op in een vector om deze makkelijker aan te kunnen roepen.</p>
+<!-- ## OPENBLOK: Data-selecteren.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Studieuren_lineaire_algebra</span> <span class="o">=</span> <span class="n">dfStudieuren_technische_natuurkunde</span><span class="p">[</span><span class="n">dfStudieuren_technische_natuurkunde</span><span class="p">[</span><span class="s1">&#39;Vak&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Lineaire Algebra&quot;</span><span class="p">][</span><span class="s1">&#39;Studieuren&#39;</span><span class="p">]</span>
+<span class="n">Studieuren_relativiteitstheorie</span> <span class="o">=</span> <span class="n">dfStudieuren_technische_natuurkunde</span><span class="p">[</span><span class="n">dfStudieuren_technische_natuurkunde</span><span class="p">[</span><span class="s1">&#39;Vak&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Relativiteitstheorie&quot;</span><span class="p">][</span><span class="s1">&#39;Studieuren&#39;</span><span class="p">]</span>
+<span class="n">Studieuren_kosmologie</span> <span class="o">=</span> <span class="n">dfStudieuren_technische_natuurkunde</span><span class="p">[</span><span class="n">dfStudieuren_technische_natuurkunde</span><span class="p">[</span><span class="s1">&#39;Vak&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Kosmologie&quot;</span><span class="p">][</span><span class="s1">&#39;Studieuren&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-selecteren.py --><!-- ## TEKSTBLOK: Data-beschrijven.py -->
+<p>Inspecteer de data met <code class="docutils literal notranslate"><span class="pre">np.mean()</span></code>, <code class="docutils literal notranslate"><span class="pre">np.std()</span></code> en <code class="docutils literal notranslate"><span class="pre">len()</span></code> om meer inzicht te krijgen in de data,, door deze aan te roepen uit het <code class="docutils literal notranslate"><span class="pre">numpy</span></code> package.</p>
+<!-- ## /TEKSTBLOK: Data-beschrijven.py -->
+<!-- ## OPENBLOK: numpy1.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: numpy1.py --><div class="col-container"> 
+  <div class="col">
+<!-- ## OPENBLOK: Data-beschrijven1.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gemiddelde</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">Studieuren_lineaire_algebra</span><span class="p">))</span>
+<span class="c1"># Standaardafwijking</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">Studieuren_lineaire_algebra</span><span class="p">))</span>
+<span class="c1"># Aantal observaties</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Studieuren_lineaire_algebra</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven1.py -->
+  </div>
+  <div class = "col">
+<!-- ## OPENBLOK: Data-beschrijven2.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gemiddelde</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">Studieuren_relativiteitstheorie</span><span class="p">))</span>
+<span class="c1"># Standaardafwijking</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">Studieuren_relativiteitstheorie</span><span class="p">))</span>
+<span class="c1"># Aantal observaties</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Studieuren_relativiteitstheorie</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven2.py -->
+  </div>
+  <div class = "col">
+<!-- ## OPENBLOK: Data-beschrijven3.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gemiddelde</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">Studieuren_kosmologie</span><span class="p">))</span>
+<span class="c1"># Standaardafwijking</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">Studieuren_kosmologie</span><span class="p">))</span>
+<span class="c1"># Aantal observaties</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Studieuren_kosmologie</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven3.py -->
+  </div>
+</div><!-- ## CLOSEDBLOK: Data-beschrijven4.py --><!-- ## /CLOSEDBLOK: Data-beschrijven4.py -->
+<!-- ## TEKSTBLOK: Datatekst-beschrijven.py -->
+<ul class="simple">
+<li><p>Gemiddeld aantal studieuren Lineaire Algebra (standaarddeviatie): <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vM_LA)</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vSD_LA)</span></code>). <em>n</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">py$vN_LA</span></code></p></li>
+<li><p>Gemiddeld aantal studieuren Relativiteitstheorie (standaarddeviatie): <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vM_RT)</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vSD_RT)</span></code>). <em>n</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">py$vN_RT</span></code>.</p></li>
+<li><p>Gemiddeld aantal studieuren Kosmologie (standaarddeviatie): <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vM_KL)</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vSD_KL)</span></code>). <em>n</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">py$vN_KL</span></code>.</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Datatekst-beschrijven.py -->
+</div>
+<div class="section" id="visuele-inspectie-van-normaliteit">
+<h2>Visuele inspectie van normaliteit<a class="headerlink" href="#visuele-inspectie-van-normaliteit" title="Permalink to this headline">¶</a></h2>
+<p>Geef de verdeling van de studieuren voor elke groep visueel weer met een histogram, Q-Q plot en boxplot.</p>
+<div class="section" id="histogram">
+<h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">¶</a></h3>
+<p>Focus bij het analyseren van een histogram<a class="footnote-reference brackets" href="#id30" id="id14">18</a> op de symmetrie van de verdeling, de hoeveelheid toppen (modaliteit) en mogelijke uitbijters. Een normale verdeling is symmetrisch, heeft één top en geen uitbijters.<a class="footnote-reference brackets" href="#id31" id="id15">9</a><sup>, </sup><a class="footnote-reference brackets" href="#id32" id="id16">10</a></p>
+<!-- ## OPENBLOK: Histogram.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Laad seaborn of facets te maken</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sb</span>
+<span class="c1"># Laad matplotlib.pyplot om plots te maken</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Maak een facet plot met een histogram voor elke vooropleiding</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sb</span><span class="o">.</span><span class="n">FacetGrid</span><span class="p">(</span><span class="n">dfStudieuren_technische_natuurkunde</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;Vak&quot;</span><span class="p">)</span>
+<span class="n">g</span> <span class="o">=</span> <span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">,</span> <span class="s2">&quot;Studieuren&quot;</span><span class="p">,</span> <span class="n">edgecolor</span> <span class="o">=</span> <span class="s2">&quot;black&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">set_axis_labels</span><span class="p">(</span><span class="s2">&quot;Aantal studieuren&quot;</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Histogram.py -->
+<p>Alle drie de verdelingen hebben één top en lijken geen uitbijters te hebben. Tevens zijn de verdelingen redelijk symmetrisch. Deze verdelingen benaderen de normaalverdeling.</p>
+</div>
+<div class="section" id="q-q-plot">
+<h3>Q-Q plot<a class="headerlink" href="#q-q-plot" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: QQplot.py -->
+<p>Importeer <code class="docutils literal notranslate"><span class="pre">scipy.stats</span></code> om een Q-Q plot te maken. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">scipy.stats.probplot()</span></code> om een Q-Q plot te maken.</p>
+<!-- ## TEKSTBLOK: QQplot.py -->
+<p>Als over het algemeen de meeste datapunten op de lijn liggen, neem dan aan dat de data normaal verdeeld zijn.</p>
+<div class = "col-container">
+  <div class="col">
+<!-- ## OPENBLOK: QQplot1.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
+<span class="n">qq</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">probplot</span><span class="p">(</span><span class="n">Studieuren_lineaire_algebra</span><span class="p">,</span> <span class="n">dist</span><span class="o">=</span><span class="s2">&quot;norm&quot;</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="n">plt</span><span class="p">)</span>
+<span class="n">title</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Lineaire algebra&quot;</span><span class="p">)</span>
+<span class="n">xlab</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Theoretische kwantielen&quot;</span><span class="p">)</span>
+<span class="n">ylab</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Kwantielen in data&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: QQplot1.py -->
+  </div>
+  <div class = "col">
+<!-- ## OPENBLOK: QQplot2.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
+<span class="n">qq</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">probplot</span><span class="p">(</span><span class="n">Studieuren_relativiteitstheorie</span><span class="p">,</span> <span class="n">dist</span><span class="o">=</span><span class="s2">&quot;norm&quot;</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="n">plt</span><span class="p">)</span>
+<span class="n">title</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Relativiteitstheorie&quot;</span><span class="p">)</span>
+<span class="n">xlab</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Theoretische kwantielen&quot;</span><span class="p">)</span>
+<span class="n">ylab</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Kwantielen in data&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: QQplot2.py -->
+  </div>
+  <div class = "col">
+<!-- ## OPENBLOK: QQplot3.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
+<span class="n">qq</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">probplot</span><span class="p">(</span><span class="n">Studieuren_kosmologie</span><span class="p">,</span> 
+<span class="n">dist</span><span class="o">=</span><span class="s2">&quot;norm&quot;</span><span class="p">,</span> 
+<span class="n">plot</span><span class="o">=</span><span class="n">plt</span><span class="p">)</span>
+<span class="n">title</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Kosmologie&quot;</span><span class="p">)</span>
+<span class="n">xlab</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Theoretische kwantielen&quot;</span><span class="p">)</span>
+<span class="n">ylab</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Kwantielen in data&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: QQplot3.py -->
+  </div>
+</div>
+<p>Bij alle drie de Q-Q plots liggen de punten rond de lijn die normaliteit aangeeft; vermoedelijk zijn de studieuren voor elke groep normaal verdeeld.</p>
+</div>
+<div class="section" id="boxplot">
+<h3>Boxplot<a class="headerlink" href="#boxplot" title="Permalink to this headline">¶</a></h3>
+<p>De box geeft de middelste 50% van het aantal studieuren per week weer. De zwarte lijn binnen de box is de mediaan. In de staarten of snorreharen zitten de eerste 25% en de laatste 25%. Cirkels visualiseren mogelijke uitbijters.<a class="footnote-reference brackets" href="#id31" id="id17">9</a><sup>, </sup><a class="footnote-reference brackets" href="#id32" id="id18">10</a> Hoe meer de boxen overlappen, hoe waarschijnlijker er geen significant verschil is tussen de groepen van metingen.</p>
+<!-- ## OPENBLOK: Boxplot.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">box</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">boxplot</span><span class="p">([</span><span class="n">Studieuren_lineaire_algebra</span><span class="p">,</span> <span class="n">Studieuren_relativiteitstheorie</span><span class="p">,</span> <span class="n">Studieuren_kosmologie</span><span class="p">],</span> <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Lineaire algebra&quot;</span><span class="p">,</span> <span class="s2">&quot;Relativiteitstheorie&quot;</span><span class="p">,</span> <span class="s2">&quot;Kosmologie&quot;</span><span class="p">])</span>
+<span class="n">title</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="n">ylab</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Aantal studieuren&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Boxplot.py -->
+<p>De boxplotten geven de spreiding weer van het aantal studieuren voor de drie vakken in de eerste onderwijsperiode: Kosmologie, Lineaire Algebra en Relativiteitstheorie. In het algemeen lijken de vakken een symmetrische verdeling te hebben. De medianen van Kosmologie en Lineaire Algebra liggen een stuk lager dan de mediaan van Relativiteitstheorie. Kosmologie en Relativiteitstheorie hebben mogelijke uitbijters.</p>
+</div>
+</div>
+<div class="section" id="toetsen-van-normaliteit">
+<h2>Toetsen van normaliteit<a class="headerlink" href="#toetsen-van-normaliteit" title="Permalink to this headline">¶</a></h2>
+<p>Om te controleren of de verdelingen van de studieuren voor elk vak normaal verdeeld zijn, kan de normaliteit getoetst worden. Twee veelgebruikte toetsen zijn: de <em>Kolmogorov-Smirnov test</em> en de <em>Shapiro-Wilk test</em>.</p>
+<div class="section" id="kolmogorov-smirnov">
+<h3>Kolmogorov-Smirnov<a class="headerlink" href="#kolmogorov-smirnov" title="Permalink to this headline">¶</a></h3>
+<p>De <em>Kolmogorov-Smirnov test</em> toetst het verschil tussen twee verdelingen. Standaard toetst deze test het verschil tussen een normale verdeling en de verdeling van de steekproef. De Lilliefors correctie is vereist als het gemiddelde en de standaardafwijking niet van tevoren bekend of bepaald zijn, wat meestal het geval is bij een steekproef. Als de p-waarde kleiner dan 0,05 is, is de verdeling van de data significant verschillend van de normale verdeling.</p>
+<!-- ## TEKSTBLOK: Lilliefors-test1.py -->
+<p>De standaard interpretatie van een statitische toets in Python is: <code class="docutils literal notranslate"><span class="pre">(&lt;teststatistiek&gt;,</span> <span class="pre">&lt;p-waarde&gt;)</span></code>. Verder toetst Python standaard tweezijdig.</p>
+<!-- ## /TEKSTBLOK: Lilliefors-test1.py -->
+<!-- ## OPENBLOK: Library-nortest.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.stats.api</span> <span class="k">as</span> <span class="nn">smod</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Library-nortest.py -->
+<div class="col-container"> 
+  <div class="col">
+<!-- ## OPENBLOK: Lilliefors-test-1.py -->
+``` {python Lilliefors Test-1, warning=FALSE}
+print(smod.lilliefors(Studieuren_lineaire_algebra, pvalmethod="table"))
+```
+<!-- ## OPENBLOK: Lilliefors-test-1.py -->
+  </div>
+  <div class = "col">
+<!-- ## OPENBLOK: Lilliefors-test-2.py -->
+``` {python Lilliefors Test-2, warning=FALSE}
+print(smod.lilliefors(Studieuren_relativiteitstheorie, pvalmethod="table"))
+```
+<!-- ## /OPENBLOK: Lilliefors-test-2.py -->
+  </div>
+  <div class = "col">
+<!-- ## OPENBLOK: Lilliefors-test-3.py -->
+``` {python Lilliefors Test-3, warning=FALSE}
+print(smod.lilliefors(Studieuren_kosmologie, pvalmethod="table"))
+```
+<!-- ## /OPENBLOK: Lilliefors-test-3.py -->
+  </div>
+</div>
+<p>De p-waarde is groter dan 0,05 voor elk vak; er is geen significant verschil gevonden tussen de verdeling van de steekproef en de normale verdeling. <a class="footnote-reference brackets" href="#id33" id="id19">11</a> De <em>repeated measures ANOVA</em> kan uitgevoerd worden.</p>
+</div>
+<div class="section" id="shapiro-wilk-test">
+<h3>Shapiro-Wilk Test<a class="headerlink" href="#shapiro-wilk-test" title="Permalink to this headline">¶</a></h3>
+<p>De <em>Shapiro-Wilk test</em> is een soortgelijke toets als de <em>Kolmogorov-Smirnov test</em> en vooral geschikt bij kleine steekproeven (n &lt; 50). Als de p-waarde kleiner dan 0,05 is, is de verdeling van de data significant verschillend van de normale verdeling.</p>
+<div class="col-container"> 
+  <div class="col">
+<!-- ## OPENBLOK: Shapiro-Wilk-test-1.py -->
+``` {python Shapiro-Wilk Test-1, warning=FALSE}
+import scipy.stats as stats
+print(stats.shapiro(Studieuren_lineaire_algebra))
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;!-- ## /OPENBLOK: Shapiro-Wilk-test-1.py --&gt;
+  &lt;/div&gt;
+  &lt;div class= &quot;col&quot;&gt;
+&lt;!-- ## OPENBLOK: Shapiro-Wilk-test-2.py --&gt;
+``` {python Shapiro-Wilk Test-2, warning=FALSE}
+import scipy.stats as stats
+print(stats.shapiro(Studieuren_relativiteitstheorie))
+
+</pre></div>
+</div>
+<!-- ## /OPENBLOK: Shapiro-Wilk-test-2.py -->
+  </div>
+  <div class= "col"> 
+<!-- ## OPENBLOK: Shapiro-Wilk-test-3.py -->
+``` {python Shapiro-Wilk Test-3, warning=FALSE}
+import scipy.stats as stats
+print(stats.shapiro(Studieuren_kosmologie))
+```
+<!-- ## /OPENBLOK: Shapiro-Wilk-test-3.py -->
+  </div>
+</div>
+<p>De p-waarde is groter dan 0,05 voor elk vak, dus er is geen significant verschil gevonden tussen de verdeling van de steekproef en de normale verdeling.<a class="footnote-reference brackets" href="#id33" id="id20">11</a> De <em>repeated measures ANOVA</em> kan uitgevoerd worden.</p>
+</div>
+</div>
+<div class="section" id="repeated-measures-anova">
+<h2>Repeated measures ANOVA<a class="headerlink" href="#repeated-measures-anova" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: repeatedmeasuresANOVA1.py -->
+<p>Voer de <em>repeated measures ANOVA</em> uit om de vraag te beantwoorden of er verschillen zijn tussen het aantal studieuren voor de vakken in de eerste onderwijsperiode van het eerste jaar van de bachelor Technische Natuurkunde. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">rm_anova</span></code> van het package <code class="docutils literal notranslate"><span class="pre">pingouin</span></code> met als argumenten de dataset <code class="docutils literal notranslate"><span class="pre">dfStudieuren_technische_natuurkunde</span></code>, de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">dv</span> <span class="pre">=</span> <span class="pre">'Studieuren'</span></code>, de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">within</span> <span class="pre">=</span> <span class="pre">'Vak'</span></code>, de variabele die de observaties aangeeft <code class="docutils literal notranslate"><span class="pre">subject</span> <span class="pre">=</span> <span class="pre">'Studentnummer'</span></code>, <code class="docutils literal notranslate"><span class="pre">correction</span> <span class="pre">=</span> <span class="pre">True</span></code> om ook <em>Mauchly’s test</em> uit te voeren en de resultaten voor de Greenhouse-Geisser correctie te laten, en <code class="docutils literal notranslate"><span class="pre">effsize</span> <span class="pre">=</span> <span class="pre">'n2'</span></code> om <em>eta squared</em> als effectmaat te gebruiken.</p>
+<!-- ## /TEKSTBLOK: repeatedmeasuresANOVA1.py -->
+<!-- ## OPENBLOK: repeatedmeasuresANOVA2.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importeer package pingouin</span>
+<span class="kn">import</span> <span class="nn">pingouin</span> <span class="k">as</span> <span class="nn">pg</span>
+
+<span class="c1"># Voer de repeated measures ANOVA uit</span>
+<span class="n">aov</span> <span class="o">=</span> <span class="n">pg</span><span class="o">.</span><span class="n">rm_anova</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">dfStudieuren_technische_natuurkunde</span><span class="p">,</span> 
+<span class="n">dv</span> <span class="o">=</span> <span class="s1">&#39;Studieuren&#39;</span><span class="p">,</span> 
+<span class="n">within</span> <span class="o">=</span> <span class="s1">&#39;Vak&#39;</span><span class="p">,</span>
+<span class="n">subject</span> <span class="o">=</span> <span class="s1">&#39;Studentnummer&#39;</span><span class="p">,</span>
+<span class="n">correction</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+<span class="n">effsize</span> <span class="o">=</span> <span class="s1">&#39;n2&#39;</span><span class="p">)</span>
+
+<span class="c1"># Print de resultaten van repeated measures ANOVA. Omdat de output veel kolommen heeft, wordt het in twee helften geprint zodat alles zichtbaar is in de output</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aov</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">7</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aov</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">7</span><span class="p">:])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: repeatedmeasuresANOVA2.py -->
+<!-- ## CLOSEDBLOK: repeatedmeasuresANOVA3.py --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: repeatedmeasuresANOVA3.py -->
+<!-- ## TEKSTBLOK: repeatedmeasuresANOVA4.py -->
+<ul class="simple">
+<li><p><em>Mauchly’s test</em> toont aan dat de assumptie van sphericiteit niet standthoudt in deze casus (<span class="math notranslate nohighlight">\(\chi^2\)</span> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Mauchly_W)</span></code>, p &lt; 0,0001); gebruik in dit geval een van de correcties. In Python is alleen de (conservatieve) Greenhouse-Geisser correctie mogelijk, dus rapporteer deze. Wil je de toets op de geadviseerde manier (zowel de Greenhouse-Geisser als de Huynh-Feldt correctie uitvoeren en daarna vergelijken), dan moet de toets uitgevoerd worden in de programmeertaal R.</p></li>
+<li><p>De data voldoet aan de assumptie van sphericiteit, <span class="math notranslate nohighlight">\(\chi^2\)</span> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Mauchly_W)</span></code>, p = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Mauchly_p,</span> <span class="pre">3)</span></code></p></li>
+<li><p>De resultaten van de Greenhouse-Geisser correctie zijn <em>F</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$GG_F)</span></code>, p &lt; 0,0001, <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$eta2)</span></code></p></li>
+<li><p>De p-waarde is kleiner dan 0,05, dus de H~0~ wordt verworpen.<a class="footnote-reference brackets" href="#id33" id="id21">11</a></p></li>
+<li><p>Er is een significant verschil tussen het aantal studieuren voor de drie vakken in de eerste onderwijsperiode; het effect van de verschillende vakken op het aantal studieuren is groot</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: repeatedmeasuresANOVA4.py -->
+</div>
+<div class="section" id="post-hoc-toets">
+<h2>Post-hoc toets<a class="headerlink" href="#post-hoc-toets" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: posthoc1.py -->
+<p>Voer post-hoc toetsen uit om te onderzoeken welke vakken uit de eerste onderwijsperiode van elkaar verschillen wat betreft het aantal studieuren dat eerstejaars studenten van de bachelor Technische Natuurkunde hieraan besteden. Bereken eerst de verschillen in gemiddelde tussen de drie vakken. Gebruik daarna voor de post-hoc toetsen de functie <code class="docutils literal notranslate"><span class="pre">pairwise_ttests</span></code> van het <code class="docutils literal notranslate"><span class="pre">pingouin</span></code> package met als argumenten de dataset <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">=</span> <span class="pre">dfStudieuren_technische_natuurkunde</span></code>, de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">dv</span> <span class="pre">=</span> <span class="pre">'Studieuren'</span></code>, de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">within</span> <span class="pre">=</span> <span class="pre">'Vak'</span></code>, de variabele die de observaties aangeeft <code class="docutils literal notranslate"><span class="pre">subject</span> <span class="pre">=</span> <span class="pre">'Studentnummer'</span></code>, de methode om te corrigeren voor meerdere toetsen (Bonferroni) <code class="docutils literal notranslate"><span class="pre">padjust</span> <span class="pre">=</span> <span class="pre">'bonf</span></code>’ en <code class="docutils literal notranslate"><span class="pre">parametric</span> <span class="pre">=</span> <span class="pre">True</span></code> om aan te geven dat er een parametrische toets (de t-toets) gebruikt moet worden.</p>
+<!-- ## /TEKSTBLOK: posthoc1.py -->
+<!-- ## OPENBLOK: posthoc2.py --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Bereken de verschillen in gemiddelde tussen de drie vakken</span>
+<span class="n">Verschil_gemiddelde_LA_RT</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">Studieuren_lineaire_algebra</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">Studieuren_relativiteitstheorie</span><span class="p">)</span>
+<span class="n">Verschil_gemiddelde_RT_KL</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">Studieuren_relativiteitstheorie</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">Studieuren_kosmologie</span><span class="p">)</span>
+<span class="n">Verschil_gemiddelde_KL_LA</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">Studieuren_kosmologie</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">Studieuren_lineaire_algebra</span><span class="p">)</span>
+
+<span class="c1"># Voer de post-hoc toetsen uit</span>
+<span class="n">post_hoc</span> <span class="o">=</span> <span class="n">pg</span><span class="o">.</span><span class="n">pairwise_ttests</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">dfStudieuren_technische_natuurkunde</span><span class="p">,</span> 
+<span class="n">dv</span> <span class="o">=</span> <span class="s1">&#39;Studieuren&#39;</span><span class="p">,</span> 
+<span class="n">within</span> <span class="o">=</span> <span class="s1">&#39;Vak&#39;</span><span class="p">,</span>
+<span class="n">subject</span> <span class="o">=</span> <span class="s1">&#39;Studentnummer&#39;</span><span class="p">,</span>
+<span class="n">padjust</span> <span class="o">=</span> <span class="s1">&#39;bonf&#39;</span><span class="p">,</span>
+<span class="n">parametric</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Print de benodigde resultaten</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">post_hoc</span><span class="p">[[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="s1">&#39;p-corr&#39;</span><span class="p">]])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: posthoc2.py -->
+<!-- ## CLOSEDBLOK: posthoc3.py --><!-- ## /CLOSEDBLOK: posthoc3.py -->
+<!-- ## /TEKSTBLOK: posthoc4.py -->
+<ul class="simple">
+<li><p>Er is een significant verschil tussen Lineaire algebra en Relativiteitstheorie, <em>MD</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Verschil_gemiddelde_LA_RT)</span></code>, p &lt; 0,0001</p></li>
+<li><p>Er is een significant verschil tussen Relativiteitstheorie en Kosmologie, <em>MD</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Verschil_gemiddelde_RT_KL)</span></code>, p &lt; 0,0001</p></li>
+<li><p>Er is geen significant verschil tussen Kosmologie en Lineaire algebra, <em>MD</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Verschil_gemiddelde_KL_LA)</span></code>, p = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$pwaarde_niet_significant,</span> <span class="pre">3)</span></code></p></li>
+</ul>
+<!-- ## /TEKSTBLOK: posthoc4.py --></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="rapportage">
+<h1>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: rapportage.py -->
+<p>Een <em>repeated measures ANOVA</em> is uitgevoerd om te onderzoeken of er verschillen zijn tussen het aantal studieuren dat eerstejaars studenten van de bachelor Technische Natuurkunde besteden aan de vakken in de eerste onderwijsperiode. De vakken zijn Lineaire Algebra, Relativiteitstheorie en Kosmologie; beschrijvende statistieken zijn te vinden in Tabel 1. De data voldoet aan de assumptie van sphericiteit (<span class="math notranslate nohighlight">\(\chi^2\)</span> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Mauchly_W)</span></code>,  p = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$Mauchly_p,</span> <span class="pre">3)</span></code>), daarom is er geen correctie gebruikt. Het aantal studieuren voor de drie vakken in de eerste onderwijsperiode verschilt significant van elkaar, <em>F</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$GG_F)</span></code>, p &lt; 0,0001, <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$eta2)</span></code>. De sterkte van het effect van het vak op het aantal studieuren is groot. Post-hoc toetsen - waarbij een Bonferroni correctie is toegepast om te corrigeren voor meerdere toetsen -  tonen aan dat het aantal studieuren voor het vak Relativiteitstheorie significant verschilt van het aantal studieuren voor zowel het vak Lineaire Algebra als Kosmologie (voor beide p &lt; 0,0001) en dat er een significant verschil is tussen de vakken Lineaire Algebra en Kosmologie (p = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$pwaarde_niet_significant,</span> <span class="pre">3)</span></code>). De resultaten suggereren dat eerstejaars studenten van de bachelor Technische Natuurkunde de meeste uren steken in het vak Relativiteitstheorie en daarna iets meer uren in het vak Kosmologie dan dan in het vak Lineaire Algebra.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Opleiding</p></th>
+<th class="head"><p>M</p></th>
+<th class="head"><p>SD</p></th>
+<th class="head"><p>N</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Lineaire Algebra</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vM_LA)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vSD_LA)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vN_LA)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Relativiteitstheorie</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vM_RT)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vSD_RT)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vN_RT)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Kosmologie</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vM_KL)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vSD_KL)</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(py$vN_KL)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><em>Tabel 1. Het gemiddelde aantal studieuren, bijbehorende standaarddeviatie en groepsgrootte voor de vakken in de eerste onderwijsperiode van de bachelor Technische Natuurkunde.</em></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<!-- ## /TEKSTBLOK: rapportage.py -->
+<!-- ## CLOSEDBLOK: Footer.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Footer.R -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id22"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
+<dd><p>Universiteit van Amsterdam (26 augustus 2014). <em>Repeated-Measures ANOVA</em>. <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Repeated-Measures_ANOVA">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id23"><span class="brackets"><a class="fn-backref" href="#id3">12</a></span></dt>
+<dd><p>Met een deelnemer wordt het object bedoeld dat geobserveerd wordt, bijvoorbeeld een student, een inwoner van Nederland, een opleiding of een organisatie. Met een observatie wordt de waarde bedoeld die de deelnemer heeft voor een bepaalde variabele. Een deelnemer heeft dus meestal een observatie voor meerdere variabelen.</p>
+</dd>
+<dt class="label" id="id24"><span class="brackets">2</span><span class="fn-backref">(<a href="#id4">1</a>,<a href="#id8">2</a>)</span></dt>
+<dd><p>Er zijn verschillende opties om variabelen te transformeren, zoals de logaritme, wortel of inverse (1 gedeeld door de variabele) nemen van de variabele. Zie <em>Discovering statistics using IBM SPSS statistics</em> van Field (2013) pagina 201-210 voor meer informatie over welke transformaties wanneer gebruikt kunnen worden.</p>
+</dd>
+<dt class="label" id="id25"><span class="brackets">3</span><span class="fn-backref">(<a href="#id5">1</a>,<a href="#id9">2</a>)</span></dt>
+<dd><p>Allen, P. &amp; Bennett, K. (2012). <em>SPSS A practical Guide version 20.0</em>. Cengage Learning Australia Pty Limited.</p>
+</dd>
+<dt class="label" id="id26"><span class="brackets"><a class="fn-backref" href="#id6">4</a></span></dt>
+<dd><p>Laerd statistics (2018). <em>Testing for Normality using SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/testing-for-normality-using-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/testing-for-normality-using-spss-statistics.php</a>.</p>
+</dd>
+<dt class="label" id="id27"><span class="brackets"><a class="fn-backref" href="#id7">5</a></span></dt>
+<dd><p>Universiteit van Amsterdam (14 juli 2014). <em>Normaliteit</em>. <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Normaliteit">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id28"><span class="brackets">6</span><span class="fn-backref">(<a href="#id10">1</a>,<a href="#id11">2</a>,<a href="#id13">3</a>)</span></dt>
+<dd><p>Field, A., Miles, J., &amp; Field, Z. (2012). <em>Discovering statistics using R</em>. London: Sage publications.</p>
+</dd>
+<dt class="label" id="id29"><span class="brackets"><a class="fn-backref" href="#id12">7</a></span></dt>
+<dd><p>Allen, P. &amp; Bennett, K. (2012). <em>SPSS A practical Guide version 20.0</em>. Cengage Learning Australia Pty Limited.</p>
+</dd>
+<dt class="label" id="id30"><span class="brackets"><a class="fn-backref" href="#id14">18</a></span></dt>
+<dd><p>De breedte van de staven van het histogram wordt vaak automatisch bepaald, maar kan handmatig aangepast worden. Aangezien de breedte van de staven bepalend zijn voor de indruk die de visualisatie geeft, is het verstandig om hier goed op te letten.</p>
+</dd>
+<dt class="label" id="id31"><span class="brackets">9</span><span class="fn-backref">(<a href="#id15">1</a>,<a href="#id17">2</a>)</span></dt>
+<dd><p>Outliers (13 augustus 2016). <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Outliers">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id32"><span class="brackets">10</span><span class="fn-backref">(<a href="#id16">1</a>,<a href="#id18">2</a>)</span></dt>
+<dd><p>Uitbijters kunnen bepalend zijn voor de uitkomst van toetsen. Bekijk of de uitbijters valide uitbijters zijn en niet een meetfout of op een andere manier incorrect verkregen data. Het weghalen van uitbijters kan de uitkomst ook vertekenen, daarom is het belangrijk om verwijderde uitbijters te melden in een rapport.</p>
+</dd>
+<dt class="label" id="id33"><span class="brackets">11</span><span class="fn-backref">(<a href="#id19">1</a>,<a href="#id20">2</a>,<a href="#id21">3</a>)</span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./python"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="03%20Ongepaarde%20t-toets-Python.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="04-Repeated-measures-ANOVA-Python.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

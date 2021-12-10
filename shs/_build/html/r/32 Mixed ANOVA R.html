@@ -1,0 +1,1404 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="41%20Logistische%20regressie%20R.html" />
+    <link rel="prev" title="Toepassing" href="31%20ANCOVA%20R.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/r/32 Mixed ANOVA R.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fr/32 Mixed ANOVA R.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#within-en-between-subjects-variabelen">
+   Within en between-subjects variabelen
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hoofdeffecten-en-interacties">
+   Hoofdeffecten en interacties
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitleg-assumpties">
+   Uitleg assumpties
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#normaliteit">
+     Normaliteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sphericiteit">
+     Sphericiteit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#effectmaat">
+   Effectmaat
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#post-hoc-toetsen">
+   Post-hoc toetsen
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering">
+   Uitvoering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-data-bekijken">
+     De data bekijken
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id18">
+     Normaliteit
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#histogram">
+       Histogram
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#toetsen-van-normaliteit">
+       Toetsen van normaliteit
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#kolmogorov-smirnov-test">
+         Kolmogorov-Smirnov test
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#shapiro-wilk-test">
+         Shapiro-Wilk test
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id24">
+     Sphericiteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#homogeniteit-van-varianties">
+     Homogeniteit van varianties
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mixed-anova">
+   Mixed ANOVA
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#simple-effects-analyse">
+     Simple effects analyse
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vak">
+       Vak
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#premaster">
+       Premaster
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#illustratie-van-post-hoc-toetsing-bij-hoofdeffecten-zonder-interactie-effect">
+     Illustratie van post-hoc toetsing bij hoofdeffecten zonder interactie-effect
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rapportage">
+   Rapportage
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-924f26e6aa13&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span>exists<span class="o">(</span><span class="s2">&quot;Substitute_var&quot;</span><span class="o">))</span> <span class="o">{</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.R -->
+<!-- ## /CLOSEDBLOK: Reticulate.R -->
+<!-- ## OPENBLOK: Data-aanmaken.R --><!-- ## /OPENBLOK: Data-aanmaken.R -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<p>Gebruik de <em>mixed ANOVA</em> om te toetsen of de gemiddelden van groepen op basis van twee of meer onafhankelijke categorische variabelen van elkaar verschillen waarbij er zowel between-subjects als within-subjects variabelen zijn.<a class="footnote-reference brackets" href="#id31" id="id1">1</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id = "casus">
+<p>De masteropleiding Sustainable Change Management is een experiment gestart waarbij studenten die niet direct toelaatbaar zijn voor de opleiding een premasterprogramma van een half jaar kunnen volgen om alsnog toegelaten te worden. Om dit experiment te evalueren wil de opleidingsdirecteur onderzoeken of
+er verschillen zijn tussen de resultaten van premasterstudenten en direct toelaatbare studenten. Daarom vraagt hij te onderzoeken of er verschillen zijn tussen de toelaatbare en premasterstudenten voor de kernvakken Sustainable Innovation, Organizational Change Management en Organizational Psychology en de masterthesis. Op basis van deze analyse kan de opleidingsdirecteur zien of het premasterprogramma goed aansluit bij het masterprogramma en waar eventuele tekortkomingen zitten.</p>
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is. Bij <em>mixed ANOVA</em> zijn er hypotheses op te stellen voor de verschillen tussen groepen van elke onafhankelijke variabele apart (hoofdeffecten) en een hypothese voor de interactie tussen twee of meerdere onafhankelijke variabelen (interactie-effect).</p>
+<p><em>H~0~</em>: Het gemiddelde cijfer is gelijk voor direct toelaatbare studenten en premasterstudenten, i.e. er is geen hoofdeffect van Premaster op Cijfer.</p>
+<p><em>H~A~</em>: Het gemiddelde cijfer is niet gelijk voor direct toelaatbare studenten en premasterstudenten, i.e. er is geen hoofdeffect van Premaster op Cijfer.</p>
+<p><em>H~0~</em>: Het gemiddelde cijfer is gelijk voor de vakken Sustainable Innovation, Organizational Change Management en Organizational Psychology en de masterthes, i.e. er is een hoofdeffect van Vak op Cijfer.</p>
+<p><em>H~A~</em>: Het gemiddelde cijfer is niet gelijk voor de vakken Sustainable Innovation, Organizational Change Management en Organizational Psychology en de masterthes, i.e. er is een hoofdeffect van Vak op Cijfer.</p>
+<p><em>H~0~</em>: Er is geen interactie-effect tussen de variabelen Vak en Premaster op het gemiddeld cijfer.</p>
+<p><em>H~A~</em>: Er is een interactie-effect tussen de variabelen Vak en Premaster op het gemiddeld cijfer.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="within-en-between-subjects-variabelen">
+<h1>Within en between-subjects variabelen<a class="headerlink" href="#within-en-between-subjects-variabelen" title="Permalink to this headline">¶</a></h1>
+<p>Binnen de <em>ANOVA</em> familie zijn er verschillende soorten analyses die afhangen van het type onafhankelijke variabele dat wordt gebruikt. Een onafhankelijke variabele kan een between-subjects en within-subjects variabele zijn. Between-subjects houdt in dat elke categorie van de variabele andere deelnemers<a class="footnote-reference brackets" href="#id32" id="id2">19</a> bevat; elke deelnemer zit slechts in één van de categoriëen. Een voorbeeld van een between-subjects variabele is Geslacht: de deelnemer zit in de categorie man of categorie vrouw en kan niet in beide zitten. Een within-subjects variabele kan op twee manieren ontworpen worden. De eerste manier is dat elke deelnemer in elke categorie zit doordat hij of zij in elke categorie gemeten is (herhaalde metingen). Een voorbeeld hiervan is de variabele onderwijsperiode: de deelnemer wordt in elke onderwijsperiode gemeten wat betreft zijn gemiddelde cijfer. De tweede manier is dat deelnemers in elke categorie aan elkaar gematcht worden. Dit betekent dat er op basis van achtergrondkenmerken deelnemers aan elkaar gekoppeld worden die erg op elkaar lijken. Een herhaalde meting wordt op deze manier als het ware nagebootst. Een voorbeeld hiervan is het matchen van studenten bij verschillende opleidingen op basis van kenmerken als geslacht, leeftijd, vooropleiding en gemiddeld eindexamencijfer middelbare school.</p>
+<p>Het soort onafhankelijke variabelen bepaalt het type <em>ANOVA</em> dat gebruikt moet worden. Bij één between-subjects variabele is de <span class="xref myst">one-way ANOVA</span> de juiste toets en bij één within-subjects variabele is de <span class="xref myst">repeated measures ANOVA</span> de juiste toets. Bij meerdere variabelen wordt het iets complexer. Als alle variabelen between-subjects variabelen zijn is de <span class="xref myst">factoriële ANOVA</span> de juiste toets. Als alle variabelen within-subjects variabelen zijn, is de <span class="xref myst">factoriële repeated measures ANOVA</span> de juiste toets. Als er een combinatie is van within-subjects en between-subjects variabelen, dan is de <em>mixed ANOVA</em> (de huidige toetspagina) de juiste toets. Bekijk dus van tevoren wat voor soort onafhankelijke variabelen worden gebruikt om de juiste toets te bepalen.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="hoofdeffecten-en-interacties">
+<h1>Hoofdeffecten en interacties<a class="headerlink" href="#hoofdeffecten-en-interacties" title="Permalink to this headline">¶</a></h1>
+<p>Bij <em>mixed ANOVA</em> wordt onderzocht of er verschillen zijn tussen groepen die gemaakt worden op basis van meerdere categorische onafhankelijke variabelen die between-subjects en within-subjects zijn. Dit wordt toegelicht met een versimpelde vorm van de huidige casus met twee onafhankelijke variabelen Vak en Premaster en een afhankelijke variabele Cijfer. De onafhankelijke variabele Vak bestaat uit twee groepen (theorie en praktijk) en de onafhankelijke variabele Periode bestaat ook uit twee groepen (A en B). Binnen <em>mixed ANOVA</em> wordt een onderscheid gemaakt tussen hoofdeffecten en interactie-effecten. Een hoofdeffect houdt in dat er een verschil is tussen de groepen van één van de onafhankelijke variabelen. In andere woorden, de onafhankelijke variabele heeft effect op de afhankelijke variabele. Voor het bedachte experiment houdt een hoofdeffect van de variabele Vak in dat er een verschil is in het gemiddelde van vak A en vak B. Een hoofdeffect van de variabele Premaster houdt in dat er een verschil is in het gemiddelde van de groep Premaster en de groep Geen Premaster.<a class="footnote-reference brackets" href="#id33" id="id3">10</a></p>
+<p>Een grafische weergave van hoofdeffecten is te zien in Figuur 1. In de figuur is de relatie tussen de variabelen Premaster en Cijfer weergegeven voor de vakken A en B. Het hoofdeffect van de variabele Premaster is te zien door het gemiddelde van de groep Premaster te vergelijken met het gemiddelde van de groep Geen Premaster. Beide gemiddelden zijn weergegeven met groene driehoeken: de groep Premaster heeft een gemiddelde van 6 en de groep Geen Premaster een gemiddelde van 8. Er is dus een verschil in gemiddelde tussen de groepen van onafhankelijke variabele Premaster, wat betekent dat er een hoofdeffect van de variabele Premaster is. Op dezelfde manier kan een mogelijk hoofdeffect van de variabele Vak onderzocht worden. Het gemiddelde van vak A is weergegeven met een oranje vierkant en het gemiddelde van vak B met een blauw vierkant. Het gemiddelde van vak A (8) ligt hoger dan het gemiddelde van vak B (6), dus er is ook een hoofdeffect van onafhankelijke variabele Vak. Beide onafhankelijke variabelen hebben dus een effect op de afhankelijke variabele Cijfer.</p>
+<!-- ## CLOSEDBLOK: Uitleg1.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Uitleg1.R -->
+<p><em>Figuur 1.  Illustratie van hoofdeffecten bij mixed ANOVA voor een casus met afhankelijke variabele Cijfer en onafhankelijke variabelen Vak en Premaster. In deze grafiek zijn er hoofdeffecten voor de variabelen Vak en Premaster., maar geen interactie-effecten.</em></p>
+<p>Een interactie-effect houdt in dat het effect van de ene onafhankelijke variabele op de afhankelijke variabele afhangt van de andere onafhankelijke variabele(n). Er is als het ware een interactie tussen de onafhankelijke variabelen die het effect op de afhankelijke variabele bepaalt. In het bedachte experiment zou dit betekenen dat het effect van onafhankelijke variabele Premaster op Cijfer verschillend is voor vak A en vak B. Een voorbeeld van dit interactie-effect is te zien in Figuur 2. In deze figuur is zichtbaar dat er bij vak A geen verschil is tussen de groepen Premaster en Geen Premaster wat betreft het cijfer, maar dat er voor vak B wel een verschil is. Bij vak B is er voor de groep Geen Premaster een hoger gemiddeld cijfer (9) dan voor de groep Premaster (7). Het effect van de onafhankelijke variabele Premaster op Cijfer hangt af van de variabele Vak, dus er is een interactie-effect van de variabelen Premaster en Vak op de afhankelijke variabele Cijfer.</p>
+<!-- ## CLOSEDBLOK: Uitleg2.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Uitleg2.R -->
+<p><em>Figuur 2.  Illustratie van interactie-effecten bij mixed ANOVA voor een casus met de afhankelijke variabele Cijfer en de onafhankelijke variabelen Vak en Premaster. In deze grafiek is er een interactie-effect van de onafhankelijke variabelen Vak en Premaster op de afhankelijke variabele Cijfer.</em></p>
+<p>In Figuur 1 waren er hoofdeffecten van de variabelen Vak en Premaster gevonden, maar was het interactie-effect nog niet onderzocht. In deze figuur is er geen sprake van een interactie-effect, omdat het effect van Premaster op Cijfer hetzelfde is voor vak A en vak B en dus niet afhangt van de variabele Vak. Voor beide vakken (A en B) is het verschil tussen de groepen Premaster en Geen Premaster twee punten. Hier is dus geen sprake van een interactie-effect. Bij grafieken is er een interactie-effect als de twee (of meerdere) lijnen niet parallel lopen. Op deze manier kan snel onderzocht worden of er een interactie-effect is en wat de invloed van het interactie-effect is.</p>
+<p>Bij <em>mixed ANOVA</em> worden bovenstaande grafieken gebruikt om de resultaten te interpreteren. De hoofdeffecten en interactie-effecten worden eerst statistisch getoetst en daarna geïnterpreteerd met onder andere deze grafieken. De aanpak is als volgt.<a class="footnote-reference brackets" href="#id33" id="id4">10</a> Eerst wordt getoetst of er sprake is van een interactie-effect tussen de onafhankelijke variabelen. Als dit niet het geval is, kunnen de hoofdeffecten geïnterpreteerd worden. Als er wel een interactie-effect is, kunnen de hoofdeffecten niet geïnterpreteerd worden. De volgende stap is dan een <em>simple effects analyse</em> waarbij het effect van de ene onafhankelijke variabele op de afhankelijke variabele wordt getoetst voor alle groepen van de andere onafhankelijke variabele die deel uitmaakt van het interactie-effect. Voor Figuur 2 zou dit betekenen dat het effect van Premaster op Gemiddeld_cijfer apart getoetst wordt voor de vakken A en B van de variabele Vak. Het interactie-effect kan op deze manier geïnterpreteerd worden, samen met de grafische weergave zoals te zien in Figuur 2.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitleg-assumpties">
+<h1>Uitleg assumpties<a class="headerlink" href="#uitleg-assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Voor een valide toetsresultaat bij de <em>mixed ANOVA</em> moet er aan een aantal assumpties voldaan worden. De steekproef moet bestaan uit onafhankelijke deelnemers, de afhankelijke variabele moet normaal verdeeld zijn voor elke combinatie van groepen van de onafhankelijke variabelen. Daarnaast moet er sphericiteit zijn voor de within-subjects variabelen en homogeniteit van varianties voor de betwee-subjects variabelen bij elke combinatie van categorieën van de within-subjects variabelen.<a class="footnote-reference brackets" href="#id31" id="id5">1</a><sup>,</sup><a class="footnote-reference brackets" href="#id34" id="id6">22</a> In deze sectie worden de assumpties allen toegelicht en worden de opties bij het niet voldoen aan de assumptie weergegeven. Verderop in de toetspagina worden de assumpties getoetst met de dataset van de onderwijscasus.</p>
+<div class="section" id="normaliteit">
+<h2>Normaliteit<a class="headerlink" href="#normaliteit" title="Permalink to this headline">¶</a></h2>
+<p>Controleer de assumptie van normaliteit voor elke groep met de volgende stappen:</p>
+<ol class="simple">
+<li><p>Controleer de data visueel met een histogram, een boxplot of een Q-Q plot.</p></li>
+<li><p>Toets of de data normaal verdeeld zijn met de <em>Kolmogorov-Smirnov test</em> of bij een kleinere steekproef (n &lt; 50) met de <em>Shapiro-Wilk test</em>.<a class="footnote-reference brackets" href="#id35" id="id7">7</a><sup>, </sup><a class="footnote-reference brackets" href="#id36" id="id8">8</a></p></li>
+</ol>
+<!-- ## TEKSTBLOK: Link1.R -->
+<p>De <em>mixed ANOVA</em> is redelijk robuust ten opzichte van een schending van de assumptie van normaliteit. Als er kleine afwijkingen zijn, heeft dat relatief kleine gevolgen voor de validiteit van de toets. Bij grotere afwijkingen is het transformeren van de afhankelijke variabele een optie.<a class="footnote-reference brackets" href="#id37" id="id9">2</a> Als dit niet werkt, dan is het een optie om de <em>mixed ANOVA</em> te splitsen door een losse <em>ANOVA</em> uit te voeren voor elke groep van de within-subjects variabele. Voor de groep waarin er afwijkingen van normaliteit zijn, kan dan de <span class="xref myst">Kruskal Wallis toets</span> uitgevoerd worden. Deze toets heeft minder onderscheidend vermogen dan de <em>ANOVA</em> maar hoeft niet aan de assumptie van normaliteit te voldoen.</p>
+<!-- ## /TEKSTBLOK: Link1.R -->
+</div>
+<div class="section" id="sphericiteit">
+<h2>Sphericiteit<a class="headerlink" href="#sphericiteit" title="Permalink to this headline">¶</a></h2>
+<p>De assumptie van sphericiteit houdt in dat de variantie van de verschilscores tussen groepen ongeveer aan elkaar gelijk zijn.<a class="footnote-reference brackets" href="#id38" id="id10">11</a> Bij een <em>mixed ANOVA</em> met meerdere onafhankelijke variabelen zijn er verschilscores te maken voor elke individuele onafhankelijke variabele en voor alle combinaties van interactie-effecten tussen de onafhankelijke variabelen. In de huidige casus zijn er voor de variabele Vak zes verschilscores te maken: Sustainable Innovation - Organizational Change Management, Sustainable Innovation - Organizational Psychology, Sustainable Innovation - masterthesis, Organizational Change Management - Organizational Psychology, Organizational Change Management - masterthesis en Organizational Psychology - masterthesis. De variantie van deze zes verschilscores moet dus ongeveer gelijk zijn om aan de assumptie te voldoen.</p>
+<p>Toets deze assumptie met <em>Mauchly’s test</em>. Als de onafhankelijke variabele niet aan de assumptie voldoet, geeft de gewone <em>mixed ANOVA</em> een verkeerd resultaat. Er zijn echter correcties die gebruikt kunnen worden als er niet aan sphericiteit voldaan is. Een voorbeeld van mogelijke output van <em>Mauchly’s test</em> in R voor de huidige toetspagina is hieronder weergegeven.</p>
+<!-- ## CLOSEDBLOK: Sphericiteit.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Sphericiteit.R -->
+<!-- ## TEKSTBLOK: Sphericiteit1.R -->
+<p>Bij een p-waarde kleiner dan 0,05, toont <em>Mauchly’s test</em> dat de assumptie van sphericiteit geschonden is. In de output is dit te zien aan de p-waarde van 0,0051 onder <code class="docutils literal notranslate"><span class="pre">$Mauchly's</span> <span class="pre">Test</span> <span class="pre">for</span> <span class="pre">Sphericity</span></code>. Er zijn twee mogelijke correcties als er geen sphericiteit is: de Greenhouse-Geisser (GG) en Huynh-Feldt (HF) correctie. De Greenhouse-Geisser correctie staat bekend als conservatief, wat betekent dat de correctie een relatief lage kans op een type I fout heeft. In andere woorden, het zal niet vaak gebeuren dat deze correctie een significant effect aantoont wanneer dat er in werkelijkheid niet is. De Huynh-Feldt correctie staat echter bekend als liberaal, wat betekent dat er een relatief hoge kans op een type I fout is. De toetsstatistiek en p-waarde van beide correcties zijn in de output te vinden onder <code class="docutils literal notranslate"><span class="pre">$Sphericity</span> <span class="pre">Corrections</span></code>.</p>
+<!-- ## TEKSTBLOK: Sphericiteit1.R -->
+<p>Houd de volgende richtlijnen aan bij het interpreteren van de <em>repeated measures ANOVA</em> als er niet aan sphericiteit is voldaan:</p>
+<ul class="simple">
+<li><p>Als beide correcties significant zijn, rapporteer de (conservatieve) Greenhouse-Geisser correctie.</p></li>
+<li><p>Als beide correcties niet significant zijn, rapporteer de (liberale) Huynh-Feldt correctie.</p></li>
+<li><p>Als de een significant is en de ander niet, bereken de gemiddelde p-waarde van beide correcties.</p>
+<ul>
+<li><p>Als deze p-waarde significant is, rapporteer dan de significante correctie.</p></li>
+<li><p>Als deze p-waarde niet significant is, rapporteer dan de niet significante correctie.</p></li>
+</ul>
+</li>
+</ul>
+<p>In de voorbeeldoutput is de p-waarde van de Greenhouse-Geisser correctie groter dan 0,05 en de p-waarde van de Huynh-Feldt correctie kleiner dan 0,05. Het gemiddelde van beide p-waarden is 0,049855, wat betekent dat er een significant resultaat is. Rapporteer in dit geval dus de (significante) Huynh-Feldt correctie, i.e. <em>F</em> = 0,56, <em>p</em> &lt; 0,05.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="effectmaat">
+<h1>Effectmaat<a class="headerlink" href="#effectmaat" title="Permalink to this headline">¶</a></h1>
+<p>De p-waarde geeft aan of het verschil tussen groepen significant is. De grootte van het verschil of effect is echter ook relevant. Een effectmaat is een gestandaardiseerde maat die de grootte van een effect weergeeft, zodat effecten van verschillende onderzoeken met elkaar vergeleken kunnen worden.<a class="footnote-reference brackets" href="#id38" id="id11">11</a> Voor de <em>mixed ANOVA</em> wordt de effectmaat <em>partial eta squared</em> vaak gebruikt.<a class="footnote-reference brackets" href="#id39" id="id12">4</a></p>
+<p>De effectmaat <em>partial eta squared</em> (partial <em>η^2^</em>) berekent de proportie van de onverklaarde variantie (variantie die niet door de andere variabelen wordt verklaard) in de afhankelijke variabele die verklaard wordt door de onafhankelijke variabele.<a class="footnote-reference brackets" href="#id39" id="id13">4</a> Voor de variabele Premaster geeft de partial eta squared dus de proportie verklaarde variantie weer van de variantie die niet verklaard is door de variabele Vak en de interactie tussen de variabele Premaster en Vak. De partial eta squared van alle termen van het model tellen dus niet per se op tot 1.<a class="footnote-reference brackets" href="#id39" id="id14">4</a> Een indicatie om partial <em>η^2^</em> te interpreteren is: rond 0,01 is een klein effect, rond 0,06 is een gemiddeld effect en rond 0,14 is een groot effect.<a class="footnote-reference brackets" href="#id40" id="id15">5</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="post-hoc-toetsen">
+<h1>Post-hoc toetsen<a class="headerlink" href="#post-hoc-toetsen" title="Permalink to this headline">¶</a></h1>
+<p>De eerste stap van de <em>mixed ANOVA</em> is het toetsen van hoofdeffecten en interactie-effecten. De volgende stap bestaat uit het bepalen welke groepen van elkaar verschillen, zowel bij <em>simple effects analyse</em> als bij het interpreteren van hoofdeffecten, en wordt gedaan met post-hoc toetsen. De post-hoc toetsen voeren meestal een correctie voor de p-waarden uit, omdat er meerdere toetsen tegelijkertijd worden gebruikt. Meerdere toetsen tegelijkertijd uitvoeren verhoogt de kans dat een van de nulhypotheses onterecht wordt verworpen en er bij toeval een verband wordt ontdekt dat er niet is (type I fout). In deze toetspagina wordt de <em>Bonferroni correctie</em> gebruikt. Deze correctie past de p-waarde aan door de p-waarde te vermenigvuldigen met het aantal uitgevoerde toetsen en verlaagt hiermee de kans op een type I fout. Een andere uitleg hiervan is dat het significantieniveau gedeeld wordt door het aantal toetsen wat leidt tot een lager significantieniveau en dus een strengere toets. Er zijn ook andere opties voor een correctie op de p-waarden.<a class="footnote-reference brackets" href="#id38" id="id16">11</a> Let er bij de <em>mixed ANOVA</em> op dat de post-hoc toetsen afhangen van het soort onafhankelijke variabele. Bij within-subjects variabelen hoort een gepaarde post-hoc toets en bij between-subjects hoort een ongepaarde post-hoc toets.<a class="footnote-reference brackets" href="#id38" id="id17">11</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering">
+<h1>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Dataset-inladen.R-->
+<p>Er is een dataset ingeladen met de cijfers per vak en informatie over het volgen van een premaster voor studenten van de master Sustainable Change Management. De dataset heet <code class="docutils literal notranslate"><span class="pre">Resultaten_SCM</span></code>.</p>
+<!-- ## /TEKSTBLOK: Dataset-inladen.R-->
+<div class="section" id="de-data-bekijken">
+<h2>De data bekijken<a class="headerlink" href="#de-data-bekijken" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Data-bekijken.R -->
+<p>Gebruik <code class="docutils literal notranslate"><span class="pre">head()</span></code> en <code class="docutils literal notranslate"><span class="pre">tail()</span></code> om de structuur van de data te bekijken.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken.R -->
+<!-- ## OPENBLOK: Data-bekijken.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Eerste 5 observaties</span>
+<span class="n">head</span><span class="p">(</span><span class="n">Resultaten_SCM</span><span class="p">)</span>
+
+<span class="c1">## Laatste 5 observaties</span>
+<span class="n">tail</span><span class="p">(</span><span class="n">Resultaten_SCM</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken.R -->
+<!-- ## TEKSTBLOK: Data-beschrijven.R -->
+<p>Inspecteer voor alle groepen het gemiddelde, de standaardafwijking, de mediaan en het aantal observaties om meer inzicht te krijgen. Gebruik hiervoor de functie <code class="docutils literal notranslate"><span class="pre">descr</span></code> en <code class="docutils literal notranslate"><span class="pre">stby</span></code> van het package <code class="docutils literal notranslate"><span class="pre">summarytools</span></code> om de beschrijvende statistieken per groep weer te geven. Voer de gewenste statistieken in met het argument <code class="docutils literal notranslate"><span class="pre">stats</span> <span class="pre">=</span> <span class="pre">c(&quot;mean&quot;,&quot;sd&quot;,&quot;med&quot;,&quot;n.valid&quot;)</span></code>.</p>
+<!-- ## /TEKSTBLOK: Data-beschrijven.R -->
+<!-- ## OPENBLOK: Data-beschrijven-1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gemiddelde, standaardafwijking, mediaan en aantal observaties</span>
+<span class="n">library</span><span class="p">(</span><span class="n">summarytools</span><span class="p">)</span>
+
+<span class="k">with</span><span class="p">(</span><span class="n">Resultaten_SCM</span><span class="p">,</span> 
+     <span class="n">stby</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">Cijfer</span><span class="p">,</span> 
+          <span class="nb">list</span><span class="p">(</span><span class="n">Vak</span><span class="p">,</span> <span class="n">Premaster</span><span class="p">),</span> 
+          <span class="n">descr</span><span class="p">,</span> 
+          <span class="n">stats</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;sd&quot;</span><span class="p">,</span> <span class="s2">&quot;med&quot;</span><span class="p">,</span> <span class="s2">&quot;n.valid&quot;</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven-1.R -->
+<p>Maak vervolgens een grafiek met de gemiddelden voor de verschillende groepen.</p>
+<!-- ## OPENBLOK: Data-beschrijven2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Resultaten_SCM</span><span class="p">,</span> 
+       <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Premaster</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Cijfer</span><span class="p">,</span> <span class="n">group</span> <span class="o">=</span> <span class="n">Vak</span><span class="p">,</span> <span class="n">colour</span> <span class="o">=</span> <span class="n">Vak</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">stat_summary</span><span class="p">(</span><span class="n">fun</span> <span class="o">=</span> <span class="n">mean</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s2">&quot;point&quot;</span><span class="p">)</span> <span class="o">+</span>  
+  <span class="n">stat_summary</span><span class="p">(</span><span class="n">fun</span> <span class="o">=</span> <span class="n">mean</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s2">&quot;line&quot;</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">group</span> <span class="o">=</span> <span class="n">Vak</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">scale_color_manual</span><span class="p">(</span><span class="n">values</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;darkorange&quot;</span><span class="p">,</span> <span class="s2">&quot;deepskyblue&quot;</span><span class="p">,</span><span class="s2">&quot;darkgreen&quot;</span><span class="p">,</span><span class="s2">&quot;purple&quot;</span><span class="p">))</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven2.R -->
+<p><em>Figuur 3.  Gemiddelde cijfers per groep op basis van de variabelen Vak en Premaster voor de dataset Resultaten_SCM.</em></p>
+<p>Op basis van de beschrijvende statistieken en de grafiek (Figuur 3) lijken er verschillen tussen de groepen te zijn. Studenten vanuit de premaster hebben een lager gemiddeld cijfer voor de vakken Organizational Change Management en Organizational Psychologie en de masterthesis, maar een hoger gemiddeld cijfer voor het vak Sustainable Innovation. De lijnen van de vaksoorten theorie en praktijk lopen niet parallel dus er lijkt een interactie-effect te zijn. De <em>mixed ANOVA</em> zal dit interactie-effect toetsen.</p>
+</div>
+<div class="section" id="id18">
+<h2>Normaliteit<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<p>De <em>mixed ANOVA</em> vereist dat de verdeling van de afhankelijke variabele de normale verdeling benaderd in elke groep die gevormd wordt door de onafhankelijke variabelen. Toets deze assumptie met behulp van een histogram en de <em>Kolmogorov-Smirnov</em> en <em>Shapiro-Wilk test</em>.</p>
+<div class="section" id="histogram">
+<h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">¶</a></h3>
+<p>Visualiseer de verdeling van de gemiddelde cijfers binnen elke groep met behulp van een histogram.<a class="footnote-reference brackets" href="#id41" id="id19">9</a> Focus bij het analyseren van een histogram op de symmetrie van de verdeling, de hoeveelheid toppen (modaliteit) en mogelijke outliers. Een normale verdeling is symmetrisch, heeft één top en geen outliers.<a class="footnote-reference brackets" href="#id42" id="id20">16</a><sup>, </sup><a class="footnote-reference brackets" href="#id43" id="id21">17</a></p>
+<!-- ## OPENBLOK: Histogram.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Histogram met ggplot</span>
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Resultaten_SCM</span><span class="p">,</span>
+  <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Cijfer</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">geom_histogram</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">y</span> <span class="o">=</span> <span class="o">..</span><span class="n">density</span><span class="o">..</span><span class="p">),</span>
+                 <span class="n">binwidth</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span>
+                 <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;grey30&quot;</span><span class="p">,</span>
+                 <span class="n">fill</span> <span class="o">=</span> <span class="s2">&quot;#0089CF&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">Premaster</span> <span class="o">+</span> <span class="n">Vak</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">geom_density</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">.2</span><span class="p">,</span> <span class="n">adjust</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">ylab</span><span class="p">(</span><span class="s2">&quot;Cijfer&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Histogram.R -->
+<p><em>Figuur 4.  Histogrammen van de verdelingen van de gemiddelde cijfers per groep op basis van de variabelen Vak en Premaster.</em></p>
+<p>De verdelingen van de acht groepen, te zien in Figuur 4, zijn redelijk symmetrisch, hebben geen outliers en zijn allen eentoppig. De verdelingen zijn dus bij benadering normaal.</p>
+</div>
+<div class="section" id="toetsen-van-normaliteit">
+<h3>Toetsen van normaliteit<a class="headerlink" href="#toetsen-van-normaliteit" title="Permalink to this headline">¶</a></h3>
+<p>Voer een toets uit om te controleren of de data normaal verdeeld zijn. Twee veelgebruikte toetsen zijn: de <em>Kolmogorov-Smirnov test</em> en de <em>Shapiro-Wilk test</em>.</p>
+<div class="section" id="kolmogorov-smirnov-test">
+<h4>Kolmogorov-Smirnov test<a class="headerlink" href="#kolmogorov-smirnov-test" title="Permalink to this headline">¶</a></h4>
+<p>De <em>Kolmogorov-Smirnov test</em> toetst het verschil tussen twee verdelingen. Standaard toetst deze toets het verschil tussen een normale verdeling en de verdeling van de steekproef. De Lilliefors correctie is vereist als het gemiddelde en de standaardafwijking niet van tevoren bekend of bepaald zijn, wat meestal het geval is bij een steekproef. Als de p-waarde kleiner dan 0,05 is, is de verdeling van de data significant verschillend van de normale verdeling.<a class="footnote-reference brackets" href="#id44" id="id22">18</a></p>
+<!-- ## OPENBLOK: KStest.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="s2">&quot;nortest&quot;</span><span class="p">)</span>
+
+<span class="k">with</span><span class="p">(</span><span class="n">Resultaten_SCM</span><span class="p">,</span> 
+     <span class="n">by</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">Cijfer</span><span class="p">,</span> 
+        <span class="nb">list</span><span class="p">(</span><span class="n">Vak</span><span class="p">,</span> <span class="n">Premaster</span><span class="p">),</span> 
+        <span class="n">lillie</span><span class="o">.</span><span class="n">test</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: KStest.R -->
+<p>De p-waarde is groter dan 0,05 voor elke groep; er zijn dus geen significante verschillen gevonden tussen de verdelingen van de steekproef en de normale verdeling. De <em>mixed ANOVA</em> kan uitgevoerd worden.</p>
+</div>
+<div class="section" id="shapiro-wilk-test">
+<h4>Shapiro-Wilk test<a class="headerlink" href="#shapiro-wilk-test" title="Permalink to this headline">¶</a></h4>
+<p>De <em>Shapiro-Wilk test</em> is een soortgelijke toets als de <em>Kolmogorov-Smirnov test</em> en vooral geschikt bij kleine steekproeven (<em>n</em> &lt; 50). Als de p-waarde kleiner dan 0,05 is, is de verdeling van de data significant verschillend van de normale verdeling.<a class="footnote-reference brackets" href="#id44" id="id23">18</a></p>
+<!-- ## OPENBLOK: Shapiro-Wilk-test.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span><span class="p">(</span><span class="n">Resultaten_SCM</span><span class="p">,</span> 
+     <span class="n">by</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">Cijfer</span><span class="p">,</span> 
+        <span class="nb">list</span><span class="p">(</span><span class="n">Vak</span><span class="p">,</span> <span class="n">Premaster</span><span class="p">),</span> 
+        <span class="n">shapiro</span><span class="o">.</span><span class="n">test</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Shapiro-Wilk-test.R -->
+<p>De p-waarde is groter dan 0,05 voor elke groep; er zijn dus geen significante verschillen gevonden tussen de verdelingen van de steekproef en de normale verdeling. De <em>mixed ANOVA</em> kan uitgevoerd worden.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id24">
+<h2>Sphericiteit<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: LeveneTest1.R -->
+<p>Toets met <em>Mauchly’s test</em> de assumptie van sphericiteit. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">ezANOVA()$Mauchly's</span> <span class="pre">Test</span> <span class="pre">for</span> <span class="pre">Sphericity</span></code> van het package <code class="docutils literal notranslate"><span class="pre">ez</span></code> met als argumenten de dataset <code class="docutils literal notranslate"><span class="pre">Resultaten_SCM</span></code>, de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">dv</span> <span class="pre">=</span> <span class="pre">Cijfer</span></code>, de variabele die de deelnemers aangeeft <code class="docutils literal notranslate"><span class="pre">wid</span> <span class="pre">=</span> <span class="pre">Studentnummer</span></code>, de within-subjects variabele <code class="docutils literal notranslate"><span class="pre">within</span> <span class="pre">=</span> <span class="pre">Vak</span></code> en de between-subjects variabele <code class="docutils literal notranslate"><span class="pre">between</span> <span class="pre">=</span> <span class="pre">Premaster</span></code>.</p>
+<!-- ## /TEKSTBLOK: LeveneTest1.R -->
+<!-- ## OPENBLOK: Levenes-test.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>library(ez)
+
+ezANOVA(Resultaten_SCM, 
+        dv = Cijfer, 
+        wid = Studentnummer,
+        within = Vak,
+        between = Premaster)$`Mauchly&#39;s Test for Sphericity`
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Levenes-test.R -->
+<!-- ## CLOSEDBLOK: Levenes-test.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Levenes-test.R -->
+<!-- ## TEKSTBLOK: Levenes-test.R -->
+<ul class="simple">
+<li><p>Voor de onafhankelijke variabele Vak is er voldaan aan de assumptie van sphericiteit, <em>W</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Mauchly_W_Periode</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">p_Periode</span></code><a class="footnote-reference brackets" href="#id44" id="id25">18</a></p></li>
+<li><p>Er hoeft geen correctie uitgevoerd te worden voor de <em>mixed ANOVA</em></p></li>
+<li><p>De interactieterm tussen de within-subjects variabele Vak en de between-subjects variabele Premaster wordt in de output weergegeven, maar hoeft niet geïnterpreteerd te worden. Alleen interactietermen tussen twee of meerdere within-subjects variabelen moeten geïnterpreteerd worden voor sphericiteit. De oplettende lezer ziet ook dat het resultaat van <em>Macuhly’s test</em> precies hetzelfde is voor beide effecten.</p></li>
+</ul>
+<!-- ## TEKSTBLOK: Levenes-test.R -->
+</div>
+<div class="section" id="homogeniteit-van-varianties">
+<h2>Homogeniteit van varianties<a class="headerlink" href="#homogeniteit-van-varianties" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Levenes-test2.R -->
+<p>Toets met de <em>Levene’s test</em> de assumptie homogeniteit van varianties voor alle vier de vakken. Maak eerst per vak een dataset. Voer daarna de <em>Levene’s test</em> uit met de functie <code class="docutils literal notranslate"><span class="pre">leveneTest</span></code> van het package <code class="docutils literal notranslate"><span class="pre">car</span></code> met het argument <code class="docutils literal notranslate"><span class="pre">Cijfer</span> <span class="pre">~</span> <span class="pre">Premaster</span></code> met daarin de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Cijfer</span></code> en de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Premaster</span></code> en het argument <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">=</span> <span class="pre">Resultaten_SCM_SI</span></code> om de dataset aan te geven.</p>
+<!-- ## /TEKSTBLOK: Levenes-test2.R -->
+<!-- ## OPENBLOK: Levenes-test3.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>library(car)
+
+# Maak een dataset voor de vier vakken
+Resultaten_SCM_SI &lt;- Resultaten_SCM[Resultaten_SCM$Vak == &quot;Sustainable Innovation&quot;,]
+Resultaten_SCM_OC &lt;- Resultaten_SCM[Resultaten_SCM$Vak == &quot;Organizational Change Management&quot;,]
+Resultaten_SCM_OP &lt;- Resultaten_SCM[Resultaten_SCM$Vak == &quot;Organizational Psychology&quot;,]
+Resultaten_SCM_TH &lt;- Resultaten_SCM[Resultaten_SCM$Vak == &quot;Thesis&quot;,]
+
+# Voer voor alle vier de vakken de Levene&#39;s test uit
+leveneTest(Cijfer ~ Premaster, data = Resultaten_SCM_SI)
+leveneTest(Cijfer ~ Premaster, data = Resultaten_SCM_OC)
+leveneTest(Cijfer ~ Premaster, data = Resultaten_SCM_OP)
+leveneTest(Cijfer ~ Premaster, data = Resultaten_SCM_TH)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Levenes-test3.R -->
+<p>Voor alle vier de vakken is de p-waarde groter dan 0,05, dus er zijn geen significante verschillen gevonden tussen de variantie in cijfers van de groep Premaster en de groep Geen Premaster.<a class="footnote-reference brackets" href="#id44" id="id26">18</a> Dit betekent dat er voor alle vakken voldaan is aan de assumptie van homogeniteit van varianties. De <em>mixed ANOVA</em> kan uitgevoerd worden.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="mixed-anova">
+<h1>Mixed ANOVA<a class="headerlink" href="#mixed-anova" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: ANOVA-toets.R -->
+<p>Voer de <em>mixed ANOVA</em> uit om de vraag te beantwoorden of er verschillen zijn tussen premasterstudenten en direct toelaatbare studenten en tussen de vakken Sustainable Innovation, Organizational Change Management, Organizational Psychology en de masterthesis voor de master Sustainable Change Management. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">ezANOVA()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">ez</span></code> met als argumenten de dataset <code class="docutils literal notranslate"><span class="pre">Resultaten_SCM</span></code>, de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">dv</span> <span class="pre">=</span> <span class="pre">Cijfer</span></code>, de variabele die de deelnemers aangeeft <code class="docutils literal notranslate"><span class="pre">wid</span> <span class="pre">=</span> <span class="pre">Studentnummer</span></code>, de within-subjects variabele <code class="docutils literal notranslate"><span class="pre">within</span> <span class="pre">=</span> <span class="pre">Vak</span></code>, de between-subjects variabele <code class="docutils literal notranslate"><span class="pre">between</span> <span class="pre">=</span> <span class="pre">Premaster</span></code> en het argument <code class="docutils literal notranslate"><span class="pre">detailed</span> <span class="pre">=</span> <span class="pre">TRUE</span></code> dat nodig is om later de effectmaat te berekenen.</p>
+<!-- ## /TEKSTBLOK: ANOVA-toets.R -->
+<!-- ## OPENBLOK: ANOVA-toets1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">ez</span><span class="p">)</span>
+
+<span class="n">Mixed_ANOVA</span> <span class="o">&lt;-</span> <span class="n">ezANOVA</span><span class="p">(</span><span class="n">Resultaten_SCM</span><span class="p">,</span>
+                       <span class="n">dv</span> <span class="o">=</span> <span class="n">Cijfer</span><span class="p">,</span> 
+                       <span class="n">wid</span> <span class="o">=</span> <span class="n">Studentnummer</span><span class="p">,</span>
+                       <span class="n">within</span> <span class="o">=</span> <span class="n">Vak</span><span class="p">,</span>
+                       <span class="n">between</span> <span class="o">=</span> <span class="n">Premaster</span><span class="p">,</span>
+                       <span class="n">detailed</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span>
+
+<span class="n">Mixed_ANOVA</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: ANOVA-toets1.R -->
+<!-- ## TEKSTBLOK: ANOVA-toets2.R -->
+<p>Bereken de effectmaat partial eta squared met behulp van de functie <code class="docutils literal notranslate"><span class="pre">anova_out()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">scoRsch</span></code> met als argument het ANOVA-object <code class="docutils literal notranslate"><span class="pre">Mixed_ANOVA</span></code>. Deze functie geeft de output van de <em>mixed ANOVA</em> op een andere manier weer en laat ook de partial eta squared zien.</p>
+<!-- ## /TEKSTBLOK: ANOVA-toets2.R -->
+<!-- ## OPENBLOK: ANOVA-toets3.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">schoRsch</span><span class="p">)</span>
+
+<span class="n">anova_out</span><span class="p">(</span><span class="n">Mixed_ANOVA</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: ANOVA-toets3.R -->
+<!-- ## CLOSEDBLOK: ANOVA-toets4.R --><div class="cell tag_remove_input tag_remove_output docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: ANOVA-toets4.R -->
+<!-- ## TEKSTBLOK: ANOVA-toets5.R -->
+<ul class="simple">
+<li><p>Er is een significant interactie-effect van Vak en Premaster op Cijfer, <em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF1</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF2</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vF_waarde</span></code>, <em>p</em> &lt; 0,0001, partial <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vEsq</span></code>.</p></li>
+<li><p>De p-waarde is kleiner dan 0,05, dus de nulhypothese dat er geen interactie-effect is wordt verworpen.<a class="footnote-reference brackets" href="#id44" id="id27">18</a></p></li>
+<li><p>Er is een groot effect van de interactie tussen Vak en Premaster op Cijfer</p></li>
+<li><p>Omdat er een significant interactie-effect is, hoeven de hoofdeffecten niet geïnterpreteerd te worden. De volgende stap is een <em>simple effects analyse</em> om te interactie verder te onderzoeken.</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: ANOVA-toets5.R -->
+<div class="section" id="simple-effects-analyse">
+<h2>Simple effects analyse<a class="headerlink" href="#simple-effects-analyse" title="Permalink to this headline">¶</a></h2>
+<p>Voer een <em>simple effects analyse</em> uit om het interactie-effect te interpreteren. Vergelijk eerst de verschillen tussen de vier vakken voor elke categorie van de variabele Premaster (Premaster en Geen Premaster dus). Vergelijk daarna de verschillen tussen de groepen Premaster en Geen Premaster voor elk vak.</p>
+<div class="section" id="vak">
+<h3>Vak<a class="headerlink" href="#vak" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: SimEff1.R -->
+<p>Maak eerst een aparte dataset voor de groepen Premaster en Geen Premaster, voer vervolgens de post-hoc toets uit en bereken de gemiddelden per onderwijsperiode. Gebruik voor de post-hoc toetsen de functie <code class="docutils literal notranslate"><span class="pre">pairwise.t.test()</span></code> met als argumenten de afhankelijk variabele <code class="docutils literal notranslate"><span class="pre">Premaster_Resultaten_SCM$Cijfer</span></code>, de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Premaster_Resultaten_SCM$Vak</span></code>, het argument <code class="docutils literal notranslate"><span class="pre">paired</span> <span class="pre">=</span> <span class="pre">TRUE</span></code> omdat er een gepaarde vergelijking gemaakt wordt en de gebruikte methode om te corrigeren voor meerdere toetsen <code class="docutils literal notranslate"><span class="pre">p.adjust.method</span> <span class="pre">=</span> <span class="pre">&quot;bonferroni&quot;</span></code>.</p>
+<!-- ## /TEKSTBLOK: SimEff1.R -->
+<!-- ## OPENBLOK: SimEff2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Maak een dataset voor de groep Premaster en de groep Geen Premaster
+Premaster_Resultaten_SCM &lt;- Resultaten_SCM[Resultaten_SCM$Premaster == &quot;Premaster&quot;,]
+
+Geen_Premaster_Resultaten_SCM &lt;- Resultaten_SCM[Resultaten_SCM$Premaster == &quot;Geen premaster&quot;,]
+
+# Voer de post-hoc toetsen uit
+pairwise.t.test(Premaster_Resultaten_SCM$Cijfer,
+                Premaster_Resultaten_SCM$Vak,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+pairwise.t.test(Geen_Premaster_Resultaten_SCM$Cijfer,
+                Geen_Premaster_Resultaten_SCM$Vak,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+# Bereken het gemiddelde per groep voor beide datasets
+with(Premaster_Resultaten_SCM, 
+     by(data = Cijfer, 
+        list(Vak), 
+        mean))
+
+with(Geen_Premaster_Resultaten_SCM, 
+     by(data = Cijfer, 
+        list(Vak), 
+        mean))
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: SimEff2.R -->
+<!-- ## CLOSEDBLOK: SimEff3.R -->
+<div class="highlight-{r, notranslate"><div class="highlight"><pre><span></span># Maak een dataset voor de groep Premaster en de groep Geen Premaster
+Premaster_Resultaten_SCM &lt;- Resultaten_SCM[Resultaten_SCM$Premaster == &quot;Premaster&quot;,]
+
+Geen_Premaster_Resultaten_SCM &lt;- Resultaten_SCM[Resultaten_SCM$Premaster == &quot;Geen premaster&quot;,]
+
+# Voer de post-hoc toetsen uit
+Posthoc_Premaster &lt;- pairwise.t.test(Premaster_Resultaten_SCM$Cijfer,
+                Premaster_Resultaten_SCM$Vak,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)$p.value
+
+Posthoc_Geen_Premaster &lt;- pairwise.t.test(Geen_Premaster_Resultaten_SCM$Cijfer,
+                Geen_Premaster_Resultaten_SCM$Vak,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)$p.value
+
+# Bereken het gemiddelde per groep voor beide datasets
+Mean_Premaster &lt;- with(Premaster_Resultaten_SCM, 
+     by(data = Cijfer, 
+        list(Vak), 
+        mean))
+
+Mean_Geen_Premaster &lt;- with(Geen_Premaster_Resultaten_SCM, 
+     by(data = Cijfer, 
+        list(Vak), 
+        mean))
+
+```
+&lt;!-- ## /CLOSEDBLOK: SimEff3.R --&gt;
+
+&lt;!-- ## TEKSTBLOK: SimEff4.R --&gt;
+Voor de premasterstudenten zijn de volgende vergelijkingen getoetst[^18]:
+
+* Organizational Change Management versus Organizational Psychology: het gemiddelde cijfer in Organizational Change Management (`r Round_and_format(Mean_Premaster[1])`) en Organizational Psychology (`r Round_and_format(Mean_Premaster[2])`) zijn significant verschillend (*p* = `r Round_and_format(Posthoc_Premaster[1,1])`)
+* Organizational Change Management versus Sustainable Innovation: het gemiddelde cijfer in Organizational Change Management (`r Round_and_format(Mean_Premaster[1])`) en Sustainable Innovation (`r Round_and_format(Mean_Premaster[3])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Organizational Change Management versus Thesis: het gemiddelde cijfer in Organizational Change Management (`r Round_and_format(Mean_Premaster[1])`) en Thesis (`r Round_and_format(Mean_Premaster[4])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Organizational Psychology versus Sustainable Innovation: het gemiddelde cijfer in Organizational Psychology (`r Round_and_format(Mean_Premaster[2])`) en Sustainable Innovation (`r Round_and_format(Mean_Premaster[3])`) zijn niet significant verschillend (*p* = `r Round_and_format(Posthoc_Premaster[2,2])`)
+* Organizational Psychology versus Thesis: het gemiddelde cijfer in Organizational Psychology (`r Round_and_format(Mean_Premaster[2])`) en Thesis (`r Round_and_format(Mean_Premaster[4])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Sustainable Innovation versus Thesis: het gemiddelde cijfer in Sustainable Innovation (`r Round_and_format(Mean_Premaster[3])`) en Thesis (`r Round_and_format(Mean_Premaster[4])`) zijn significant verschillend (*p* = `r Round_and_format(Posthoc_Premaster[3,3])`)
+</pre></div>
+</div>
+<p>Voor de studenten die geen premaster hebben gevolgd zijn de volgende vergelijkingen getoetst<a class="footnote-reference brackets" href="#id44" id="id28">18</a>:</p>
+<ul class="simple">
+<li><p>Organizational Change Management versus Organizational Psychology: het gemiddelde cijfer in Organizational Change Management (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Premaster[1])</span></code>) en Organizational Psychology (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Premaster[2])</span></code>) zijn significant verschillend (<em>p</em> &lt; 0,0001)</p></li>
+<li><p>Organizational Change Management versus Sustainable Innovation: het gemiddelde cijfer in Organizational Change Management (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Premaster[1])</span></code>) en Sustainable Innovation (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Premaster[3])</span></code>) zijn significant verschillend (<em>p</em> &lt; 0,0001)</p></li>
+<li><p>Organizational Change Management versus Thesis: het gemiddelde cijfer in Organizational Change Management (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Premaster[1])</span></code>) en Thesis (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Premaster[4])</span></code>) zijn significant verschillend (<em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Posthoc_Premaster[3,1])</span></code>)</p></li>
+<li><p>Organizational Psychology versus Sustainable Innovation: het gemiddelde cijfer in Organizational Psychology (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Premaster[2])</span></code>) en Sustainable Innovation (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Premaster[3])</span></code>) zijn significant verschillend (<em>p</em> &lt; 0,0001)</p></li>
+<li><p>Organizational Psychology versus Thesis: het gemiddelde cijfer in Organizational Psychology (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Premaster[2])</span></code>) en Thesis (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Premaster[4])</span></code>) zijn niet significant verschillend (<em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Posthoc_Premaster[3,2])</span></code>)</p></li>
+<li><p>Sustainable Innovation versus Thesis: het gemiddelde cijfer in Sustainable Innovation (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Premaster[3])</span></code>) en Thesis (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Premaster[4])</span></code>) zijn significant verschillend (<em>p</em> &lt; 0,0001)</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: SimEff4.R -->
+</div>
+<div class="section" id="premaster">
+<h3>Premaster<a class="headerlink" href="#premaster" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: SimEff5.R -->
+<p>Maak eerst aparte datasets voor de vakken Organization Change Management (OC), Organizational Psychology (OP), Sustainable Innovation (SI) en de masterthesis (TH) en voer vervolgens de post-hoc toets uit. Gebruik voor de post-hoc toetsen de functie <code class="docutils literal notranslate"><span class="pre">pairwise.t.test()</span></code> met als argumenten de afhankelijk variabele <code class="docutils literal notranslate"><span class="pre">OC_Resultaten_SCM$Cijfer</span></code>, de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">OC_Resultaten_SCM$Vak</span></code>, het argument <code class="docutils literal notranslate"><span class="pre">paired</span> <span class="pre">=</span> <span class="pre">FALSE</span></code> omdat er een ongepaarde vergelijking gemaakt wordt en de gebruikte methode om te corrigeren voor meerdere toetsen <code class="docutils literal notranslate"><span class="pre">p.adjust.method</span> <span class="pre">=</span> <span class="pre">&quot;bonferroni&quot;</span></code>.</p>
+<!-- ## /TEKSTBLOK: SimEff5.R -->
+<!-- ## OPENBLOK: SimEff6.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Maak een dataset voor de vier vakken
+OC_Resultaten_SCM &lt;- Resultaten_SCM[Resultaten_SCM$Vak == &quot;Organizational Change Management&quot;,]
+OP_Resultaten_SCM &lt;- Resultaten_SCM[Resultaten_SCM$Vak == &quot;Organizational Psychology&quot;,]
+SI_Resultaten_SCM &lt;- Resultaten_SCM[Resultaten_SCM$Vak == &quot;Sustainable Innovation&quot;,]
+TH_Resultaten_SCM &lt;- Resultaten_SCM[Resultaten_SCM$Vak == &quot;Thesis&quot;,]
+
+# voer de post-hoc toetsen uit
+pairwise.t.test(OC_Resultaten_SCM$Cijfer,
+                OC_Resultaten_SCM$Premaster,
+                paired = FALSE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+pairwise.t.test(OP_Resultaten_SCM$Cijfer,
+                OP_Resultaten_SCM$Premaster,
+                paired = FALSE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+pairwise.t.test(SI_Resultaten_SCM$Cijfer,
+                SI_Resultaten_SCM$Premaster,
+                paired = FALSE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+pairwise.t.test(TH_Resultaten_SCM$Cijfer,
+                TH_Resultaten_SCM$Premaster,
+                paired = FALSE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+# Bereken het gemiddelde per groep
+with(Resultaten_SCM, 
+     by(data = Cijfer, 
+        list(Premaster, Vak), 
+        mean))
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: SimEff6.R -->
+<!-- ## CLOSEDBLOK: SimEff7.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: SimEff7.R -->
+<!-- ## TEKSTBLOK: SimEff8.R -->
+<ul class="simple">
+<li><p>Organizational Change Management: het gemiddelde cijfer voor de groep Premaster (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vak[1,1])</span></code>) en voor de groep Geen Premaster (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vak[2,1])</span></code>) zijn significant verschillend (<em>p</em> &lt; 0,0001)</p></li>
+<li><p>Organizational Psychology: het gemiddelde cijfer voor de groep Premaster (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vak[1,2])</span></code>) en voor de groep Geen Premaster (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vak[2,2])</span></code>) zijn significant verschillend (<em>p</em> &lt; 0,0001)</p></li>
+<li><p>Sustainable Innovation: het gemiddelde cijfer voor de groep Premaster (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vak[1,3])</span></code>) en voor de groep Geen Premaster (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vak[2,3])</span></code>) zijn significant verschillend (<em>p</em> &lt; 0,0001)</p></li>
+<li><p>Thesis: het gemiddelde cijfer voor de groep Premaster (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vak[1,4])</span></code>) en voor de groep Geen Premaster (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Mean_Vak[2,4])</span></code>) zijn niet significant verschillend (<em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(posthoc_TH)</span></code>)</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: SimEff8.R --></div>
+</div>
+<div class="section" id="illustratie-van-post-hoc-toetsing-bij-hoofdeffecten-zonder-interactie-effect">
+<h2>Illustratie van post-hoc toetsing bij hoofdeffecten zonder interactie-effect<a class="headerlink" href="#illustratie-van-post-hoc-toetsing-bij-hoofdeffecten-zonder-interactie-effect" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: PHtest1.R -->
+<p>In de huidige casus worden de hoofdeffecten niet geïnterpreteerd vanwege het significante interactie-effect. Om toch te illustreren hoe het interpreteren van hoofdeffecten zonder een significant interactie-effect werkt, wordt de bijbehorende post-hoc toetsing toch geïllustreerd. Hiervoor wordt  een nieuwe dataset <code class="docutils literal notranslate"><span class="pre">Hoofdeffecten_Resultaten_SCM</span></code> gebruikt.</p>
+<!-- ## /TEKSTBLOK: PHtest1.R -->
+<!-- ## OPENBLOK: PHtest2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">ez</span><span class="p">)</span>
+
+<span class="c1">## Voer de mixed ANOVA uit</span>
+<span class="n">Mixed_ANOVA_H</span> <span class="o">&lt;-</span> <span class="n">ezANOVA</span><span class="p">(</span><span class="n">Hoofdeffecten_Resultaten_SCM</span><span class="p">,</span>
+                       <span class="n">dv</span> <span class="o">=</span> <span class="n">Cijfer</span><span class="p">,</span> 
+                       <span class="n">wid</span> <span class="o">=</span> <span class="n">Studentnummer</span><span class="p">,</span>
+                       <span class="n">within</span> <span class="o">=</span> <span class="n">Vak</span><span class="p">,</span>
+                       <span class="n">between</span> <span class="o">=</span> <span class="n">Premaster</span><span class="p">,</span>
+                       <span class="n">detailed</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span>
+
+<span class="c1">## Geef de resultaten weer</span>
+<span class="n">Mixed_ANOVA_H</span>
+
+<span class="n">library</span><span class="p">(</span><span class="n">schoRsch</span><span class="p">)</span>
+
+<span class="c1">## Geef met deze functie opnieuw de resultaten weer om de effectmaat partial eta squared te vinden</span>
+<span class="n">anova_out</span><span class="p">(</span><span class="n">Mixed_ANOVA_H</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: PHtest2.R -->
+<!-- ## CLOSEDBLOK: PHtest3.R --><div class="cell tag_remove_input tag_remove_output docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: PHtest3.R -->
+<!-- ## TEKSTBLOK: PHtest4.R -->
+<p>Er is geen significant interactie-effect van Vak en Premaster op Cijfer, <em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF1_H</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF2_H</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vF_waarde_H</span></code>, <em>p</em> = <code class="docutils literal notranslate"><span class="pre">vp_H</span></code>, <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vEsq_H</span></code>.<a class="footnote-reference brackets" href="#id44" id="id29">18</a> De hoofdeffecten van Vak (<em>p</em> &lt; 0,0001) en Premaster (<em>p</em> &lt; 0,0001) zijn wel significant.<a class="footnote-reference brackets" href="#id44" id="id30">18</a> Voer daarom post-hoc toetsen uit voor beide variabelen.</p>
+<p>Gebruik voor de post-hoc toetsen de functie <code class="docutils literal notranslate"><span class="pre">pairwise.t.test()</span></code> met als argumenten de afhankelijk variabele <code class="docutils literal notranslate"><span class="pre">Hoofdeffecten_Resultaten_SCM$Cijfers</span></code>, de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Hoofdeffecten_Resultaten_SCM$Vak</span></code> of <code class="docutils literal notranslate"><span class="pre">Hoofdeffecten_Resultaten_SCM$Premaster</span></code> en de gebruikte methode om te corrigeren voor meerdere toetsen <code class="docutils literal notranslate"><span class="pre">p.adjust.method</span> <span class="pre">=</span> <span class="pre">&quot;bonferroni&quot;</span></code>. Voer voor de variabele Vak een gepaarde post-hoc toets uit met het argument <code class="docutils literal notranslate"><span class="pre">paired</span> <span class="pre">=</span> <span class="pre">TRUE</span></code> en voor de variabele Premaster een ongepaarde post-hoc toets uit met het argument <code class="docutils literal notranslate"><span class="pre">paired</span> <span class="pre">=</span> <span class="pre">FALSE</span></code>.</p>
+<!-- ## /TEKSTBLOK: PHtest4.R -->
+<!-- ## OPENBLOK: PHtest5.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Voer de post-hoc toetsen uit voor de variabele Vak
+pairwise.t.test(Hoofdeffecten_Resultaten_SCM$Cijfer,
+                Hoofdeffecten_Resultaten_SCM$Vak,
+                paired = TRUE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+# Bereken het gemiddelde cijfer voor de vakken
+with(Hoofdeffecten_Resultaten_SCM, 
+     by(data = Cijfer, 
+        list(Vak), 
+        mean))
+
+# Voer de post-hoc toetsen uit voor de variabele Premaster
+pairwise.t.test(Hoofdeffecten_Resultaten_SCM$Cijfer,
+                Hoofdeffecten_Resultaten_SCM$Premaster,
+                paired = FALSE,
+                p.adjust.method = &quot;bonferroni&quot;)
+
+# Bereken het gemiddelde cijfer voor de groep Premaster en de groep Geen Premaster
+with(Hoofdeffecten_Resultaten_SCM, 
+     by(data = Cijfer, 
+        list(Premaster), 
+        mean))
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: PHtest5.R -->
+<!-- ## CLOSEDBLOK: PHtest6.R -->
+<div class="highlight-{r, notranslate"><div class="highlight"><pre><span></span>PH_Vak &lt;- pairwise.t.test(Hoofdeffecten_Resultaten_SCM$Cijfer,
+                Hoofdeffecten_Resultaten_SCM$Vak,
+                p.adjust.method = &quot;bonferroni&quot;)$p.value
+
+PH_Premaster &lt;- pairwise.t.test(Hoofdeffecten_Resultaten_SCM$Cijfer,
+                Hoofdeffecten_Resultaten_SCM$Premaster,
+                p.adjust.method = &quot;bonferroni&quot;)$p.value
+
+# Bereken het gemiddelde cijfer voor
+H_mean_Vak &lt;- with(Hoofdeffecten_Resultaten_SCM, 
+     by(data = Cijfer, 
+        list(Vak), 
+        mean))
+
+# Bereken het gemiddelde cijfer voor de
+H_mean_Premaster &lt;- with(Hoofdeffecten_Resultaten_SCM, 
+     by(data = Cijfer, 
+        list(Premaster), 
+        mean))
+
+```
+&lt;!-- ## /CLOSEDBLOK: PHtest6.R --&gt;
+
+&lt;!-- ## TEKSTBLOK: PHtest7.R --&gt;
+De verschillen voor de groepen van de onafhankelijke variabele Premaster zijn[^18]:
+
+* Het gemiddelde cijfer voor de groep Premaster (`r Round_and_format(H_mean_Premaster[2])`) en voor het praktijkvak (`r Round_and_format(H_mean_Premaster[1])`) zijn significant verschillend (*p* &lt; 0,0001)
+
+De verschillen voor de groepen van de onafhankelijke variabele Vak zijn[^18]:
+
+* Organizational Change Management versus Organizational Psychology: het gemiddelde cijfer in Organizational Change Management (`r Round_and_format(H_mean_Vak[1])`) en Organizational Psychology (`r Round_and_format(H_mean_Vak[2])`) zijn significant verschillend (*p* = 0,010)
+* Organizational Change Management versus Sustainable Innovation: het gemiddelde cijfer in Organizational Change Management (`r Round_and_format(H_mean_Vak[1])`) en Sustainable Innovation (`r Round_and_format(H_mean_Vak[3])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Organizational Change Management versus Thesis: het gemiddelde cijfer in Organizational Change Management (`r Round_and_format(H_mean_Vak[1])`) en Thesis (`r Round_and_format(H_mean_Vak[4])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Organizational Psychology versus Sustainable Innovation: het gemiddelde cijfer in Organizational Psychology (`r Round_and_format(H_mean_Vak[2])`) en Sustainable Innovation (`r Round_and_format(H_mean_Vak[3])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Organizational Psychology versus Thesis: het gemiddelde cijfer in Organizational Psychology (`r Round_and_format(H_mean_Vak[2])`) en Thesis (`r Round_and_format(H_mean_Vak[4])`) zijn significant verschillend (*p* &lt; 0,0001)
+* Sustainable Innovation versus Thesis: het gemiddelde cijfer in Sustainable Innovation (`r Round_and_format(H_mean_Vak[3])`) en Thesis (`r Round_and_format(H_mean_Vak[4])`) zijn significant verschillend (*p* &lt; 0,0001)
+
+&lt;!-- ## /TEKSTBLOK: PHtest7.R --&gt;
+
+Visualiseer de gemiddelden per groep om de resultaten ook visueel weer te geven. In de grafiek in Figuur 5 is te zien dat de lijnen redelijk parallel lopen wat overeenkomt met het feit dat er geen significant interactie-effect is. Het hoofdeffect van de variabele Premaster is duidelijk zichtbaar: de gemiddeldes van de groep Geen Premaster liggen voor alle vakken hoger dan de gemiddeldes van de groep Premaster. Dit komt overeen met het significante verschil tussen beide groepen op de post-hoc toets. Het hoofdeffect van de variabele Vak is ook zichtbaar. De masterthesis heeft het hoogste gemiddelde cijfer en het vak Sustainable Innovation het laagste gemiddelde cijfer. De vakken Organizational Change Management en Organizational Psychology liggen qua gemiddelde ertussenin. Uit de post-hoc toetsen blijkt dat al deze verschillen significant zijn.
+
+&lt;!-- ## OPENBLOK: PHtest8.R --&gt;
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Hoofdeffecten_Resultaten_SCM</span><span class="p">,</span> 
+       <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Vak</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Cijfer</span><span class="p">,</span> <span class="n">group</span> <span class="o">=</span> <span class="n">Premaster</span><span class="p">,</span> <span class="n">colour</span> <span class="o">=</span> <span class="n">Premaster</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">stat_summary</span><span class="p">(</span><span class="n">fun</span> <span class="o">=</span> <span class="n">mean</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s2">&quot;point&quot;</span><span class="p">)</span> <span class="o">+</span>  
+  <span class="n">stat_summary</span><span class="p">(</span><span class="n">fun</span> <span class="o">=</span> <span class="n">mean</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s2">&quot;line&quot;</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">group</span> <span class="o">=</span> <span class="n">Premaster</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">scale_color_manual</span><span class="p">(</span><span class="n">values</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;darkorange&quot;</span><span class="p">,</span> <span class="s2">&quot;deepskyblue&quot;</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">scale_x_discrete</span><span class="p">(</span><span class="n">labels</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;OC&quot;</span><span class="p">,</span> <span class="s2">&quot;OP&quot;</span><span class="p">,</span> <span class="s2">&quot;SI&quot;</span><span class="p">,</span>  <span class="s2">&quot;TH&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: PHtest8.R -->
+<p><em>Figuur 5.  Gemiddelde cijfers per groep op basis van Vak en Premaster voor de dataset Hoofdeffecten_Resultaten_SCM. De afkortingen staan voor de vakken Organizational Change Management (OC), Organizational Psychology (OP), Sustainable Innovation (SI) en de masterthesis (TH).</em></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="rapportage">
+<h1>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Rapportage.R -->
+<p>De <em>mixed ANOVA</em> is uitgevoerd om te toetsen of er verschillen zijn tussen premasterstudenten en direct toelaatbare studenten en tussen de vakken Organizational Change Management, Organizational Psychology, Sustainable Innovation en de masterthesis wat betreft de cijfers van studenten van de master Sustainable Change Management. De resultaten lieten zien dat er een significant interactie-effect was tussen de variabelen Vak en Premaster op de gemiddelde cijfers van de studenten, <em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF1</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF2</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vF_waarde</span></code>, <em>p</em> &lt; 0,0001, <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vEsq</span></code>.</p>
+<p>Om dit effect verder te onderzoeken, is er een <em>simple effects analyse</em> uitgevoerd met behulp van post-hoc toetsen met een Bonferroni-correctie voor meerdere toetsen. Uit deze analyse bleek dat er voor de drie vakken een significant verschil is tussen de gemiddelde cijfers van de premasterstudenten en direct toelaatbare studenten, maar dat er geen significant verschil is bij de masterthesis. Premasterstudenten hebben hogere cijfers bij het vak Sustainable Innovation, maar lagere cijfers bij de vakken Organizational Change Management en Organizational Psychology. Voor de direct toelaatbare studenten zijn er significante verschillen voor alle vergelijkingen van vakken behalve de vergelijking tussen de gemiddelde cijfers voor het vak Organizational Psychology en de masterthesis. Voor premasterstudenten zijn er significante verschillen voor alle vergelijkingen van vakken behalve de vergelijking van de gemiddelde cijfers voor de vakken Organizational Psychology en Sustainable Innovation. In Figuur 6 zijn de gemiddeldes voor alle groepen weergegeven om de resultaten te ondersteunen.</p>
+<p>Samenvattend suggereren de resultaten dat het afhankelijk is van het vak of premasterstudenten even goed, beter of minder goede cijfers halen voor de vakken van de master Sustainable Change Management.</p>
+<!-- ## /TEKSTBLOK: Rapportage.R -->
+<!-- ## CLOSEDBLOK: Rapportage2.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Rapportage2.R -->
+<p><em>Figuur 6.  Gemiddelde cijfers per groep op basis van Vak en Premaster voor de dataset Resultaten_SCM. De afkortingen staan voor de vakken Organizational Change Management (OC), Organizational Psychology (OP), Sustainable Innovation (SI) en de masterthesis (TH).</em></p>
+<!-- ## CLOSEDBLOK: Footer.R --><!-- ## /CLOSEDBLOK: Footer.R -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id31"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id5">2</a>)</span></dt>
+<dd><p>Laerd statistics (2018). <em>Mixed ANOVA using SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/mixed-anova-using-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/mixed-anova-using-spss-statistics.php</a>.</p>
+</dd>
+<dt class="label" id="id32"><span class="brackets"><a class="fn-backref" href="#id2">19</a></span></dt>
+<dd><p>Met een deelnemer wordt het object bedoeld dat geobserveerd wordt, bijvoorbeeld een student, een inwoner van Nederland, een opleiding of een organisatie. Met een observatie wordt de waarde bedoeld die de deelnemer heeft voor een bepaalde variabele. Een deelnemer heeft dus meestal een observatie voor meerdere variabelen.</p>
+</dd>
+<dt class="label" id="id33"><span class="brackets">10</span><span class="fn-backref">(<a href="#id3">1</a>,<a href="#id4">2</a>)</span></dt>
+<dd><p>Field, A. (2013). <em>Discovering statistics using IBM SPSS statistics</em>.
+Sage. Pagina 507-542.</p>
+</dd>
+<dt class="label" id="id34"><span class="brackets"><a class="fn-backref" href="#id6">22</a></span></dt>
+<dd><p>Field, A. (2013). <em>Discovering statistics using IBM SPSS statistics</em>. Sage. Pagina 591 - 622.</p>
+</dd>
+<dt class="label" id="id35"><span class="brackets"><a class="fn-backref" href="#id7">7</a></span></dt>
+<dd><p>Laerd statistics (2018). <em>Testing for Normality using SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/testing-for-normality-using-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/testing-for-normality-using-spss-statistics.php</a>.</p>
+</dd>
+<dt class="label" id="id36"><span class="brackets"><a class="fn-backref" href="#id8">8</a></span></dt>
+<dd><p>Universiteit van Amsterdam (14 juli 2014). <em>Normaliteit</em>. <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Normaliteit">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id37"><span class="brackets"><a class="fn-backref" href="#id9">2</a></span></dt>
+<dd><p>Er zijn verschillende opties om variabelen te transformeren, zoals de logaritme, wortel of inverse (1 gedeeld door de variabele) nemen van de variabele. Zie <em>Discovering statistics using IBM SPSS statistics</em> van Field (2013) pagina 201-210 voor meer informatie over welke transformaties wanneer gebruikt kunnen worden.</p>
+</dd>
+<dt class="label" id="id38"><span class="brackets">11</span><span class="fn-backref">(<a href="#id10">1</a>,<a href="#id11">2</a>,<a href="#id16">3</a>,<a href="#id17">4</a>)</span></dt>
+<dd><p>Field, A., Miles, J., &amp; Field, Z. (2012). <em>Discovering statistics using R</em>. London: Sage publications.</p>
+</dd>
+<dt class="label" id="id39"><span class="brackets">4</span><span class="fn-backref">(<a href="#id12">1</a>,<a href="#id13">2</a>,<a href="#id14">3</a>)</span></dt>
+<dd><p>Tabachnick, B.G. &amp; Fidell, L.S. (2013). <em>Using multivariate statistics</em>. Sixth Edition, Pearson. Pagina 54 - 55.</p>
+</dd>
+<dt class="label" id="id40"><span class="brackets"><a class="fn-backref" href="#id15">5</a></span></dt>
+<dd><p>Allen, P. &amp; Bennett, K. (2012). <em>SPSS A practical Guide version 20.0</em>. Cengage Learning Australia Pty Limited. Pagina 84.</p>
+</dd>
+<dt class="label" id="id41"><span class="brackets"><a class="fn-backref" href="#id19">9</a></span></dt>
+<dd><p>De breedte van de staven van het histogram worden hier automatisch bepaald, maar kunnen handmatig aangepast worden. Aangezien de breedte van de staven bepalend zijn voor de indruk die de visualisatie geeft, is het verstandig om hier goed op te letten.</p>
+</dd>
+<dt class="label" id="id42"><span class="brackets"><a class="fn-backref" href="#id20">16</a></span></dt>
+<dd><p>Outliers (13 augustus 2016). <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Outliers">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id43"><span class="brackets"><a class="fn-backref" href="#id21">17</a></span></dt>
+<dd><p>Outliers kunnen bepalend zijn voor de uitkomst van toetsen. Bekijk of de outliers valide outliers zijn en niet een meetfout of op een andere manier incorrect verkregen data. Het weghalen van outliers kan de uitkomst ook vertekenen, daarom is het belangrijk om verwijderde outliers te melden in een rapport.</p>
+</dd>
+<dt class="label" id="id44"><span class="brackets">18</span><span class="fn-backref">(<a href="#id22">1</a>,<a href="#id23">2</a>,<a href="#id25">3</a>,<a href="#id26">4</a>,<a href="#id27">5</a>,<a href="#id28">6</a>,<a href="#id29">7</a>,<a href="#id30">8</a>)</span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./r"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="31%20ANCOVA%20R.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="41%20Logistische%20regressie%20R.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

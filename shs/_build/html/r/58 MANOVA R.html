@@ -1,0 +1,1405 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Toepassing" href="53%20Ordinale%20logistische%20regressie%20R.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/r/58 MANOVA R.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fr/58 MANOVA R.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manova">
+   MANOVA
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#procedure">
+   Procedure
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toetsstatistiek">
+   Toetsstatistiek
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitleg-assumpties">
+   Uitleg assumpties
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#outliers">
+     Outliers
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#boxplots-en-standaardiseren">
+       Boxplots en standaardiseren
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mahalanobis-afstand">
+       Mahalanobis afstand
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#aantal-observaties-per-groep">
+     Aantal observaties per groep
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multivariate-normaliteit">
+     Multivariate normaliteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#homogeniteit-van-variantie-covariantie-matrices">
+     Homogeniteit van variantie-covariantie matrices
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lineariteit">
+     Lineariteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multicollineariteit">
+     Multicollineariteit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#effectmaat">
+   Effectmaat
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering">
+   Uitvoering
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toetsing-assumpties">
+   Toetsing assumpties
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id42">
+     Outliers
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id43">
+       Boxplots en standaardiseren
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mahalanobis-distance">
+       Mahalanobis distance
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id44">
+     Aantal observaties per groep
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id45">
+     Multivariate normaliteit
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#histogram">
+       Histogram
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id49">
+     Homogeniteit van variantie-covariantie matrices
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id50">
+     Lineariteit
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id51">
+     Multicollineariteit
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id52">
+   MANOVA
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#anova-s-voor-elke-afhankelijke-variabele">
+   ANOVA’s voor elke afhankelijke variabele
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#post-hoc-toetsen">
+   Post-hoc toetsen
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rapportage">
+   Rapportage
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-924f26e6aa13&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span>exists<span class="o">(</span><span class="s2">&quot;Substitute_var&quot;</span><span class="o">))</span> <span class="o">{</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.R -->
+<!-- ## /CLOSEDBLOK: Reticulate.R -->
+<!-- ## OPENBLOK: Data-aanmaken.R --><!-- ## /OPENBLOK: Data-aanmaken.R -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<p>Gebruik de <em>MANOVA</em> om te toetsen of groepen gebaseerd op één of meer onafhankelijke categorische variabelen van elkaar verschillen voor meerdere afhankelijke variabelen tegelijk. In de casus behorend bij deze toetspagina is er één onafhankelijke variabele die de groepen definieert. Er wordt dus een <em>one-way MANOVA</em> uitgevoerd.<a class="footnote-reference brackets" href="#id55" id="id1">1</a><sup>,</sup><a class="footnote-reference brackets" href="#id56" id="id2">20</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id = "casus">
+<p>Bij de masteropleiding Bioinformatics worden studenten met een bachelor Biologie, Wiskunde en Informatica toegelaten. De decaan van de faculteit wil deze toelatingseisen evalueren en onderzoeken of het curriculum aansluit bij de studenten van deze vooropleidingen. Daarom vergelijkt zij de studenten van de drie vooropleidingen wat betreft hun gemiddelde cijfers in periode 1, 2 en 3. Op basis hiervan kan zij de toelaatbaarheid voor de drie bacheloropleidingen heroverwegen of overwegen om daarnaast een aantal specifiek te volgen bachelorvakken op te nemen in de ingangseisen.</p>
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is.</p>
+<p><em>H~0~</em>: Er is geen verschil tussen de gemiddelde cijfers in periode 1, 2 en 3 voor studenten afkomstig van de bacheloropleidingen Biologie, Wiskunde en Informatica.</p>
+<p><em>H~A~</em>: Er is een verschil tussen de gemiddelde cijfers van ten minste een van de onderwijsperiodes (periode 1, 2 en 3) voor studenten afkomstig van de bacheloropleidingen Biologie, Wiskunde en Informatica.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="manova">
+<h1>MANOVA<a class="headerlink" href="#manova" title="Permalink to this headline">¶</a></h1>
+<p>De <em>MANOVA</em> is de multivariate versie van de <em>ANOVA</em>. De <em>ANOVA</em> toetst een verschil in het gemiddelde van een afhankelijke variabele tussen verschillende groepen. De <em>MANOVA</em> vergelijkt ook een verschil tussen groepen, maar nu het verschil in gemiddelden van meerdere afhankelijke variabelen tegelijk. Om precies te zijn wordt er een lineaire combinatie van de afhankelijke variabelen gevonden waarvoor de groepen het meest van elkaar verschillen.</p>
+<p>Als alternatief voor de <em>MANOVA</em> zou er ook voor elke afhankelijke variabele apart een <em>ANOVA</em> uitgevoerd kunnen worden. De <em>MANOVA</em> heeft twee voordelen ten opzichte van dit alternatief. Allereerst heeft de <em>MANOVA</em> een hoger onderscheidend vermogen<a class="footnote-reference brackets" href="#id57" id="id3">3</a> om een verschil tussen groepen te vinden, omdat er rekening wordt gehouden met de onderlinge samenhang van de afhankelijke variabelen. Daarnaast heeft de <em>MANOVA</em> een kleinere type I fout. Dit is de kans dat de nulhypothese ten onrechte verworpen wordt en er dus een effect gevonden wordt dat er eigenlijk niet is. De reden hiervoor is dat het aantal toetsen verschilt. Bij de <em>MANOVA</em> is er slechts één toets, wat een type I fout van 5% oplevert voor een significantieniveau van 0,05. Bij het uitvoeren van meerdere <em>ANOVA’s</em> is er een type I fout van 5% voor elke afhankelijke variabele. De overall type I fout - de kans dat bij minimaal een van de toetsen de nulhypothese ten onrechte verworpen wordt - is dan logischerwijs hoger dan 5%. De overall type I fout is te berekenen met de formule <span class="math notranslate nohighlight">\(1 - (1-\alpha)^p\)</span> waarbij <span class="math notranslate nohighlight">\(p\)</span> het aantal afhankelijke variabelen is en <span class="math notranslate nohighlight">\(\alpha\)</span> het significantieniveau. In de huidige casus zijn er drie afhankelijke variabelen en wordt een significantieniveau van 0,05 gehanteerd. De overall type I fout voor het uitvoeren van meerdere <em>ANOVA’s</em> zou dus <span class="math notranslate nohighlight">\(1 - 0,95^3 = 0,14\)</span> zijn, wat bijna drie keer zo hoog is als de type I fout bij een <em>MANOVA</em>.<a class="footnote-reference brackets" href="#id56" id="id4">20</a></p>
+<p>Net zoals bij de <em>ANOVA</em> is de <em>MANOVA</em> uit te voeren voor één of meerdere onafhankelijke variabelen. Bij de <em>one-way MANOVA</em> worden groepen gebaseerd op één onafhankelijke variabele vergeleken voor meerdere afhankelijke variabelen. Bij de <em>factoriële MANOVA</em> worden groepen vergeleken die gebaseerd zijn op meerdere onafhankelijke variabelen. Hierbij kunnen er ook interactie-effecten tussen de onafhankelijke variabelen optreden. In deze toetspagina wordt een voorbeeld van de <em>one-way MANOVA</em> uitgewerkt. Op vergelijkbare wijze kan een <em>factoriële MANOVA</em> uitgevoerd worden. Voor meer informatie over de aanpak bij meerdere onafhankelijke variabelen, zie de <span class="xref myst">toetspagina</span> van de <em>factoriële ANOVA</em>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="procedure">
+<h1>Procedure<a class="headerlink" href="#procedure" title="Permalink to this headline">¶</a></h1>
+<p>De procedure bij de <em>MANOVA</em> bestaat uit meerdere stappen. De eerste stap is de <em>MANOVA</em> zelf: hierbij wordt onderzocht of er een verschil tussen de groepen is voor minimaal één van de afhankelijke variabelen. Als er in deze stap geen significant resultaat is, dan is de conclusie dat er voor geen enkele afhankelijke variabele een verschil lijkt te zijn tussen de groepen. Als de <em>MANOVA</em> wel significant is, dan is de volgende stap om te onderzoeken voor welke afhankelijke variabele(n) er een verschil tussen de groepen is.</p>
+<p>Voer hiervoor een <em>ANOVA</em> uit voor elke afhankelijke variabele apart. Omdat er meerdere toetsen tegelijkertijd worden uitgevoerd, is de overall type I fout hoger. Daarom is het nuttig om een correctie op de p-waarde van de <em>ANOVA’s</em> uit te voeren. Aangezien dit niet in de ANOVA-functie in R gedaan kan worden, moet dit handmatig. Een simpel uit te voeren correctie is de Bonferroni correctie. Hierbij wordt het significantieniveau gedeeld door het aantal toetsen wat leidt tot een lager significantieniveau en dus een strengere toets. In de huidige casus wordt het significantieniveau van 0,05 gedeeld door drie (gemiddelde cijfers van periode 1, 2 en 3) wat leidt tot een nieuw significantieniveau van 0,017.<a class="footnote-reference brackets" href="#id56" id="id5">20</a> Er zijn ook andere opties voor een correctie op de p-waarden.<a class="footnote-reference brackets" href="#id58" id="id6">13</a></p>
+<p>Zeer waarschijnlijk wordt er voor één of meerdere afhankelijke variabelen een significant verschil in gemiddelde van de groepen gevonden. De derde stap is in dat geval om voor deze significante <em>ANOVA’s</em> post-hoc toetsen uit te voeren. Met post-hoc toetsen wordt bepaald welke specifieke groepen van elkaar verschillen voor die afhankelijke variabele. Hierbij worden er opnieuw meerdere toetsen tegelijkertijd uitgevoerd wat de overall type I fout verhoogt. Voer daarom weer een correctie voor meerdere toetsenuit. Bij de <em>one-way ANOVA</em> is de Tukey HSD correctie hiervoor een gebruikelijke optie; bij de <em>factoriële ANOVA</em> is de Games-Howell correctie een gebruikelijke optie. Er zijn ook andere opties voor een correctie op de p-waarden.<a class="footnote-reference brackets" href="#id58" id="id7">13</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="toetsstatistiek">
+<h1>Toetsstatistiek<a class="headerlink" href="#toetsstatistiek" title="Permalink to this headline">¶</a></h1>
+<p>Er zijn meerdere methoden om de toetsstatistiek van de <em>MANOVA</em> te berekenen. De vier meeste gebruikte versie zijn <em>Wilks’s Lambda</em>, <em>Hotelling’s Trace</em>, <em>Roy’s Largest Root</em> en <em>Pillai’s Trace</em>. Afhankelijk van allerlei karakteristieken van de data met betrekking tot bijvoorbeeld steekproefgroottes en assumpties is soms de ene toetsstatistiek en soms de andere toetsstatistiek de beste optie. Meer informatie hierover is te vinden in de boeken van Field<a class="footnote-reference brackets" href="#id59" id="id8">22</a> en Tabachnick &amp; Fidell<a class="footnote-reference brackets" href="#id56" id="id9">20</a>. In het algemeen wordt <em>Wilks’s Lambda</em> gebruikt, omdat deze in de meeste situaties het hoogste onderscheidend vermogen heeft. Bij een laag aantal observaties, verschillen in het aantal observaties per groep en afwijkingen van de assumptie van homogeniteit van variantie-covariantie matrices is <em>Pillai’s Trace</em> vanwege zijn robuustheid een betere optie. De keuze voor een toetsstatistiek is echter iets om goed over na te denken en uiteindelijk aan de onderzoeker.<a class="footnote-reference brackets" href="#id56" id="id10">20</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitleg-assumpties">
+<h1>Uitleg assumpties<a class="headerlink" href="#uitleg-assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Om een valide resultaat te vinden met de <em>MANOVA</em>, dient er aan een aantal assumpties voldaan te worden.<a class="footnote-reference brackets" href="#id55" id="id11">1</a><sup>,</sup><a class="footnote-reference brackets" href="#id56" id="id12">20</a> In deze sectie worden de assumpties allen toegelicht en worden de opties bij het niet voldoen aan de assumptie weergegeven. Verderop in de toetspagina worden de assumpties getoetst met de dataset van de onderwijscasus.</p>
+<div class="section" id="outliers">
+<h2>Outliers<a class="headerlink" href="#outliers" title="Permalink to this headline">¶</a></h2>
+<p>Voordat gestart kan worden met de <em>MANOVA</em>, moet de data gescreend worden op de aanwezigheid van outliers. Outliers (uitbijters) zijn observaties die sterk afwijken van de overige observaties. Univariate outliers zijn observaties die afwijken voor één specifieke variabele, zoals een student die twintig jaar over zijn studie heeft gedaan. Multivariate outliers zijn observaties die afwijken door de combinatie van meerdere variabelen, zoals een persoon van 18 jaar met een inkomen van €100.000,-. De leeftijd van 18 jaar is geen outlier op zichzelf en een inkomen van €100.000,- is dat ook niet. Echter, de combinatie van beide zorgt ervoor dat de observatie vrij onwaarschijnlijk is.<a class="footnote-reference brackets" href="#id60" id="id13">4</a></p>
+<p>Na het vinden van een outlier is de volgende stap om een goede oplossing voor te outlier te bedenken. Het is van belang hier goed over na te denken en niet zomaar een outlier te verwijderen met als enige argument dat het een outlier is. In het algemeen kan er onderscheid gemaakt worden tussen onmogelijke en onwaarschijnlijke outliers.<a class="footnote-reference brackets" href="#id61" id="id14">5</a> Een onmogelijke outlier is een observatie die technisch gezien niet kan kloppen, bijvoorbeeld een leeftijd van 1000 jaar, een negatief salaris of een man die zwanger is. Bij deze outliers is het een optie om de waarde te vervangen als er een overduidelijke fout bij het invoeren van de data is gemaakt. Een andere optie is de waarde te verwijderen. Een onwaarschijnlijke outlier is een observatie die technisch gezien wel kan, maar heel erg afwijkt van de overige observaties. De rijksten der aarde zijn in de stad of het dorp waar zij wonen qua vermogen waarschijnlijk een outlier. Maar het zijn bestaande personen dus het verwijderen van de observatie zou hier foutief zijn. Opties in deze situatie zijn de variabele(n) te transformeren, de outlier gewoon mee te nemen in de analyse of de analyse met en zonder de outlier uit te voeren en beide te rapporteren. Ook is het niet verboden om de outlier toch te verwijderen, maar het is in dat geval wel van belang dit transparant te rapporteren en op een goede wijze te beargumenteren.<a class="footnote-reference brackets" href="#id61" id="id15">5</a></p>
+<p>Bij de <em>MANOVA</em> zijn er twee nuttige methoden om outliers te vinden.<a class="footnote-reference brackets" href="#id62" id="id16">23</a></p>
+<div class="section" id="boxplots-en-standaardiseren">
+<h3>Boxplots en standaardiseren<a class="headerlink" href="#boxplots-en-standaardiseren" title="Permalink to this headline">¶</a></h3>
+<p>Begin voor de analyse met het screenen van de variabelen in de dataset op de aanwezigheid van univariate outliers. Voor continue variabelen bestaat deze screening uit het visualiseren van de variabele met een boxplot en het standaardiseren<a class="footnote-reference brackets" href="#id63" id="id17">6</a> van de variabele. Als een observatie een gestandaardiseerde score van groter dan 3 of kleiner dan -3 heeft, wordt deze beschouwd als een outlier. In dat geval wijkt de observatie namelijk meer dan drie standaardafwijkingen af van het gemiddelde van de variabele. Gebruik zowel de boxplot als de standaardisering om outliers te vinden voor de afhankelijke variabelen.<a class="footnote-reference brackets" href="#id61" id="id18">5</a></p>
+</div>
+<div class="section" id="mahalanobis-afstand">
+<h3>Mahalanobis afstand<a class="headerlink" href="#mahalanobis-afstand" title="Permalink to this headline">¶</a></h3>
+<p>Multivariate outliers zijn deelnemers<a class="footnote-reference brackets" href="#id64" id="id19">19</a> met een combinatie van observaties op verschillende variabelen die erg afwijken van de overige deelnemers. Deze multivariate outliers kunnen geïdentificeerd worden met de Mahalanobis afstand. De Mahalanobis afstand is een maat die aangeeft in hoeverre de observaties van een deelnemer voor alle afhankelijke variabelen afwijken van de gemiddeldes van de afhankelijke variabelen. Het is een maat voor een afstand tussen twee punten als meerdere variabelen worden gebruikt. Gebruik de Mahalanobis afstand om te onderzoeken of er multivariate outliers zijn bij de afhankelijke variabelen.<a class="footnote-reference brackets" href="#id62" id="id20">23</a> Bereken de Mahalanobis afstand voor elke deelnemer en vergelijk deze met de criteriumwaarde. De criteriumwaarde wordt bepaald op basis van de chi-kwadraat score bij een aantal vrijheidsgraden dat gelijk is aan het aantal variabelen en een significantieniveau van 0,001 (of een zelf gekozen significantieniveau). In de code wordt toegelicht hoe de criteriumwaarde bepaald kan worden.<a class="footnote-reference brackets" href="#id60" id="id21">4</a></p>
+</div>
+</div>
+<div class="section" id="aantal-observaties-per-groep">
+<h2>Aantal observaties per groep<a class="headerlink" href="#aantal-observaties-per-groep" title="Permalink to this headline">¶</a></h2>
+<p>Om de <em>MANOVA</em> uit te voeren, moeten er voor elke groep meer observaties zijn dan het aantal afhankelijke variabelen. Dit is enerzijds een vereiste om de variantie-covariantie matrix te berekenen en anderzijds nodig voor het onderscheidend vermogen van de <em>MANOVA</em>. In de meeste gevallen wordt er voldaan aan deze assumptie. Echter, als er meerdere onafhankelijke variabelen zijn, kan het voorkomen dat voor een van de combinaties van de categorieën van de onafhankelijke variabelen er te weinig observaties zijn. Deze assumptie is op simpele wijze te toetsen door het aantal observaties per groep met een tabel te inspecteren. Als er niet genoeg observaties per groep zijn, dan zijn er meerdere oplossingen mogelijk. De groep kan verwijderd worden of samengevoegd worden met een andere groep. Daarnaast is meer data verzamelen ook een goede optie.<a class="footnote-reference brackets" href="#id56" id="id22">20</a></p>
+</div>
+<div class="section" id="multivariate-normaliteit">
+<h2>Multivariate normaliteit<a class="headerlink" href="#multivariate-normaliteit" title="Permalink to this headline">¶</a></h2>
+<p>Een assumptie van de <em>MANOVA</em> is dat de afhankelijke variabelen een multivariate normaalverdeling volgen. De multivariate normaalverdeling is de multivariate versie van de (univariate) normaalverdeling. Als variabelen een multivariate normaalverdeling volgen, dan is elke lineaire combinatie van de variabelen normaal verdeeld. Bij de <em>MANOVA</em> moet er voor elke groep een normale verdeling zijn voor elke afhankelijke variabele. Onderzoek de assumptie door voor elke groep een histogram te maken voor elke afhankelijke variabele. De <em>MANOVA</em> is redelijk robuust ten opzichte van een schending van de assumptie van multivariate normaliteit. Als het aantal vrijheidsgraden van de residuën groter is dan 20 en de afwijkingen van normaliteit zichtbaar in de histogrammen niet door outliers veroorzaakt worden, dan is de <em>MANOVA</em> robuust ten opzichte van de assumptie van multivariate normaliteiten kan de <em>MANOVA</em> gewoon uitgevoerd worden. Als dit niet het geval is, dan is het transformeren van de afhankelijke variabele(n) die afwijken van de normaalverdeling een optie.<a class="footnote-reference brackets" href="#id65" id="id23">7</a> Er is geen nonparametrische variant voor de <em>MANOVA</em>. Als er geen geschikte transformatie gevonden kan worden, dan is het een optie om bij een <em>one-way MANOVA</em> voor de afhankelijke variabelen die afwijken van de normaalverdeling apart een <span class="xref myst">Kruskal Wallis toets</span>. Voor de <em>factoriële MANOVA</em> is het in dit geval een optie om voor de afhankelijke variabelen die afwijken van de normaalverdeling apart de <em>ANOVA</em> uit te voeren als regressiemodel (zie hiervoor bijbehorened <span class="xref myst">toetspagina</span>).<a class="footnote-reference brackets" href="#id56" id="id24">20</a></p>
+</div>
+<div class="section" id="homogeniteit-van-variantie-covariantie-matrices">
+<h2>Homogeniteit van variantie-covariantie matrices<a class="headerlink" href="#homogeniteit-van-variantie-covariantie-matrices" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Link2.R -->
+<p>Een assumptie van de <em>ANOVA</em> is dat de variantie van de afhankelijke variabele ongeveer hetzelfde is in elke groep. Bij de <em>MANOVA</em> zijn er meerdere afhankelijke variabelen en is er dus ook een multivariate versie van deze assumptie die al deze afhankelijke variabelen betreft. Elke afhankelijke variabele heeft een variantie, maar onderling hebben de paren van afhankelijke variabelen ook een covariantie. Deze covariantie toont de sterkte van de samenhang tussen twee variabelen en is in feite een ongestandaardiseerde correlatie. De correlatie tussen twee variabelen toont de sterkte van de samenhang aan en ligt tussen de -1 en 1 en is een herberekening van de covariantie. Voor de <em>MANOVA</em> geldt dat de varianties en covarianties van de afhankelijke variabelen ongeveer even groot moeten zijn in elke groep. De varianties en covarianties kunnen wiskundig gebundeld worden in een matrix. De assumptie bij de <em>MANOVA</em> betreft daarom de homogeniteit van variantie-covariantie-matrices.<a class="footnote-reference brackets" href="#id56" id="id25">20</a></p>
+<p>De assumptie van homogeniteit van variantie-covariantie-matrices wordt getoetst met <em>Box’s M test</em>. Bij een p-waarde kleiner dan 0,01 zijn er significante verschillen tussen de variantie-covariantie matrices van de groepen en is er niet voldaan aan deze assumptie. Hierbij wordt er afgeweken van het gebruikelijke significantieniveau van 0,05, omdat <em>Box’s M test</em> erg gevoelig voor verschillen is. Als het aantal observaties in elke groep even groot is, is de <em>MANOVA</em> redelijk robuust ten opzichte van een schending van deze assumptie en kan de <em>MANOVA</em> gewoon uitgevoerd worden. Als het aantal observaties echter niet gelijk is voor elke groep, zorgt een schending van deze assumptie wel voor problemen. In dat geval zijn er meerdere oplossingen nodig. Het aantal observaties kan per groep gelijkgetrokken worden door bepaalde observaties op willekeurige wijze te verwijderen. Het nadeel hiervan is dat minder observaties leidt tot een lager onderscheidend vermogen. Een andere optie is om in plaats van een <em>MANOVA</em> aparte <em>ANOVA’s</em> uit te voeren voor elke afhankelijke variabele. Bij een <em>one-way MANOVA</em> kan dan voor de afhankelijke variabelen die niet voldoen aan de assumptie van homogeniteit van varianties apart een <span class="xref myst">Kruskal Wallis toets</span> uitgevoerd worden. Voor de <em>factoriële MANOVA</em> is het in dit geval een optie om voor de afhankelijke variabelen die niet voldoen aan de assumptie van homogeniteit van varianties apart de <em>ANOVA</em> uit te voeren als regressiemodel (zie hiervoor bijbehorende <span class="xref myst">toetspagina</span>).<a class="footnote-reference brackets" href="#id56" id="id26">20</a></p>
+<!-- ## /TEKSTBLOK: Link2.R -->
+</div>
+<div class="section" id="lineariteit">
+<h2>Lineariteit<a class="headerlink" href="#lineariteit" title="Permalink to this headline">¶</a></h2>
+<p>Bij de <em>MANOVA</em> wordt aangenomen dat er voor elke groep een lineaire relatie is tussen elk paar van afhankelijke variabelen. Een lineaire relatie houdt in dat de toename of afname van de ene variabele als gevolg van de toename van de andere variabele constant is: er is een rechte lijn door de data heen te trekken. Een voorbeeld van een lineaire en niet-lineaire relatie is weergegeven in Figuur 1. Bij de linkerfiguur kan er duidelijk een rechte lijn door de punten getrokken worden en is er dus sprake van een lineaire relatie. Bij de rechterfiguur is dit niet het geval, daar is er sprake van een curve in de relatie tussen de variabelen. Als er geen lineair verband is tussen de variabelen, dan is het onderscheidend vermogen van de <em>MANOVA</em> lager.<a class="footnote-reference brackets" href="#id56" id="id27">20</a><sup>,</sup><a class="footnote-reference brackets" href="#id66" id="id28">8</a></p>
+<p>De assumptie van lineariteit wordt onderzocht met behulp van scatter plots, zoals in onderstaande figuren. Maak per groep (op basis van de onafhankelijke variabele[n]) voor elk paar van afhankelijke variabelen een scatter plot en bekijk of er een lineaire relatie is. Als er geen lineaire relatie is, is het transformeren van de afwijkende variabele een optie. De variabele kan op verschillende manieren getransformeerd<a class="footnote-reference brackets" href="#id65" id="id29">7</a> worden zodat er alsnog een lineaire relatie ontstaat. <a class="footnote-reference brackets" href="#id66" id="id30">8</a></p>
+<div class = "col-container">
+  <div class="col">
+<!-- ## CLOSEDBLOK: Lineariteit1.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Lineariteit1.R -->
+  </div>
+  <div class = "col">
+<!-- ## CLOSEDBLOK: Lineariteit2.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Lineariteit2.R -->
+  </div>
+</div>
+<p><em>Figuur 1.  Voorbeeld van een lineaire (links) en niet-lineaire (rechts) relatie tussen twee variabelen.</em></p>
+</div>
+<div class="section" id="multicollineariteit">
+<h2>Multicollineariteit<a class="headerlink" href="#multicollineariteit" title="Permalink to this headline">¶</a></h2>
+<p>Multicollineariteit houdt in dat er een hoge correlatie tussen twee of meerdere variabelen is. Er is perfecte multicollineariteit als één variabele een lineaire combinatie is van een of meerdere andere variabelen. In andere woorden, de variabele is precies te berekenen op basis van andere variabelen. In dat geval kan de <em>MANOVA</em> niet wiskundig bepaald worden en werkt de <em>MANOVA</em> niet. Dit komt zeer weinig voor en is vaak makkelijk op te lossen door goed naar de variabelen die het veroorzaken te kijken en een variabele te transformeren of te verwijderen.<a class="footnote-reference brackets" href="#id60" id="id31">4</a></p>
+<p>Bij een hoog niveau van multicollineariteit kan de <em>MANOVA</em> wel uitgevoerd worden, is het onderscheidend vermogen<a class="footnote-reference brackets" href="#id57" id="id32">3</a> lager. Daarnaast is het onlogisch om twee variabelen die sterk gecorreleerd zijn allebei aan de <em>MANOVA</em> toe te voegen, omdat de variabelen in feite hetzelfde meten. Multicollineariteit kan opgelost worden door een van de variabelen die het veroorzaakt te verwijderen. Een andere optie is een principale componenten analyse (PCA) uitvoeren op de afhankelijke variabelen zodat er een onderliggende variabele gecreëerd wordt (zie Field<a class="footnote-reference brackets" href="#id60" id="id33">4</a> voor meer informatie).<a class="footnote-reference brackets" href="#id56" id="id34">20</a></p>
+<p>Multicollineariteit wordt getoetst met de Variance Inflation Factor (VIF) die meet hoe sterk elke variabele gecorreleerd is met de andere variabelen. Als de VIF van een variabele hoger dan 10 is, is er multicollineariteit voor die variabele.<a class="footnote-reference brackets" href="#id60" id="id35">4</a><sup>,</sup><a class="footnote-reference brackets" href="#id67" id="id36">9</a></p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="effectmaat">
+<h1>Effectmaat<a class="headerlink" href="#effectmaat" title="Permalink to this headline">¶</a></h1>
+<p>De p-waarde geeft aan of het verschil tussen groepen significant is. De grootte van het verschil of effect is echter ook relevant. Een effectmaat is een gestandaardiseerde maat die de grootte van een effect weergeeft, zodat effecten van verschillende onderzoeken met elkaar vergeleken kunnen worden.<a class="footnote-reference brackets" href="#id58" id="id37">13</a> Bij de <em>MANOVA</em> is de interpretatie van verschillende effectmaten vrij complex.<a class="footnote-reference brackets" href="#id56" id="id38">20</a> Daarom is het nuttiger om een effectmaat te gebruiken bij de tweede stap van de <em>MANOVA</em> waarin voor elke afhankelijke variabele een aparte <em>ANOVA</em> wordt uitgevoerd. De effectmaat voor de <em>ANOVA</em> is de <em>partial eta squared</em> (partial <em>η^2^</em>). Deze effectmaat berekent de proportie van de onverklaarde variantie (variantie die niet door de andere variabelen wordt verklaard) in de afhankelijke variabele die verklaard wordt door de onafhankelijke variabele.<a class="footnote-reference brackets" href="#id68" id="id39">14</a> Als er meerdere onafhankelijke variabelen zijn, tellen de partial eta squareds van alle termen van het model dus niet per se op tot 1.<a class="footnote-reference brackets" href="#id68" id="id40">14</a> Een indicatie om partial <em>η^2^</em> te interpreteren is: rond 0,01 is een klein effect, rond 0,06 is een gemiddeld effect en rond 0,14 is een groot effect.<a class="footnote-reference brackets" href="#id69" id="id41">15</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering">
+<h1>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Dataset-inladen.R-->
+<p>Er is een dataset ingeladen met daarin de gemiddelde cijfers voor periode 1, 2 en 3 en de bacheloropleiding en studentnummers van alle studenten van de master Bioinformatics. De dataset heet <code class="docutils literal notranslate"><span class="pre">Gemiddelde_cijfers_bioinformatics</span></code>.</p>
+<!-- ## /TEKSTBLOK: Dataset-inladen.R-->
+<!-- ## TEKSTBLOK: Data-bekijken.R -->
+<p>Gebruik <code class="docutils literal notranslate"><span class="pre">head()</span></code> en <code class="docutils literal notranslate"><span class="pre">tail()</span></code> om de structuur van de data te bekijken.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken.R -->
+<!-- ## OPENBLOK: Data-bekijken.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Eerste 5 observaties</span>
+<span class="n">head</span><span class="p">(</span><span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">)</span>
+
+<span class="c1">## Laatste 5 observaties</span>
+<span class="n">tail</span><span class="p">(</span><span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken.R -->
+<!-- ## TEKSTBLOK: Data-beschrijven.R -->
+<p>Inspecteer voor alle groepen het gemiddelde, de standaardafwijking, de mediaan en het aantal observaties voor de gemiddelde cijfers in periode 1, 2 en 3 om meer inzicht te krijgen. Gebruik hiervoor de functie <code class="docutils literal notranslate"><span class="pre">descr</span></code> en <code class="docutils literal notranslate"><span class="pre">stby</span></code> van het package <code class="docutils literal notranslate"><span class="pre">summarytools</span></code> om de beschrijvende statistieken per groep weer te geven. Voer de gewenste statistieken in met het argument <code class="docutils literal notranslate"><span class="pre">stats</span> <span class="pre">=</span> <span class="pre">c(&quot;mean&quot;,&quot;sd&quot;,&quot;med&quot;,&quot;n.valid&quot;)</span></code>.</p>
+<!-- ## /TEKSTBLOK: Data-beschrijven.R -->
+<!-- ## OPENBLOK: Data-beschrijven-1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gemiddelde, standaardafwijking, mediaan en aantal observaties</span>
+<span class="n">library</span><span class="p">(</span><span class="n">summarytools</span><span class="p">)</span>
+
+<span class="k">with</span><span class="p">(</span><span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">,</span> 
+     <span class="n">stby</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">cbind</span><span class="p">(</span><span class="n">Cijfers_P1</span><span class="p">,</span> <span class="n">Cijfers_P2</span><span class="p">,</span> <span class="n">Cijfers_P3</span><span class="p">),</span> 
+          <span class="nb">list</span><span class="p">(</span><span class="n">Bacheloropleiding</span><span class="p">),</span> 
+          <span class="n">descr</span><span class="p">,</span> 
+          <span class="n">stats</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;sd&quot;</span><span class="p">,</span> <span class="s2">&quot;med&quot;</span><span class="p">,</span> <span class="s2">&quot;n.valid&quot;</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven-1.R -->
+<p>Maak vervolgens een grafiek met de gemiddelden per bacheloropleiding voor de verschillende periodes. Maak hiervoor eerst een lange dataset met de functie <code class="docutils literal notranslate"><span class="pre">melt()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">reshape</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Maak een lange dataset</span>
+<span class="n">library</span><span class="p">(</span><span class="n">reshape</span><span class="p">)</span>
+
+<span class="n">Gemiddelde_cijfers_bioinformatics_lang</span> <span class="o">&lt;-</span> <span class="n">melt</span><span class="p">(</span><span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">,</span>
+                                               <span class="nb">id</span><span class="o">.</span><span class="n">vars</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;Studentnummer&quot;</span><span class="p">,</span> 
+                                                           <span class="s2">&quot;Bacheloropleiding&quot;</span><span class="p">),</span>
+                                               <span class="n">measure</span><span class="o">.</span><span class="n">vars</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;Cijfers_P1&quot;</span><span class="p">,</span> 
+                                                                <span class="s2">&quot;Cijfers_P2&quot;</span><span class="p">,</span> 
+                                                                <span class="s2">&quot;Cijfers_P3&quot;</span><span class="p">),</span>
+                                               <span class="n">variable_name</span> <span class="o">=</span> <span class="s2">&quot;Periode&quot;</span><span class="p">)</span>
+
+<span class="c1"># Maak de grafiek</span>
+<span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Gemiddelde_cijfers_bioinformatics_lang</span><span class="p">,</span> 
+       <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Periode</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="n">group</span> <span class="o">=</span> <span class="n">Bacheloropleiding</span><span class="p">,</span> <span class="n">colour</span> <span class="o">=</span> <span class="n">Bacheloropleiding</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">stat_summary</span><span class="p">(</span><span class="n">fun</span> <span class="o">=</span> <span class="n">mean</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s2">&quot;point&quot;</span><span class="p">)</span> <span class="o">+</span>  
+  <span class="n">stat_summary</span><span class="p">(</span><span class="n">fun</span> <span class="o">=</span> <span class="n">mean</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s2">&quot;line&quot;</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">group</span> <span class="o">=</span> <span class="n">Bacheloropleiding</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="n">scale_color_manual</span><span class="p">(</span><span class="n">values</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;darkorange&quot;</span><span class="p">,</span> <span class="s2">&quot;deepskyblue&quot;</span><span class="p">,</span> <span class="s2">&quot;darkgreen&quot;</span><span class="p">))</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>Figuur 2.  Gemiddelde cijfers voor periode 1, 2 en 3 voor studenten bioinformatics met als bacheloropleidingen Biologie, Informatica en Wiskunde.</em></p>
+<p>Uit de beschrijvende statistieken en de visualisatie in Figuur 2 blijkt dat het gemiddelde cijfer in periode 1 en 2 voor de bacheloropleidingen Informatica en Wiskunde hoger ligt dan het gemiddelde cijfer voor de bacheloropleiding Biologie. In periode 3 is dit juist andersom.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="toetsing-assumpties">
+<h1>Toetsing assumpties<a class="headerlink" href="#toetsing-assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Gebruik de <em>MANOVA</em> om te onderzoeken of er een verschil is tussen de gemiddelde cijfers in periode 1, 2 en 3 voor studenten van de master Bioinformatics die afkomstig zijn van de vooropleidingen Wiskunde, Informatica en Biologie. Start met het toetsen van de assumpties en voer vervolgens de <em>ANCOVA</em> uit als hieraan voldaan is.</p>
+<div class="section" id="id42">
+<h2>Outliers<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id43">
+<h3>Boxplots en standaardiseren<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: Outlier1.R -->
+<p>Onderzoek of er univariate outliers zijn met behulp van boxplots en gestandaardiseerde scores voor de afhankelijke variabelen en tabellen voor onafhankelijke variabelen. Begin met de boxplot voor de variabelen <code class="docutils literal notranslate"><span class="pre">Cijfers_P1</span></code>, <code class="docutils literal notranslate"><span class="pre">Cijfers_P2</span></code> en <code class="docutils literal notranslate"><span class="pre">Cijfers_P3</span></code>.</p>
+<!-- ## /TEKSTBLOK: Outlier1.R -->
+<!-- ## OPENBLOK: Outlier2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Maak een boxplot van de continue variabelen in de dataset</span>
+<span class="n">boxplot</span><span class="p">(</span><span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">[,</span><span class="n">c</span><span class="p">(</span><span class="s2">&quot;Cijfers_P1&quot;</span><span class="p">,</span>
+                                             <span class="s2">&quot;Cijfers_P2&quot;</span><span class="p">,</span>
+                                             <span class="s2">&quot;Cijfers_P3&quot;</span><span class="p">)])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier2.R -->
+<p>Voor de drie variabelen zijn er geen onmogelijke scores en zijn er geen grote afwijkingen op basis van de boxplot. Onderzoek de gestandaardiseerde scores door een functie te schrijven die het aantal observaties per variabele telt met een gestandaardiseerde score hoger dan 3 of lager dan -3. Pas deze functie vervolgens toe op de drie afhankelijke variabelen in de dataset.</p>
+<!-- ## OPENBLOK: Outlier3.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Maak een functie om het aantal observaties met een gestandaardiseerde score hoger dan 3 of lager dan -3 te tellen
+Outlier_standaardiseren &lt;- function(variabele){
+  # Standaardiseer de variabele met de scale functie
+  Z_score &lt;- scale(variabele)
+  # Tel het aantal observaties met een absolute score hoger dan 3
+  Aantal_outliers &lt;- sum(abs(Z_score) &gt; 3)
+  # Retourneer dit aantal
+  return(Aantal_outliers)
+}
+
+# Tel voor de continue variabelen het aantal observaties met een gestandaardiseerde score hoger dan 3 of lager dan -3
+Outlier_standaardiseren(Gemiddelde_cijfers_bioinformatics$Cijfers_P1)
+Outlier_standaardiseren(Gemiddelde_cijfers_bioinformatics$Cijfers_P2)
+Outlier_standaardiseren(Gemiddelde_cijfers_bioinformatics$Cijfers_P3)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier3.R -->
+<p>Er zijn bij de gemiddelde cijfers in periode 2 twee mogelijke outliers gevonden. Nu is het de vraag of deze gemiddelde cijfers in periode 2 onmogelijke of onwaarschijnlijke outliers zijn. In de boxplot is te zien dat het minimum van de observaties iets boven de vijf ligt en het maximum iets onder de negen. Voor een gemiddeld cijfer in een onderwijsperiode zijn dit geen ongeloofwaardige observaties, dus worden ze niet als outliers beschouwd. Daarom worden de observaties niet uit de dataset verwijderd.</p>
+<p>Bacheloropleiding is de enige onafhankelijke variabele in deze dataset. Maak een tabel met de frequenties voor alle categoriëen van deze variabele om te onderzoeken of hier afwijkende waardes zijn.</p>
+<!-- ## OPENBLOK: Outlier4.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>table(Gemiddelde_cijfers_bioinformatics$Bacheloropleiding)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier4.R -->
+<p>De categorieën van de variabele Opleiding zijn <code class="docutils literal notranslate"><span class="pre">Biologie</span></code>, <code class="docutils literal notranslate"><span class="pre">Informatica</span></code> en <code class="docutils literal notranslate"><span class="pre">Wiskunde</span></code>. Er zijn dus geen opmerkelijke waarden bij de variabele Bacheloropleiding.</p>
+</div>
+<div class="section" id="mahalanobis-distance">
+<h3>Mahalanobis distance<a class="headerlink" href="#mahalanobis-distance" title="Permalink to this headline">¶</a></h3>
+<!-- ## TEKSTBLOK: Outlier7.R -->
+<p>Onderzoek of er multivariate outliers zijn met behulp van de Mahalanobis distance met behulp van de functie <code class="docutils literal notranslate"><span class="pre">mahalanobis()</span></code>. De Mahalanobis afstand geeft aan in hoeverre een deelnemer afwijkt van het gemiddelde van alle deelnemers voor alle afhankelijke variabele samen.</p>
+<p>Neem een subset van de dataset met alleen de afhankelijke variabelen en gebruik deze voor de Mahalanobis afstand. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">mahalanobis()</span></code> met als argumenten de dataset <code class="docutils literal notranslate"><span class="pre">Subset</span></code>, de gemiddeldes van elke kolom berekend met <code class="docutils literal notranslate"><span class="pre">colMeans(Subset)</span></code> en de covariantiematrix van de dataset berekend met <code class="docutils literal notranslate"><span class="pre">cov(Subset)</span></code>.</p>
+<p>Bereken daarna de criteriumwaarde op basis van het gewenste significantieniveau en het aantal afhankelijke variabelen. Plot de Mahalanobis afstanden en tel het aantal deelnemers met een Mahalanobis afstand groter dan de criteriumwaarde. Het gehanteerde significantieniveau is 0,001.</p>
+<!-- ## /TEKSTBLOK: Outlier7.R -->
+<!-- ## OPENBLOK: Outlier8.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Maak een subset van de dataset met alle afhankelijke variabelen</span>
+<span class="n">Subset</span> <span class="o">&lt;-</span> <span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">[,</span><span class="n">c</span><span class="p">(</span><span class="s2">&quot;Cijfers_P1&quot;</span><span class="p">,</span>
+                                               <span class="s2">&quot;Cijfers_P2&quot;</span><span class="p">,</span>
+                                               <span class="s2">&quot;Cijfers_P3&quot;</span><span class="p">)]</span>
+
+<span class="c1"># Bereken de Mahalanobis afstand voor elke deelnemer </span>
+<span class="n">Mahalanobis_afstanden</span> <span class="o">&lt;-</span> <span class="n">mahalanobis</span><span class="p">(</span><span class="n">Subset</span><span class="p">,</span>
+                                     <span class="n">colMeans</span><span class="p">(</span><span class="n">Subset</span><span class="p">),</span>
+                                     <span class="n">cov</span><span class="p">(</span><span class="n">Subset</span><span class="p">))</span>
+
+<span class="c1"># Bepaal de criteriumwaarde voor de Mahalanobis afstand met de functie qchisq() met als eerste argument 1 - het significantieniveau en als tweede argument het aantal afhankelijke variabelen. In deze casus is het significantieniveau voor de Mahalanobis afstand 0.001 en het aantal afhankelijke variabelen berekend met ncol(Subset).</span>
+<span class="p">(</span><span class="n">Criteriumwaarde</span> <span class="o">&lt;-</span> <span class="n">qchisq</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="mf">0.001</span><span class="p">,</span> <span class="n">ncol</span><span class="p">(</span><span class="n">Subset</span><span class="p">)))</span>
+
+<span class="c1"># Plot de Mahalanobis afstanden</span>
+<span class="n">plot</span><span class="p">(</span><span class="n">Mahalanobis_afstanden</span><span class="p">,</span> <span class="n">xlab</span> <span class="o">=</span> <span class="s2">&quot;Volgorde&quot;</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">&quot;Mahalanobis afstanden&quot;</span><span class="p">)</span>
+
+<span class="c1"># Tel het aantal Mahalanobis afstanden groter dan de criteriumwaarde</span>
+<span class="nb">sum</span><span class="p">(</span><span class="n">Mahalanobis_afstanden</span> <span class="o">&gt;</span> <span class="n">Criteriumwaarde</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Outlier8.R -->
+<!-- ## TEKSTBLOK: Outlier9.R -->
+<p>Er zijn geen deelnemers met een Mahalanobis afstand groter dan de criteriumwaarde van <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Criteriumwaarde)</span></code>, dus er lijken geen multivariate outliers te zijn op basis van de Mahalanobis afstand.</p>
+<!-- ## /TEKSTBLOK: Outlier9.R -->
+</div>
+</div>
+<div class="section" id="id44">
+<h2>Aantal observaties per groep<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h2>
+<p>Om de <em>MANOVA</em> uit te voeren, moeten er in elke groep meer observaties dan afhankelijke variabelen zijn. In de huidige casus zijn er drie afhankelijke variabelen en zijn er drie groepen op basis van de bacheloropleiding van de studenten van de master Bioinformatics. Maak een tabel met het aantal observaties per groep om de assumptie te onderzoeken.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>table(Gemiddelde_cijfers_bioinformatics$Bacheloropleiding)
+
+</pre></div>
+</div>
+</div>
+</div>
+<p>Alle drie de groepen hebben meer dan 3 osbervaties, dus er is voldaan aan de assumptie van het aantal observaties per groep.</p>
+</div>
+<div class="section" id="id45">
+<h2>Multivariate normaliteit<a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h2>
+<p>De <em>MANOVA</em> vereist dat de verdeling van de afhankelijke variabele de normale verdeling benaderd in elke groep die gevormd wordt door de onafhankelijke variabelen. Onderzoek deze assumptie door per groep een histogram te maken van elke afhankelijke variabele.</p>
+<div class="section" id="histogram">
+<h3>Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">¶</a></h3>
+<p>Visualiseer de verdelingen van de gemiddelde cijfers in periode 1, 2 en 3 binnen elke groep met behulp van een histogram<a class="footnote-reference brackets" href="#id70" id="id46">24</a>. Focus bij het analyseren van een histogram op de symmetrie van de verdeling, de hoeveelheid toppen (modaliteit) en mogelijke outliers. Een normale verdeling is symmetrisch, heeft één top en geen outliers.<a class="footnote-reference brackets" href="#id71" id="id47">16</a><sup>, </sup><a class="footnote-reference brackets" href="#id72" id="id48">17</a></p>
+<!-- ## OPENBLOK: AssLineariteit1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Histogram met ggplot</span>
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">,</span>
+  <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Cijfers_P1</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">geom_histogram</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">y</span> <span class="o">=</span> <span class="o">..</span><span class="n">density</span><span class="o">..</span><span class="p">),</span>
+                 <span class="n">binwidth</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span>
+                 <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;grey30&quot;</span><span class="p">,</span>
+                 <span class="n">fill</span> <span class="o">=</span> <span class="s2">&quot;#0089CF&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">Bacheloropleiding</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">geom_density</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">.2</span><span class="p">,</span> <span class="n">adjust</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">xlab</span><span class="p">(</span><span class="s2">&quot;Gemiddeld cijfer periode 1&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">ylab</span><span class="p">(</span><span class="s2">&quot;Frequentiedichtheid&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssLineariteit1.R --><!-- ## OPENBLOK: AssLineariteit1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Histogram met ggplot</span>
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">,</span>
+  <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Cijfers_P2</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">geom_histogram</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">y</span> <span class="o">=</span> <span class="o">..</span><span class="n">density</span><span class="o">..</span><span class="p">),</span>
+                 <span class="n">binwidth</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span>
+                 <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;grey30&quot;</span><span class="p">,</span>
+                 <span class="n">fill</span> <span class="o">=</span> <span class="s2">&quot;#0089CF&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">Bacheloropleiding</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">geom_density</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">.2</span><span class="p">,</span> <span class="n">adjust</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">xlab</span><span class="p">(</span><span class="s2">&quot;Gemiddeld cijfer periode 2&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">ylab</span><span class="p">(</span><span class="s2">&quot;Frequentiedichtheid&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssLineariteit1.R --><!-- ## OPENBLOK: AssLineariteit2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Histogram met ggplot</span>
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">,</span>
+  <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Cijfers_P3</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">geom_histogram</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">y</span> <span class="o">=</span> <span class="o">..</span><span class="n">density</span><span class="o">..</span><span class="p">),</span>
+                 <span class="n">binwidth</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span>
+                 <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;grey30&quot;</span><span class="p">,</span>
+                 <span class="n">fill</span> <span class="o">=</span> <span class="s2">&quot;#0089CF&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">Bacheloropleiding</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">geom_density</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mf">.2</span><span class="p">,</span> <span class="n">adjust</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">xlab</span><span class="p">(</span><span class="s2">&quot;Gemiddeld cijfer periode 3&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">ylab</span><span class="p">(</span><span class="s2">&quot;Frequentiedichtheid&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssLineariteit2.R -->
+<p><em>Figuur 3.  Histogrammen van de verdelingen van de gemiddelde cijfers in periode 1, 2 en 3 per bacheloropleiding.</em></p>
+<p>De verdelingen van alle combinaties van afhankelijke variabelen en groepen zijn te zien in Figuur 3. Voor alle combinaties van variabelen en groepen is de verdeling redelijk symmetrisch en eentoppig en zijn er geen outliers. De verdelingen zijn dus bij benadering normaal. Er is dus voldaan aan de assumptie van multivariate normaliteit.</p>
+<p>Als er afwijkingen van de normaalverdeling zijn voor één of meerdere groepen, dan is de <em>MANOVA</em> nog steeds robuust als het aantal vrijheidsgraden van de residuën groter is dan 20. Dit aantal is te vinden door de <em>MANOVA</em> uit te voeren en dit aantal vrijheidsgraden te bekijken. Maak eerst een matrix met daarin de drie afhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">Gemiddelde_cijfers_bioinformatics$Cijfers_P1</span></code>, <code class="docutils literal notranslate"><span class="pre">Gemiddelde_cijfers_bioinformatics$Cijfers_P2</span></code> en <code class="docutils literal notranslate"><span class="pre">Gemiddelde_cijfers_bioinformatics$Cijfers_P3</span></code>. Voer daarna de <em>MANOVA</em> uit met de functie <code class="docutils literal notranslate"><span class="pre">manova()</span></code> met als eerste argument de formule <code class="docutils literal notranslate"><span class="pre">Afhankelijke_variabelen</span> <span class="pre">~</span> <span class="pre">Bacheloropleiding</span></code> met links van de tilde de matrix met afhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">Afhankelijke_variabelen</span></code> en rechts van de tilde de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Bacheloropleiding</span></code> en als tweede argument de dataset <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">=</span> <span class="pre">Gemiddelde_cijfers_bioinformatics</span></code> en sla het resultaat op in het object <code class="docutils literal notranslate"><span class="pre">MANOVA</span></code>. Bereken ten slotte het aantal vrijheidsgraden van de residuën met <code class="docutils literal notranslate"><span class="pre">MANOVA$df.residual</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Bind de afhankelijke variabelen in een matrix
+Afhankelijke_variabelen &lt;- cbind(Gemiddelde_cijfers_bioinformatics$Cijfers_P1,
+                                 Gemiddelde_cijfers_bioinformatics$Cijfers_P2,
+                                 Gemiddelde_cijfers_bioinformatics$Cijfers_P3)
+
+# Voer de MANOVA uit
+MANOVA &lt;- manova(Afhankelijke_variabelen ~ Bacheloropleiding, 
+                 data = Gemiddelde_cijfers_bioinformatics)
+
+# Bereken de vrijheidsgraden van de residuën
+MANOVA$df.residual
+</pre></div>
+</div>
+</div>
+</div>
+<p>Het aantal vrijheidsgraden van de residuën is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">MANOVA$df.residual</span></code> wat ruim meer is dan 20. Mocht er dus geen multivariate normaliteit zijn op basis van de histogrammen, dan is de <em>MANOVA</em> alsnog robuust ten opzichte van een schending van deze assumptie.</p>
+</div>
+</div>
+<div class="section" id="id49">
+<h2>Homogeniteit van variantie-covariantie matrices<a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: LeveneTest1.R -->
+<p>Toets met <em>Box’s M test</em> de assumptie homogeniteit van variantie-covariantie matrices. Gebruik hiervoor de functie <code class="docutils literal notranslate"><span class="pre">box_m</span></code> van het package <code class="docutils literal notranslate"><span class="pre">rstatix</span></code> met als argumenten de afhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">Gemiddelde_cijfers_bioinformatics[,c(&quot;Cijfers_P1&quot;,</span> <span class="pre">&quot;Cijfers_P2&quot;,</span> <span class="pre">&quot;Cijfers_P3&quot;)]</span></code> en de onafhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">Gemiddelde_cijfers_bioinformatics[,&quot;Bacheloropleiding&quot;]</span></code>.</p>
+<!-- ## /TEKSTBLOK: LeveneTest1.R -->
+<!-- ## OPENBLOK: Levenes-test.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">rstatix</span><span class="p">)</span>
+
+<span class="n">box_m</span><span class="p">(</span><span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">[,</span><span class="n">c</span><span class="p">(</span><span class="s2">&quot;Cijfers_P1&quot;</span><span class="p">,</span>
+                                           <span class="s2">&quot;Cijfers_P2&quot;</span><span class="p">,</span>
+                                           <span class="s2">&quot;Cijfers_P3&quot;</span><span class="p">)],</span>
+      <span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">[,</span><span class="s2">&quot;Bacheloropleiding&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Levenes-test.R -->
+<!-- ## CLOSEDBLOK: Levenes-test.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Levenes-test.R -->
+<!-- ## TEKSTBLOK: Levenes-test.R -->
+<ul class="simple">
+<li><p><em>F</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vF_waarde</span></code>, p-waarde = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vF_p</span></code>,</p></li>
+<li><p>De p-waarde is groter dan 0,01, dus er is geen significant verschil gevonden tussen de groepen wat betreft de variantie-covariantie matrices. Er is dus aan de assumptie van homogeniteit van varianties voldaan.</p></li>
+</ul>
+<!-- ## TEKSTBLOK: Levenes-test.R -->
+</div>
+<div class="section" id="id50">
+<h2>Lineariteit<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h2>
+<p>Onderzoek of er voor elke bacheloropleiding een lineaire relatie is tussen elk paar van afhankelijke variabelen.</p>
+<!-- ## OPENBLOK: AssLineariteit1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ggplot</span><span class="p">(</span><span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Cijfers_P1</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Cijfers_P2</span><span class="p">))</span> <span class="o">+</span>
+    <span class="n">geom_point</span><span class="p">()</span> <span class="o">+</span> <span class="n">ylab</span><span class="p">(</span><span class="s2">&quot;Cijfers Periode 2&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="n">xlab</span><span class="p">(</span><span class="s2">&quot;Cijfers Periode 1&quot;</span><span class="p">)</span> <span class="o">+</span> 
+  <span class="n">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">Bacheloropleiding</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssLineariteit1.R -->
+  </div>
+  <div class="col">
+<!-- ## OPENBLOK: AssLineariteit1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ggplot</span><span class="p">(</span><span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Cijfers_P1</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Cijfers_P3</span><span class="p">))</span> <span class="o">+</span>
+    <span class="n">geom_point</span><span class="p">()</span> <span class="o">+</span> <span class="n">ylab</span><span class="p">(</span><span class="s2">&quot;Cijfers Periode 3&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="n">xlab</span><span class="p">(</span><span class="s2">&quot;Cijfers Periode 1&quot;</span><span class="p">)</span> <span class="o">+</span> 
+  <span class="n">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">Bacheloropleiding</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssLineariteit1.R -->
+<!-- ## OPENBLOK: AssLineariteit2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ggplot</span><span class="p">(</span><span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Cijfers_P2</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Cijfers_P3</span><span class="p">))</span> <span class="o">+</span>
+    <span class="n">geom_point</span><span class="p">()</span> <span class="o">+</span> <span class="n">ylab</span><span class="p">(</span><span class="s2">&quot;Cijfers Periode 3&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="n">xlab</span><span class="p">(</span><span class="s2">&quot;Cijfers Periode 2&quot;</span><span class="p">)</span> <span class="o">+</span> 
+  <span class="n">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">Bacheloropleiding</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssLineariteit2.R -->
+<p><em>Figuur 4. Scatter plots van de relatie tussen elk paar van afhankelijke variabelen voor de bacheloropleidingen Biologie, Informatica en Wiskunde.</em></p>
+<p>Op basis van de scatter plots in Figuur 4 lijken er voor elke groep lineaire relaties te zijn tussen alle paren van afhankelijke variabelen. Er is dus aan de assumptie van lineariteit voldaan.</p>
+</div>
+<div class="section" id="id51">
+<h2>Multicollineariteit<a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: AssMulticollineariteit1.R -->
+<p>Onderzoek of er sprake is van multicollineariteit bij de afhankelijke variabelen met behulp van Variance Inflation Factors (VIFs). Bereken de VIFs voor elke afhankelijke variabele met de functie <code class="docutils literal notranslate"><span class="pre">VIF()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">DescTools</span></code> waarbij de functie als argument <code class="docutils literal notranslate"><span class="pre">Multicollineariteit</span></code> heeft. Voer hiervoor eerst een regressiemodel waarbij de drie afhankelijke variabelen de predictors zijn. Dit is nodig omdat de functie <code class="docutils literal notranslate"><span class="pre">VIF()</span></code> de VIF berekend voor predictors van een regressiemodel. Voer het regressiemodel uit met de functie <code class="docutils literal notranslate"><span class="pre">lm()</span></code> met als eerste argument de vergelijking <code class="docutils literal notranslate"><span class="pre">log(Cijfers_P1*Cijfers_P3)</span> <span class="pre">~</span> <span class="pre">Cijfers_P1</span> <span class="pre">+</span> <span class="pre">Cijfers_P2</span> <span class="pre">+</span> <span class="pre">Cijfers_P3</span></code> met links van het tilde de zelfverzonnen afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">log(Cijfers_P1*Cijfers_P3)</span></code> en rechts de predictors <code class="docutils literal notranslate"><span class="pre">Cijfers_P1</span></code>, <code class="docutils literal notranslate"><span class="pre">Cijfers_P2</span></code> en <code class="docutils literal notranslate"><span class="pre">Cijfers_P3</span></code>. Het tweede argument is de dataset <code class="docutils literal notranslate"><span class="pre">Gemiddelde_cijfers_bioinformatics</span></code>. De afhankelijke variabele is hier zelfverzonnen omdat de VIF niet afhankelijk is van deze variabele. De afhankelijke variabele kan dus ook op een andere manier gemaakt worden.</p>
+<!-- ## /TEKSTBLOK: AssMulticollineariteit1.R --><!-- ## OPENBLOK: AssMulticollineariteit2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">DescTools</span><span class="p">)</span>
+
+<span class="c1"># Maak een regressiemodel met de lm() functie met de afhankelijke variabelen als predictor</span>
+<span class="n">Multicollineariteit</span> <span class="o">&lt;-</span> <span class="n">lm</span><span class="p">(</span><span class="n">log</span><span class="p">(</span><span class="n">Cijfers_P1</span><span class="o">*</span><span class="n">Cijfers_P3</span><span class="p">)</span> <span class="o">~</span> <span class="n">Cijfers_P1</span> <span class="o">+</span> <span class="n">Cijfers_P2</span> <span class="o">+</span> <span class="n">Cijfers_P3</span><span class="p">,</span>
+                           <span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">)</span>
+
+<span class="c1"># Bereken de VIF voor de predictors Cijfers_P1, Cijfers_P2 en Cijfers_P3</span>
+<span class="n">VIF</span><span class="p">(</span><span class="n">Multicollineariteit</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: AssMulticollineariteit2.R -->
+<p>Geen enkele van de VIFs is hoger dan 10, dus er is voldaan aan de assumptie van multicollineariteit.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="id52">
+<h1>MANOVA<a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Uitvoering1.R -->
+<p>Voer de <em>MANOVA</em> uit om te onderzoeken of er verschillen zijn tussen studenten afkomstig van de bacheloropleidingen Biologie, Informatica en Wiskunde wat betreft hun gemiddelde cijfers in periode 1, 2 en 3 voor de master Bioinformatics. Maak eerst een matrix met daarin de drie afhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">Gemiddelde_cijfers_bioinformatics$Cijfers_P1</span></code>, <code class="docutils literal notranslate"><span class="pre">Gemiddelde_cijfers_bioinformatics$Cijfers_P2</span></code> en <code class="docutils literal notranslate"><span class="pre">Gemiddelde_cijfers_bioinformatics$Cijfers_P3</span></code>. Voer daarna de <em>MANOVA</em> uit met de functie <code class="docutils literal notranslate"><span class="pre">manova()</span></code> met als eerste argument de formule <code class="docutils literal notranslate"><span class="pre">Afhankelijke_variabelen</span> <span class="pre">~</span> <span class="pre">Bacheloropleiding</span></code> met links van de tilde de matrix met afhankelijke variabelen <code class="docutils literal notranslate"><span class="pre">Afhankelijke_variabelen</span></code> en rechts van de tilde de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Bacheloropleiding</span></code> en als tweede argument de dataset <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">=</span> <span class="pre">Gemiddelde_cijfers_bioinformatics</span></code> en sla het resultaat op in het object <code class="docutils literal notranslate"><span class="pre">MANOVA</span></code>. Geef vervolgens de resultaten weer met de toetsstatistiek <em>Wilks’s Lambda</em> met behulp van de functie <code class="docutils literal notranslate"><span class="pre">summary.manova()</span></code> met als argumenten het MANOVA object <code class="docutils literal notranslate"><span class="pre">MANOVA</span></code> en <code class="docutils literal notranslate"><span class="pre">test</span> <span class="pre">=</span> <span class="pre">&quot;Wilks&quot;</span></code> om aan te geven dat <em>Wilks’s Lambda</em> gebruikt moet worden.</p>
+<!-- ## /TEKSTBLOK: Uitvoering1.R -->
+<!-- ## OPENBLOK: Uitvoering2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Sla de afhankelijke variabelen op in een matrix
+Afhankelijke_variabelen &lt;- cbind(Gemiddelde_cijfers_bioinformatics$Cijfers_P1,
+                                 Gemiddelde_cijfers_bioinformatics$Cijfers_P2,
+                                 Gemiddelde_cijfers_bioinformatics$Cijfers_P3)
+
+# Voer de MANOVA uit
+MANOVA &lt;- manova(Afhankelijke_variabelen ~ Bacheloropleiding, 
+                 data = Gemiddelde_cijfers_bioinformatics)
+
+# Laat de resultaten zien voor de toetsstatistiek Wilks&#39;s Lambda
+summary.manova(MANOVA, test = &quot;Wilks&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Uitvoering2.R -->
+<!-- ## CLOSEDBLOK: Uitvoering3.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Uitvoering3.R -->
+<!-- ## TEKSTBLOK: ANOVA-toets2.R -->
+<ul class="simple">
+<li><p>Er is een significant effect van de variabele Bacheloropleiding op een lineaire combinatie van de afhankelijke variabelen Cijfers_P1, Cijfers P2 en Cijfers_P3 (<em>Λ</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vWilks</span></code>, <em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF1</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF2</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vF</span></code>, <em>p</em> &lt; 0,0001)</p></li>
+<li><p>De p-waarde is kleiner dan 0,05, dus de nulhypothese dat er geen interactie-effect is wordt verworpen.<a class="footnote-reference brackets" href="#id73" id="id53">18</a></p></li>
+<li><p>Omdat de <em>MANOVA</em> een significant resultaat laat zien, kan er voor elke afhankelijke variabele apart een <em>ANOVA</em> uitgevoerd worden</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: ANOVA-toets2.R --></div>
+<div class="tex2jax_ignore mathjax_ignore section" id="anova-s-voor-elke-afhankelijke-variabele">
+<h1>ANOVA’s voor elke afhankelijke variabele<a class="headerlink" href="#anova-s-voor-elke-afhankelijke-variabele" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: ANOVA-toets2_1.R -->
+<p>Voer voor de afhankelijke variabelen Cijfers_P1, Cijfers_P2 en Cijfers_P3 apart een <em>ANOVA</em> uit. Om de <em>ANOVA</em> uit te voeren, moeten eerst de assumptie van normaliteit en homogeniteit van varianties getoetst worden, voor meer informatie zie de toetspagina’s van de <span class="xref myst">one-way ANOVA</span> en de <span class="xref myst">factoriële ANOVA</span>. De assumptie van normaliteit is al getoetst voordat de <em>MANOVA</em> is uitgevoerd. Hieruit bleek dat de verdeling voor elke groep voor elke afhankelijke variabele de normaalverdeling benaderd, dus er is ook voor de <em>ANOVA</em> aan deze assumptie voldaan. De assumptie van homogeniteit van varianties moet wel getoetst worden, omdat bij de <em>MANOVA</em> de homogeniteit van variantie-covariantie matrices getoetst wordt.</p>
+<p>Toets de assumptie van homogeniteit van varianties met de <em>Levene’s test</em>. Gebruik hiervoor de functie <code class="docutils literal notranslate"><span class="pre">leveneTest()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">car</span></code> met als eerste argument de vergelijking <code class="docutils literal notranslate"><span class="pre">Cijfers_P1</span> <span class="pre">~</span> <span class="pre">Bacheloropleiding</span></code> met links van de tilde de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Cijfers_P1</span></code> (of <code class="docutils literal notranslate"><span class="pre">Cijfers_P2</span></code> of <code class="docutils literal notranslate"><span class="pre">Cijfers_P3</span></code>) en rechts van de tilde de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Bacheloropleiding</span></code> en als tweede argument de dataset <code class="docutils literal notranslate"><span class="pre">Gemiddelde_cijfers_bioinformatics</span></code>.</p>
+<!-- ## /TEKSTBLOK: ANOVA-toets2_1.R -->
+<!-- ## OPENBLOK: ANOVA-toets2_2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">car</span><span class="p">)</span>
+
+<span class="n">leveneTest</span><span class="p">(</span><span class="n">Cijfers_P1</span> <span class="o">~</span> <span class="n">Bacheloropleiding</span><span class="p">,</span> <span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">)</span>
+<span class="n">leveneTest</span><span class="p">(</span><span class="n">Cijfers_P2</span> <span class="o">~</span> <span class="n">Bacheloropleiding</span><span class="p">,</span> <span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">)</span>
+<span class="n">leveneTest</span><span class="p">(</span><span class="n">Cijfers_P3</span> <span class="o">~</span> <span class="n">Bacheloropleiding</span><span class="p">,</span> <span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: ANOVA-toets2_2.R --><p>Voor alle drie de afhankelijke variabelen is de <em>Levene’s test</em> niet significant, dus alle variabelen voldoen aan de assumptie van homogeniteit van varianties. De <em>ANOVA’s</em> kunnen uitgevoerd worden.</p>
+<!-- ## TEKSTBLOK: ANOVA-toets2_3.R -->
+<p>Gebruik hiervoor de functie <code class="docutils literal notranslate"><span class="pre">aov()</span></code> met als eerste argument de vergelijking <code class="docutils literal notranslate"><span class="pre">Cijfers_P1</span> <span class="pre">~</span> <span class="pre">Bacheloropleiding</span></code> met links van de tilde de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Cijfers_P1</span></code> (of <code class="docutils literal notranslate"><span class="pre">Cijfers_P2</span></code> of <code class="docutils literal notranslate"><span class="pre">Cijfers_P3</span></code>) en rechts van de tilde de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Bacheloropleiding</span></code> en als tweede argument de dataset <code class="docutils literal notranslate"><span class="pre">Gemiddelde_cijfers_bioinformatics</span></code> en sla het resultaat op. Om te corrigeren voor het feit dat er drie toetsen tegelijkertijd uitgevoerd worden, wordt een Bonferroni correctie uitgevoerd door het significantieniveau van 0,05 door het aantal toetsen (drie) te delen. Dit levert een nieuw significantieniveau van 0,017 (0,05 / 3 = 0,017) op. Waar normaliter de p-waarde van de <em>ANOVA</em> met het significantieniveau 0,05 vergeleken wordt, wordt de p-waarde nu met het significantieniveau 0,017 vergeleken. Laat vervolgens de resultaten zien met de functie <code class="docutils literal notranslate"><span class="pre">summary()</span></code> met als argument het ANOVA object. Bereken daarna de effectmaat <em>partial eta squared</em> met de functie <code class="docutils literal notranslate"><span class="pre">EtaSq()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">DescTools</span></code> als argument het ANOVA object.</p>
+<!-- ## /TEKSTBLOK: ANOVA-toets2_3.R -->
+<!-- ## OPENBLOK: ANOVA-toets3.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">DescTools</span><span class="p">)</span>
+
+<span class="c1"># Voer de ANOVA&#39;s uit</span>
+<span class="n">ANOVA_P1</span> <span class="o">&lt;-</span> <span class="n">aov</span><span class="p">(</span><span class="n">Cijfers_P1</span> <span class="o">~</span> <span class="n">Bacheloropleiding</span><span class="p">,</span> <span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">)</span>
+<span class="n">ANOVA_P2</span> <span class="o">&lt;-</span> <span class="n">aov</span><span class="p">(</span><span class="n">Cijfers_P2</span> <span class="o">~</span> <span class="n">Bacheloropleiding</span><span class="p">,</span> <span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">)</span>
+<span class="n">ANOVA_P3</span> <span class="o">&lt;-</span> <span class="n">aov</span><span class="p">(</span><span class="n">Cijfers_P3</span> <span class="o">~</span> <span class="n">Bacheloropleiding</span><span class="p">,</span> <span class="n">Gemiddelde_cijfers_bioinformatics</span><span class="p">)</span>
+
+<span class="c1"># Laat de resultaten zien</span>
+<span class="n">summary</span><span class="p">(</span><span class="n">ANOVA_P1</span><span class="p">)</span>
+<span class="n">summary</span><span class="p">(</span><span class="n">ANOVA_P2</span><span class="p">)</span>
+<span class="n">summary</span><span class="p">(</span><span class="n">ANOVA_P3</span><span class="p">)</span>
+
+<span class="c1"># Bereken de effectmaat</span>
+<span class="n">EtaSq</span><span class="p">(</span><span class="n">ANOVA_P1</span><span class="p">)</span>
+<span class="n">EtaSq</span><span class="p">(</span><span class="n">ANOVA_P2</span><span class="p">)</span>
+<span class="n">EtaSq</span><span class="p">(</span><span class="n">ANOVA_P3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: ANOVA-toets3.R -->
+<!-- ## CLOSEDBLOK: ANOVA-toets4.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: ANOVA-toets4.R -->
+<!-- ## TEKSTBLOK: ANOVA-toets5.R -->
+<ul class="simple">
+<li><p>Er is een significant verschil tussen de bacheloropleidingen wat betreft het gemiddelde cijfer in periode 1, <em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">DF1_P1</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">DF2_P1</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">F_P1</span></code>, <em>p</em> &lt; 0,0001, <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Eta_P1</span></code></p></li>
+<li><p>Er is een significant verschil tussen de bacheloropleidingen wat betreft het gemiddelde cijfer in periode 2, <em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">DF1_P2</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">DF2_P2</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">F_P2</span></code>, <em>p</em> &lt; 0,0001, <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Eta_P2</span></code></p></li>
+<li><p>Er is een significant verschil tussen de bacheloropleidingen wat betreft het gemiddelde cijfer in periode 3, <em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">DF1_P3</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">DF2_P3</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">F_P3</span></code>, <em>p</em> &lt; 0,0001, <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Eta_P3</span></code></p></li>
+<li><p>Voor alle drie de perioden is er een significant verschil tussen de gemiddelde cijfers van de drie bacheloropleidingen. Er kunnen voor iedere periode dus post-hoc toetsen uitgevoerd worden</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: ANOVA-toets5.R -->
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="post-hoc-toetsen">
+<h1>Post-hoc toetsen<a class="headerlink" href="#post-hoc-toetsen" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: PHtest1.R -->
+<p>Voer post-hoc toetsen uit om te onderzoeken welke bacheloropleidingen van elkaar verschillen voor de gemiddelde cijfers in periode 1, 2 en 3. Gebruik hiervoor de functie <code class="docutils literal notranslate"><span class="pre">TukeyHSD()</span></code> met als argument het ANOVA-object van bijvoorbeeld periode 1 <code class="docutils literal notranslate"><span class="pre">ANOVA_P1</span></code>.</p>
+<!-- ## /TEKSTBLOK: PHtest1.R -->
+<!-- ## OPENBLOK: PHtest2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">TukeyHSD</span><span class="p">(</span><span class="n">ANOVA_P1</span><span class="p">)</span>
+<span class="n">TukeyHSD</span><span class="p">(</span><span class="n">ANOVA_P2</span><span class="p">)</span>
+<span class="n">TukeyHSD</span><span class="p">(</span><span class="n">ANOVA_P3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: PHtest2.R -->
+<!-- ## CLOSEDBLOK: PHtest3.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: PHtest3.R -->
+<!-- ## TEKSTBLOK: PHtest4.R -->
+<p>De resultaten van de post-hoc toetsen voor de gemiddelde cijfers van periode 1 zijn<a class="footnote-reference brackets" href="#id73" id="id54">18</a>:</p>
+<ul class="simple">
+<li><p>Informatica versus Biologie: het verschil in gemiddelde (Informatica - Biologie) is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_P1[1,1])</span></code>, dit is een significant verschil (<em>p</em> &lt; 0,0001).</p></li>
+<li><p>Wiskunde versus Biologie: het verschil in gemiddelde (Wiskunde - Biologie) is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_P1[2,1])</span></code>, dit is een significant verschil (<em>p</em> &lt; 0,0001).</p></li>
+<li><p>Wiskunde versus Informatica: het verschil in gemiddelde (Wiskunde - Informatica) is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_P1[3,1])</span></code>, dit is geen significant verschil (<em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_P1[3,4])</span></code>).</p></li>
+</ul>
+<p>De resultaten van de post-hoc toetsen voor de gemiddelde cijfers van periode 2 zijn:</p>
+<ul class="simple">
+<li><p>Informatica versus Biologie: het verschil in gemiddelde (Informatica - Biologie) is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_P2[1,1])</span></code>, dit is een significant verschil (<em>p</em> &lt; 0,0001).</p></li>
+<li><p>Wiskunde versus Biologie: het verschil in gemiddelde (Wiskunde - Biologie) is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_P2[2,1])</span></code>, dit is een significant verschil (<em>p</em> &lt; 0,0001).</p></li>
+<li><p>Wiskunde versus Informatica: het verschil in gemiddelde (Wiskunde - Informatica) is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_P2[3,1])</span></code>, dit is geen significant verschil (<em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_P2[3,4])</span></code>).</p></li>
+</ul>
+<p>De resultaten van de post-hoc toetsen voor de gemiddelde cijfers van periode 3 zijn:</p>
+<ul class="simple">
+<li><p>Informatica versus Biologie: het verschil in gemiddelde (Informatica - Biologie) is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_P3[1,1])</span></code>, dit is een significant verschil (<em>p</em> &lt; 0,0001).</p></li>
+<li><p>Wiskunde versus Biologie: het verschil in gemiddelde (Wiskunde - Biologie) is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_P3[2,1])</span></code>, dit is een significant verschil (<em>p</em> &lt; 0,0001).</p></li>
+<li><p>Wiskunde versus Informatica: het verschil in gemiddelde (Wiskunde - Informatica) is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_P3[3,1])</span></code>, dit is geen significant verschil (<em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_P3[3,4])</span></code>).</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: PHtest4.R -->
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="rapportage">
+<h1>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Rapportage.R -->
+<p>DE <em>MANOVA</em> is uitgevoerd om te onderzoeken of er verschillen zijn in de gemiddelde cijfers van masterstudenten Bioinformatics voor periode 1, 2 en 3 tussen studenten afkomstig van de bacheloropleidingen Biologie, Informatica en Wiskunde. Uit de resultaten van de <em>MANOVA</em> blijkt er een significant verschil te zijn tussen de drie bacheloropleidingen voor de gemiddelde cijfers voor minimaal één van de onderwijsperiodes, <em>Λ</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vWilks</span></code>, <em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF1</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vDF2</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vF</span></code>, <em>p</em> &lt; 0,0001.</p>
+<p>Vervolgens zijn er voor elke onderwijsperiode <em>ANOVA’s</em> uitgevoerd om te toetsen of de gemiddelden verschillen per bacheloropleiding. Er is een Bonferroni-correctie gebruikt omdat er drie afhankelijke variabelen tegelijkertijd getoetst worden. Er is een significant verschil tussen de bacheloropleidingen wat betreft het gemiddelde cijfer in periode 1 (<em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">DF1_P1</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">DF2_P1</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">F_P1</span></code>, <em>p</em> &lt; 0,0001, <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Eta_P1</span></code>), periode 2 (<em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">DF1_P2</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">DF2_P2</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">F_P2</span></code>, <em>p</em> &lt; 0,0001, <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Eta_P2</span></code>) en periode 3 (<em>F</em> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">DF1_P3</span></code>,<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">DF2_P3</span></code>) = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">F_P3</span></code>, <em>p</em> &lt; 0,0001, <em>η^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Eta_P3</span></code>). De post-hoc toetsen laten zien dat er voor alle drie de perioden geen significante verschillen zijn tussen de bacheloropleidingen Wiskunde en Informatica, maar wel significante verschillen tussen Wiskunde en Biologie en Informatica en Biologie. Uit de resultaten van de post-hoc toetsen en Figuur 5 is af te leiden dat de studenten van de bacheloropleidingen Wiskunde en Informatica een hoger gemiddeld cijfer behalen in periode 1 en 2 en dat studenten van de bacheloropleiding Biologie een hoger gemiddeld cijfer behalen in periode 3. Het lijkt er dus op dat het per periode verschilt welke bacheloropleiding studenten het beste voorbereid op de master.</p>
+<!-- ## /TEKSTBLOK: Rapportage.R --><!-- ## CLOSEDBLOK: Rapportage1.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Rapportage1.R -->
+<p><em>Figuur 5.  Gemiddelde cijfers voor periode 1, 2 en 3 voor studenten bioinformatics met als bacheloropleidingen Biologie, Informatica en Wiskunde.</em></p>
+<!-- ## CLOSEDBLOK: Footer.R --><!-- ## /CLOSEDBLOK: Footer.R -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id55"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id11">2</a>)</span></dt>
+<dd><p>Laerd Statistics (2018). <em>One-way MANOVA in SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/one-way-manova-using-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/one-way-manova-using-spss-statistics.php</a></p>
+</dd>
+<dt class="label" id="id56"><span class="brackets">20</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id4">2</a>,<a href="#id5">3</a>,<a href="#id9">4</a>,<a href="#id10">5</a>,<a href="#id12">6</a>,<a href="#id22">7</a>,<a href="#id24">8</a>,<a href="#id25">9</a>,<a href="#id26">10</a>,<a href="#id27">11</a>,<a href="#id34">12</a>,<a href="#id38">13</a>)</span></dt>
+<dd><p>Tabachnick, B.G. &amp; Fidell, L.S. (2013). <em>Using multivariate statistics</em>. Sixth Edition, Pearson. Pagina 285 - 354.</p>
+</dd>
+<dt class="label" id="id57"><span class="brackets">3</span><span class="fn-backref">(<a href="#id3">1</a>,<a href="#id32">2</a>)</span></dt>
+<dd><p>Tabachnick, B.G. &amp; Fidell, L.S. (2013). <em>Using multivariate statistics</em>. Sixth Edition, Pearson. Pagina 86.</p>
+</dd>
+<dt class="label" id="id58"><span class="brackets">13</span><span class="fn-backref">(<a href="#id6">1</a>,<a href="#id7">2</a>,<a href="#id37">3</a>)</span></dt>
+<dd><p>Field, A., Miles, J., &amp; Field, Z. (2012). <em>Discovering statistics using R</em>. London: Sage publications.</p>
+</dd>
+<dt class="label" id="id59"><span class="brackets"><a class="fn-backref" href="#id8">22</a></span></dt>
+<dd><p>Field, A. (2013). <em>Discovering statistics using IBM SPSS statistics</em>. Sage. Pagina 623-664.</p>
+</dd>
+<dt class="label" id="id60"><span class="brackets">4</span><span class="fn-backref">(<a href="#id13">1</a>,<a href="#id21">2</a>,<a href="#id31">3</a>,<a href="#id33">4</a>,<a href="#id35">5</a>)</span></dt>
+<dd><p>Field, A. (2013). <em>Discovering statistics using IBM SPSS statistics</em>. Sage. Pagina 293-356.</p>
+</dd>
+<dt class="label" id="id61"><span class="brackets">5</span><span class="fn-backref">(<a href="#id14">1</a>,<a href="#id15">2</a>,<a href="#id18">3</a>)</span></dt>
+<dd><p>Universiteit van Amsterdam (13 augustus 2016). <em>Outliers</em>. <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Outliers">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id62"><span class="brackets">23</span><span class="fn-backref">(<a href="#id16">1</a>,<a href="#id20">2</a>)</span></dt>
+<dd><p>Tabachnick, B.G. &amp; Fidell, L.S. (2013). <em>Using multivariate statistics</em>. Sixth Edition, Pearson. Pagina 72 - 77.</p>
+</dd>
+<dt class="label" id="id63"><span class="brackets"><a class="fn-backref" href="#id17">6</a></span></dt>
+<dd><p>Standaardiseren houdt in dat de variabelen getransformeerd worden zodat ze een gemiddelde van 0 hebben en een standaardafwijking van 1. Dit wordt gedaan door voor alle observaties van een variabele eerst het gemiddelde af te trekken en daarna te delen door de standaardafwijking, i.e. <span class="math notranslate nohighlight">\(\frac{x_i - \mu}{\sigma}\)</span>.</p>
+</dd>
+<dt class="label" id="id64"><span class="brackets"><a class="fn-backref" href="#id19">19</a></span></dt>
+<dd><p>Met een deelnemer wordt het object bedoeld dat geobserveerd wordt, bijvoorbeeld een student, een inwoner van Nederland, een opleiding of een organisatie. Met een observatie wordt de waarde bedoeld die de deelnemer heeft voor een bepaalde variabele. Een deelnemer heeft dus meestal een observatie voor meerdere variabelen.</p>
+</dd>
+<dt class="label" id="id65"><span class="brackets">7</span><span class="fn-backref">(<a href="#id23">1</a>,<a href="#id29">2</a>)</span></dt>
+<dd><p>Er zijn verschillende opties om variabelen te transformeren, zoals de logaritme, wortel of inverse (1 gedeeld door de variabele) nemen van de variabele. Zie <em>Discovering statistics using IBM SPSS statistics</em> van Field (2013) pagina 201-210 voor meer informatie over welke transformaties wanneer gebruikt kunnen worden.</p>
+</dd>
+<dt class="label" id="id66"><span class="brackets">8</span><span class="fn-backref">(<a href="#id28">1</a>,<a href="#id30">2</a>)</span></dt>
+<dd><p>Universiteit van Amsterdam (7 juli 2014). <em>Lineariteit</em>. <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Lineariteit">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id67"><span class="brackets"><a class="fn-backref" href="#id36">9</a></span></dt>
+<dd><p>Stat 501. <em>12.4 - Detecting Multicollinearity Using Variance Inflation Factors</em>. <a class="reference external" href="https://online.stat.psu.edu/stat501/lesson/12/12.4">PennState Eberly College of Science</a>.</p>
+</dd>
+<dt class="label" id="id68"><span class="brackets">14</span><span class="fn-backref">(<a href="#id39">1</a>,<a href="#id40">2</a>)</span></dt>
+<dd><p>Tabachnick, B.G. &amp; Fidell, L.S. (2013). <em>Using multivariate statistics</em>. Sixth Edition, Pearson. Pagina 54 - 55.</p>
+</dd>
+<dt class="label" id="id69"><span class="brackets"><a class="fn-backref" href="#id41">15</a></span></dt>
+<dd><p>Allen, P. &amp; Bennett, K. (2012). <em>SPSS A practical Guide version 20.0</em>. Cengage Learning Australia Pty Limited. Pagina 84.</p>
+</dd>
+<dt class="label" id="id70"><span class="brackets"><a class="fn-backref" href="#id46">24</a></span></dt>
+<dd><p>De breedte van de staven van het histogram wordt vaak automatisch bepaald, maar kan handmatig aangepast worden. Aangezien de breedte van de staven bepalend zijn voor de indruk die de visualisatie geeft, is het verstandig om hier goed op te letten.</p>
+</dd>
+<dt class="label" id="id71"><span class="brackets"><a class="fn-backref" href="#id47">16</a></span></dt>
+<dd><p>Outliers (13 augustus 2016). <a class="reference external" href="https://wiki.uva.nl/methodologiewinkel/index.php/Outliers">UvA Wiki Methodologiewinkel</a>.</p>
+</dd>
+<dt class="label" id="id72"><span class="brackets"><a class="fn-backref" href="#id48">17</a></span></dt>
+<dd><p>Outliers kunnen bepalend zijn voor de uitkomst van toetsen. Bekijk of de outliers valide outliers zijn en niet een meetfout of op een andere manier incorrect verkregen data. Het weghalen van outliers kan de uitkomst ook vertekenen, daarom is het belangrijk om verwijderde outliers te melden in een rapport.</p>
+</dd>
+<dt class="label" id="id73"><span class="brackets">18</span><span class="fn-backref">(<a href="#id53">1</a>,<a href="#id54">2</a>)</span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./r"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="53%20Ordinale%20logistische%20regressie%20R.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

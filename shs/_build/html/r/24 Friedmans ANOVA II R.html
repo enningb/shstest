@@ -1,0 +1,944 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="25%20Kruskal%20Wallis%20toets%20II%20R.html" />
+    <link rel="prev" title="Toepassing" href="23%20Mann-Whitney%20U%20toets%20II%20R.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/r/24 Friedmans ANOVA II R.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fr/24 Friedmans ANOVA II R.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumpties">
+   Assumpties
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#post-hoc-toets">
+   Post-hoc toets
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#effectmaat">
+   Effectmaat
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering">
+   Uitvoering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-data-bekijken">
+     De data bekijken
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-data-visualiseren">
+     De data visualiseren
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#friedman-s-anova">
+     Friedman’s ANOVA
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#post-hoc-toets-wilcoxon-signed-rank-toets">
+     Post-hoc toets: Wilcoxon signed rank toets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rapportage">
+   Rapportage
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-924f26e6aa13&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span>exists<span class="o">(</span><span class="s2">&quot;Substitute_var&quot;</span><span class="o">))</span> <span class="o">{</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.R -->
+<!-- ## /CLOSEDBLOK: Reticulate.R -->
+<!-- ## OPENBLOK: Data-aanmaken.R --><!-- ## /OPENBLOK: Data-aanmaken.R -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<p>Gebruik <em>Friedman’s ANOVA</em> om te toetsen of twee of meer gepaarde groepen van elkaar verschillen op een ordinale<a class="footnote-reference brackets" href="#id16" id="id1">16</a> variabele.<a class="footnote-reference brackets" href="#id17" id="id2">1</a> Als de variabele beter als nominaal<a class="footnote-reference brackets" href="#id18" id="id3">18</a> beschouwd kan worden, is de <span class="xref myst">multilevel multinomiale logistische regressie</span> een alternatief. Bij deze toets wordt echter geen rekening gehouden met de ordening van de categorieën van de ordinale variabele: de variabele wordt behandeld als een nominale variabele.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id="casus">
+<p>De opleidingsdirecteur van de bachelor Geschiedenis van een universiteit merkt dat er tijdens het eerste studiejaar veel studenten zijn die niet alle vakken voldoende afsluiten. Zij wil uitvinden in welke onderwijsperiode dit vooral plaatsvindt om te onderzoeken waardoor de studievertraging veroorzaakt wordt. Op deze universiteit bestaat het eerste jaar uit vier onderwijsperiodes met daarin drie vakken. De opleidingsdirecteur vraagt studieresultaten op van eerstejaars studenten in het vorige collegejaar. Met deze resultaten wil zij onderzoeken of er verschillen zijn tussen de vier onderwijsperiodes wat betreft het aantal vakken dat studenten voldoende afsluiten.</p>
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is.</p>
+<p><em>H~0~</em>: Er zijn geen verschillen tussen (de gemiddelde rangnummers van) het aantal voldoendes in onderwijsperiode 1, 2, 3 en 4 voor studenten van de bachelor Geschiedenis.</p>
+<p><em>H~A~</em>: Er zijn wel verschillen tussen (de gemiddelde rangnummers van) het aantal voldoendes in onderwijsperiode 1, 2, 3 en 4 voor studenten van de bachelor Geschiedenis.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="assumpties">
+<h1>Assumpties<a class="headerlink" href="#assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Het meetniveau van de afhankelijke variabele is ordinaal<a class="footnote-reference brackets" href="#id16" id="id4">16</a> of continu.<a class="footnote-reference brackets" href="#id17" id="id5">1</a> In deze toetspagina staat een casus met een ordinale afhankelijke variabele centraal; een casus met een continue afhankelijke variabele met bijbehorende uitwerking is te vinden in de [Friedman’s ANOVA I](9- Friedmans-ANOVA-I-R.html).</p>
+<p>Om <em>Friedman’s ANOVA</em> uit te voeren met een ordinale afhankelijke variabele, moet deze variabele in sommige gevallen omgezet worden in getallen. Als een variabele bijvoorbeeld vier categorieën bevat, worden ze genummerd van 1 tot en met 4 op basis van de ordening van de variabele. Een voorbeeld hiervan is de afhankelijke variabele Beoordeling die de categorieën onvoldoende, voldoende, goed en uitstekend bevat. De categorieën onvoldoende, voldoende, goed en uitstekend worden dan omgezet in respectievelijk 1, 2, 3 en 4. Bij de <span class="xref myst">multilevel multinomiale logistische regressie</span> wordt dit niet gedaan, maar wordt de ordinale afhankelijke variabele als nominaal<a class="footnote-reference brackets" href="#id18" id="id6">18</a> beschouwd.</p>
+<p><em>Friedman’s ANOVA</em> maakt voor elke observatie-eenheid een rangschikking van alle observaties. Vervolgens wordt het gemiddelde rangnummer per groep berekend en vergeleken tussen de groepen. In de huidige casus wordt er dus voor elke student een rangschikking gemaakt van het aantal voldoendes in onderwijsperiode 1, 2, 3 en 4 en wordt het gemiddelde rangnummer berekend voor elk van de vier onderwijsperioden. Het verschil tussen de gemiddelde rangnummers van de groepen bepaalt de significantie van de toets.<a class="footnote-reference brackets" href="#id17" id="id7">1</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="post-hoc-toets">
+<h1>Post-hoc toets<a class="headerlink" href="#post-hoc-toets" title="Permalink to this headline">¶</a></h1>
+<p><em>Friedman’s ANOVA</em> toetst of er een verschil is tussen de groepen op gebied van de afhankelijke variabele. De post-hoc toets wordt daarna gebruikt om te toetsen tussen welke specifieke groepen er een significant verschil is. Gebruik de <span class="xref myst">Wilcoxon signed rank toets</span> als post-hoc toets.</p>
+<p>Gebruik een correctie voor de p-waarden, omdat er meerdere toetsen tegelijkertijd worden gebruikt. Meerdere toetsen tegelijkertijd uitvoeren verhoogt de kans dat een van de nulhypotheses onterecht wordt verworpen en er bij toeval een verband wordt ontdekt dat er niet is (type I fout). In deze toetspagina wordt de <em>Bonferroni correctie</em> gebruikt. Deze correctie past de p-waarde aan door de p-waarde te vermenigvuldigen met het aantal uitgevoerde toetsen en verlaagt hiermee de kans op een type I fout. Een andere uitleg hiervan is dat het significantieniveau gedeeld wordt door het aantal toetsen wat leidt tot een lager significantieniveau en dus een strengere toets. Er zijn ook andere opties voor een correctie op de p-waarden.<a class="footnote-reference brackets" href="#id19" id="id8">5</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="effectmaat">
+<h1>Effectmaat<a class="headerlink" href="#effectmaat" title="Permalink to this headline">¶</a></h1>
+<p>De p-waarde geeft aan of het verschil tussen groepen significant is. De grootte van het verschil of effect is echter ook relevant. Een effectmaat is een gestandaardiseerde maat die de grootte van een effect weergeeft, zodat effecten van verschillende onderzoeken met elkaar vergeleken kunnen worden.<a class="footnote-reference brackets" href="#id19" id="id9">5</a> Voor <em>Friedman’s ANOVA</em> wordt de effectmaat <em>Kendall’s W</em> vaak gebruikt.<a class="footnote-reference brackets" href="#id20" id="id10">6</a><sup>, </sup><a class="footnote-reference brackets" href="#id21" id="id11">7</a><sup>, </sup><a class="footnote-reference brackets" href="#id22" id="id12">8</a> Een indicatie om <em>Kendall’s W</em> te interpreteren is: rond 0,1 is het een klein effect, rond 0,3 is het een gemiddeld effect en rond 0,5 is het een groot effect.<a class="footnote-reference brackets" href="#id20" id="id13">6</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering">
+<h1>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Dataset-inladen.R-->
+<p>Er is een dataset <code class="docutils literal notranslate"><span class="pre">Voldoendes_Geschiedenis</span></code> ingeladen met daarin per student per periode het aantal voldoendes in het eerste jaar van de studenten van de bachelor Geschiedenis.</p>
+<!-- ## /TEKSTBLOK: Dataset-inladen.R-->
+<div class="section" id="de-data-bekijken">
+<h2>De data bekijken<a class="headerlink" href="#de-data-bekijken" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Data-bekijken.R -->
+<p>Gebruik <code class="docutils literal notranslate"><span class="pre">head()</span></code> en <code class="docutils literal notranslate"><span class="pre">tail()</span></code> om de structuur van de data te bekijken.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken.R -->
+<!-- ## OPENBLOK: Data-bekijken.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Eerste 6 observaties</span>
+<span class="n">head</span><span class="p">(</span><span class="n">Voldoendes_Geschiedenis</span><span class="p">)</span>
+
+<span class="c1">## Laatste 6 observaties</span>
+<span class="n">tail</span><span class="p">(</span><span class="n">Voldoendes_Geschiedenis</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken.R -->
+<!-- ## TEKSTBLOK: Data-kruistabel1.R -->
+<p>Een kruistabel geeft het aantal observaties weer voor de combinaties van de categorieën van de variabelen <code class="docutils literal notranslate"><span class="pre">Periode</span></code> en <code class="docutils literal notranslate"><span class="pre">Voldoendes</span></code>. In feite laat dit zien hoeveel studenten 0, 1, 2 of 3 voldoendes hebben gehaald in elke onderwijsperiode. Maak de kruistabel met de functie <code class="docutils literal notranslate"><span class="pre">table()</span></code> met als argumenten de variabele <code class="docutils literal notranslate"><span class="pre">Voldoendes_Geschiedenis$Periode</span></code> en de variabele <code class="docutils literal notranslate"><span class="pre">Voldoendes_Geschiedenis$Voldoendes</span></code>.</p>
+<!-- ## /TEKSTBLOK: Data-kruistabel1.R -->
+<!-- ## OPENBLOK: Data-kruistabel2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>## Maak een kruistabel
+Voldoendes_kruistabel &lt;- table(Voldoendes_Geschiedenis$Periode,
+                                  Voldoendes_Geschiedenis$Voldoendes,
+                               dnn = c(&quot;Periode&quot;,&quot;Aantal voldoendes&quot;))
+
+## Print de kruistabel 
+print(Voldoendes_kruistabel)
+
+## Print een tabel met proporties; het tweede argument `1` zorgt ervoor dat de 
+## proporties per rij berekend worden
+prop.table(Voldoendes_kruistabel, 1)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-kruistabel2.R -->
+<p>De kruistabel en bijbehorende kruistabel met proporties geven informatie over de verdeling van de beoordelingen van studenten. In periode 1, 2 en 4 haalden de meeste studenten 3 voldoendes, maar in periode 3 haalden de meeste studenten 2 voldoendes.</p>
+</div>
+<div class="section" id="de-data-visualiseren">
+<h2>De data visualiseren<a class="headerlink" href="#de-data-visualiseren" title="Permalink to this headline">¶</a></h2>
+<p>Maak een staafdiagram om de verdeling van het aantal voldoendes voor alle onderwijsperioden visueel weer te geven.</p>
+<!-- ## OPENBLOK: Histogram1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Staafdiagram met ggplot2</span>
+<span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Voldoendes_Geschiedenis</span><span class="p">,</span>
+  <span class="n">aes</span><span class="p">(</span><span class="n">Voldoendes</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">geom_bar</span><span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;grey30&quot;</span><span class="p">,</span>
+                 <span class="n">fill</span> <span class="o">=</span> <span class="s2">&quot;#0089CF&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">Periode</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">ylab</span><span class="p">(</span><span class="s2">&quot;Frequentie&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Aantal voldoendes per periode&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Histogram1.R -->
+<p><em>Figuur 1. Staafdiagram met de frequenties van het aantal voldoendes voor onderwijsperiode 1, 2, 3 en 4.</em></p>
+<p>Het staafdiagram (Figuur 1) laat zien dat de meeste studenten 3 voldoendes halen in periode 1, 2 en 4 en de meeste studenten 2 voldoendes halen in periode 3. Ook valt op dat in periode 2 en 4 verreweg de meeste studenten 3 voldoendes halen, maar dat dat niet zo is in periode 1.</p>
+</div>
+<div class="section" id="friedman-s-anova">
+<h2>Friedman’s ANOVA<a class="headerlink" href="#friedman-s-anova" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Kruskal-Wallis-test-1.R -->
+<p>Voer de <em>Friedman’s ANOVA</em> uit om te onderzoeken of er verschillen zijn tussen het aantal voldoendes in de vier onderwijsperioden in het eerste jaar van studenten van de bachelor Geschiedenis. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">friedman.test()</span></code> met als eerste argument de formule <code class="docutils literal notranslate"><span class="pre">Voldoendes</span> <span class="pre">~</span> <span class="pre">Periode</span> <span class="pre">|</span> <span class="pre">Studentnummer</span></code> met daarin links van de tilde de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Voldoendes</span></code> en rechts van de tilde de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Periode</span></code> en na het sluisteken de variabele <code class="docutils literal notranslate"><span class="pre">Studentnummer</span></code> die de deelnemers<a class="footnote-reference brackets" href="#id23" id="id14">19</a> aangeeft. Het tweede argument is de dataset <code class="docutils literal notranslate"><span class="pre">Voldoendes_Geschiedenis</span></code>.</p>
+<!-- ## /TEKSTBLOK: Kruskal-Wallis-test-1.R -->
+<!-- ## OPENBLOK: Kruskal-Wallis-test-2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">friedman</span><span class="o">.</span><span class="n">test</span><span class="p">(</span><span class="n">Voldoendes</span> <span class="o">~</span> <span class="n">Periode</span> <span class="o">|</span> <span class="n">Studentnummer</span><span class="p">,</span>
+              <span class="n">Voldoendes_Geschiedenis</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Kruskal-Wallis-test-2.R -->
+<p>Bereken de effectmaat <em>Kendall’s W</em> vervolgens op basis van de <em>χ^2^</em>-waarde van de <em>Friedman’s ANOVA</em>.</p>
+<!-- ## OPENBLOK: Kruskal-Wallis-test-3.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Sla de Chi-kwadraat waarde op
+Chi2 &lt;- friedman.test(Voldoendes ~ Periode | Studentnummer,
+                      Voldoendes_Geschiedenis)$statistic
+
+# Sla het aantal deelnemers op
+N &lt;- length(unique(Voldoendes_Geschiedenis$Studentnummer))  
+
+# Sla het aantal groepen op
+k &lt;- length(unique(Voldoendes_Geschiedenis$Periode))
+
+# Bereken de effectmaat
+W &lt;- Chi2 / (N * (k - 1))
+
+# Print de effectmaat
+paste(&quot;De effectmaat is&quot;, W)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Kruskal-Wallis-test-3.R --><!-- ## CLOSEDBLOK: Kruskal-Wallis-test-4.R --><!-- ## /CLOSEDBLOK: Kruskal-Wallis-test-4.R -->
+<!-- ## TEKSTBLOK: Kruskal-Wallis-test-5.R -->
+<ul class="simple">
+<li><p><em>χ^2^~<code class="docutils literal notranslate"><span class="pre">vdf</span></code>~</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vChi2</span></code>, <em>p</em> &lt; 0,0001, <em>W</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(W)</span></code></p></li>
+<li><p>De p-waarde is kleiner dan 0,05, dus de H~0~ wordt verworpen.<a class="footnote-reference brackets" href="#id24" id="id15">14</a></p></li>
+<li><p>Er is een significant verschil tussen het aantal voldoendes in de vier onderwijsperioden; het effect van de onderwijsperiode op het aantal voldoendes is klein</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Kruskal-Wallis-test-5.R --></div>
+<div class="section" id="post-hoc-toets-wilcoxon-signed-rank-toets">
+<h2>Post-hoc toets: Wilcoxon signed rank toets<a class="headerlink" href="#post-hoc-toets-wilcoxon-signed-rank-toets" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Mann-Whitney-U-test.R -->
+<p>Gebruik de <span class="xref myst">Wilcoxon signed rank toets</span> als post-hoc toets om te bepalen welke groepen significant verschillen. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">pairwise.wilcox.test()</span></code> met als eerste argument de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Voldoendes_Geschiedenis$Voldoendes</span></code>, als tweede argument de onafhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Voldoendes_Geschiedenis$Periode</span></code>, als derde argument <code class="docutils literal notranslate"><span class="pre">paired</span> <span class="pre">=</span> <span class="pre">TRUE</span></code> om aan te geven dat er gepaarde groepen zijn en als vierde argument <code class="docutils literal notranslate"><span class="pre">p.adjust.method</span> <span class="pre">=</span> <span class="pre">&quot;bonferroni&quot;</span></code> om aan te geven dat de <em>Bonferroni correctie</em> toegepast moet worden. Naast de p-waarde worden bij de <span class="xref myst">Wilcoxon signed rank toets</span> de som van de rangnummers gerapporteerd. Voor meer informatie, zie de toetspagina van de <span class="xref myst">Wilcoxon signed rank toets</span>.</p>
+<!-- ## /TEKSTBLOK: Mann-Whitney-U-test.R -->
+<!-- ## OPENBLOK: Mann-Whitney-U-test.R -->
+<div class="highlight-{r notranslate"><div class="highlight"><pre><span></span>pairwise.wilcox.test(Voldoendes_Geschiedenis$Voldoendes, 
+                     Voldoendes_Geschiedenis$Periode, 
+                     paired = TRUE,
+                     p.adjust.method = &quot;bonferroni&quot;)
+</pre></div>
+</div>
+<!-- ## /OPENBLOK: Mann-Whitney-U-test.R -->
+<!-- ## CLOSEDBLOK: Mann-Whitney-U-test1.R -->
+<div class="highlight-{r notranslate"><div class="highlight"><pre><span></span>posthoc &lt;- pairwise.wilcox.test(Voldoendes_Geschiedenis$Voldoendes, 
+                     Voldoendes_Geschiedenis$Periode, 
+                     paired = TRUE,
+                     p.adjust.method = &quot;bonferroni&quot;)$p.value
+
+</pre></div>
+</div>
+<!-- ## /CLOSEDBLOK: Mann-Whitney-U-test1.R -->
+<p>De <span class="xref myst">Wilcoxon signed rank toets</span> gebruikt de som van positieve en negatieve rangnummers van de verschilscores om de significantie van de toets te bepalen. Deze sommen beschrijven het verschil tussen twee gepaarde groepen waarbij de groep met een hogere som van rangnummers ook hogere waarden op de afhankelijke variabele heeft. In deze casus heeft de periode met hogere rangnummers een hoger aantal voldoendes. Bereken de som van de positieve en negatieve rangnummers voor alle vergelijkingen. In de onderstaande code worden de gemiddelde rangnummers voor alle post-hoc toetsen berekend. De resultaten zijn te zien in Tabel 1.</p>
+<!-- ## OPENBLOK: Mann-Whitney-U-test2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Definieer een functie die de sommen van de positieve en negatieve rangnummers berekent
+Sommen_rangnummers &lt;- function(Groep_1, Groep_2){
+  
+  # Bereken de verschilscores
+  Verschilscores &lt;- Groep_1 - Groep_2
+  
+  # Rangschik de absolute waarden van de verschilscores
+  Rangnummers &lt;- rank(abs(Verschilscores))
+
+  # Maak een vector met daarin de tekens (plus of min) van de verschilscores
+  Tekens &lt;- sign(Verschilscores)
+
+  # Bereken de som van de positieve rangnummers
+  Som_positief &lt;- sum(Rangnummers[Tekens == 1])
+
+  # Bereken de som van de negatieve rangnummers
+  Som_negatief &lt;- sum(Rangnummers[Tekens == -1])
+  
+  # Retourneer de som van de positieve en negatieve rangnummers
+  return(list(Positief = Som_positief, Negatief = Som_negatief))
+}
+
+# Definieer de variabelen die het aantal voldoendes bevatten per periode
+Voldoendes_Periode_1 &lt;- Voldoendes_Geschiedenis$Voldoendes[Voldoendes_Geschiedenis$Periode == 1]
+Voldoendes_Periode_2 &lt;- Voldoendes_Geschiedenis$Voldoendes[Voldoendes_Geschiedenis$Periode == 2]
+Voldoendes_Periode_3 &lt;- Voldoendes_Geschiedenis$Voldoendes[Voldoendes_Geschiedenis$Periode == 3]
+Voldoendes_Periode_4 &lt;- Voldoendes_Geschiedenis$Voldoendes[Voldoendes_Geschiedenis$Periode == 4]
+
+# Bereken de positieve en negatieve som van rangnummers
+
+## De som van rangnummers per vergelijking
+(Som_1_2 &lt;- Sommen_rangnummers(Voldoendes_Periode_1, Voldoendes_Periode_2))
+Som_1_3 &lt;- Sommen_rangnummers(Voldoendes_Periode_1, Voldoendes_Periode_3)
+Som_1_4 &lt;- Sommen_rangnummers(Voldoendes_Periode_1, Voldoendes_Periode_4)
+Som_2_3 &lt;- Sommen_rangnummers(Voldoendes_Periode_2, Voldoendes_Periode_3)
+Som_2_4 &lt;- Sommen_rangnummers(Voldoendes_Periode_2, Voldoendes_Periode_4)
+Som_3_4 &lt;- Sommen_rangnummers(Voldoendes_Periode_3, Voldoendes_Periode_4)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Mann-Whitney-U-test2.R -->
+<!-- ## TEKSTBLOK: posthoc6.R -->
+<p>| Vergelijking | p-waarde     |   Som positieve rangnummers        | Som negatieve rangnummers     |
+| ————-  | ———-  | ——— | ———- | ——– |
+| Periode 1 vs. 2    | 0,496<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">#Round_and_format(posthoc[2,1])</span></code> |<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_1_2[[1]])</span></code> | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_1_2[[2]])</span></code> |
+| Periode 1 vs. 3    | 0,814<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">#Round_and_format(posthoc[3,3])</span></code> | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_1_3[[1]])</span></code> | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_1_3[[2]])</span></code> |
+| Periode 1 vs. 4    | &lt; 0,001 <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">#Round_and_format(posthoc[2,2])</span></code> | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_1_4[[1]])</span></code> | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_1_4[[2]])</span></code> |
+| Periode 2 vs. 3    | 0,031<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">#Round_and_format(posthoc[3,1])</span></code> |  <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_2_3[[1]])</span></code> | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_2_3[[2]])</span></code> |
+| Periode 2 vs. 4    | 0,259<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">#Round_and_format(posthoc[1,1])</span></code> | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_2_4[[1]])</span></code> | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_2_4[[2]])</span></code> |
+| Periode 3 vs. 4    | &lt; 0,0001 <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">#Round_and_format(posthoc[3,2])</span></code> | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_3_4[[1]])</span></code> | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_3_4[[2]])</span></code> |</p>
+<p><em>Tabel 1. Resultaten post-hoc toetsen voor de vergelijking van het aantal voldoendes voor periode 1, 2, 3 en 4.</em></p>
+<!-- ## /TEKSTBLOK: posthoc6.R --><!-- ## TEKSTBLOK: posthoc7.R -->
+<p>De significante verschillen op de post-hoc toetsen zijn:</p>
+<ul class="simple">
+<li><p>Het aantal voldoendes in periode 1 (Som = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_1_4[[1]])</span></code>) verschilt significant van het aantal voldoendes in periode 4 (Som = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_1_4[[2]])</span></code>), <em>p</em> &lt; 0,001. De hogere som van rangnummers in periode 4 duidt erop dat het aantal voldoendes hoger is in periode 4 ten opzichte van periode 1.</p></li>
+<li><p>Het aantal voldoendes in periode 2 (Som = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_2_3[[1]])</span></code>) verschilt significant van het aantal voldoendes in periode 3 (Som = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_2_3[[2]])</span></code>), <em>p</em> = 0,031. De hogere som van rangnummers in periode 2 duidt erop dat het aantal voldoendes hoger is in periode 2 ten opzichte van periode 3.</p></li>
+<li><p>Het aantal voldoendes in periode 3 (Som = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_3_4[[1]])</span></code>) verschilt significant van het aantal voldoendes in periode 4 (Som = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_3_4[[2]])</span></code>), <em>p</em> &lt; 0,0001. De hogere som van rangnummers in periode 4 duidt erop dat het aantal voldoendes hoger is in periode 4 ten opzichte van periode 3.</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: posthoc7.R --></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="rapportage">
+<h1>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Rapportage.R -->
+<p>De <em>Friedman’s ANOVA</em> is uitgevoerd om te toetsen of er verschillen zijn tussen het aantal voldoendes in de vier onderwijsperioden van het eerste jaar van de bachelor Geschiedenis. Uit de resultaten kan afgelezen worden dat er een significant verschil is tussen de onderwijsperioden wat betreft het aantal voldoendes, <em>χ^2^~<code class="docutils literal notranslate"><span class="pre">vdf</span></code>~</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vChi2</span></code>, <em>p</em> &lt; 0,0001, <em>W</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(W)</span></code>.</p>
+<p>De <span class="xref myst">Wilcoxon signed rank toets</span> is uitgevoerd als post-hoc toets om te onderzoeken tussen welke perioden er verschillen zijn in het aantal voldoendes dat studenten behalen. De <em>Bonferroni correctie</em> is gebruikt om de Type I fout te voorkomen die gepaard gaat met het veelvuldig toetsen. Er is een significant verschil (<em>p</em> &lt; 0,001) gevonden tussen periode 1 (Som = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_1_4[[1]])</span></code>) en periode 4 (Som = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_1_4[[2]])</span></code>) waarbij er meer voldoendes zijn gehaald in periode 4. Daarnaast is er een significant verschil (<em>p</em> = 0,031) gevonden tussen periode 2 (Som = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_2_3[[1]])</span></code>) en periode 3 (Som = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_2_3[[2]])</span></code>) waarbij er meer voldoendes zijn gehaald in periode 2. Ook is er een significant verschil (<em>p</em> &lt; 0,0001) gevonden tussen periode 3 (Som = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_3_4[[1]])</span></code>) en periode 4 (Som = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Som_3_4[[2]])</span></code>) waarbij er meer voldoendes zijn gehaald in periode 4. De overige vergelijkingen tussen opleidingen leidden niet tot een significant verschil. De resultaten suggereren dat periode 2 en 4 periodes zijn waarin studenten een groot aantal voldoendes halen voor de drie vakken die ze volgen. In periode 1 en 3 lijkt het aantal voldoendes per student wat lager te zijn. Het is daarom handig om in te zoomen op deze onderwijsperioden om de oorzaak van studievertraging te vinden.</p>
+<!-- ## /TEKSTBLOK: Rapportage.R -->
+<!-- ## CLOSEDBLOK: Footer.R --><!-- ## /CLOSEDBLOK: Footer.R -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id16"><span class="brackets">16</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id4">2</a>)</span></dt>
+<dd><p>Een ordinale variabele is een categorische variabele waarbij de categorieën geordend kunnen worden. Een voorbeeld is de variabele beoordeling met de categorieën Onvoldoende, Voldoende, Goed en Uitstekend.</p>
+</dd>
+<dt class="label" id="id17"><span class="brackets">1</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id5">2</a>,<a href="#id7">3</a>)</span></dt>
+<dd><p>Laerd statistics (2018). <em>Friedman Test using SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/friedman-test-using-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/friedman-test-using-spss-statistics.php</a>.</p>
+</dd>
+<dt class="label" id="id18"><span class="brackets">18</span><span class="fn-backref">(<a href="#id3">1</a>,<a href="#id6">2</a>)</span></dt>
+<dd><p>Een nominale variabele is een categorische variabele waarbij de categorieën niet geordend kunnen worden. Een voorbeeld is de variabele windstreek (noord, oost, zuid, west) en geslacht (man of vrouw).</p>
+</dd>
+<dt class="label" id="id19"><span class="brackets">5</span><span class="fn-backref">(<a href="#id8">1</a>,<a href="#id9">2</a>)</span></dt>
+<dd><p>Field, A., Miles, J., &amp; Field, Z. (2012). <em>Discovering statistics using R</em>. London: Sage publications.</p>
+</dd>
+<dt class="label" id="id20"><span class="brackets">6</span><span class="fn-backref">(<a href="#id10">1</a>,<a href="#id13">2</a>)</span></dt>
+<dd><p>University of Sheffield. <em>Friedman test in SPSS</em>. <a class="reference external" href="https://www.sheffield.ac.uk/polopoly_fs/1.714575%21/file/stcp-marshall-FriedmanS.pdf">Mathematics and Statistics Help (MASH)</a>. Bezocht op 13 maart 2020.</p>
+</dd>
+<dt class="label" id="id21"><span class="brackets"><a class="fn-backref" href="#id11">7</a></span></dt>
+<dd><p><em>Kendall’s W</em> wordt berekend door de teststatistiek van <em>Friedman’s ANOVA</em> (dit is de <em>χ^2^</em>) te delen door het aantal deelnemers <em>N</em> en het aantal groepen <em>k</em> minus één, i.e. <span class="math notranslate nohighlight">\(W = \frac{\chi^2}{N(k-1)}\)</span>.</p>
+</dd>
+<dt class="label" id="id22"><span class="brackets"><a class="fn-backref" href="#id12">8</a></span></dt>
+<dd><p>Kassambara, A. (2020). <em>rstatix: Pipe-Friendly Framework for Basic Statistical Tests</em>. <a class="reference external" href="https://CRAN.R-project.org/package=rstatix">R package version 0.4.0.</a>.</p>
+</dd>
+<dt class="label" id="id23"><span class="brackets"><a class="fn-backref" href="#id14">19</a></span></dt>
+<dd><p>Met een deelnemer wordt het object bedoeld dat geobserveerd wordt, bijvoorbeeld een student, een inwoner van Nederland, een opleiding of een organisatie. Met een observatie wordt de waarde bedoeld die de deelnemer heeft voor een bepaalde variabele. Een deelnemer heeft dus meestal een observatie voor meerdere variabelen.</p>
+</dd>
+<dt class="label" id="id24"><span class="brackets"><a class="fn-backref" href="#id15">14</a></span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met Type I en Type II fouten.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./r"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="23%20Mann-Whitney%20U%20toets%20II%20R.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="25%20Kruskal%20Wallis%20toets%20II%20R.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

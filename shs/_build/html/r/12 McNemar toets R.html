@@ -1,0 +1,879 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html" />
+    <link rel="prev" title="Toepassing" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/r/12 McNemar toets R.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fr/12 McNemar toets R.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mcnemar-toets">
+   McNemar toets
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumpties">
+   Assumpties
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#frequentiematrix">
+   Frequentiematrix
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#de-data-bekijken">
+   De data bekijken
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   McNemar toets
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uitvoering">
+     Uitvoering
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rapportage">
+     Rapportage
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-924f26e6aa13&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span>exists<span class="o">(</span><span class="s2">&quot;Substitute_var&quot;</span><span class="o">))</span> <span class="o">{</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.R -->
+<!-- ## /CLOSEDBLOK: Reticulate.R -->
+<!-- ## OPENBLOK: Data-aanmaken.R --><!-- ## /OPENBLOK: Data-aanmaken.R -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Link1.R -->
+<p>Gebruik de <em>McNemar toets</em> om te toetsen of er verschillen zijn voor de frequenties van een binaire<a class="footnote-reference brackets" href="#id10" id="id1">1</a> variabele tussen twee gepaarde groepen.<a class="footnote-reference brackets" href="#id11" id="id2">2</a><sup>, </sup><a class="footnote-reference brackets" href="#id12" id="id3">3</a> De <em>McNemar toets</em> kan in theorie ook gebruikt worden om twee gepaarde groepen te vergelijken op een nominale variabele met meer dan twee categorieën. Deze toetspagina illustreert de toets echter voor een binaire variabele. Hoewel het dus mogelijk met de <em>McNemar toets</em> is om twee gepaarde groepen te vergelijken wat betreft een nominale variabele, wordt hiervoor echter de voorkeur gegeven aan de <span class="xref myst">Bhapkar toets</span>.</p>
+<!-- ## /TEKSTBLOK: Link1.R -->
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id = "casus">
+De decaan van een hogeschool merkt dat weinig studenten met een functiebeperking een beroep doen op de Financiële Ondersteuning Studenten (FOS). Ze besluit daarom in december een interventie te doen en stuurt al deze studenten een e-mail over de FOS. Een half jaar later (in de maand juni) maakt ze de balans op: doen studenten met een functiebeperking vaker een beroep op de FOS na de interventie?
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is.</p>
+<p><em>H~0~</em>: Er is geen verschil in de verdeling van het aantal studenten voor en na de interventie dat wel of niet gebruik maakt van de FOS.</p>
+<p><em>H~A~</em>: Er is een verschil in de verdeling van het aantal studenten voor en na de interventie dat wel of niet gebruik maakt van de FOS.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="mcnemar-toets">
+<h1>McNemar toets<a class="headerlink" href="#mcnemar-toets" title="Permalink to this headline">¶</a></h1>
+<p>De <em>McNemar toets</em> toetst of er verschillen zijn tussen de frequenties van een binaire variabele tussen twee gepaarde groepen. In de huidige casus gaat het om de frequenties van studenten die wel of niet gebruik maken van de Financiële Ondersteuning Studenten (FOS). De twee gepaarde groepen zijn het meetmoment in december en het meetmoment in juni. Er zijn meerdere methoden om de p-waarde van de <em>McNemar toets</em> te berekenen. De <em>mid p-value</em> methode is het beste qua onderscheidend vermogen<a class="footnote-reference brackets" href="#id13" id="id4">7</a> en type I fout<a class="footnote-reference brackets" href="#id14" id="id5">8</a>. Bij deze methode wordt de p-waarde op een exacte manier berekend waarna een correctie wordt toegepast.<a class="footnote-reference brackets" href="#id15" id="id6">9</a> Meer informatie over de verschillende methoden van de <em>McNemar toets</em> is te vinden in <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3716987/">dit artikel</a>.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="assumpties">
+<h1>Assumpties<a class="headerlink" href="#assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Om de <em>McNemar toets</em> uit te voeren, moet de data aan een aantal voorwaarden voldoen. Er moet sprake zijn van gepaarde metingen, meestal twee verschillende metingen bij dezelfde steekproef. Elke meting moet binair zijn, wat betekent dat er twee categorieën zijn voor de gemeten variabele. Daarnaast mag er geen overlap zijn tussen de categorieën van de categorische variabele: elke observatie past slechts in een van beide categorieën.<a class="footnote-reference brackets" href="#id12" id="id7">3</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="frequentiematrix">
+<h1>Frequentiematrix<a class="headerlink" href="#frequentiematrix" title="Permalink to this headline">¶</a></h1>
+<p>De <em>McNemar toets</em> gaat uit van een frequentiematrix, een matrix waarin de rijen de eerste meting van de steekproef bevat en de kolommen de tweede meting. Een voorbeeld bij de casus is weergegeven in Tabel 1.</p>
+<!-- ## CLOSEDBLOK: Groepsgrootte0.R -->
+<!-- ## /CLOSEDBLOK: Groepsgrootte0.R -->
+<!-- ## CLOSEDBLOK: Groepsgrootte1.R --><!-- ## /CLOSEDBLOK: Groepsgrootte1.R -->
+<!-- ## TEKSTBLOK: Groepsgrootte2.R -->
+<p>||                      | Juni    |
+|————-| ——————– | ————-| ————|
+||                      | FOS | geen FOS|
+|<strong>December</strong>| FOS      | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_frequentiematrix[&quot;ja&quot;,&quot;ja&quot;]</span></code> | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_frequentiematrix[&quot;ja&quot;,&quot;nee&quot;]</span></code>     |
+|            | Geen FOS | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_frequentiematrix[&quot;nee&quot;,&quot;ja&quot;]</span></code> | <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_frequentiematrix[&quot;nee&quot;,&quot;nee&quot;]</span></code>     |
+<em>Tabel 1. Frequentiematrix van het aantal studenten dat een beroep doet op de FOS in december en juni.</em></p>
+<p>De cel linksboven bevat het aantal studenten dat zowel in december als juni een beroep heeft gedaan op de FOS; dit zijn er <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_frequentiematrix[&quot;ja&quot;,&quot;ja&quot;]</span></code>. De cel rechtsonder bevat het aantal studenten dat zowel in december als juni geen beroep heeft gedaan op de FOS; dit zijn er <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_frequentiematrix[&quot;nee&quot;,&quot;nee&quot;]</span></code>. Beide cellen staan op de diagonaal van de tabel en worden daarom de diagonale elementen genoemd.</p>
+<p>In de cel rechtsboven staat het aantal studenten dat wel in december maar niet in juni een beroep op de FOS heeft gedaan; dit zijn er <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_frequentiematrix[&quot;ja&quot;,&quot;nee&quot;]</span></code>. In de cel linksonder staat het aantal studenten dat niet in december maar wel in juni een beroep op de FOS heeft gedaan; dit zijn er <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_frequentiematrix[&quot;nee&quot;,&quot;ja&quot;]</span></code>. Deze cellen zijn geen onderdeel van de diagonaal van de tabel en worden daarom de niet-diagonale elementen genoemd.</p>
+<!-- ## /TEKSTBLOK: Groepsgrootte2.R -->
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="de-data-bekijken">
+<h1>De data bekijken<a class="headerlink" href="#de-data-bekijken" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Data-bekijken1.R -->
+<p>Er is een dataset ingeladen genaamd <code class="docutils literal notranslate"><span class="pre">FOS_studenten</span></code>. In deze dataset is voor elke student aangegeven of ze wel of geen beroep op de FOS hebben gedaan in december en in juni.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken1.R -->
+<!-- ## OPENBLOK: Data-bekijken2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Eerste 6 observaties</span>
+<span class="n">head</span><span class="p">(</span><span class="n">FOS_studenten</span><span class="p">)</span>
+
+<span class="c1">## Laatste 6 observaties</span>
+<span class="n">tail</span><span class="p">(</span><span class="n">FOS_studenten</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken2.R -->
+<!-- ## TEKSTBLOK: Data-kruistabel1.R -->
+<p>Een kruistabel geeft de aantallen observaties weer voor de combinaties van de categorieën van de variabelen <code class="docutils literal notranslate"><span class="pre">Maand</span></code> en <code class="docutils literal notranslate"><span class="pre">FOS</span></code>. In feite laat dit zien hoeveel studenten er wel of niet een beroep doen op de FOS in december en in juni. Een kruistabel verschilt dus van een frequentiematrix. Maak de kruistabel met de functie <code class="docutils literal notranslate"><span class="pre">table()</span></code> met als argumenten de variabele <code class="docutils literal notranslate"><span class="pre">FOS_studenten$FOS</span></code>, die weergeeft of studenten wel of geen beroep op de FOS doen, en de variabele <code class="docutils literal notranslate"><span class="pre">FOS_studenten$Maand</span> </code>, die het meetmoment (december of juni) weergeeft.</p>
+<!-- ## /TEKSTBLOK: Data-kruistabel1.R -->
+<!-- ## OPENBLOK: Data-kruistabel2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>## Maak een kruistabel
+FOS_studenten_kruistabel &lt;- table(FOS_studenten$`FOS`, FOS_studenten$Maand)
+
+## Print de kruistabel 
+print(FOS_studenten_kruistabel)
+
+## Print een tabel met proporties, tweede argument 2 zorgt ervoor dat de 
+## proporties per kolom berekend worden
+prop.table(FOS_studenten_kruistabel, 2)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-kruistabel2.R -->
+<p>De kruistabel laat zien dat het aantal studenten dat een beroep op de FOS heeft gedaan hoger is en het aantal studenten dat geen beroep op de FOS heeft gedaan lager is in juni. Het percentage studenten dat een beroep op de FOS heeft gedaan is toegenomen; dit is ook te zien in de kruistabel met proporties.</p>
+<!-- ## TEKSTBLOK: Data-bekijken3.R -->
+<p>In aanvulling op de kruistabel, geeft de frequentiematrix ook een goede indruk van de data. In de frequentiematrix worden de aantallen studenten die wel of geen beroep op de FOS hebben gedaan tegen elkaar uitgezet voor december en juni. Sla daarom de variabele <code class="docutils literal notranslate"><span class="pre">FOS</span></code> apart op in twee vectoren: een voor december en een voor juni. Maak daarna de frequentiematrix.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken3.R -->
+<!-- ## OPENBLOK: Data-beschrijven.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>## Definieer de groepen
+December &lt;- FOS_studenten$`FOS`[FOS_studenten$Maand == &quot;december&quot;]
+Juni &lt;- FOS_studenten$`FOS`[FOS_studenten$Maand == &quot;juni&quot;]
+
+## Maak een frequentiematrix
+FOS_studenten_frequentiematrix &lt;- table(December, Juni)
+
+## Print de frequentiematrix 
+print(FOS_studenten_frequentiematrix)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven.R -->
+<!-- ## TEKSTBLOK: Data-bekijken4.R -->
+<p>De diagonale elementen bevatten <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_frequentiematrix[&quot;ja&quot;,&quot;ja&quot;]</span></code> en <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_frequentiematrix[&quot;nee&quot;,&quot;nee&quot;]</span></code> observaties. De niet-diagonale elementen bevatten <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_frequentiematrix[&quot;ja&quot;,&quot;nee&quot;]</span></code> en <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_frequentiematrix[&quot;nee&quot;,&quot;ja&quot;]</span></code> observaties.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken4.R -->
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="id8">
+<h1>McNemar toets<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="uitvoering">
+<h2>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: McNemar-toets1.R -->
+<p>Voer de <em>McNemar toets</em> uit om te onderzoeken of er een verschil is tussen de frequenties van de studenten dat wel of geen beroep doet op de FOS voor en na de interventie van de decaan. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">exact2x2()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">exact2x2</span></code> met als eerste argument de frequentiematrix <code class="docutils literal notranslate"><span class="pre">FOS_studenten_frequentiematrix</span></code>, als tweede argument <code class="docutils literal notranslate"><span class="pre">paired</span> <span class="pre">=</span> <span class="pre">TRUE</span></code> omdat er een gepaarde vergelijking wordt gemaakt en als derde argument <code class="docutils literal notranslate"><span class="pre">midp</span> <span class="pre">=</span> <span class="pre">TRUE</span></code> omdat de <em>mid p-value</em> methode gebruikt wordt.</p>
+<!-- ## /TEKSTBLOK: McNemar-toets1.R -->
+<!-- ## OPENBLOK: McNemar-toets2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>library(exact2x2)
+
+## Definieer de groepen
+December &lt;- FOS_studenten$`FOS`[FOS_studenten$Maand == &quot;december&quot;]
+Juni &lt;- FOS_studenten$`FOS`[FOS_studenten$Maand == &quot;juni&quot;]
+
+## Maak een frequentiematrix
+FOS_studenten_frequentiematrix &lt;- table(December, Juni)
+
+# Voer McNemar toets uit
+exact2x2(FOS_studenten_frequentiematrix,
+         paired = TRUE,
+         midp = TRUE)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: McNemar-toets2.R -->
+<p>Bereken het verschil tussen de proporties studenten dat een beroep doet op de FOS in december en juni. Op deze manier kan een (eventueel) significant resultaat geïnterpreteerd worden.</p>
+<!-- ## OPENBLOK: McNemar-toets5.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>## Maak een kruistabel
+FOS_studenten_kruistabel &lt;- table(FOS_studenten$`FOS`, FOS_studenten$Maand)
+
+## Print een tabel met proporties, tweede argument 2 zorgt ervoor dat de 
+## proporties per kolom berekend worden
+FOS_studenten_kruistabel_proporties &lt;- prop.table(FOS_studenten_kruistabel, 2)
+
+# Bereken het verschil in proporties
+Verschil_proporties &lt;- FOS_studenten_kruistabel_proporties[&quot;ja&quot;, &quot;juni&quot;] - FOS_studenten_kruistabel_proporties[&quot;ja&quot;, &quot;december&quot;]
+
+# Print het verschil in proporties
+Verschil_proporties
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: McNemar-toets5.R -->
+<!-- ## TEKSTBLOK: McNemar-toets5.R -->
+<ul class="simple">
+<li><p>Er is een significant verschil tussen de frequenties van het aantal studenten dat wel of niet gebruik maakt van de FOS tussen december en juni, <em>p</em> &lt; 0,0001</p></li>
+<li><p>De p-waarde is kleiner dan 0,05, dus de H~0~ wordt verworpen.<a class="footnote-reference brackets" href="#id16" id="id9">6</a></p></li>
+<li><p>Het verschil in proporties is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Verschil_proporties)</span></code>, er zijn dus meer studenten die gebruik maken van de FOS in juni ten opzichte van december</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: McNemar-toets5.R -->
+</div>
+<div class="section" id="rapportage">
+<h2>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Rapportage.R -->
+<p>De <em>McNemar toets</em> is uitgevoerd om uit te vinden of er een verschil is in de frequenties van het aantal studenten dat wel of geen beroep doet op de FOS voor en na de interventie van de decaan. De interventie heeft als doel het aantal studenten met een functiebeperking dat een beroep doet op de FOS te verhogen. De resultaten laten een significant verschil zien tussen de frequenties voor en na de interventie (<em>p</em> &lt; 0,0001), wat betekent dat de nulhypothese verworpen kan worden. Het verschil in de proportie studenten dat een beroep doet op de FOS is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Verschil_proporties)</span></code> . Het verschil in proporties en de kruistabel (Tabel 2) illustreren dat het percentage studenten dat een beroep doet op de FOS is toegenomen na de interventie.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>December</p></th>
+<th class="head"><p>Juni</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>FOS</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_kruistabel[&quot;ja&quot;,&quot;december&quot;]</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_kruistabel[&quot;ja&quot;,&quot;juni&quot;]</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>geen FOS</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_kruistabel[&quot;nee&quot;,&quot;december&quot;]</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">FOS_studenten_kruistabel[&quot;nee&quot;,&quot;juni&quot;]</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><em>Tabel 2. Kruistabel van het aantal studenten dat een beroep doet op de FOS in december en juni</em></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<!-- ## /TEKSTBLOK: Rapportage.R -->
+<!-- ## CLOSEDBLOK: Footer.R --><!-- ## /CLOSEDBLOK: Footer.R -->
+<!-- ## TEKSTBLOK: Extra_bron.R -->
+<!-- ## /TEKSTBLOK: Extra_bron.R -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id10"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Binaire variabelen: twee elkaar uitsluitende waarden, zoals ja of nee, 0 of 1, aan of uit.</p>
+</dd>
+<dt class="label" id="id11"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Van Geloven, N., &amp; Holman, R., (4 juni 2014). <em>McNemar toets</em>. <a class="reference external" href="https://wikistatistiek.amc.nl/index.php/McNemar_toets">Wiki Statistiek Academisch Medisch Centrum</a>.</p>
+</dd>
+<dt class="label" id="id12"><span class="brackets">3</span><span class="fn-backref">(<a href="#id3">1</a>,<a href="#id7">2</a>)</span></dt>
+<dd><p>Laerd statistics (2018). <em>McNemar’s test using SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/mcnemars-test-using-spss-statistics.php">Laerd statistics</a></p>
+</dd>
+<dt class="label" id="id13"><span class="brackets"><a class="fn-backref" href="#id4">7</a></span></dt>
+<dd><p>Onderscheidend vermogen, in het Engels power genoemd, is de kans dat de nulhypothese verworpen wordt wanneer de alternatieve hypothese waar is.</p>
+</dd>
+<dt class="label" id="id14"><span class="brackets"><a class="fn-backref" href="#id5">8</a></span></dt>
+<dd><p>Een type I fout is de kans dat een van de nulhypotheses onterecht wordt verworpen en er bij toeval een verband wordt ontdekt dat er niet is.</p>
+</dd>
+<dt class="label" id="id15"><span class="brackets"><a class="fn-backref" href="#id6">9</a></span></dt>
+<dd><p>Fagerland, M.W., Lydersen, S., &amp; Laake, P. (2013). <em>The McNemar test for binary matched-pairs data: mid-p and asymptotic are better than exact conditional</em>. BMC medical research methodology, 13, 91. <a class="reference external" href="https://doi.org/10.1186/1471-2288-13-91">https://doi.org/10.1186/1471-2288-13-91</a></p>
+</dd>
+<dt class="label" id="id16"><span class="brackets"><a class="fn-backref" href="#id9">6</a></span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./r"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

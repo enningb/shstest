@@ -1,0 +1,977 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html" />
+    <link rel="prev" title="Toepassing" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/r/21 Chi-kwadraat toets voor goodness of fit en multinomiaaltoets R.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fr/21 Chi-kwadraat toets voor goodness of fit en multinomiaaltoets R.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumpties">
+   Assumpties
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#post-hoc-toetsen">
+   Post-hoc toetsen
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#de-data-bekijken">
+   De data bekijken
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chi-kwadraat-toets-voor-goodness-of-fit">
+   Chi-kwadraat toets voor goodness of fit
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#asssumptie-verwachte-frequenties">
+     Asssumptie verwachte frequenties
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uitvoering">
+     Uitvoering
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#post-hoc-toets-gestandaardiseerde-residuen">
+     Post-hoc toets: gestandaardiseerde residuën
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rapportage">
+     Rapportage
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multinomiaaltoets">
+   Multinomiaaltoets
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+     Uitvoering
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id20">
+     Rapportage
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-924f26e6aa13&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span>exists<span class="o">(</span><span class="s2">&quot;Substitute_var&quot;</span><span class="o">))</span> <span class="o">{</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.R -->
+<!-- ## /CLOSEDBLOK: Reticulate.R -->
+<!-- ## OPENBLOK: Data-aanmaken.R --><!-- ## /OPENBLOK: Data-aanmaken.R -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Link1.R -->
+<p>Gebruik de <em>Chi-kwadraat toets voor goodness of fit</em> om te onderzoeken of de geobserveerde frequenties van de categorieën van één categorische variabele met meer dan twee categorieën overeenkomt met de verwachte frequenties van de categorische variabele.<a class="footnote-reference brackets" href="#id21" id="id1">6</a><sup>,</sup><a class="footnote-reference brackets" href="#id22" id="id2">7</a> Met deze toets kunnen geobserveerde percentages met bekende of verwachte percentages vergeleken worden. Gebruik de exacte <em>multinomiaaltoets</em> bij een laag aantal observaties, dit wordt bij de assumpties toegelicht.<a class="footnote-reference brackets" href="#id23" id="id3">1</a> De <em>Chi-kwadraat toets voor goodness of fit</em> kan ook gebruikt worden voor een categorische variabele met twee categorieën. Voor de exacte <em>multinomiaaltoets</em> geldt dit ook, maar in dat geval is de toets gelijk aan de exacte <em>binomiaaltoets</em> die te vinden is in bijbehorende <span class="xref myst">toetspagina</span>. De <em>Chi-kwadraat toets voor goodness of fit</em> en de exacte <em>multinomiaaltoets</em> zijn voor zowel nominale<a class="footnote-reference brackets" href="#id24" id="id4">9</a> als ordinale<a class="footnote-reference brackets" href="#id25" id="id5">8</a> variabelen te gebruiken.</p>
+<!-- ## /TEKSTBLOK: Link1.R -->
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id = "casus">
+<p>De opleidingsdirecteur van de bacheloropleiding Maritieme Techniek van een universiteit is geïnteresseerd in de resultaten van het Bindend Studie Advies (BSA) van de studenten die deze opleiding volgen. Zij is met name geïnteresseerd in de mate waarin de resultaten van het BSA overeenkomen met de resultaten van de universiteit. Bij deze universiteit ontvangt 70% van de studenten een positief BSA, 20% een negatief BSA en 10% een uitgesteld BSA aan het einde van het eerste jaar. Als blijkt dat de resultaten van het BSA voor de opleiding Maritieme Techniek afwijken van de resultaten van de gehele universiteit, dan kan dit een signaal voor de opleidingsdirecteur zijn om het eerste jaar van de opleiding anders in te richten.</p>
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is.</p>
+<p>H~0~: De verdeling van het BSA van de studenten Maritieme Techniek is gelijk aan de verdeling van de gehele universiteit (70% positief BSA, 20% negatief BSA en 10% uitgesteld BSA).</p>
+<p>H~A~: De verdeling van het BSA van de studenten Maritieme Techniek is niet gelijk aan de verdeling van de gehele universiteit (70% positief BSA, 20% negatief BSA en 10% uitgesteld BSA).</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="assumpties">
+<h1>Assumpties<a class="headerlink" href="#assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Om de <em>Chi-kwadraat toets voor goodness of fit</em> en de exacte <em>multinomiaaltoets</em>uit te voeren, moet de variabele nominaal<a class="footnote-reference brackets" href="#id24" id="id6">9</a> of ordinaal<a class="footnote-reference brackets" href="#id25" id="id7">8</a> zijn.<a class="footnote-reference brackets" href="#id21" id="id8">6</a> In deze casus is de categorische variabele nominaal, bij een ordinale categorische variabele worden de toetsen op dezelfde manier uitgevoerd.</p>
+<p>De categorieën van de variabele mogen niet overlappen, wat wil zeggen dat elke observatie slechts in een van de categorieën past. Voor de <em>Chi-kwadraat toets voor goodness of fit</em> mag in niet meer dan 20% van de categorieën van de variabele de verwachte frequentie minder dan vijf zijn. Als dit wel het geval is, gebruik dan de <em>multinomiaaltoets</em>.<a class="footnote-reference brackets" href="#id22" id="id9">7</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="post-hoc-toetsen">
+<h1>Post-hoc toetsen<a class="headerlink" href="#post-hoc-toetsen" title="Permalink to this headline">¶</a></h1>
+<p>De <em>Chi-kwadraat toets voor goodness of fit</em> en de exacte <em>multinomiaaltoets</em> worden gebruikt om te onderzoeken of de verdeling van een categorische variabele met meer dan twee categorieën overeenkomt met een verwachte verdeling. Als de verdelingen niet overeenkomen, is de volgende stap om te bepalen voor welke specifieke categorieën er een verschil is. Met behulp van post-hoc toetsen wordt vervolgens bepaald in welke categorieën de verschillen te vinden zijn.</p>
+<p>Als post-hoc toets voor de <em>Chi-kwadraat toets voor goodness of fit</em> wordt het gestandaardiseerde residu gebruikt. Dit is het gestandaardiseerde verschil tussen het (geobserveerde) aantal observaties en het verwachte aantal observaties, waarbij gestandaardiseerd betekent dat het een gemiddelde van 0 en standaardafwijking van 1 heeft. Op deze manier kunnen de verschillende residuen met elkaar vergeleken worden, omdat ze dezelfde schaal hebben. Voor elke cel in de kruistabel kan het gestandaardiseerde residu bepaald worden. Vergelijkbaar met z-scores<a class="footnote-reference brackets" href="#id26" id="id10">11</a> zijn deze residuen significant bij een waarde groter dan ± 1,96 wanneer een significantieniveau (α) van 0,05 wordt gehanteerd. Op deze manier kan bepaald worden in welke cellen er afwijkingen van de verwachte frequenties zijn.<a class="footnote-reference brackets" href="#id27" id="id11">12</a></p>
+<p>Voor de <em>multinomiaaltoets</em> zijn er geen voorgeschreven post-hoc toetsen. Vergelijk hiervoor de geobserveerde percentages met de percentages die verwacht worden om te onderzoeken in welke categorieën er afwijkingen zijn tussen het geobserveerde en verwachte percentage.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="de-data-bekijken">
+<h1>De data bekijken<a class="headerlink" href="#de-data-bekijken" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Data-bekijken1.R -->
+<p>Er is een dataset ingeladen genaamd <code class="docutils literal notranslate"><span class="pre">BSA_Maritieme_techniek</span></code>. Dit is een dataframe met studentnummers en een nominale variabele die laat zien wat voor BSA de student heeft ontvangen.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken1.R -->
+<!-- ## OPENBLOK: Data-bekijken2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Eerste 6 observaties</span>
+<span class="n">head</span><span class="p">(</span><span class="n">BSA_Maritieme_techniek</span><span class="p">)</span>
+<span class="c1">## Laatste 6 observaties</span>
+<span class="n">tail</span><span class="p">(</span><span class="n">BSA_Maritieme_techniek</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken2.R -->
+<p>Het is informatief om de frequenties en de percentages van de drie mogelijkheden van het BSA te bepalen voor de studenten Maritieme Techniek.</p>
+<!-- ## OPENBLOK: Data-bekijken3.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>## Bepaal de frequenties
+table(BSA_Maritieme_techniek$BSA_advies)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>## Bepaal de percentages
+100*prop.table(table(BSA_Maritieme_techniek$BSA_advies))
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /OPENBLOK: Data-bekijken3.R -->
+<!-- ## TEKSTBLOK: Data-bekijken4.R -->
+<p>Het aantal studenten met een positief BSA is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Tab[2])</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Proptab[2])</span></code>%), met een negatief BSA is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Tab[1])</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Proptab[1])</span></code>%) en met een uitgesteld BSA is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Tab[3])</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Proptab[3])</span></code>%). Het lijkt erop dat het percentage studenten met een positief BSA lager is dan het percentage van de gehele universiteit (70%) en dat het percentage studenten met een negatief BSA juist hoger is dan dat van de gehele universiteit (20%). De <em>Chi-kwadraat toets voor goodness of fit</em> of de <em>multinomiaaltoets</em> toetst of dit verschil significant is.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken4.R -->
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="chi-kwadraat-toets-voor-goodness-of-fit">
+<h1>Chi-kwadraat toets voor goodness of fit<a class="headerlink" href="#chi-kwadraat-toets-voor-goodness-of-fit" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="asssumptie-verwachte-frequenties">
+<h2>Asssumptie verwachte frequenties<a class="headerlink" href="#asssumptie-verwachte-frequenties" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Assumptie.R -->
+<p>De verwachte frequentie mag niet kleiner dan vijf zijn in 20% van de categorieën van de categorische variabele. Aangezien er een variabele met drie categorieën getoetst wordt, mag geen van de drie categorieën dus minder dan vijf als verwachte frequentie hebben. Bereken de verwachte frequentie met het argument <code class="docutils literal notranslate"><span class="pre">chisq.test()$expected</span></code> van de functie <code class="docutils literal notranslate"><span class="pre">chisq.test()</span></code>. De argumenten van de functie zijn de tabel met daarin de hoeveelheid studenten voor de drie mogelijkheden van het BSA <code class="docutils literal notranslate"><span class="pre">Tabel_volgorde</span></code> en een vector die aangeeft wat de verwachte proporties<a class="footnote-reference brackets" href="#id28" id="id12">4</a> zijn voor het aantal studenten met respectievelijk een positief, negatief of uitgesteld BSA <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">=</span> <span class="pre">c(0.7,</span> <span class="pre">0.2,</span> <span class="pre">0.1)</span></code>. Let hierbij goed op dat de volgorde van de BSA mogelijkheden in de tabel overeenkomt met de volgorde van de proporties.</p>
+<!-- ## /TEKSTBLOK: Assumptie.R -->
+<!-- ## OPENBLOK: Assumptie1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Maak een tabel met daarin de aantallen studenten per BSA mogelijkheid
+Tabel &lt;- table(BSA_Maritieme_techniek$BSA_advies)
+
+# Zet de tabel op volgorde Positief, Negatief, Uitgesteld
+Tabel_volgorde &lt;- Tabel[c(&quot;Positief&quot;, &quot;Negatief&quot;, &quot;Uitgesteld&quot;)]
+
+# Bereken de verwachte frequenties
+chisq.test(Tabel_volgorde, p = c(0.7, 0.2, 0.1))$expected
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Assumptie1.R -->
+<p>Geen van de verwachte frequenties is kleiner dan vijf, dus de <em>Chi-kwadraat toets voor goodness of fit</em> kan worden uitgevoerd.</p>
+</div>
+<div class="section" id="uitvoering">
+<h2>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h2>
+<p>Voer de <em>Chi-kwadraat toets voor goodness of fit</em>  uit om te onderzoeken of de verdeling van de BSA mogelijkheden van de studenten Maritieme Techniek overeenkomt met de verdeling van de gehele universiteit (70% positief BSA, 20% negatief BSA en 10% uitgesteld BSA).</p>
+<!-- ## TEKSTBLOK: Chi-kwadraat1.R -->
+<p>Gebruik de functie <code class="docutils literal notranslate"><span class="pre">chisq.test()</span></code> met als argumenten de tabel met daarin de hoeveelheid studenten voor de drie mogelijkheden van het BSA <code class="docutils literal notranslate"><span class="pre">Tabel_volgorde</span></code> en een vector die aangeeft wat de verwachte proporties<a class="footnote-reference brackets" href="#id28" id="id13">4</a> zijn voor het aantal studenten met respectievelijk een positief, negatief of uitgesteld BSA <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">=</span> <span class="pre">c(0.7,</span> <span class="pre">0.2,</span> <span class="pre">0.1)</span></code>. Let hierbij goed op dat de volgorde van de BSA mogelijkheden in de tabel overeenkomt met de volgorde van de proporties.</p>
+<!-- ## /TEKSTBLOK: Chi-kwadraat1.R --><!-- ## OPENBLOK: Chi-kwadraat2.R--><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Maak een tabel met daarin de aantallen studenten per BSA mogelijkheid
+Tabel &lt;- table(BSA_Maritieme_techniek$BSA_advies)
+
+# Zet de tabel op volgorde Positief, Negatief, Uitgesteld
+Tabel_volgorde &lt;- Tabel[c(&quot;Positief&quot;, &quot;Negatief&quot;, &quot;Uitgesteld&quot;)]
+
+# Voer de toets uit
+chisq.test(Tabel_volgorde, p = c(0.7, 0.2, 0.1))
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Chi-kwadraat2.R-->
+<!-- ## CLOSEDBLOK: Chi-kwadraat3.R--><!-- ## /CLOSEDBLOK: Chi-kwadraat3.R-->
+<!-- ## TEKSTBLOK: Chi-kwadraat4.R-->
+<ul class="simple">
+<li><p>χ^2^~<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vdf</span></code>~ = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vchi2</span></code>, <em>p</em> &lt; 0,001</p></li>
+<li><p>De p-waarde is kleiner dan 0,05, dus de nulhypothese wordt verworpen.<a class="footnote-reference brackets" href="#id29" id="id14">5</a></p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Chi-kwadraat4.R--></div>
+<div class="section" id="post-hoc-toets-gestandaardiseerde-residuen">
+<h2>Post-hoc toets: gestandaardiseerde residuën<a class="headerlink" href="#post-hoc-toets-gestandaardiseerde-residuen" title="Permalink to this headline">¶</a></h2>
+<p>Voer post-hoc toetsen uit om te bepalen voor welke BSA mogelijkheden er verschillen zijn tussen de verdeling van de studenten Maritieme Techniek en de verdeling van de gehele universiteit. Inspecteer hiervoor de Pearson residuen van de <em>Chi-kwadraat toets voor onafhankelijkheid</em> op waarden groter dan 1,96 en kleiner dan -1,96. Let op dat hier nog geen correctie voor meerdere toetsen plaatsvindt.<a class="footnote-reference brackets" href="#id30" id="id15">10</a></p>
+<!-- ## TEKSTBLOK: Chi2-toets post-hoc0.R -->
+<!-- ## /TEKSTBLOK: Chi2-toets post-hoc0.R -->
+<!-- ## OPENBLOK: Chi2-toets post-hoc1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Maak een tabel met daarin de aantallen studenten per BSA mogelijkheid
+Tabel &lt;- table(BSA_Maritieme_techniek$BSA_advies)
+
+# Zet de tabel op volgorde Positief, Negatief, Uitgesteld
+Tabel_volgorde &lt;- Tabel[c(&quot;Positief&quot;, &quot;Negatief&quot;, &quot;Uitgesteld&quot;)]
+
+# Voer de toets uit
+Resultaat &lt;- chisq.test(Tabel_volgorde, p = c(0.7, 0.2, 0.1))
+
+# Bekijk de gestandaardiseerde residuën
+Resultaat$residuals
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Chi2-toets post-hoc1.R -->
+<!-- ## CLOSEDBLOK: Chi2-toets post-hoc1_1.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Chi2-toets post-hoc1_1.R -->
+<p>De post-hoc toetsing op basis van de gestandaardiseerde residuën kan als volgt geïnterpreteerd worden:</p>
+<!-- ## TEKSTBLOK: Chi2-toets post-hoc2.R-->
+<ul class="simple">
+<li><p>Significant lager aantal observaties bij een positief BSA , <em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_res[1])</span></code></p></li>
+<li><p>Significant hoger aantal observaties bij een negatief BSA , <em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_res[2])</span></code></p></li>
+<li><p>Geen significant verschillend aantal observaties bij een uitgesteld BSA , <em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_res[3])</span></code></p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Chi2-toets post-hoc2.R-->
+</div>
+<div class="section" id="rapportage">
+<h2>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Chi-kwadraat5.R-->
+<p>De <em>Chi-kwadraat toets voor goodness of fit</em> is uitgevoerd om te onderzoeken of de verdeling van het BSA van studenten Maritieme Techniek overeenkomt met de verdeling van de gehele universiteit waar deze opleiding onder valt (70% positief BSA, 20% negatief BSA en 10% uitgesteld BSA). De verdeling van het BSA van de instromende studenten Maritieme Techniek is significant verschillend van de verdeling van de gehele universiteit, χ^2^~<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vdf</span></code>~ = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vchi2</span></code>, <em>p</em> &lt; 0,001.</p>
+<p>Uit de post-hoc toetsen blijkt dat het aantal studenten met een positief BSA significant lager is dan het percentage van de gehele universiteit (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Proptab[2])</span></code>%, <em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_res[1])</span></code>), het aantal studenten met een negatief BSA significant hoger is dan het percentage van de gehele universiteit (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Proptab[1])</span></code>%, <em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_res[2])</span></code>) en het percentage studenten met een uitgesteld BSA niet significant verschillend is van de gehele universiteit (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Proptab[3])</span></code>%, <em>z</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(PH_res[3])</span></code>). De resultaten suggereren dat de opleiding Maritieme Technieken qua BSA dus afwijkt van de gehele universiteit waarbij het aantal positieve BSA’s lager en het aantal negatieve BSA’s hoger in vergelijking tot de gehele universiteit.</p>
+<!-- ## /TEKSTBLOK: Chi-kwadraat5.R--></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="multinomiaaltoets">
+<h1>Multinomiaaltoets<a class="headerlink" href="#multinomiaaltoets" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id16">
+<h2>Uitvoering<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Binomiaaltoets1.R -->
+<p>Voer de <em>multinomiaaltoets</em>  uit te onderzoeken of de verdeling van de BSA mogelijkheden van de studenten Maritieme Techniek overeenkomt met de verdeling van de gehele universiteit (70% positief BSA, 20% negatief BSA en 10% uitgesteld BSA). Deze toets is een alternatief voor de <em>Chi-kwadraat toets voor goodness of fit</em> bij een laag aantal observaties. Er is een subset <code class="docutils literal notranslate"><span class="pre">BSA_Maritieme_techniek_steekproef</span></code> van de dataset <code class="docutils literal notranslate"><span class="pre">BSA_Maritieme_techniek</span></code> ingeladen met daarin een lager aantal observaties.</p>
+<!-- ## /TEKSTBLOK: Binomiaaltoets1.R -->
+<p>Het is informatief om de frequenties en de percentages van de drie mogelijkheden van het BSA te bepalen voor de studenten Maritieme Techniek.</p>
+<!-- ## OPENBLOK: Binomiaaltoets3.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>table(BSA_Maritieme_techniek_steekproef$BSA_advies)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>100*prop.table(table(BSA_Maritieme_techniek_steekproef$BSA_advies))
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Binomiaaltoets3.R -->
+<!-- ## CLOSEDBLOK: Binomiaaltoets3_3.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Binomiaaltoets3_3.R -->
+<!-- ## TEKSTBLOK: Binomiaaltoets4.R -->
+<p>Het aantal studenten met een positief BSA is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Tab2[2])</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Proptab2[2])</span></code>%), met een negatief BSA is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Tab2[1])</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Proptab2[1])</span></code>%) en met een uitgesteld BSA is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Tab2[3])</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Proptab2[3])</span></code>%). Het lijkt erop dat het percentage studenten met een positief BSA hoger is dan het percentage van de gehele universiteit (70%) en dat het percentage studenten met een negatief BSA juist lager is dan dat van de gehele universiteit (20%). De <em>multinomiaaltoets</em> toetst of dit verschil significant is.</p>
+<!-- ## /TEKSTBLOK: Binomiaaltoets4.R -->
+<!-- ## TEKSTBLOK: Binomiaaltoets5.R -->
+<p>Bereken de verwachte frequentie met het argument <code class="docutils literal notranslate"><span class="pre">chisq.test()$expected</span></code> van de functie <code class="docutils literal notranslate"><span class="pre">chisq.test()</span></code>. De argumenten van de functie zijn de tabel met daarin de hoeveelheid studenten voor de drie mogelijkheden van het BSA <code class="docutils literal notranslate"><span class="pre">Tabel_volgorde</span></code> en een vector die aangeeft wat de verwachte proporties<a class="footnote-reference brackets" href="#id28" id="id17">4</a> zijn voor het aantal studenten met respectievelijk een positief, negatief of uitgesteld BSA <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">=</span> <span class="pre">c(0.7,</span> <span class="pre">0.2,</span> <span class="pre">0.1)</span></code>. Let hierbij goed op dat de volgorde van de BSA mogelijkheden in de tabel overeenkomt met de volgorde van de proporties.</p>
+<!-- ## /TEKSTBLOK: Binomiaaltoets5.R -->
+<!-- ## OPENBLOK: Binomiaaltoets6.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Maak een tabel met daarin de aantallen studenten per BSA mogelijkheid
+Tabel &lt;- table(BSA_Maritieme_techniek_steekproef$BSA_advies)
+
+# Zet de tabel op volgorde Positief, Negatief, Uitgesteld
+(Tabel_volgorde &lt;- Tabel[c(&quot;Positief&quot;, &quot;Negatief&quot;, &quot;Uitgesteld&quot;)])
+
+# Voer de toets uit
+chisq.test(Tabel_volgorde, p = c(0.7, 0.2, 0.1))$expected
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Binomiaaltoets6.R -->
+<!-- ## CLOSEDBLOK: Binomiaaltoets6_1.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Binomiaaltoets6_1.R -->
+<p>De verwachte frequentie voor studenten met een uitgesteld BSA is kleiner dan 5. Dit betekent dat er in meer dan 20% van de categorieën een verwachte frequentie van minder dan 5 is en dat er dus niet voldaan is aan de assumptie van verwachte frequenties. Voer daarom de <em>multinomiaaltoets</em> uit.</p>
+<!-- ## TEKSTBLOK: Binomiaaltoets7.R -->
+<p>Voer de <em>multinomiaaltoets</em> uit met de functie <code class="docutils literal notranslate"><span class="pre">multinomial.test()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">RVAideMemoire</span></code> met als argument een vector met daarin de hoeveelheid studenten voor de drie mogelijkheden van het BSA <code class="docutils literal notranslate"><span class="pre">Vector_volgorde</span></code> en een vector die aangeeft wat de verwachte proporties<a class="footnote-reference brackets" href="#id28" id="id18">4</a> zijn voor het aantal studenten met respectievelijk een positief, negatief of uitgesteld BSA <code class="docutils literal notranslate"><span class="pre">p</span> <span class="pre">=</span> <span class="pre">c(0.7,</span> <span class="pre">0.2,</span> <span class="pre">0.1)</span></code>. Deze functie vereist een vector wat de reden is dat de tabel met de aantallen observaties per categorie omgezet wordt in een vector. Let hierbij goed op dat de volgorde van de BSA mogelijkheden in de tabel overeenkomt met de volgorde van de proporties.</p>
+<!-- ## /TEKSTBLOK: Binomiaaltoets7.R -->
+<!-- ## OPENBLOK: Binomiaaltoets8.R--><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Laad het package in
+library(RVAideMemoire)
+
+# Maak een tabel met daarin de aantallen studenten per BSA mogelijkheid
+Tabel &lt;- table(BSA_Maritieme_techniek_steekproef$BSA_advies)
+
+# Zet de tabel op volgorde Positief, Negatief, Uitgesteld
+Tabel_volgorde &lt;- Tabel[c(&quot;Positief&quot;, &quot;Negatief&quot;, &quot;Uitgesteld&quot;)]
+
+# Zet de tabel om in een vector voor de functie multinomial.test
+Vector_volgorde &lt;- as.numeric(Tabel_volgorde)
+
+# Voer de toets uit
+multinomial.test(Vector_volgorde, p = c(0.7, 0.2, 0.1))
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Binomiaaltoets8.R-->
+<!-- ## CLOSEDBLOK: Binomiaaltoets9.R --><div class="cell tag_remove_input docutils container">
+</div>
+<!-- ## /CLOSEDBLOK: Binomiaaltoets9.R -->
+<!-- ## TEKSTBLOK: Binomiaaltoets10.R-->
+<ul class="simple">
+<li><p>p-waarde = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">mp</span></code>, dus de nulhypothese kan niet worden verworpen.<a class="footnote-reference brackets" href="#id29" id="id19">5</a></p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Binomiaaltoets10.R--></div>
+<div class="section" id="id20">
+<h2>Rapportage<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Rapportage2.R-->
+<p>De <em>multinomiaaltoets</em> is uitgevoerd om te onderzoeken of de verdeling van het BSA van studenten Maritieme Techniek overeenkomt met de verdeling van de gehele universiteit waar deze opleiding onder valt (70% positief BSA, 20% negatief BSA en 10% uitgesteld BSA) voor een dataset met een laag aantal observaties. De verdeling van het BSA van de instromende studenten van de universiteit verschilt niet significant van de landelijke verdeling (<em>p</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">mp</span></code>). Het aantal studenten met een positief BSA is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Tab2[2])</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Proptab2[2])</span></code>%), met een negatief BSA is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Tab2[1])</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Proptab2[1])</span></code>%) en met een uitgesteld BSA is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Tab2[3])</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(Proptab2[3])</span></code>%). De resultaten suggereren dat de opleiding Maritieme Technieken qua BSA niet afwijkt van de gehele universiteit.</p>
+<!-- ## /TEKSTBLOK: Rapportage2.R-->
+<!-- ## CLOSEDBLOK: Footer.R --><!-- ## /CLOSEDBLOK: Footer.R -->
+<!-- ## TEKSTBLOK: Extra-Bron.R -->
+<!-- ## /TEKSTBLOK: Extra-Bron.R -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id21"><span class="brackets">6</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id8">2</a>)</span></dt>
+<dd><p>Laerd Statistics (2018). <em>Chi-Square Goodness-of-Fit Test in SPSS Statistics</em>. <a class="reference external" href="https://statistics.laerd.com/spss-tutorials/chi-square-goodness-of-fit-test-in-spss-statistics.php">https://statistics.laerd.com/spss-tutorials/chi-square-goodness-of-fit-test-in-spss-statistics.php</a></p>
+</dd>
+<dt class="label" id="id22"><span class="brackets">7</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id9">2</a>)</span></dt>
+<dd><p>Allen, P. &amp; Bennett, K. (2012). <em>SPSS A practical Guide version 20.0</em>. Cengage Learning Australia Pty Limited.</p>
+</dd>
+<dt class="label" id="id23"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
+<dd><p>Agresti, A. (2003). <em>Categorical data analysis</em>. Vol. 482, John Wiley &amp; Sons.</p>
+</dd>
+<dt class="label" id="id24"><span class="brackets">9</span><span class="fn-backref">(<a href="#id4">1</a>,<a href="#id6">2</a>)</span></dt>
+<dd><p>Een nominale variabele is een categorische variabele waarbij de categorieën niet geordend kunnen worden. Een voorbeeld is de variabele windstreek (noord, oost, zuid, west) en geslacht (man of vrouw).</p>
+</dd>
+<dt class="label" id="id25"><span class="brackets">8</span><span class="fn-backref">(<a href="#id5">1</a>,<a href="#id7">2</a>)</span></dt>
+<dd><p>Een ordinale variabele is een categorische variabele waarbij de categorieën geordend kunnen worden. Een voorbeeld is de variabele beoordeling met de categorieën Onvoldoende, Voldoende, Goed en Uitstekend.</p>
+</dd>
+<dt class="label" id="id26"><span class="brackets"><a class="fn-backref" href="#id10">11</a></span></dt>
+<dd><p>Een z-score is een maat om aan te geven hoeveel een observatie afwijkt van het gemiddelde. De z-score wordt berekend door het gemiddelde van de observatie af te halen en dit daarna te delen door de standaarddeviatie, i.e. <span class="math notranslate nohighlight">\(\frac{X - \mu}{\sigma}\)</span>. In feite geeft een z-score aan hoeveel standaarddeviaties de observatie van het gemiddelde afwijkt.</p>
+</dd>
+<dt class="label" id="id27"><span class="brackets"><a class="fn-backref" href="#id11">12</a></span></dt>
+<dd><p>Field, A., Miles, J., &amp; Field, Z. (2012). <em>Discovering statistics using R</em>. London: Sage publications.</p>
+</dd>
+<dt class="label" id="id28"><span class="brackets">4</span><span class="fn-backref">(<a href="#id12">1</a>,<a href="#id13">2</a>,<a href="#id17">3</a>,<a href="#id18">4</a>)</span></dt>
+<dd><p>Een proportie van een bepaalde categorie is de frequentie van de categorie gedeeld door het totaal aantal observaties. Het kan gezien worden als de kans van een bepaalde categorie en bevat een waarde tussen 0 en 1.</p>
+</dd>
+<dt class="label" id="id29"><span class="brackets">5</span><span class="fn-backref">(<a href="#id14">1</a>,<a href="#id19">2</a>)</span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+<dt class="label" id="id30"><span class="brackets"><a class="fn-backref" href="#id15">10</a></span></dt>
+<dd><p>De waarde 1,96 is een z-score en correspondeert met het significantieniveau 0,05 voor een tweezijdige toets. Om te corrigeren voor meerdere testen kan een ander significantieniveau gekozen worden wat resulteert in een andere z-score om mee te vergelijken. Bij een significantieniveau van 0,01 is de z-score bijvoorbeeld 2,58. De z-score per significantieniveau is te berekenen met <code class="docutils literal notranslate"><span class="pre">abs(qnorm(alfa/2))</span></code> waarbij <code class="docutils literal notranslate"><span class="pre">alfa</span></code> het gewenste significantieniveau is.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./r"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

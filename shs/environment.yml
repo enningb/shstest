@@ -1,0 +1,33 @@
+name: handboekstudiedata
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas>=1.0
+  - numpy
+  - jupyter
+  - jupytext
+  - jupyterlab
+  - nb_conda_kernels
+  - ipykernel
+# code format
+  - black
+  - isort
+# statistiek
+  - pingouin
+  - scikit-learn
+  - scipy
+  - matplotlib
+  - seaborn
+  - plotly
+  - bokeh
+  - altair
+  - altair_data_server
+  - altair_saver
+  - pip
+  - pip:
+     - savReaderWriter
+# r
+  - r-essentials

@@ -1,0 +1,927 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="28%20Multipele%20lineaire%20regressie%20R.html" />
+    <link rel="prev" title="Toepassing" href="26%20Tekentoets%20II%20R.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="18%20Bhapkar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/r/27 Moods mediaan toets R.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fr/27 Moods mediaan toets R.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumpties">
+   Assumpties
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#groepsgroottes">
+     Groepsgroottes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering">
+   Uitvoering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-data-bekijken">
+     De data bekijken
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#de-data-visualiseren">
+     De data visualiseren
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assumptie-groepsgrootte">
+     Assumptie groepsgrootte
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mood-s-mediaan-toets">
+     Mood’s mediaan toets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rapportage">
+   Rapportage
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-924f26e6aa13&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span>exists<span class="o">(</span><span class="s2">&quot;Substitute_var&quot;</span><span class="o">))</span> <span class="o">{</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.R -->
+<!-- ## /CLOSEDBLOK: Reticulate.R -->
+<!-- ## OPENBLOK: Data-aanmaken.R --><!-- ## /OPENBLOK: Data-aanmaken.R -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: link1.R-->
+<p>Gebruik <em>Mood’s mediaan toets</em> om de medianen van twee ongepaarde groepen te vergelijken.<a class="footnote-reference brackets" href="#id12" id="id1">1</a><sup>,</sup><a class="footnote-reference brackets" href="#id13" id="id2">2</a> Deze toets wordt gebruikt als er niet aan de assumpties is voldaan bij sterkere toetsen zoals de <span class="xref myst">ongepaarde t-toets</span> en de <span class="xref myst">Mann-Whitney U toets</span>. Als de verdelingen van beide groepen bij benadering normaal verdeeld zijn, dan kan de <span class="xref myst">ongepaarde t-toets</span> gebruikt worden om de gemiddelden te vergelijken. Als de verdelingen van beide groepen dezelfde vorm hebben, kan de <span class="xref myst">Mann-Whitney U toets</span> gebruikt worden om de medianen te vergelijken.<a class="footnote-reference brackets" href="#id14" id="id3">3</a> De <span class="xref myst">Mann-Whitney U toets</span> heeft in dat geval een hoger onderscheidend vermogen<a class="footnote-reference brackets" href="#id13" id="id4">2</a>.</p>
+<!-- ## /TEKSTBLOK: link1.R--></div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id ="casus">
+De onderwijsdirecteur van de opleiding Business Administration van een hogeschool vraagt zich af of er verschil is in de studieresultaten van studenten met een Nederlandse vooropleiding en een buitenlandse vooropleiding. Met name in het tweede studiejaar lijken er verschillen op te treden die hij wil begrijpen om mogelijke interventies met zijn docenten te bespreken. Hij vraagt zich af: ‘Verschilt het aantal studiepunten in het tweede studiejaar van studenten met een Nederlandse vooropleiding van het aantal studiepunten in het tweede studiejaar van studenten met een buitenlandse vooropleiding?
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is.</p>
+<p><em>H~0~</em>: De verdeling van het behaalde aantal studiepunten in het tweede jaar van studenten met een buitenlandse vooropleiding is hetzelfde als de verdeling van studenten met een Nederlandse vooropleiding.</p>
+<p><em>H~A~</em>: De verdeling van het behaalde aantal studiepunten in het tweede jaar van studenten met een buitenlandse vooropleiding is anders dan de verdeling van studenten met een Nederlandse vooropleiding.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="assumpties">
+<h1>Assumpties<a class="headerlink" href="#assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Het meetniveau van de afhankelijke variabele is continu.<a class="footnote-reference brackets" href="#id15" id="id5">5</a><sup>,</sup><a class="footnote-reference brackets" href="#id16" id="id6">6</a></p>
+<div class="section" id="groepsgroottes">
+<h2>Groepsgroottes<a class="headerlink" href="#groepsgroottes" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: link2.R-->
+<p><em>Mood’s mediaan toets</em> toetst het verschil tussen de medianen van twee ongepaarde groepen. Eerst wordt de mediaan berekend van de samengevoegde observaties van beide groepen. Daarna worden voor beide ongepaarde groepen het aantal observaties groter dan en kleiner dan of gelijk aan de mediaan geteld. Dit levert een kruistabel op die vervolgens getoetst kan worden met de <span class="xref myst">Chi-kwadraat toets voor onafhankelijkheid</span>. Een voorbeeld van zo’n kruistabel is te zien in Tabel 1.</p>
+<!-- ## /TEKSTBLOK: link2.R-->
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Groep 1</p></th>
+<th class="head"><p>Groep 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Aantal observaties groter dan mediaan</p></td>
+<td><p>20</p></td>
+<td><p>25</p></td>
+</tr>
+<tr class="row-odd"><td><p>Aantal observaties kleiner dan of gelijk aan mediaan</p></td>
+<td><p>30</p></td>
+<td><p>40</p></td>
+</tr>
+<tr class="row-even"><td><p><em>Tabel 1. Kruistabel met aantal observaties groter dan en kleiner dan of gelijk aan mediaan voor twee ongepaarde groepen.</em></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<!-- ## TEKSTBLOK: link3.R-->
+<p>Een assumptie van de <em>Chi-kwadraat toets voor onafhankelijk</em> is dat niet meer dan 20% van de cellen van de kruistabel een verwacht aantal observaties van vijf of minder heeft. Als dit niet het geval is, is <em>Fisher’s exact toets</em> een beter alternatief. Zie de toetspagina van de <span class="xref myst">Chi-kwadraat toets voor onafhankelijkheid</span> voor een uitgebreide uitleg over deze assumptie.</p>
+<!-- ## /TEKSTBLOK: link3.R-->
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering">
+<h1>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Dataset-inladen.R-->
+<p>Er is een dataset <code class="docutils literal notranslate"><span class="pre">Studiepunten_studiejaar2</span></code> ingeladen met het aantal punten dat studenten in het tweede jaar halen.</p>
+<!-- ## /TEKSTBLOK: Dataset-inladen.R-->
+<div class="section" id="de-data-bekijken">
+<h2>De data bekijken<a class="headerlink" href="#de-data-bekijken" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Data-bekijken.R -->
+<p>Gebruik <code class="docutils literal notranslate"><span class="pre">head()</span></code> en <code class="docutils literal notranslate"><span class="pre">tail()</span></code> om de structuur van de data te bekijken.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken.R -->
+<!-- ## OPENBLOK: Data-bekijken.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Eerste 6 observaties</span>
+<span class="n">head</span><span class="p">(</span><span class="n">Studiepunten_studiejaar2</span><span class="p">)</span>
+<span class="c1">## Eerste 6 observaties</span>
+<span class="n">tail</span><span class="p">(</span><span class="n">Studiepunten_studiejaar2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken.R -->
+<!-- ## TEKSTBLOK: Data-beschrijven.R -->
+<p>Bekijk de grootte, de mediaan en de kwantielen van het aantal studiepunten met <code class="docutils literal notranslate"><span class="pre">length()</span></code> en <code class="docutils literal notranslate"><span class="pre">quantile()</span></code>. De mediaan en kwantielen worden vaak gebruikt als maat wanneer een verdeling niet symmetrisch is.</p>
+<!-- ## /TEKSTBLOK: Data-beschrijven.R -->
+<!-- ## OPENBLOK: Data-selecteren.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>Vooropleiding_Nederlands &lt;- Studiepunten_studiejaar2$Vooropleiding == &quot;Nederlands&quot;
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-selecteren.R -->
+<!-- ## OPENBLOK: Numpy-inladen.R -->
+<!-- ## /OPENBLOK: Numpy-inladen.R -->
+<div class="col-container">
+  <div class="col">
+<!-- ## OPENBLOK: Data-beschrijven-1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>length(Studiepunten_studiejaar2$Studiepunten[Vooropleiding_Nederlands])
+quantile(Studiepunten_studiejaar2$Studiepunten[Vooropleiding_Nederlands])
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-beschrijven-1.R -->
+  </div>
+  <div class="col">
+<!-- ## OPENBLOK: Data-beschrijven-2.R -->
+``````{r Data beschrijven 2, collapse=TRUE}
+length(Studiepunten_studiejaar2$Studiepunten[!Vooropleiding_Nederlands])
+quantile(Studiepunten_studiejaar2$Studiepunten[!Vooropleiding_Nederlands])
+```
+<!-- ## /OPENBLOK: Data-beschrijven-2.R -->
+  </div>
+</div>
+<!-- ## CLOSEDBLOK: Data-beschrijven-3.R -->
+``` {r data beschrijven als object, include=FALSE, echo=TRUE}
+Vooropleiding_Nederlands <- Studiepunten_studiejaar2$Vooropleiding == "Nederlands"
+<p>vN_NL &lt;- length(Studiepunten_studiejaar2<span class="math notranslate nohighlight">\(Studiepunten[Vooropleiding_Nederlands])
+vQ_NL &lt;- quantile(Studiepunten_studiejaar2\)</span>Studiepunten[Vooropleiding_Nederlands])</p>
+<p>vN_Inter &lt;- length(Studiepunten_studiejaar2<span class="math notranslate nohighlight">\(Studiepunten[!Vooropleiding_Nederlands])
+vQ_Inter &lt;- quantile(Studiepunten_studiejaar2\)</span>Studiepunten[!Vooropleiding_Nederlands])</p>
+<p>vN_NL &lt;- Round_and_format(vN_NL)
+vN_Inter &lt;- Round_and_format(vN_Inter)</p>
+<p>vQ1_NL &lt;- Round_and_format(vQ_NL[2])
+vQ1_Inter &lt;- Round_and_format(vQ_Inter[2])</p>
+<p>vMed_NL &lt;- Round_and_format(vQ_NL[3])
+vMed_Inter &lt;- Round_and_format(vQ_Inter[3])</p>
+<p>vQ3_NL &lt;- Round_and_format(vQ_NL[4])
+vQ3_Inter &lt;- Round_and_format(vQ_Inter[4])</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;!-- ## /CLOSEDBLOK: Data-beschrijven-3.R --&gt;
+
+&lt;!-- ## TEKSTBLOK: Data-beschrijven2.R --&gt;
+* Mediaan studenten Nederlandse vooropleiding: `r vMed_NL`, *n* = `r vN_NL`.
+* Mediaan studenten buitenlandse vooropleiding: `r vMed_Inter`, *n* = `r vN_Inter`.
+
+&lt;!-- ## /TEKSTBLOK: Data-beschrijven2.R --&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="de-data-visualiseren">
+<h2>De data visualiseren<a class="headerlink" href="#de-data-visualiseren" title="Permalink to this headline">¶</a></h2>
+<p>Maak een histogram<a class="footnote-reference brackets" href="#id17" id="id7">18</a> om de verdeling van het aantal studiepunten in het tweede jaar voor studenten met een Nederlandse en buitenlandse vooropleiding visueel weer te geven.</p>
+<!-- ## OPENBLOK: Histogram1.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Histogram met ggplot2</span>
+<span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="n">ggplot</span><span class="p">(</span><span class="n">Studiepunten_studiejaar2</span><span class="p">,</span>
+  <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Studiepunten</span><span class="p">))</span> <span class="o">+</span>
+  <span class="n">geom_histogram</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">y</span> <span class="o">=</span> <span class="o">..</span><span class="n">density</span><span class="o">..</span><span class="p">),</span>
+                 <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;grey30&quot;</span><span class="p">,</span>
+                 <span class="n">fill</span> <span class="o">=</span> <span class="s2">&quot;#0089CF&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="n">Vooropleiding</span><span class="p">,</span> <span class="n">labeller</span> <span class="o">=</span> <span class="n">labeller</span><span class="p">(</span><span class="n">Vooropleiding</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">Nederlands</span> <span class="o">=</span> <span class="s2">&quot;Nederlandse vooropleiding&quot;</span><span class="p">,</span> <span class="n">buitenlands</span> <span class="o">=</span> <span class="s2">&quot;Buitenlandse vooropleiding&quot;</span><span class="p">)))</span> <span class="o">+</span>
+  <span class="n">ylab</span><span class="p">(</span><span class="s2">&quot;Frequentie&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="n">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Studiepunten van studenten Business Administration in het tweede jaar &quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Histogram1.R -->
+<p>Beide histogrammen bevatten een grote groep studenten met een laag aantal studiepunten (twaalf of minder). De overige studenten volgen een ietwat scheve verdeling met de top rond de vijftig studiepunten. De verdelingen van beide groepen studenten hebben echter niet dezelfde vorm. De frequentiedichtheid van het aantal studenten rond de vijftig studiepunten is veel hoger voor de studenten met Nederlandse vooropleiding, terwijl de frequentiedichtheid van het aantal studenten met twaalf of minder studiepunten juist hoger is voor de studenten met een buitenlandse vooropleiding.</p>
+</div>
+<div class="section" id="assumptie-groepsgrootte">
+<h2>Assumptie groepsgrootte<a class="headerlink" href="#assumptie-groepsgrootte" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: groepsgrootte1.R -->
+<p>Maak een kruistabel met het aantal observaties hoger en lager dan de mediaan voor beide ongepaarde groepen. Bereken vervolgens de verwachte aantallen observaties met <code class="docutils literal notranslate"><span class="pre">chisq.test()$expected</span></code> met als argument de kruistabel <code class="docutils literal notranslate"><span class="pre">Kruistabel</span></code>.</p>
+<!-- ## /TEKSTBLOK: groepsgrootte1.R -->
+<!-- ## OPENBLOK: groepsgrootte2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Bereken de mediaan van alle observaties samengevoegd
+Mediaan &lt;- median(Studiepunten_studiejaar2$Studiepunten)
+
+# Bepaal voor elke observatie of deze hoger of lager/gelijk aan de mediaan is
+Index_hoger_lager &lt;- Studiepunten_studiejaar2$Studiepunten &gt; Mediaan 
+
+# Maak een kruistabel
+Kruistabel &lt;- table(Index_hoger_lager, Studiepunten_studiejaar2$Vooropleiding)
+
+# Print de kruistabel
+print(Kruistabel)
+
+# Bereken de verwachte aantallen observaties
+chisq.test(Kruistabel)$expected
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: groepsgrootte2.R --><p>Geen van de verwachte aantallen observaties is kleiner dan vijf, dus er is voldaan aan de assumptie over de groepsgroottes. Voer <em>Mood’s mediaan toets</em> uit met behulp van de <em>Chi-kwadraat toets</em>.</p>
+</div>
+<div class="section" id="mood-s-mediaan-toets">
+<h2>Mood’s mediaan toets<a class="headerlink" href="#mood-s-mediaan-toets" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Moods-mediaan-toets-1.R -->
+<p>Gebruik de functie <code class="docutils literal notranslate"><span class="pre">mood.medtest()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">RVAideMemoire</span></code> om <em>Mood’s mediaan toets</em> uit te voeren. Het eerste argument <code class="docutils literal notranslate"><span class="pre">Studiepunten</span> <span class="pre">~</span> <span class="pre">Vooropleiding</span></code> bevat de afhankelijke variabele <code class="docutils literal notranslate"><span class="pre">Studiepunten</span></code> en de variabele <code class="docutils literal notranslate"><span class="pre">Vooropleiding</span></code> die beide ongepaarde groepen aangeeft, het tweede argument bevat de dataset <code class="docutils literal notranslate"><span class="pre">Studiepunten_studiejaar2</span></code> en het derde argument <code class="docutils literal notranslate"><span class="pre">exact=</span> <span class="pre">FALSE</span></code> geeft aan dat de <em>Chi-kwadraat toets voor onafhankelijkheid</em> uitgevoerd moet worden. Gebruik <code class="docutils literal notranslate"><span class="pre">exact</span> <span class="pre">=</span> <span class="pre">TRUE</span></code> om <em>Fisher’s exact toets</em> uit te voeren.</p>
+<!-- ## /TEKSTBLOK: Moods-mediaan-toets-1.R -->
+<!-- ## OPENBLOK: Moods-mediaan-toets-2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">RVAideMemoire</span><span class="p">)</span>
+<span class="n">mood</span><span class="o">.</span><span class="n">medtest</span><span class="p">(</span><span class="n">Studiepunten</span> <span class="o">~</span> <span class="n">Vooropleiding</span><span class="p">,</span> <span class="n">Studiepunten_studiejaar2</span><span class="p">,</span> <span class="n">exact</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Moods-mediaan-toets-2.R -->
+<!-- ## CLOSEDBLOK: Moods-mediaan-toets-3.R --><!-- ## /CLOSEDBLOK: Moods-mediaan-toets-3.R -->
+<!-- ## TEKSTBLOK: Moods-mediaan-toets-3.R -->
+<p>Bereken vervolgens de mediaan van de verschilscores en bijbehorend 95%-betrouwbaarheidsinterval.<a class="footnote-reference brackets" href="#id18" id="id8">7</a><sup>,</sup><a class="footnote-reference brackets" href="#id19" id="id9">8</a> Gebruik hiervoor de functie <code class="docutils literal notranslate"><span class="pre">HodgesLehmann()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">DescTools</span></code> met als argumenten het aantal studiepunten van studenten met Nederlandse vooropleiding <code class="docutils literal notranslate"><span class="pre">Studiepunten_studiejaar2$Studiepunten[Vooropleiding_Nederlands]</span></code>, het aantal studiepunten van studenten met een buitenlandse vooropleiding <code class="docutils literal notranslate"><span class="pre">Studiepunten_studiejaar2$Studiepunten[!Vooropleiding_Nederlands]</span></code> en <code class="docutils literal notranslate"><span class="pre">conf.level</span> <span class="pre">=</span> <span class="pre">0.95</span></code> om het 95%-betrouwbaarheidsinterval te schatten.<a class="footnote-reference brackets" href="#id20" id="id10">9</a></p>
+<!-- ## /TEKSTBLOK: Moods-mediaan-toets-3.R -->
+<!-- ## OPENBLOK: Moods-mediaan-toets-4.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>library(DescTools)
+HodgesLehmann(Studiepunten_studiejaar2$Studiepunten[Vooropleiding_Nederlands], Studiepunten_studiejaar2$Studiepunten[!Vooropleiding_Nederlands], conf.level = 0.95)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Moods-mediaan-toets-4.R --><!-- ## TEKSTBLOK: Moods-mediaan-toets-4.R -->
+<ul class="simple">
+<li><p>χ^2^ ~<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vdf</span></code>~ = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vChi2</span></code>, <em>p</em> = &lt; 0,0001</p></li>
+<li><p>De p-waarde is kleiner dan 0,05, dus de H~0~ wordt verworpen.<a class="footnote-reference brackets" href="#id20" id="id11">9</a></p></li>
+<li><p>De mediaan van de verschilscores is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vW_est</span></code> met een
+95%-betrouwbaarheidsinterval  van <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vW_lb</span></code> tot <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vW_ub</span></code>. De mediaan van de verschillen tussen  studenten met een Nederlandse en buitenlandse vooropleiding is dus <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vW_est</span></code> studiepunten.</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Moods-mediaan-toets-4.R --></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="rapportage">
+<h1>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Rapportage.R -->
+<p><em>Mood’s mediaan toets</em> is uitgevoerd om te toetsen of de mediaan van het behaald aantal studiepunten in het tweede jaar van de bachelor Business Administration hetzelfde is voor studenten met buitenlandse vooropleiding als voor studenten met Nederlandse vooropleiding. De resultaten van de toets laten zien dat er een significant verschil is tussen beide medianen, χ^2^ ~<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vdf</span></code>~ = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vChi2</span></code>, <em>p</em> = &lt; 0,0001. Het geschatte mediaan van de verschilscores is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vW_est</span></code> met bijbehorend 95%-betrouwbaarheidsinterval van <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vW_lb</span></code> tot <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vW_ub</span></code>. Studenten met een Nederlandse vooropleiding lijken dus meer studiepunten te behalen in het tweede jaar dan studenten met een buitenlandse vooropleiding.</p>
+<!-- ## /TEKSTBLOK: Rapportage.R -->
+<!-- ## CLOSEDBLOK: Footer.R --><!-- ## /CLOSEDBLOK: Footer.R --><hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id12"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Statistics How To (28 februari 2016). <em>Mood’s Median Test: Definition, Run the Test and Interpret Results</em>. <a class="reference external" href="https://www.statisticshowto.com/moods-median-test/">Statistics How to</a>.</p>
+</dd>
+<dt class="label" id="id13"><span class="brackets">2</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id4">2</a>)</span></dt>
+<dd><p>Brown, G. W., &amp; Mood, A. M. (1951). <em>On median tests for linear hypotheses</em>. In <em>Proceedings of the Second Berkeley Symposium on Mathematical Statistics and Probability</em>. The Regents of the University of California.</p>
+</dd>
+<dt class="label" id="id14"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p>Onderscheidend vermogen, in het Engels power genoemd, is de kans dat de nulhypothese verworpen wordt wanneer de alternatieve hypothese ‘waar’ is.</p>
+</dd>
+<dt class="label" id="id15"><span class="brackets"><a class="fn-backref" href="#id5">5</a></span></dt>
+<dd><p>SPSS Tutorials. <em>SPSS Median Test for 2 Independent Medians</em>. Bezocht op 22 april 2020. <a class="reference external" href="https://www.statisticshowto.com/moods-median-test/">Statistics How to</a>.</p>
+</dd>
+<dt class="label" id="id16"><span class="brackets"><a class="fn-backref" href="#id6">6</a></span></dt>
+<dd><p><em>Mood’s mediaan toets</em> kan ook uitgevoerd worden om de medianen te vergelijken van twee of meer ordinale variabelen. Echter, de <span class="xref myst">Mann-Whitney U toets</span> of de <span class="xref myst">Kruskal Wallis toets</span> zijn dan alternatieven met een hoger onderscheidend vermogen.</p>
+</dd>
+<dt class="label" id="id17"><span class="brackets"><a class="fn-backref" href="#id7">18</a></span></dt>
+<dd><p>De breedte van de staven van het histogram wordt vaak automatisch bepaald, maar kan handmatig aangepast worden. Aangezien de breedte van de staven bepalend zijn voor de indruk die de visualisatie geeft, is het verstandig om hier goed op te letten.</p>
+</dd>
+<dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id8">7</a></span></dt>
+<dd><p>De mediaan van de verschilscores kan bij twee ongepaarde steekproeven bijvoorbeeld geschat worden door alle <em>m x n</em> verschilscores te berekenen tussen <em>m</em> observaties uit de ene steekproef en <em>n</em> observaties uit de andere steekproef. De mediaan van deze <em>m x n</em> verschilscores is dan de schatting.</p>
+</dd>
+<dt class="label" id="id19"><span class="brackets"><a class="fn-backref" href="#id9">8</a></span></dt>
+<dd><p>Wikipedia (10 maart 2020). *Hogdes-Lehmann estimator. *<a class="reference external" href="https://en.wikipedia.org/wiki/Hodges%E2%80%93Lehmann_estimator">https://en.wikipedia.org/wiki/Hodges%E2%80%93Lehmann_estimator</a></p>
+</dd>
+<dt class="label" id="id20"><span class="brackets">9</span><span class="fn-backref">(<a href="#id10">1</a>,<a href="#id11">2</a>)</span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./r"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="26%20Tekentoets%20II%20R.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="28%20Multipele%20lineaire%20regressie%20R.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

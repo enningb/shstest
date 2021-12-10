@@ -1,0 +1,855 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toepassing &#8212; Handboek Studiedata</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Toepassing" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html" />
+    <link rel="prev" title="Toepassing" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Handboek Studiedata</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welkom bij het Handboek Studiedata
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algemeen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Begrippenlijst.html">
+   Begrippenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Over.html">
+   Over
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Verantwoording.html">
+   Verantwoording
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-1.html">
+   Toetsmatrix 1 (R)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../toetsmatrix-html.html">
+   Toetshtml
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/01%20One%20sample%20t-toets-Python.html">
+   One-sample t-toets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/02%20Gepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/03%20Ongepaarde%20t-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04%20Repeated%20measures%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/04-Repeated-measures-ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/05%20One-way%20ANOVA-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/06%20Tekentoets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/07%20Wilcoxon%20signed%20rank%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/08%20Mann-Whitney%20U%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/09%20Friedmans%20ANOVA%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10%20Kruskal%20Wallis%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/10-Kruskal-Wallis-toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/12%20McNemar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exact%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/15%20Cochrans%20Q%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exact%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/18%20Bhapkar%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/26%20Tekentoets%20II-Python.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../python/27%20Moods%20mediaan%20toets-Python.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  R
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01%20One%20sample%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02%20Gepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="03%20Ongepaarde%20t-toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04%20Repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05%20One-way%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06%20Tekentoets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07%20Wilcoxon%20signed%20rank%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08%20Mann-Whitney%20U%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09%20Friedmans%20ANOVA%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10%20Kruskal%20Wallis%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20binomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12%20McNemar%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fishers%20exacte%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="15%20Cochrans%20Q%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="21%20Chi-kwadraat%20toets%20voor%20goodness%20of%20fit%20en%20multinomiaaltoets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="22%20Wilcoxon%20signed%20rank%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="23%20Mann-Whitney%20U%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="24%20Friedmans%20ANOVA%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="25%20Kruskal%20Wallis%20toets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="26%20Tekentoets%20II%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="27%20Moods%20mediaan%20toets%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="28%20Multipele%20lineaire%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="29%20Factoriele%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="30%20Factoriele%20repeated%20measures%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="31%20ANCOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="32%20Mixed%20ANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="41%20Logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="47%20Multinomiale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="53%20Ordinale%20logistische%20regressie%20R.html">
+   Toepassing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="58%20MANOVA%20R.html">
+   Toepassing
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/r/18 Bhapkar toets R.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enningb/shstest"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enningb/shstest/issues/new?title=Issue%20on%20page%20%2Fr/18 Bhapkar toets R.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Toepassing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#onderwijscasus">
+   Onderwijscasus
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assumpties">
+   Assumpties
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#frequentiematrix">
+   Frequentiematrix
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#de-data-bekijken">
+   De data bekijken
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uitvoering">
+   Uitvoering
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bhapkar-toets">
+     Bhapkar toets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rapportage">
+   Rapportage
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!-- ## CLOSEDBLOK: Functies.R --><div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-924f26e6aa13&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span>exists<span class="o">(</span><span class="s2">&quot;Substitute_var&quot;</span><span class="o">))</span> <span class="o">{</span>
+        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /CLOSEDBLOK: Functies.R -->
+<!-- ## CLOSEDBLOK: CSS -->
+<style>
+`r htmltools::includeHTML(paste0(here::here(),"/01. Includes/css/Stylesheet_SHHO.css"))`
+</style>
+<!-- ## /CLOSEDBLOK: CSS -->
+<!-- ## CLOSEDBLOK: Header.R --><!-- ## /CLOSEDBLOK: Header.R -->
+<!-- ## CLOSEDBLOK: Status.R --><!-- ## /CLOSEDBLOK: Status.R -->
+<!-- ## CLOSEDBLOK: Reticulate.R -->
+<!-- ## /CLOSEDBLOK: Reticulate.R -->
+<!-- ## OPENBLOK: Data-aanmaken.R --><!-- ## /OPENBLOK: Data-aanmaken.R -->
+<div class="tex2jax_ignore mathjax_ignore section" id="toepassing">
+<h1>Toepassing<a class="headerlink" href="#toepassing" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Link1.R -->
+<p>Gebruik de <em>Bhapkar toets</em> om te toetsen of er verschillen zijn voor een nominale<a class="footnote-reference brackets" href="#id7" id="id1">1</a> variabele tussen twee gepaarde groepen.<a class="footnote-reference brackets" href="#id8" id="id2">2</a><sup>, </sup><a class="footnote-reference brackets" href="#id9" id="id3">3</a> Als de nominale variabele twee categorieën heeft, kan ook de <span class="xref myst">McNemar toets</span> gebruikt worden.</p>
+<!-- ## /TEKSTBLOK: Link1.R -->
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="onderwijscasus">
+<h1>Onderwijscasus<a class="headerlink" href="#onderwijscasus" title="Permalink to this headline">¶</a></h1>
+<div id = "casus">
+<p>De studieadviseur van de bachelor Leisure &amp; Events Management geeft halverwege het eerste studiejaar een voorlopig BSA-advies aan alle eerstejaars studenten. Studenten ontvangen een positief, negatief of uitgesteld BSA.  Daarnaast voert zij met alle studenten persoonlijke gesprekken om het advies toe te lichten en een plan voor de rest van het studiejaar te maken. De studieadviseur wil graag onderzoeken of er verschillen zijn tussen het voorlopige BSA-advies halverwege het jaar en het definitieve advies aan het einde van het jaar zodat ze de effectiviteit van de persoonlijke gesprekken kan beoordelen.</p>
+<p>Dit onderzoek vertaalt zich in de volgende combinatie van hypothesen, waarbij de nulhypothese zo geformuleerd is dat er geen effect of verschil is en de alternatieve hypothese zo geformuleerd is dat er wel een effect of verschil is.</p>
+<p><em>H~0~</em>: Er is geen verschil tussen de verdeling van de voorlopige BSA adviezen en de definitieve BSA adviezen.</p>
+<p><em>H~A~</em>: Er is een verschil tussen de verdeling van de voorlopige BSA adviezen en de definitieve BSA adviezen.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="assumpties">
+<h1>Assumpties<a class="headerlink" href="#assumpties" title="Permalink to this headline">¶</a></h1>
+<p>Om de <em>Bhapkar toets</em> uit te voeren, moeten de data aan een aantal voorwaarden voldoen. Er dient een categorische variabele te zijn met twee of meer categorieën en een binaire variabele die de twee gepaarde groepen weergeeft. Daarnaast mag er geen overlap zijn tussen de categorieën van de categorische variabele: elke observatie past slechts in een van beide categorieën.<a class="footnote-reference brackets" href="#id8" id="id4">2</a><sup>, </sup><a class="footnote-reference brackets" href="#id9" id="id5">3</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="frequentiematrix">
+<h1>Frequentiematrix<a class="headerlink" href="#frequentiematrix" title="Permalink to this headline">¶</a></h1>
+<p>De <em>Bhapkar toets</em> gaat uit van een frequentiematrix, een matrix waarin de rijen de eerste meting van de steekproef bevat en de kolommen de tweede meting. Een voorbeeld bij de casus is weergegeven in Tabel 1.</p>
+<!-- ## OPENBLOK: Groepsgrootte1.R --><!-- ## /OPENBLOK: Groepsgrootte1.R -->
+<!-- ## TEKSTBLOK: Groepsgrootte2.R -->
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p>Definitief</p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>Positief</p></td>
+<td><p>Negatief</p></td>
+<td><p>Uitgesteld</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Voorlopig</strong></p></td>
+<td><p>Positief</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Positief&quot;,&quot;Positief&quot;]</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Positief&quot;,&quot;Negatief&quot;]</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Positief&quot;,&quot;Uitgesteld&quot;]</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>Negatief</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Negatief&quot;,&quot;Positief&quot;]</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Negatief&quot;,&quot;Negatief&quot;]</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Negatief&quot;,&quot;Uitgesteld&quot;]</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>Uitgesteld</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Uitgesteld&quot;,&quot;Positief&quot;]</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Uitgesteld&quot;,&quot;Negatief&quot;]</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Uitgesteld&quot;,&quot;Uitgesteld&quot;]</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><em>Tabel 1. Frequentiematrix van de voorlopige en definitieve BSA-adviezen voor studenten van de bachelor Leisure &amp; Event Management.</em></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>De cel linksboven bevat het aantal studenten dat zowel bij het voorlopige BSA als het definitieve BSA advies een positief advies heeft ontvangen; dit zijn <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Positief&quot;,&quot;Positief&quot;]</span></code> studenten. De cel in het midden van de frequentiematrix laat het aantal studenten zien dat zowel bij het voorlopige BSA als het definitieve BSA advies een negatief advies heeft ontvangen; dit zijn <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Negatief&quot;,&quot;Negatief&quot;]</span></code> studenten. De cel rechtsonder bevat het aantal studenten dat zowel bij het voorlopige BSA als het definitieve BSA advies een uitgesteld advies heeft ontvangen; dit is <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Uitgesteld&quot;,&quot;Uitgesteld&quot;]</span></code> student. Deze drie cellen staan op de diagonaal van de tabel en worden daarom de <em>diagonale elementen</em> genoemd.</p>
+<p>Er zijn ook cellen die niet onder de diagonale elementen van de frequentiematrix vallen. Deze cellen bevatten studenten waarbij het voorlopige BSA advies verschilt van het definitieve advies. In de cel rechtsboven bijvoorbeeld staat het aantal studenten dat een positief voorlopig BSA advies en een uitgesteld definitief BSA advies heeft ontvangen; dit zijn <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Positief&quot;,&quot;Uitgesteld&quot;]</span></code> studenten. De cel linksonder bevat het aantal studenten dat een uitgesteld voorlopig BSA advies en een positief definitief BSA advies heeft ontvangen; dit zijn <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_frequentiematrix[&quot;Uitgesteld&quot;,&quot;Positief&quot;]</span></code> studenten.</p>
+<!-- ## /TEKSTBLOK: Groepsgrootte2.R --></div>
+<div class="tex2jax_ignore mathjax_ignore section" id="de-data-bekijken">
+<h1>De data bekijken<a class="headerlink" href="#de-data-bekijken" title="Permalink to this headline">¶</a></h1>
+<!-- ## TEKSTBLOK: Data-bekijken1.R -->
+<p>Er is een dataset ingeladen genaamd <code class="docutils literal notranslate"><span class="pre">BSA_LEM</span></code>. In deze dataset is voor elke student aangegeven wat het voorlopige en definitieve BSA advies is.</p>
+<!-- ## /TEKSTBLOK: Data-bekijken1.R -->
+<!-- ## OPENBLOK: Data-bekijken2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Eerste 6 observaties</span>
+<span class="n">head</span><span class="p">(</span><span class="n">BSA_LEM</span><span class="p">)</span>
+
+<span class="c1">## Laatste 6 observaties</span>
+<span class="n">tail</span><span class="p">(</span><span class="n">BSA_LEM</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-bekijken2.R -->
+<!-- ## TEKSTBLOK: Data-kruistabel1.R -->
+<p>Een kruistabel geeft de aantallen observaties weer voor de combinaties van de categorieën van de variabelen <code class="docutils literal notranslate"><span class="pre">Soort_BSA</span></code> en <code class="docutils literal notranslate"><span class="pre">BSA_advies</span></code>. In feite laat deze tabel de frequentie van het positieve, negatieve en uitgestelde BSA-advies zien voor de voorlopige en definitieve BSA. Maak de kruistabel met de functie <code class="docutils literal notranslate"><span class="pre">table()</span></code> met als argumenten de variabele <code class="docutils literal notranslate"><span class="pre">BSA_LEM$Soort_BSA</span></code>, die weergeeft of het om het voorlopige of definitieve advies gaat, en de variabele <code class="docutils literal notranslate"><span class="pre">BSA_LEM$BSA_advies</span></code>, die het BSA-advies aangeeft.</p>
+<!-- ## /TEKSTBLOK: Data-kruistabel1.R -->
+<!-- ## OPENBLOK: Data-kruistabel2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>## Maak een kruistabel
+BSA_kruistabel &lt;- table(BSA_LEM$Soort_BSA, BSA_LEM$BSA_advies)
+
+## Print de kruistabel 
+print(BSA_kruistabel)
+
+## Print een tabel met proporties, tweede argument 1 zorgt ervoor dat de 
+## proporties per rij berekend worden
+prop.table(BSA_kruistabel, 1)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Data-kruistabel2.R -->
+<p>De kruistabel en de kruistabel met proporties laten zien dat het aantal positieve BSA-adviezen hoger is bij het definitieve advies en het aantal negatieve BSA-adviezen juist lager. Het aantal uitgestelde BSA-adviezen is iets lager bij het definitieve advies.</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="uitvoering">
+<h1>Uitvoering<a class="headerlink" href="#uitvoering" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="bhapkar-toets">
+<h2>Bhapkar toets<a class="headerlink" href="#bhapkar-toets" title="Permalink to this headline">¶</a></h2>
+<!-- ## TEKSTBLOK: Bhapkar-toets1.R -->
+<p>Voer de <em>Bhapkar toets</em> uit om te onderzoeken of er een verschil is tussen de verdeling van de voorlopige en definitieve BSA-adviezen voor studenten van de bachelor Leisure &amp; Events Management. Gebruik de functie <code class="docutils literal notranslate"><span class="pre">bhapkar()</span></code> van het package <code class="docutils literal notranslate"><span class="pre">irr</span></code> met als argument een matrix met daarin de voorlopige BSA-adviezen <code class="docutils literal notranslate"><span class="pre">Voorlopig</span></code> en de definitieve BSA-adviezen <code class="docutils literal notranslate"><span class="pre">Definitief</span></code>.</p>
+<!-- ## /TEKSTBLOK: Bhapkar-toets1.R -->
+<!-- ## OPENBLOK: Bhapkar-toets2.R --><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>## Laad het package van de Bhapkar toets in
+library(irr)
+
+## Sla de voorlopige en definitieve BSA-adviezen op in een vector
+Voorlopig &lt;- BSA_LEM$BSA_advies[BSA_LEM$Soort_BSA == &quot;Voorlopig&quot;]
+Definitief &lt;- BSA_LEM$BSA_advies[BSA_LEM$Soort_BSA == &quot;Definitief&quot;]
+
+## Voer de Bhapkar toets uit
+bhapkar(cbind(Voorlopig, Definitief))
+</pre></div>
+</div>
+</div>
+</div>
+<!-- ## /OPENBLOK: Bhapkar-toets2.R -->
+<!-- ## CLOSEDBLOK: Bhapkar-toets3.R --><!-- ## /CLOSEDBLOK: Bhapkar-toets3.R -->
+<!-- ## TEKSTBLOK: Bhapkar-toets5.R -->
+<ul class="simple">
+<li><p><em>χ^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vChi2</span></code>, <em>p</em> = 0,004</p></li>
+<li><p>De p-waarde is kleiner dan 0,05, dus de H~0~ wordt verworpen.<a class="footnote-reference brackets" href="#id10" id="id6">6</a></p></li>
+<li><p>De verdelingen van de voorlopige en definitieve BSA-adviezen zijn verschillend.</p></li>
+</ul>
+<!-- ## /TEKSTBLOK: Bhapkar-toets5.R --></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="rapportage">
+<h1>Rapportage<a class="headerlink" href="#rapportage" title="Permalink to this headline">¶</a></h1>
+<!-- ## CLOSEDBLOK: posthoc3.R --><!-- ## /CLOSEDBLOK: posthoc3.R --><!-- ## TEKSTBLOK: Bhapkar-toets6.R -->
+<p>De <em>Bhapkar toets</em> is uitgevoerd om uit te vinden of er een verschil tussen de verdeling van de voorlopige en definitieve BSA-adviezen van de studenten van de bachelor Leisure &amp; Events Management. Uit de <em>Bhapkar toets</em> blijkt dat er een significant verschil is tussen de verdelingen van de voorlopige en definitieve BSA-adviezen, <em>χ^2^</em> = <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">vChi2</span></code>, <em>p</em> &lt; 0,0001. De frequenties en bijbehorende percentages voor de voorlopige en definitieve BSA-adviezen zijn te vinden in Tabel 2. Op basis van de resultaten en deze tabel is te zien dat er bij de definitieve BSA-adviezen meer positieve en minder negatieve BSA-adviezen zijn dan bij de voorlopige adviezen. Daarnaast is het aantal uitgestelde BSA-adviezen iets lager bij de definitieve adviezen. De persoonlijke gesprekken met de studieadviseur lijken er dus voor te zorgen dat er meer positieve en minder negatieve en uitgestelde BSA-adviezen zijn.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p>BSA-advies</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p>Positief</p></td>
+<td><p>Negatief</p></td>
+<td><p>Uitgesteld</p></td>
+</tr>
+<tr class="row-odd"><td><p>Voorlopig</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_kruistabel[&quot;Voorlopig&quot;,&quot;Positief&quot;]</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(100*propBSA_kruistabel[&quot;Voorlopig&quot;,&quot;Positief&quot;])</span></code>%)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_kruistabel[&quot;Voorlopig&quot;,&quot;Negatief&quot;]</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(100*propBSA_kruistabel[&quot;Voorlopig&quot;,&quot;Negatief&quot;])</span></code>%)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_kruistabel[&quot;Voorlopig&quot;,&quot;Uitgesteld&quot;]</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(100*propBSA_kruistabel[&quot;Voorlopig&quot;,&quot;Uitgesteld&quot;])</span></code>%)</p></td>
+</tr>
+<tr class="row-even"><td><p>Definitief</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_kruistabel[&quot;Definitief&quot;,&quot;Positief&quot;]</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(100*propBSA_kruistabel[&quot;Definitief&quot;,&quot;Positief&quot;])</span></code>%)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_kruistabel[&quot;Definitief&quot;,&quot;Negatief&quot;]</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(100*propBSA_kruistabel[&quot;Definitief&quot;,&quot;Negatief&quot;])</span></code>%)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">BSA_kruistabel[&quot;Definitief&quot;,&quot;Uitgesteld&quot;]</span></code> (<code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">Round_and_format(100*propBSA_kruistabel[&quot;Definitief&quot;,&quot;Uitgesteld&quot;])</span></code>%)</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>Tabel 2. Kruistabel en rijpercentages voor de voorlopige en definitieve BSA-adviezen van studenten van de bachelor Leisure &amp; Events Management.</em></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<!-- ## /TEKSTBLOK: Bhapkar-toets6.R -->
+<!-- ## CLOSEDBLOK: Footer.R --><!-- ## /CLOSEDBLOK: Footer.R -->
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id7"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Een nominale variabele is een categorische variabele waarbij de categorieën niet geordend kunnen worden. Een voorbeeld is de variabele windstreek (noord, oost, zuid, west) en geslacht (man of vrouw).</p>
+</dd>
+<dt class="label" id="id8"><span class="brackets">2</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id4">2</a>)</span></dt>
+<dd><p>Sun, X., &amp; Yang, Z., (2008) <em>Generalized McNemar’s Test for Homogeneity of the Marginal Distributions</em>. <a class="reference external" href="https://support.sas.com/resources/papers/proceedings/pdfs/sgf2008/382-2008.pdf">SAS Global Forum 2008</a></p>
+</dd>
+<dt class="label" id="id9"><span class="brackets">3</span><span class="fn-backref">(<a href="#id3">1</a>,<a href="#id5">2</a>)</span></dt>
+<dd><p>Uebersax, J. (30 augustus 2006). <a class="reference external" href="https://www.john-uebersax.com/stat/mcnemar.htm"><em>McNemar Tests of Marginal Homogeneity</em></a></p>
+</dd>
+<dt class="label" id="id10"><span class="brackets"><a class="fn-backref" href="#id6">6</a></span></dt>
+<dd><p>In dit voorbeeld wordt uitgegaan van een waarschijnlijkheid van 95% c.q. een p-waardegrens van 0,05. De grens is naar eigen inzicht aan te passen; houd hierbij rekening met type I en type II fouten.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./r"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="16%20Chi-kwadraat%20toets%20voor%20onafhankelijkheid%20en%20Fisher-Freeman-Halton%20exacte%20toets%20I%20R.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Toepassing</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="20%20Multilevel%20multinomiale%20logistische%20regressie%20R.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Toepassing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Versnellingsplan Onderwijsinnovatie met ICT<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
